@@ -1,5 +1,4 @@
 # Setup script for new windows machine
-<<<<<<< HEAD
 Requires -RunAsAdministrator
 
 # Set working directory
@@ -15,8 +14,6 @@ $OneApps = "$Env:OneDriveConsumer\Apps\"
 
 $OneApps = "$Env:OneDriveConsumer\Apps\"
 
-
->>>>>>> 411475fb899f2447e85be5cf9e40d7cf18149f75
 # Linked Files (Destination => Source)
 $symlinks = @{
     $PROFILE.CurrentUserAllHosts                                                                         = ".\profile.ps1"
@@ -25,7 +22,6 @@ $symlinks = @{
     "$Env:LocalAppData\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json"        = "$OneApps\WindowsTerminal\settings.json"
     "$Env:LocalAppData\Packages\Microsoft.WindowsTerminalPreview_8wekyb3d8bbwe\LocalState\settings.json" = "$OneApps\WindowsTerminalBeta\settings.json"
     
-<<<<<<< HEAD
 }
 
 # Define the list of modules to  with additional options
@@ -174,7 +170,4 @@ function New-SymbolicLinks {
 # Setup Actions
 Install-Modules -Modules $myModules
 Install-Applications -AppList $AppList
-Create-SymbolicLinks -Symlinks $symlinks
-=======
-}
->>>>>>> 411475fb899f2447e85be5cf9e40d7cf18149f75
+New-SymbolicLinks -Symlinks $symlinks
