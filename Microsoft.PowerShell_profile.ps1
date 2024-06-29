@@ -1,6 +1,3 @@
-# Initial GitHub.com connectivity check with 1 second timeout
-$canConnectToGitHub = Test-Connection github.com -Count 1 -Quiet -TimeoutSeconds 1
-
 ###############################
 ###   MY CUSTOM FUNCTIONS   ###
 ###############################
@@ -106,7 +103,7 @@ function Install-Applications {
 
 # Update Powershell
 function Update-PowerShell {
-    if (-not $global:canConnectToGitHub) {
+    if (-not (Test-InternetConnection)) {
         Write-Host "Skipping PowerShell update check due to GitHub.com not responding within 1 second." -ForegroundColor Yellow
         return
     }
@@ -134,9 +131,21 @@ function Update-PowerShell {
     }
 }
 
+# Function to test internet connectivity
+function Test-InternetConnection {
+    try {
+        $testConnection = Test-Connection -ComputerName github.com -Count 1 -ErrorAction Stop
+        return $true
+    }
+    catch {
+        Write-Warning "Internet connection is required but not available. Please check your connection."
+        return $false
+    }
+}
+
 # Check for Profile Updates
 function Update-Profile {
-    if (-not $global:canConnectToGitHub) {
+    if (-not (Test-InternetConnection)) {
         Write-Host "Skipping profile update check due to GitHub.com not responding within 1 second." -ForegroundColor Yellow
         return
     }
@@ -151,7 +160,7 @@ function Update-Profile {
             Write-Host "Profile has been updated. Please restart your shell to reflect changes" -ForegroundColor Magenta
         }
     } catch {
-        Write-Error "Unable to check for `$PROFILE.CurrentUserAllHost updates"
+        Write-Error "Unable to check for `$PROFILE updates"
     } finally {
         Remove-Item "$env:temp/Microsoft.PowerShell_profile.ps1" -ErrorAction SilentlyContinue
     }
