@@ -9,11 +9,6 @@ Set-Location $PSScriptRoot
 $env:Path = [System.Environment]::GetEnvironmentVariable("Path", "Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path", "User")
 $OneApps = "$Env:OneDriveConsumer\Apps\"
 
-=======
-#Requires -RunAsAdministrator
-
-$OneApps = "$Env:OneDriveConsumer\Apps\"
-
 # Linked Files (Destination => Source)
 $symlinks = @{
     $PROFILE.CurrentUserAllHosts                                                                         = ".\profile.ps1"
