@@ -1,7 +1,10 @@
+<<<<<<< HEAD
 ###############################
 ###   MY CUSTOM FUNCTIONS   ###
 ###############################
 
+=======
+>>>>>>> 411475fb899f2447e85be5cf9e40d7cf18149f75
 # Define the list of modules to install
 $myModules = @(
     @{moduleName = "Microsoft.WinGet.Client"; installOptions = "-AcceptLicense -Force"},
@@ -31,9 +34,12 @@ function Install-Modules {
         [array]$Modules
     )
 
+<<<<<<< HEAD
     $totalModules = $Modules.Count
     $completedModules = 0
 
+=======
+>>>>>>> 411475fb899f2447e85be5cf9e40d7cf18149f75
     $jobs = @()
     foreach ($module in $Modules) {
         $moduleName = $module.moduleName
@@ -42,12 +48,16 @@ function Install-Modules {
         $jobs += Start-Job -Name "Install-$moduleName" -ScriptBlock {
             if (-not (Get-Module -ListAvailable -Name $using:moduleName)) {
                 Install-Module -Name $using:moduleName -Scope CurrentUser $using:installOptions
+<<<<<<< HEAD
                 Import-Module $using:moduleName
+=======
+>>>>>>> 411475fb899f2447e85be5cf9e40d7cf18149f75
             }
             Import-Module $using:moduleName
         }
     }
 
+<<<<<<< HEAD
     # Display progress bar
     do {
         $completedModules = ($jobs | Where-Object { $_.State -eq 'Completed' }).Count
@@ -57,6 +67,10 @@ function Install-Modules {
 
     # Wait for all jobs to complete and check for any issues
     $jobs | Wait-Job | Out-Null
+=======
+    # Wait for all jobs to complete and check for any issues
+    $jobs | Wait-Job
+>>>>>>> 411475fb899f2447e85be5cf9e40d7cf18149f75
     $failedJobs = $jobs | Where-Object { $_.State -ne 'Completed' }
     if ($failedJobs) {
         Write-Host "Some module installations failed:"
@@ -72,9 +86,12 @@ function Install-Applications {
         [array]$AppList
     )
 
+<<<<<<< HEAD
     $totalApps = $AppList.Count
     $completedApps = 0
 
+=======
+>>>>>>> 411475fb899f2447e85be5cf9e40d7cf18149f75
     $jobs = @()
     foreach ($app in $AppList) {
         $jobs += Start-Job -Name "Install-$($app.Command)" -ScriptBlock {
@@ -85,6 +102,7 @@ function Install-Applications {
         }
     }
 
+<<<<<<< HEAD
     # Display progress bar
     do {
         $completedApps = ($jobs | Where-Object { $_.State -eq 'Completed' }).Count
@@ -94,6 +112,10 @@ function Install-Applications {
 
     # Wait for all jobs to complete and check for any issues
     $jobs | Wait-Job | Out-Null
+=======
+    # Wait for all jobs to complete and check for any issues
+    $jobs | Wait-Job
+>>>>>>> 411475fb899f2447e85be5cf9e40d7cf18149f75
     $failedJobs = $jobs | Where-Object { $_.State -ne 'Completed' }
     if ($failedJobs) {
         Write-Host "Some application installations failed:"
@@ -101,6 +123,7 @@ function Install-Applications {
     }
 }
 
+<<<<<<< HEAD
 # Function for Oh-My-Posh customisations
 function Set-OhMyPosh {
     if (Get-Command "oh-my-posh" -ErrorAction SilentlyContinue) {
@@ -122,6 +145,18 @@ function Set-PSReadLine {
         Set-PSReadLineKeyHandler -Key Tab -Function Complete
     }
 }
+=======
+# Install modules and applications
+Install-Modules -Modules $myModules
+Install-Applications -AppList $AppList
+
+
+########################################################################################################
+
+###############################
+###   MY CUSTOM FUNCTIONS   ###
+###############################
+>>>>>>> 411475fb899f2447e85be5cf9e40d7cf18149f75
 
 # Function to upgrade WinGet packages
 function wingetUpgrade {if (Get-Command "winget" -ErrorAction SilentlyContinue) {
@@ -152,6 +187,7 @@ function update {
     #windowsUpdateCheck
 }
 
+<<<<<<< HEAD
 # Show fastfetch in terminal or if not installed get powerfetch from online script
 function Show-fastfetch {
     if (Get-Command "fastfetch" -ErrorAction SilentlyContinue) {
@@ -160,10 +196,13 @@ function Show-fastfetch {
         Invoke-Expression (new-object net.webclient).DownloadString('https://raw.githubusercontent.com/jantari/powerfetch/master/powerfetch.ps1')
     }
 }
+=======
+>>>>>>> 411475fb899f2447e85be5cf9e40d7cf18149f75
 
 #########################################
 ###   SHELL CUSTOMISATION FUNCTIONS   ###
 #########################################
+<<<<<<< HEAD
 if ([Environment]::GetCommandLineArgs().Contains("-NonInteractive") -or [Environment]::GetCommandLineArgs().Contains("-CustomPipeName")) {
     Install-Modules -Modules $myModules
     return
@@ -186,3 +225,37 @@ Install-Modules -Modules $myModules
 Install-Applications -AppList $AppList
 Set-OhMyPosh
 Set-PSReadLine
+=======
+# Check and install the CaskaydiaCove NerdFont if not already installed
+$fontPath = "$env:LOCALAPPDATA\Microsoft\Windows\Fonts\CaskaydiaCove*"
+if (Test-Path $fontPath) {
+} else {
+    if (Get-Command "oh-my-posh" -ErrorAction SilentlyContinue) {
+        oh-my-posh font install CascadiaCode --user
+    } else {
+        Write-Host "Oh-My-Posh was not found on this system"
+    }
+}
+
+if (Get-Command "oh-my-posh" -ErrorAction SilentlyContinue) {
+    oh-my-posh init pwsh --config "$env:OneDriveConsumer\Documents\PowerShell\oh-my-posh-theme.json" | Invoke-Expression
+} else {
+    Write-Host "Oh-My-Posh was not found on this system"
+}
+
+if (Get-Command "Set-PSReadLineOption" -ErrorAction SilentlyContinue) {
+    Set-PSReadLineOption -PredictionViewStyle ListView
+    Set-PSReadLineOption -PredictionSource HistoryAndPlugin
+    Set-PSReadLineOption -HistoryNoDuplicates
+    Set-PSReadLineKeyHandler -Key Tab -Function Complete
+}
+
+if (Get-Command "fastfetch" -ErrorAction SilentlyContinue) {
+    Write-Host " "
+    Write-Host " "
+    fastfetch -c paleofetch
+    } else {
+        iex (new-object net.webclient).DownloadString('https://raw.githubusercontent.com/jantari/powerfetch/master/powerfetch.ps1')
+    }
+ 
+>>>>>>> 411475fb899f2447e85be5cf9e40d7cf18149f75
