@@ -4,17 +4,12 @@ if (-NOT ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdenti
     break
 }
 
-# Set working directory
-Set-Location $PSScriptRoot
-[Environment]::CurrentDirectory = $PSScriptRoot
-
 # Set Paths
 $env:Path = [System.Environment]::GetEnvironmentVariable("Path", "Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path", "User")
 $OneApps = "$Env:OneDriveConsumer\Apps\"
 
 # Linked Files (Destination => Source)
 $symlinks = @{
-    #$PROFILE.CurrentUserAllHosts                                                                         = ".\profile.ps1"
     "$Env:UserProfile\.gitconfig"                                                                        = "$OneApps\Git\.gitconfig"
     "$Env:UserProfile\.ssh"                                                                              = "$OneApps\SSH"
     "$Env:LocalAppData\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json"        = "$OneApps\WindowsTerminal\settings.json"
@@ -79,7 +74,7 @@ function Test-InternetConnection {
 
 # Check for Profile Updates
 function Update-Profile {
-    if (-not $global:canConnectToGitHub) {
+    if (-not (Test-InternetConnection)) {
         Write-Host "Skipping profile update check due to GitHub.com not responding within 1 second." -ForegroundColor Yellow
         return
     }
