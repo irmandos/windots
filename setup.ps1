@@ -1,5 +1,8 @@
-# Setup script for new windows machine
-Requires -RunAsAdministrator
+# Ensure the script can run with elevated privileges
+if (-NOT ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator")) {
+    Write-Warning "Please run this script as an Administrator!"
+    break
+}
 
 # Set working directory
 Set-Location $PSScriptRoot
@@ -62,6 +65,40 @@ $AppList = @(
     @{ Command = ''; WingetName = 'Discord.Discord'; OptionalStrings = '' }
 )
 
+# Function to test internet connectivity
+function Test-InternetConnection {
+    try {
+        $testConnection = Test-Connection -ComputerName www.google.com -Count 1 -ErrorAction Stop
+        return $true
+    }
+    catch {
+        Write-Warning "Internet connection is required but not available. Please check your connection."
+        return $false
+    }
+}
+
+# Check for Profile Updates
+function Update-Profile {
+    if (-not $global:canConnectToGitHub) {
+        Write-Host "Skipping profile update check due to GitHub.com not responding within 1 second." -ForegroundColor Yellow
+        return
+    }
+
+    try {
+        $url = "https://raw.githubusercontent.com/irmandos/windots/main/profile.ps1"
+        $oldhash = Get-FileHash $PROFILE.CurrentUserAllHosts
+        Invoke-RestMethod $url -OutFile "$env:temp/profile.ps1"
+        $newhash = Get-FileHash "$env:temp/profile.ps1"
+        if ($newhash.Hash -ne $oldhash.Hash) {
+            Copy-Item -Path "$env:temp/profile.ps1" -Destination $PROFILE.CurrentUserAllHosts -Force
+            Write-Host "Profile has been updated. Please restart your shell to reflect changes" -ForegroundColor Magenta
+        }
+    } catch {
+        Write-Error "Unable to check for `$PROFILE.CurrentUserAllHosts updates"
+    } finally {
+        Remove-Item "$env:temp/profile.ps1" -ErrorAction SilentlyContinue
+    }
+}
 
 # Function to install modules asynchronously
 function Install-Modules {
@@ -163,6 +200,8 @@ function New-SymbolicLinks {
 }
 
 # Setup Actions
+if (-not (Test-InternetConnection)) {break} # Check for internet connectivity before proceeding
 Install-Modules -Modules $myModules
 Install-Applications -AppList $AppList
 New-SymbolicLinks -Symlinks $symlinks
+Update-Profile
