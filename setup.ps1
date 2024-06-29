@@ -85,18 +85,18 @@ function Update-Profile {
     }
 
     try {
-        $url = "https://raw.githubusercontent.com/irmandos/windots/main/profile.ps1"
-        $oldhash = Get-FileHash $PROFILE.CurrentUserAllHosts
-        Invoke-RestMethod $url -OutFile "$env:temp/profile.ps1"
-        $newhash = Get-FileHash "$env:temp/profile.ps1"
+        $url = "https://raw.githubusercontent.com/irmandos/windots/main/Microsoft.PowerShell_profile.ps1"
+        $oldhash = Get-FileHash $PROFILE
+        Invoke-RestMethod $url -OutFile "$env:temp/Microsoft.PowerShell_profile.ps1"
+        $newhash = Get-FileHash "$env:temp/Microsoft.PowerShell_profile.ps1"
         if ($newhash.Hash -ne $oldhash.Hash) {
-            Copy-Item -Path "$env:temp/profile.ps1" -Destination $PROFILE.CurrentUserAllHosts -Force
+            Copy-Item -Path "$env:temp/Microsoft.PowerShell_profile.ps1" -Destination $PROFILE -Force
             Write-Host "Profile has been updated. Please restart your shell to reflect changes" -ForegroundColor Magenta
         }
     } catch {
-        Write-Error "Unable to check for `$PROFILE.CurrentUserAllHosts updates"
+        Write-Error "Unable to check for `$PROFILE updates"
     } finally {
-        Remove-Item "$env:temp/profile.ps1" -ErrorAction SilentlyContinue
+        Remove-Item "$env:temp/Microsoft.PowerShell_profile.ps1" -ErrorAction SilentlyContinue
     }
 }
 
