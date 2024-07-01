@@ -238,7 +238,7 @@ function Get-PubIP { (Invoke-WebRequest http://ifconfig.me/ip).Content }
 
 # Open WinUtil
 function winutil {
-	iwr -useb https://christitus.com/win | iex
+    Invoke-WebRequest -useb https://christitus.com/win | Invoke-Expression
 }
 
 ### Quality of Life Aliases
@@ -278,7 +278,7 @@ function uptime {
 }
 
 function reload-profile {
-    & $PROFILE.CurrentUserAllHosts
+    & $PROFILE
 }
 
 function grep($regex, $dir) {
