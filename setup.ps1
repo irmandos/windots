@@ -52,11 +52,11 @@ $AppList = @(
     @{ Command = ''; WingetName = 'Notepad++.Notepad++'; OptionalStrings = '' },
     @{ Command = ''; WingetName = '7zip.7zip'; OptionalStrings = '' },
     @{ Command = ''; WingetName = 'CodecGuide.K-LiteCodecPack.Full'; OptionalStrings = '' },
-    @{ Command = ''; WingetName = 'Valve.Steam'; OptionalStrings = '' },
-    @{ Command = ''; WingetName = 'EpicGames.EpicGamesLauncher'; OptionalStrings = '' },
-    @{ Command = ''; WingetName = 'Ubisoft.Connect'; OptionalStrings = '' },
     @{ Command = ''; WingetName = 'Microsoft.VisualStudioCode'; OptionalStrings = '' },
+    @{ Command = ''; WingetName = 'uvncbvba.UltraVnc'; OptionalStrings = '' },
     @{ Command = ''; WingetName = 'namazso.OpenHashTab'; OptionalStrings = '' },
+    @{ Command = ''; WingetName = 'Plex.Plex'; OptionalStrings = '' },
+    @{ Command = ''; WingetName = 'Spotify.Spotify'; OptionalStrings = '' },
     @{ Command = ''; WingetName = 'Discord.Discord'; OptionalStrings = '' }
 )
 
