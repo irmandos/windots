@@ -79,7 +79,6 @@ function Install-Applications {
     foreach ($app in $AppList) {
         $jobs += Start-Job -Name "Install-$($app.Command)" -ScriptBlock {
             if (-not (Get-Command -Name $using:app.Command -ErrorAction SilentlyContinue)) {
-                Write-Verbose "Installing $using:app.WingetName..."
                 Install-WinGetPackage $using:app.WingetName
             }
         }
@@ -231,7 +230,7 @@ function Show-fastfetch {
 function touch($file) { "" | Out-File $file -Encoding ASCII }
 
 function Edit-Profile {
-    notepad $PROFILE.CurrentUserAllHosts
+    notepad $PROFILE
 }
 
 function Get-PubIP { (Invoke-WebRequest http://ifconfig.me/ip).Content }
@@ -256,7 +255,13 @@ function g { z Github } # Git Shortcuts
 function gcl { git clone "$args" } # Git Shortcuts
 function cpy { Set-Clipboard $args[0] } # Clipboard Utilities
 function pst { Get-Clipboard } # Clipboard Utilities
-function sysinfo { Get-ComputerInfo }
+
+function Get-SystemInfo {
+    if (-not (Get-Command -Name fastfetch -ErrorAction SilentlyContinue)) {
+        Get-ComputerInfo
+    }
+    fastfetch -c all
+}
 
 function admin {
     if ($args.Count -gt 0) {
