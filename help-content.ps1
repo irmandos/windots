@@ -120,5 +120,4 @@ APPLICATIONS MANAGED
 "@
 }
 
-Export-ModuleMember -Function Show-Help
 

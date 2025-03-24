@@ -65,7 +65,7 @@ function touch {
         }
     }
     catch {
-        Write-Error "Failed to touch $Path: $_"
+        Write-Error "Failed to touch $Path: ${_}"
     }
 }
 
@@ -88,7 +88,7 @@ function nf {
         return $file
     }
     catch {
-        Write-Error "Failed to create file '$Name': $_"
+        Write-Error "Failed to create file '$Name': ${_}"
     }
 }
 
@@ -111,7 +111,7 @@ function mkcd {
         Write-Verbose "Created and navigated to: $($newDir.FullName)"
     }
     catch {
-        Write-Error "Failed to create or navigate to directory: $_"
+        Write-Error "Failed to create or navigate to directory: ${_}"
     }
 }
 
@@ -306,7 +306,7 @@ function gcom {
         gc -Message $Message
     }
     catch {
-        Write-Error "Git commit failed: $_"
+        Write-Error "Git commit failed: ${_}"
     }
 }
 
@@ -329,7 +329,7 @@ function lazyg {
         gp
     }
     catch {
-        Write-Error "LazyGit operation failed: $_"
+        Write-Error "LazyGit operation failed: ${_}"
     }
 }
 
@@ -356,7 +356,7 @@ function cpy {
             Write-Verbose "Copied to clipboard: $Text"
         }
         catch {
-            Write-Error "Failed to copy to clipboard: $_"
+            Write-Error "Failed to copy to clipboard: ${_}"
         }
     }
 }
@@ -374,7 +374,7 @@ function pst {
         return $clipboardContent
     }
     catch {
-        Write-Error "Failed to get clipboard content: $_"
+        Write-Error "Failed to get clipboard content: ${_}"
         return $null
     }
 }
@@ -410,7 +410,7 @@ function admin {
         Write-Verbose "Started admin terminal session"
     }
     catch {
-        Write-Error "Failed to start admin terminal: $_"
+        Write-Error "Failed to start admin terminal: ${_}"
     }
 }
 
@@ -444,7 +444,7 @@ function restart-powershell {
         }
     }
     catch {
-        Write-Error "Failed to restart PowerShell: $_"
+        Write-Error "Failed to restart PowerShell: ${_}"
     }
 }
 
@@ -501,7 +501,7 @@ function update-system {
         Write-Host "System update completed." -ForegroundColor Cyan
     }
     catch {
-        Write-Error "Update failed: $_"
+        Write-Error "Update failed: ${_}"
     }
 }
 
@@ -542,7 +542,7 @@ function sysinfo {
         Write-Host "==========================`n" -ForegroundColor Cyan
     }
     catch {
-        Write-Error "Failed to retrieve system information: $_"
+        Write-Error "Failed to retrieve system information: ${_}"
     }
 }
 
@@ -618,7 +618,7 @@ function find-in-files {
         Write-Host "Found $count matches in $($files.Count) files" -ForegroundColor Green
     }
     catch {
-        Write-Error "Search failed: $_"
+        Write-Error "Search failed: ${_}"
     }
 }
 
@@ -694,7 +694,7 @@ function replace-in-files {
         Write-Host "Replaced $replaceCount occurrences in $fileCount files" -ForegroundColor Green
     }
     catch {
-        Write-Error "Replace operation failed: $_"
+        Write-Error "Replace operation failed: ${_}"
     }
 }
 
@@ -761,7 +761,7 @@ function format-json {
             return $output
         }
         catch {
-            Write-Error "JSON formatting failed: $_"
+            Write-Error "JSON formatting failed: ${_}"
         }
     }
 }
@@ -813,7 +813,7 @@ function get-public-ip {
         Write-Error "Could not retrieve public IP from any service."
     }
     catch {
-        Write-Error "Failed to get public IP: $_"
+        Write-Error "Failed to get public IP: ${_}"
     }
 }
 
@@ -897,7 +897,7 @@ function ping-host {
         }
     }
     catch {
-        Write-Error "Ping failed: $_"
+        Write-Error "Ping failed: ${_}"
     }
 }
 
@@ -986,7 +986,7 @@ function test-port {
         }
     }
     catch {
-        Write-Error "Port test failed: $_"
+        Write-Error "Port test failed: ${_}"
     }
 }
 
@@ -1055,7 +1055,7 @@ function show-processes {
         $processes | Format-Table -Property Name, Id, "CPU", "Memory(MB)", "ThreadCount", "IO(KB)" -AutoSize
     }
     catch {
-        Write-Error "Failed to get process information: $_"
+        Write-Error "Failed to get process information: ${_}"
     }
 }
 
@@ -1100,7 +1100,7 @@ function kill-process {
         }
     }
     catch {
-        Write-Error "Failed to terminate processes: $_"
+        Write-Error "Failed to terminate processes: ${_}"
     }
 }
 
@@ -1181,7 +1181,7 @@ function show-process-tree {
         }
     }
     catch {
-        Write-Error "Failed to generate process tree: $_"
+        Write-Error "Failed to generate process tree: ${_}"
     }
 }
 
@@ -1302,7 +1302,7 @@ function monitor-process {
         } while ($Count -eq 0 -or $cycles -lt $Count)
     }
     catch {
-        Write-Error "Process monitoring failed: $_"
+        Write-Error "Process monitoring failed: ${_}"
     }
     finally {
         Write-Host "`nProcess monitoring stopped." -ForegroundColor Cyan
@@ -1408,7 +1408,7 @@ function env-var {
         }
     }
     catch {
-        Write-Error "Environment variable operation failed: $_"
+        Write-Error "Environment variable operation failed: ${_}"
     }
 }
 
@@ -1482,7 +1482,7 @@ function add-to-path {
         Write-Host "Added to PATH ($Scope scope): $Directory" -ForegroundColor Green
     }
     catch {
-        Write-Error "Failed to add directory to PATH: $_"
+        Write-Error "Failed to add directory to PATH: ${_}"
     }
 }
 
@@ -1552,7 +1552,7 @@ function remove-from-path {
         Write-Host "Removed from PATH ($Scope scope): $Directory" -ForegroundColor Yellow
     }
     catch {
-        Write-Error "Failed to remove directory from PATH: $_"
+        Write-Error "Failed to remove directory from PATH: ${_}"
     }
 }
 
@@ -1622,7 +1622,7 @@ function show-path {
         }
     }
     catch {
-        Write-Error "Failed to show PATH: $_"
+        Write-Error "Failed to show PATH: ${_}"
     }
 }
 
@@ -1715,7 +1715,7 @@ function edit-profile {
         Write-Host "Opened $Scope profile: $profilePath" -ForegroundColor Green
     }
     catch {
-        Write-Error "Failed to edit profile: $_"
+        Write-Error "Failed to edit profile: ${_}"
     }
 }
 
@@ -1814,7 +1814,7 @@ function backup-profile {
         return $backupPath
     }
     catch {
-        Write-Error "Failed to backup profile: $_"
+        Write-Error "Failed to backup profile: ${_}"
         return $null
     }
 }
@@ -1906,7 +1906,7 @@ function restore-profile {
         Write-Host "Restart your PowerShell session or run reload-profile to apply changes." -ForegroundColor Yellow
     }
     catch {
-        Write-Error "Failed to restore profile: $_"
+        Write-Error "Failed to restore profile: ${_}"
     }
 }
 
@@ -2030,7 +2030,7 @@ function reload-profile {
         Write-Host "`nSession refreshed successfully. Profile is ready to use." -ForegroundColor Green
     }
     catch {
-        Write-Error "Failed to reload profile: $_"
+        Write-Error "Failed to reload profile: ${_}"
     }
 }
 

@@ -108,7 +108,7 @@ function Update-CacheData {
         Write-Verbose "Updated cache file: $CacheFile"
     }
     catch {
-        Write-Warning "Failed to update cache file $CacheFile: $_"
+        Write-Warning "Failed to update cache file $CacheFile: ${_}"
     }
 }
 
@@ -969,6 +969,7 @@ Export-ModuleMember -Function @(
     'Install-Modules',
     'Install-Applications',
     'Update-WinGet',
-    'Update-Modules'
+    'Update-Modules',
+    'Import-RequiredModules'
 )
 
