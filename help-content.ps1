@@ -21,6 +21,24 @@ Update-Modules
     Updates all PowerShell modules using M365 module
     Example: Update-Modules
 
+PROFILE MANAGEMENT (profile-manager.ps1)
+------------------------------------
+Update-ProfileFromGithub
+    Updates PowerShell profile files from GitHub repository
+    Example: Update-ProfileFromGithub
+
+Push-ProfileToGithub [-CommitMessage <string>]
+    Pushes local profile changes to GitHub repository
+    Example: Push-ProfileToGithub -CommitMessage "Updated aliases"
+
+Sync-Profile [-CommitMessage <string>]
+    Syncs profile by pushing local changes and pulling remote updates
+    Example: Sync-Profile
+
+Backup-ProfileFiles
+    Creates a backup of all profile files with timestamp
+    Example: Backup-ProfileFiles
+
 ALIASES AND FUNCTIONS (aliases.ps1)
 ---------------------------------
 File Management:
@@ -47,7 +65,6 @@ System Administration:
     uptime                - Show system uptime
     Get-SystemInfo        - Display detailed system information
     flushdns             - Clear DNS cache
-    Export-Profile        - Export profile settings
     reload-profile        - Reload PowerShell profile
     Edit-Profile          - Open profile in notepad
 
@@ -80,6 +97,7 @@ To enable all features, uncomment these lines in your profile:
     . "$PSScriptRoot\module-manager.ps1"
     . "$PSScriptRoot\aliases.ps1"
     . "$PSScriptRoot\help-content.ps1"
+    . "$PSScriptRoot\profile-manager.ps1"
 
 MODULES INSTALLED
 ----------------
