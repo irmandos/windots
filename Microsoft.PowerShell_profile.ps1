@@ -41,14 +41,14 @@ if ($VerbosePreference -eq 'Continue') {
 #############################################################################
 
 # Import essential module management 
-. "$PSScriptRoot\module-manager.ps1"
+. "$env:OneDriveConsumer\Documents\PowerShell\module-manager.ps1"
 
 # Load essential modules with optimized parallel loading
 # This uses the optimized Import-RequiredModules function from module-manager.ps1
 Import-RequiredModules
 
 # Import core aliases and functions for any session type
-. "$PSScriptRoot\aliases.ps1"
+. "$env:OneDriveConsumer\Documents\PowerShell\aliases.ps1"
 
 # Exit early for non-interactive sessions (jobs, commands, etc.)
 if ($IsNonInteractive) {
@@ -64,7 +64,7 @@ if ($IsNonInteractive) {
 #############################################################################
 if ($IsVSCodeTerminal) {
     # Import additional VS Code specific modules and functions
-    . "$PSScriptRoot\profile-manager.ps1"
+    . "$env:OneDriveConsumer\Documents\PowerShell\profile-manager.ps1"
     
     # Function for Oh-My-Posh with VS Code optimized settings
     function Set-OhMyPoshVSCode {
@@ -97,8 +97,8 @@ if ($IsVSCodeTerminal) {
 #############################################################################
 
 # Import all profile modules for interactive sessions
-. "$PSScriptRoot\profile-manager.ps1"
-. "$PSScriptRoot\help-content.ps1"
+. "$env:OneDriveConsumer\Documents\PowerShell\profile-manager.ps1"
+. "$env:OneDriveConsumer\Documents\PowerShell\help-content.ps1"
 
 #region SHELL CUSTOMIZATION FUNCTIONS
 #############################################################################

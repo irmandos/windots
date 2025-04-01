@@ -11,6 +11,7 @@
     Version: 1.0
 #>
 
+
 # Cache configuration
 $script:CacheFolder = Join-Path $env:USERPROFILE '.pwsh-cache'
 $script:ModuleCacheFile = Join-Path $script:CacheFolder 'module-cache.json'
@@ -108,7 +109,7 @@ function Update-CacheData {
         Write-Verbose "Updated cache file: $CacheFile"
     }
     catch {
-        Write-Warning "Failed to update cache file $CacheFile: ${_}"
+        Write-Warning ("Failed to update cache file {0}: {1}" -f $CacheFile, $_)
     }
 }
 
@@ -135,7 +136,7 @@ function Test-CacheValid {
         return $cacheAge.TotalDays -lt $script:CacheValidDays
     }
     catch {
-        Write-Warning "Error checking cache validity: $_"
+        Write-Warning ("Error checking cache validity: {0}" -f $_)
         return $false
     }
 }
@@ -147,20 +148,6 @@ function Test-CacheValid {
     Imports all required PowerShell modules without checking if they're installed
     This is optimized for fast profile loading
 #>
-function Import-RequiredModules {
-    [CmdletBinding()]
-    param()
-
-    # Import modules in parallel for faster loading
-    $script:RequiredModules | ForEach-Object -Parallel {
-        try {
-            Import-Module $_ -ErrorAction SilentlyContinue
-        }
-        catch {
-            # Silently continue - we don't want to block profile loading
-        }
-    } -ThrottleLimit 10
-}
 
 <#
 .SYNOPSIS
@@ -210,7 +197,7 @@ function Install-RequiredPSModules {
                     Installed = $false
                     Error = $_.Exception.Message
                 }
-                Write-Warning "Failed to install module $moduleName : $_"
+                Write-Warning ("Failed to install module {0}: {1}" -f $moduleName, $_)
             }
         }
         else {
@@ -294,7 +281,7 @@ function Install-RequiredWingetApps {
                         Installed = $false
                         Error = $_.Exception.Message
                     }
-                    Write-Warning "Failed to install application $appId : $_"
+                    Write-Warning ("Failed to install application {0}: {1}" -f $appId, $_)
                 }
             }
             else {
@@ -310,7 +297,7 @@ function Install-RequiredWingetApps {
                 Installed = $false
                 Error = $_.Exception.Message
             }
-            Write-Warning "Error checking status for application $appId : $_"
+            Write-Warning ("Error checking status for application {0}: {1}" -f $appId, $_)
         }
     }
 
@@ -358,7 +345,7 @@ function Update-AllPSModules {
         }
     }
     catch {
-        Write-Warning "Error updating modules: $_"
+        Write-Warning ("Error updating modules: {0}" -f $_)
     }
 }
 
@@ -401,13 +388,6 @@ function Start-BackgroundInstallationCheck {
 # Initialize cache when module is imported
 Initialize-Cache
 
-# Export public functions
-Export-ModuleMember -Function Import-RequiredModules
-Export-ModuleMember -Function Install-RequiredPSModules
-Export-ModuleMember -Function Install-RequiredWingetApps
-Export-ModuleMember -Function Update-AllPSModules
-Export-ModuleMember -Function Start-BackgroundInstallationCheck
-
 #region Module Manager
 # Improved module manager with caching, background processing, and parallel importing
 # Author: User
@@ -421,8 +401,6 @@ $DefaultModules = @(
     @{moduleName = "PSReadLine"; installOptions = "-AcceptLicense -AllowPrerelease -Force -SkipPublisherCheck"},
     @{moduleName = "posh-git"; installOptions = "-AcceptLicense -Force"},
     @{moduleName = "Terminal-Icons"; installOptions = "-AcceptLicense -Force"},
-    @{moduleName = "oh-my-posh"; installOptions = "-AcceptLicense -Force"},
-    @{moduleName = "z"; installOptions = "-AcceptLicense -Force"},
     @{moduleName = "M365PSProfile"; installOptions = "-AcceptLicense -Force"},
     @{moduleName = "Az.Accounts"; installOptions = "-AcceptLicense -Force"},
     @{moduleName = "Az.Tools.Predictor"; installOptions = "-AcceptLicense -Force"},
@@ -486,7 +464,7 @@ function Initialize-ModuleCache {
         return Get-Content -Path $ModuleCachePath -Raw | ConvertFrom-Json
     }
     catch {
-        Write-ModuleLog "Failed to initialize module cache: $_" -Level Error
+        Write-ModuleLog ("Failed to initialize module cache: {0}" -f $_) -Level Error
         # Create a default cache in memory if file operations fail
         return @{
             'LastCheckDate' = (Get-Date).AddDays(-2).ToString('yyyy-MM-dd')
@@ -508,7 +486,7 @@ function Update-ModuleCache {
         Write-ModuleLog "Module cache updated successfully" -Level Info
     }
     catch {
-        Write-ModuleLog "Failed to update module cache: $_" -Level Error
+        Write-ModuleLog ("Failed to update module cache: {0}" -f $_) -Level Error
     }
 }
 
@@ -531,7 +509,7 @@ function Test-ShouldCheckModules {
         return $lastCheck -lt $today
     }
     catch {
-        Write-ModuleLog "Error determining if modules should be checked: $_" -Level Error
+        Write-ModuleLog ("Error determining if modules should be checked: {0}" -f $_) -Level Error
         # Default to checking if there's an error
         return $true
     }
@@ -623,7 +601,6 @@ function Import-RequiredModules {
     
     return $results
 }
-
 # Module and Application Installation
 function Start-ModuleVerification {
     [CmdletBinding()]
@@ -774,6 +751,26 @@ function Start-ModuleVerification {
                                     'LastChecked' = (Get-Date).ToString('yyyy-MM-dd')
                                 }
                             }
+                        }
+                        catch {
+                            # Log error for app installation
+                            $cache.WingetStatus[$appName] = @{
+                                'Installed' = $false
+                                'LastChecked' = (Get-Date).ToString('yyyy-MM-dd')
+                                'Error' = $_.Exception.Message
+                            }
+                        }
+                    }
+                }
+            }
+            catch {
+                # Handle errors with winget module
+                Write-ModuleLog "Error with WinGet module: $_" -Level Error
+            }
+            
+            # Update the module cache with app status
+            Update-ModuleCache -Cache $cache
+        }
         
         # Run the installations
         Install-RequiredPSModules -Modules $DefaultModules
@@ -841,135 +838,47 @@ function Install-RequiredPSModules {
                 }
             }
             catch {
-                Write-ModuleLog "Failed to install module $module`: $_" -Level Error
+                Write-ModuleLog ("Failed to install module {0}: {1}" -f $module, $_) -Level Error
                 
                 $cache.ModuleStatus[$module] = @{
-
-# Module and Package Management Functions
-
-# Define the list of modules to install
-$myModules = @(
-    @{moduleName = "Microsoft.WinGet.Client"; installOptions = "-AcceptLicense -Force"},
-    @{moduleName = "PSWriteColor"; installOptions = "-AcceptLicense -Force"},
-    @{moduleName = "PSReadLine"; installOptions = "-AcceptLicense -AllowPrerelease -Force -SkipPublisherCheck"},
-    @{moduleName = "posh-git"; installOptions = "-AcceptLicense -Force"},
-    @{moduleName = "Terminal-Icons"; installOptions = "-AcceptLicense -Force"},
-    @{moduleName = "M365PSProfile"; installOptions = "-AcceptLicense -Force && Install-PSResource -Name M365PSProfile"},
-    @{moduleName = "Az.Accounts"; installOptions = "-AcceptLicense -Force"},
-    @{moduleName = "Az.Tools.Predictor"; installOptions = "-AcceptLicense -Force"},
-    @{moduleName = "PSWindowsUpdate"; installOptions = "-AcceptLicense -Force"}
-)
-
-# Define the list of applications to install
-$AppList = @(
-    @{ Command = 'oh-my-posh'; WingetName = 'JanDeDobbeleer.OhMyPosh'; OptionalStrings = '' },
-    @{ Command = 'git'; WingetName = 'git.git'; OptionalStrings = '' },
-    @{ Command = 'fastfetch'; WingetName = 'Fastfetch-cli.Fastfetch'; OptionalStrings = '' },
-    @{ Command = 'onefetch'; WingetName = 'o2sh.onefetch'; OptionalStrings = '' }
-)
-
-# Function to install modules asynchronously
-function Install-Modules {
-    [CmdletBinding()]
-    param (
-        [Parameter(Mandatory = $true)]
-        [array]$Modules
-    )
-
-    $totalModules = $Modules.Count
-    $completedModules = 0
-
-    $jobs = @()
-    foreach ($module in $Modules) {
-        $moduleName = $module.moduleName
-        $installOptions = $module.installOptions
-
-        $jobs += Start-Job -Name "Install-$moduleName" -ScriptBlock {
-            if (-not (Get-Module -ListAvailable -Name $using:moduleName)) {
-                Install-Module -Name $using:moduleName -Scope CurrentUser $using:installOptions
-                Import-Module $using:moduleName
+                    'Installed' = $false
+                    'LastChecked' = (Get-Date).ToString('yyyy-MM-dd')
+                    'Error' = $_.Exception.Message
+                }
             }
-            Import-Module $using:moduleName
         }
-    }
-
-    # Display progress bar
-    do {
-        $completedModules = ($jobs | Where-Object { $_.State -eq 'Completed' }).Count
-        Write-Progress -Activity "Installing Modules" -Status "Progress" -PercentComplete ($completedModules / $totalModules * 100)
-        Start-Sleep -Seconds 1
-    } while ($completedModules -lt $totalModules)
-
-    # Wait for all jobs to complete and check for any issues
-    $jobs | Wait-Job | Out-Null
-    $failedJobs = $jobs | Where-Object { $_.State -ne 'Completed' }
-    if ($failedJobs) {
-        Write-Host "Some module installations failed:"
-        $failedJobs | ForEach-Object { Receive-Job -Job $_ }
-    }
-}
-
-# Function to install applications asynchronously
-function Install-Applications {
-    [CmdletBinding()]
-    param (
-        [Parameter(Mandatory = $true)]
-        [array]$AppList
-    )
-
-    $totalApps = $AppList.Count
-    $completedApps = 0
-
-    $jobs = @()
-    foreach ($app in $AppList) {
-        $jobs += Start-Job -Name "Install-$($app.Command)" -ScriptBlock {
-            if (-not (Get-Command -Name $using:app.Command -ErrorAction SilentlyContinue)) {
-                Install-WinGetPackage $using:app.WingetName
+        else {
+            $cache.ModuleStatus[$module] = @{
+                'Installed' = $true
+                'LastChecked' = (Get-Date).ToString('yyyy-MM-dd')
             }
         }
     }
-
-    # Display progress bar
-    do {
-        $completedApps = ($jobs | Where-Object { $_.State -eq 'Completed' }).Count
-        Write-Progress -Activity "Installing Applications" -Status "Progress" -PercentComplete ($completedApps / $totalApps * 100)
-        Start-Sleep -Seconds 1
-    } while ($completedApps -lt $totalApps)
-
-    # Wait for all jobs to complete and check for any issues
-    $jobs | Wait-Job | Out-Null
-    $failedJobs = $jobs | Where-Object { $_.State -ne 'Completed' }
-    if ($failedJobs) {
-        Write-Host "Some application installations failed:"
-        $failedJobs | ForEach-Object { Receive-Job -Job $_ }
-    }
+    
+    Write-Progress -Activity "Checking PowerShell modules" -Completed
+    Update-ModuleCache -Cache $cache
 }
 
-# Function to upgrade WinGet packages
-function Update-WinGet {
-    if (Get-Command "winget" -ErrorAction SilentlyContinue) {
-        winget upgrade --accept-source-agreements --accept-package-agreements --include-pinned --all
-    } else {
-        Write-Host "Oh no, what have you done, WinGet is missing!"
-    }
-}
-
-# Function to update PowerShell modules
-function Update-Modules {
-    if (Get-Command "Install-M365Module" -ErrorAction SilentlyContinue) {
-        Write-Host "Checking WinGet..."
-        Install-M365Module -Modules $myModules.moduleName
-    } else {
-        Write-Host "Oh no, you do not have M365 module installed!"
-    }
-}
-
-# Export functions
-Export-ModuleMember -Function @(
-    'Install-Modules',
-    'Install-Applications',
-    'Update-WinGet',
-    'Update-Modules',
-    'Import-RequiredModules'
+# Define functions that should be available globally
+$GlobalFunctions = @(
+    'Import-RequiredModules',
+    'Start-BackgroundInstallationCheck',
+    'Install-RequiredPSModules',
+    'Install-RequiredWingetApps',
+    'Update-AllPSModules',
+    'Start-ModuleVerification',
+    'Sync-ModulesAndPackages'
 )
 
+# Make functions available in global scope when dot-sourced
+foreach ($function in $GlobalFunctions) {
+    $functionDef = Get-Item -Path "function:$function" -ErrorAction SilentlyContinue
+    if ($functionDef) {
+        Set-Item -Path "function:global:$function" -Value $functionDef.Definition
+        Write-Verbose "Made function '$function' available in global scope"
+    } else {
+        Write-Warning "Function '$function' not found to export to global scope"
+    }
+}
+
+Write-Verbose "Module-manager initialization completed"

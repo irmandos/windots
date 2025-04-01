@@ -14,7 +14,7 @@
 #>
 
 # Module metadata for import handling
-$script:ModuleVersion = '1.2.0'
+$script:ModuleVersion = '1.2.2'
 $script:ModuleName = 'PowerShell-Aliases'
 $script:ModuleDescription = 'Optimized PowerShell aliases and utility functions'
 #>
@@ -48,7 +48,7 @@ $script:CommandCache = @{}
 function touch {
     [CmdletBinding()]
     param (
-        [Parameter($PathParamAttribute)]
+        [Parameter(Mandatory = $true, Position = 0, HelpMessage = "Specify the file or directory path")]
         [string]$Path
     )
     
@@ -65,7 +65,7 @@ function touch {
         }
     }
     catch {
-        Write-Error "Failed to touch $Path: ${_}"
+        Write-Error "Failed to touch $Path':' $_"
     }
 }
 
@@ -888,7 +888,7 @@ function ping-host {
         $packetLoss = if ($pingCount -gt 0) { ($failed / $pingCount) * 100 } else { 0 }
         
         # Display summary
-        Write-Host "`nPing statistics for $Target:" -ForegroundColor Cyan
+        Write-Host "`nPing statistics for $Target':'" -ForegroundColor Cyan
         Write-Host "    Packets: Sent = $pingCount, Received = $successful, Lost = $failed ($([math]::Round($packetLoss, 2))% loss)"
         
         if ($successful -gt 0) {
@@ -2037,92 +2037,92 @@ function reload-profile {
 # Create aliases for profile management functions
 Set-Alias -Name ep -Value edit-profile
 Set-Alias -Name bp -Value backup-profile
-Set-Alias -Name rp -Value restore-profile
+#Set-Alias -Name rp -Value restore-profile
 Set-Alias -Name reload -Value reload-profile
 
 #endregion Profile Management
 
-#region Module Exports
-
-# Export all functions to make them available upon import
-Export-ModuleMember -Function @(
-    # File and Directory Management
-    'touch', 'nf', 'mkcd', 'docs', 'dtop', 'la', 'll',
-    
-    # Git Functions
-    'Invoke-GitCommand', 'gs', 'ga', 'gc', 'gp', 'g', 'gcl', 'gcom', 'lazyg',
-    
-    # Clipboard Functions
-    'cpy', 'pst',
-    
-    # System Administration
-    'admin', 'restart-powershell', 'update-system', 'sysinfo',
-    
-    # Text Operations
-    'find-in-files', 'replace-in-files', 'format-json',
-    
-    # Network Tools
-    'get-public-ip', 'ping-host', 'test-port',
-    
-    # Process Management
-    'show-processes', 'kill-process', 'show-process-tree', 'monitor-process',
-    
-    # Environment Management
-    'env-var', 'add-to-path', 'remove-from-path', 'show-path',
-    
-    # Profile Management
-    'edit-profile', 'backup-profile', 'restore-profile', 'reload-profile'
-)
-
-# Export all aliases
-Export-ModuleMember -Alias @(
-    # File and Directory Management
-    'll', 'la',
-    
-    # Git Functions
-    'gs', 'ga', 'gc', 'gp', 'g', 'gcl',
-    
-    # System Administration
-    'ups',
-    
-    # Text Operations
-    'fif', 'rif', 'fmtj',
-    
-    # Network Tools
-    'pubip', 'pping', 'tport',
-    
-    # Process Management
-    'top', 'kill', 'pstree', 'pmon',
-    
-    # Environment Management
-    'env', 'apath', 'rpath', 'path',
-    
-    # Profile Management
-    'ep', 'bp', 'rp', 'reload'
-)
-
-# Module cleanup function to support proper unloading
-$ExecutionContext.SessionState.Module.OnRemove = {
-    # Clean up aliases when the module is removed
-    $aliasesToRemove = @(
-        'll', 'la', 'gs', 'ga', 'gc', 'gp', 'g', 'gcl', 'ups', 'fif', 'rif', 'fmtj',
-        'pubip', 'pping', 'tport', 'top', 'kill', 'pstree', 'pmon', 'env', 'apath',
-        'rpath', 'path', 'ep', 'bp', 'rp', 'reload'
-    )
-    
-    foreach ($alias in $aliasesToRemove) {
-        if (Test-Path "Alias:$alias") {
-            Remove-Item -Path "Alias:$alias" -Force -ErrorAction SilentlyContinue
-        }
-    }
-    
-    # Clean up command cache and any other module-specific variables
-    Remove-Variable -Name CommandCache -Scope Script -Force -ErrorAction SilentlyContinue
-    
-    Write-Verbose "Aliases module unloaded successfully."
-}
-
-# Module initialization confirmation
-Write-Verbose "Aliases module version $script:ModuleVersion loaded successfully."
-
-#endregion Module Exports
+##region Module Exports
+#
+## Export all functions to make them available upon import
+#Export-ModuleMember -Function @(
+#    # File and Directory Management
+#    'touch', 'nf', 'mkcd', 'docs', 'dtop', 'la', 'll',
+#    
+#    # Git Functions
+#    'Invoke-GitCommand', 'gs', 'ga', 'gc', 'gp', 'g', 'gcl', 'gcom', 'lazyg',
+#    
+#    # Clipboard Functions
+#    'cpy', 'pst',
+#    
+#    # System Administration
+#    'admin', 'restart-powershell', 'update-system', 'sysinfo',
+#    
+#    # Text Operations
+#    'find-in-files', 'replace-in-files', 'format-json',
+#    
+#    # Network Tools
+#    'get-public-ip', 'ping-host', 'test-port',
+#    
+#    # Process Management
+#    'show-processes', 'kill-process', 'show-process-tree', 'monitor-process',
+#    
+#    # Environment Management
+#    'env-var', 'add-to-path', 'remove-from-path', 'show-path',
+#    
+#    # Profile Management
+#    'edit-profile', 'backup-profile', 'restore-profile', 'reload-profile'
+#)
+#
+## Export all aliases
+#Export-ModuleMember -Alias @(
+#    # File and Directory Management
+#    'll', 'la',
+#    
+#    # Git Functions
+#    'gs', 'ga', 'gc', 'gp', 'g', 'gcl',
+#    
+#    # System Administration
+#    'ups',
+#    
+#    # Text Operations
+#    'fif', 'rif', 'fmtj',
+#    
+#    # Network Tools
+#    'pubip', 'pping', 'tport',
+#    
+#    # Process Management
+#    'top', 'kill', 'pstree', 'pmon',
+#    
+#    # Environment Management
+#    'env', 'apath', 'rpath', 'path',
+#    
+#    # Profile Management
+#    'ep', 'bp', 'reload'
+#)
+#
+## Module cleanup function to support proper unloading
+#$ExecutionContext.SessionState.Module.OnRemove = {
+#    # Clean up aliases when the module is removed
+#    $aliasesToRemove = @(
+#        'll', 'la', 'gs', 'ga', 'gc', 'gp', 'g', 'gcl', 'ups', 'fif', 'rif', 'fmtj',
+#        'pubip', 'pping', 'tport', 'top', 'kill', 'pstree', 'pmon', 'env', 'apath',
+#        'rpath', 'path', 'ep', 'bp', 'rp', 'reload'
+#    )
+#    
+#    foreach ($alias in $aliasesToRemove) {
+#        if (Test-Path "Alias:$alias") {
+#            Remove-Item -Path "Alias:$alias" -Force -ErrorAction SilentlyContinue
+#        }
+#    }
+#    
+#    # Clean up command cache and any other module-specific variables
+#    Remove-Variable -Name CommandCache -Scope Script -Force -ErrorAction SilentlyContinue
+#    
+#    Write-Verbose "Aliases module unloaded successfully."
+#}
+#
+## Module initialization confirmation
+#Write-Verbose "Aliases module version $script:ModuleVersion loaded successfully."
+#
+##endregion Module Exports
