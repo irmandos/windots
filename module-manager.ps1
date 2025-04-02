@@ -402,8 +402,8 @@ $DefaultModules = @(
     @{moduleName = "posh-git"; installOptions = "-AcceptLicense -Force"},
     @{moduleName = "Terminal-Icons"; installOptions = "-AcceptLicense -Force"},
     @{moduleName = "M365PSProfile"; installOptions = "-AcceptLicense -Force"},
-    @{moduleName = "Az.Accounts"; installOptions = "-AcceptLicense -Force"},
-    @{moduleName = "Az.Tools.Predictor"; installOptions = "-AcceptLicense -Force"},
+#    @{moduleName = "Az.Accounts"; installOptions = "-AcceptLicense -Force"},
+#    @{moduleName = "Az.Tools.Predictor"; installOptions = "-AcceptLicense -Force"},
     @{moduleName = "PSWindowsUpdate"; installOptions = "-AcceptLicense -Force"}
 )
 
