@@ -1,0 +1,372 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">Az.App</S>
+      <Version N="Version">2.0.1</Version>
+      <S N="Type">Module</S>
+      <S N="Description">Microsoft Azure PowerShell: App cmdlets</S>
+      <S N="Author">Microsoft Corporation</S>
+      <S N="CompanyName">azure-sdk</S>
+      <S N="Copyright">Microsoft Corporation. All rights reserved.</S>
+      <DT N="PublishedDate">2025-01-14T03:10:56+02:00</DT>
+      <Obj N="InstalledDate" RefId="1">
+        <DT>2024-07-22T15:48:23.9620308+02:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="2">
+            <TN RefId="1">
+              <T>Deserialized.Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>Deserialized.System.Enum</T>
+              <T>Deserialized.System.ValueType</T>
+              <T>Deserialized.System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <Obj N="UpdatedDate" RefId="3">
+        <DT>2025-09-03T11:18:37.751259+02:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="4">
+            <TN RefId="2">
+              <T>Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>System.Enum</T>
+              <T>System.ValueType</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <URI N="LicenseUri">https://aka.ms/azps-license</URI>
+      <URI N="ProjectUri">https://github.com/Azure/azure-powershell</URI>
+      <Nil N="IconUri" />
+      <Obj N="Tags" RefId="5">
+        <TN RefId="3">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>Azure</S>
+          <S>ResourceManager</S>
+          <S>ARM</S>
+          <S>PSModule</S>
+          <S>App</S>
+          <S>PSEdition_Core</S>
+          <S>PSEdition_Desktop</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="6">
+        <TN RefId="4">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="7">
+              <TNRef RefId="3" />
+              <LST>
+                <S>Disable-AzContainerAppRevision</S>
+                <S>Enable-AzContainerAppRevision</S>
+                <S>Get-AzContainerApp</S>
+                <S>Get-AzContainerAppAuthConfig</S>
+                <S>Get-AzContainerAppAuthToken</S>
+                <S>Get-AzContainerAppAvailableWorkloadProfile</S>
+                <S>Get-AzContainerAppBillingMeter</S>
+                <S>Get-AzContainerAppConnectedEnv</S>
+                <S>Get-AzContainerAppConnectedEnvCert</S>
+                <S>Get-AzContainerAppConnectedEnvDapr</S>
+                <S>Get-AzContainerAppConnectedEnvDaprSecret</S>
+                <S>Get-AzContainerAppConnectedEnvStorage</S>
+                <S>Get-AzContainerAppCustomHostName</S>
+                <S>Get-AzContainerAppDiagnosticDetector</S>
+                <S>Get-AzContainerAppDiagnosticRevision</S>
+                <S>Get-AzContainerAppDiagnosticRoot</S>
+                <S>Get-AzContainerAppJob</S>
+                <S>Get-AzContainerAppJobExecution</S>
+                <S>Get-AzContainerAppJobSecret</S>
+                <S>Get-AzContainerAppManagedCert</S>
+                <S>Get-AzContainerAppManagedEnv</S>
+                <S>Get-AzContainerAppManagedEnvAuthToken</S>
+                <S>Get-AzContainerAppManagedEnvCert</S>
+                <S>Get-AzContainerAppManagedEnvDapr</S>
+                <S>Get-AzContainerAppManagedEnvDaprSecret</S>
+                <S>Get-AzContainerAppManagedEnvDiagnosticDetector</S>
+                <S>Get-AzContainerAppManagedEnvDiagnosticRoot</S>
+                <S>Get-AzContainerAppManagedEnvStorage</S>
+                <S>Get-AzContainerAppManagedEnvWorkloadProfileState</S>
+                <S>Get-AzContainerAppRevision</S>
+                <S>Get-AzContainerAppRevisionReplica</S>
+                <S>Get-AzContainerAppSecret</S>
+                <S>Get-AzContainerAppSourceControl</S>
+                <S>New-AzContainerApp</S>
+                <S>New-AzContainerAppAuthConfig</S>
+                <S>New-AzContainerAppConfigurationObject</S>
+                <S>New-AzContainerAppConnectedEnv</S>
+                <S>New-AzContainerAppConnectedEnvCert</S>
+                <S>New-AzContainerAppConnectedEnvDapr</S>
+                <S>New-AzContainerAppConnectedEnvStorage</S>
+                <S>New-AzContainerAppCustomDomainObject</S>
+                <S>New-AzContainerAppDaprMetadataObject</S>
+                <S>New-AzContainerAppEnvironmentVarObject</S>
+                <S>New-AzContainerAppIdentityProviderObject</S>
+                <S>New-AzContainerAppInitContainerTemplateObject</S>
+                <S>New-AzContainerAppIPSecurityRestrictionRuleObject</S>
+                <S>New-AzContainerAppJob</S>
+                <S>New-AzContainerAppJobExecutionContainerObject</S>
+                <S>New-AzContainerAppJobScaleRuleObject</S>
+                <S>New-AzContainerAppManagedCert</S>
+                <S>New-AzContainerAppManagedEnv</S>
+                <S>New-AzContainerAppManagedEnvCert</S>
+                <S>New-AzContainerAppManagedEnvDapr</S>
+                <S>New-AzContainerAppManagedEnvStorage</S>
+                <S>New-AzContainerAppProbeHeaderObject</S>
+                <S>New-AzContainerAppProbeObject</S>
+                <S>New-AzContainerAppRegistryCredentialObject</S>
+                <S>New-AzContainerAppScaleRuleAuthObject</S>
+                <S>New-AzContainerAppScaleRuleObject</S>
+                <S>New-AzContainerAppSecretObject</S>
+                <S>New-AzContainerAppSecretVolumeItemObject</S>
+                <S>New-AzContainerAppServiceBindObject</S>
+                <S>New-AzContainerAppSourceControl</S>
+                <S>New-AzContainerAppTemplateObject</S>
+                <S>New-AzContainerAppTrafficWeightObject</S>
+                <S>New-AzContainerAppVolumeMountObject</S>
+                <S>New-AzContainerAppVolumeObject</S>
+                <S>New-AzContainerAppWorkloadProfileObject</S>
+                <S>Remove-AzContainerApp</S>
+                <S>Remove-AzContainerAppAuthConfig</S>
+                <S>Remove-AzContainerAppConnectedEnv</S>
+                <S>Remove-AzContainerAppConnectedEnvCert</S>
+                <S>Remove-AzContainerAppConnectedEnvDapr</S>
+                <S>Remove-AzContainerAppConnectedEnvStorage</S>
+                <S>Remove-AzContainerAppJob</S>
+                <S>Remove-AzContainerAppManagedCert</S>
+                <S>Remove-AzContainerAppManagedEnv</S>
+                <S>Remove-AzContainerAppManagedEnvCert</S>
+                <S>Remove-AzContainerAppManagedEnvDapr</S>
+                <S>Remove-AzContainerAppManagedEnvStorage</S>
+                <S>Restart-AzContainerAppRevision</S>
+                <S>Start-AzContainerApp</S>
+                <S>Start-AzContainerAppJob</S>
+                <S>Stop-AzContainerApp</S>
+                <S>Stop-AzContainerAppJobExecution</S>
+                <S>Test-AzContainerAppConnectedEnvNameAvailability</S>
+                <S>Test-AzContainerAppNamespaceAvailability</S>
+                <S>Update-AzContainerApp</S>
+                <S>Update-AzContainerAppAuthConfig</S>
+                <S>Update-AzContainerAppConnectedEnvCert</S>
+                <S>Update-AzContainerAppConnectedEnvDapr</S>
+                <S>Update-AzContainerAppConnectedEnvStorage</S>
+                <S>Update-AzContainerAppJob</S>
+                <S>Update-AzContainerAppManagedCert</S>
+                <S>Update-AzContainerAppManagedEnv</S>
+                <S>Update-AzContainerAppManagedEnvCert</S>
+                <S>Update-AzContainerAppManagedEnvDapr</S>
+                <S>Update-AzContainerAppManagedEnvStorage</S>
+                <S>Update-AzContainerAppSourceControl</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Obj N="Value" RefId="8">
+              <TNRef RefId="3" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Ref N="Value" RefId="8" />
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="9">
+              <TNRef RefId="3" />
+              <LST>
+                <S>Disable-AzContainerAppRevision</S>
+                <S>Enable-AzContainerAppRevision</S>
+                <S>Get-AzContainerApp</S>
+                <S>Get-AzContainerAppAuthConfig</S>
+                <S>Get-AzContainerAppAuthToken</S>
+                <S>Get-AzContainerAppAvailableWorkloadProfile</S>
+                <S>Get-AzContainerAppBillingMeter</S>
+                <S>Get-AzContainerAppConnectedEnv</S>
+                <S>Get-AzContainerAppConnectedEnvCert</S>
+                <S>Get-AzContainerAppConnectedEnvDapr</S>
+                <S>Get-AzContainerAppConnectedEnvDaprSecret</S>
+                <S>Get-AzContainerAppConnectedEnvStorage</S>
+                <S>Get-AzContainerAppCustomHostName</S>
+                <S>Get-AzContainerAppDiagnosticDetector</S>
+                <S>Get-AzContainerAppDiagnosticRevision</S>
+                <S>Get-AzContainerAppDiagnosticRoot</S>
+                <S>Get-AzContainerAppJob</S>
+                <S>Get-AzContainerAppJobExecution</S>
+                <S>Get-AzContainerAppJobSecret</S>
+                <S>Get-AzContainerAppManagedCert</S>
+                <S>Get-AzContainerAppManagedEnv</S>
+                <S>Get-AzContainerAppManagedEnvAuthToken</S>
+                <S>Get-AzContainerAppManagedEnvCert</S>
+                <S>Get-AzContainerAppManagedEnvDapr</S>
+                <S>Get-AzContainerAppManagedEnvDaprSecret</S>
+                <S>Get-AzContainerAppManagedEnvDiagnosticDetector</S>
+                <S>Get-AzContainerAppManagedEnvDiagnosticRoot</S>
+                <S>Get-AzContainerAppManagedEnvStorage</S>
+                <S>Get-AzContainerAppManagedEnvWorkloadProfileState</S>
+                <S>Get-AzContainerAppRevision</S>
+                <S>Get-AzContainerAppRevisionReplica</S>
+                <S>Get-AzContainerAppSecret</S>
+                <S>Get-AzContainerAppSourceControl</S>
+                <S>New-AzContainerApp</S>
+                <S>New-AzContainerAppAuthConfig</S>
+                <S>New-AzContainerAppConfigurationObject</S>
+                <S>New-AzContainerAppConnectedEnv</S>
+                <S>New-AzContainerAppConnectedEnvCert</S>
+                <S>New-AzContainerAppConnectedEnvDapr</S>
+                <S>New-AzContainerAppConnectedEnvStorage</S>
+                <S>New-AzContainerAppCustomDomainObject</S>
+                <S>New-AzContainerAppDaprMetadataObject</S>
+                <S>New-AzContainerAppEnvironmentVarObject</S>
+                <S>New-AzContainerAppIdentityProviderObject</S>
+                <S>New-AzContainerAppInitContainerTemplateObject</S>
+                <S>New-AzContainerAppIPSecurityRestrictionRuleObject</S>
+                <S>New-AzContainerAppJob</S>
+                <S>New-AzContainerAppJobExecutionContainerObject</S>
+                <S>New-AzContainerAppJobScaleRuleObject</S>
+                <S>New-AzContainerAppManagedCert</S>
+                <S>New-AzContainerAppManagedEnv</S>
+                <S>New-AzContainerAppManagedEnvCert</S>
+                <S>New-AzContainerAppManagedEnvDapr</S>
+                <S>New-AzContainerAppManagedEnvStorage</S>
+                <S>New-AzContainerAppProbeHeaderObject</S>
+                <S>New-AzContainerAppProbeObject</S>
+                <S>New-AzContainerAppRegistryCredentialObject</S>
+                <S>New-AzContainerAppScaleRuleAuthObject</S>
+                <S>New-AzContainerAppScaleRuleObject</S>
+                <S>New-AzContainerAppSecretObject</S>
+                <S>New-AzContainerAppSecretVolumeItemObject</S>
+                <S>New-AzContainerAppServiceBindObject</S>
+                <S>New-AzContainerAppSourceControl</S>
+                <S>New-AzContainerAppTemplateObject</S>
+                <S>New-AzContainerAppTrafficWeightObject</S>
+                <S>New-AzContainerAppVolumeMountObject</S>
+                <S>New-AzContainerAppVolumeObject</S>
+                <S>New-AzContainerAppWorkloadProfileObject</S>
+                <S>Remove-AzContainerApp</S>
+                <S>Remove-AzContainerAppAuthConfig</S>
+                <S>Remove-AzContainerAppConnectedEnv</S>
+                <S>Remove-AzContainerAppConnectedEnvCert</S>
+                <S>Remove-AzContainerAppConnectedEnvDapr</S>
+                <S>Remove-AzContainerAppConnectedEnvStorage</S>
+                <S>Remove-AzContainerAppJob</S>
+                <S>Remove-AzContainerAppManagedCert</S>
+                <S>Remove-AzContainerAppManagedEnv</S>
+                <S>Remove-AzContainerAppManagedEnvCert</S>
+                <S>Remove-AzContainerAppManagedEnvDapr</S>
+                <S>Remove-AzContainerAppManagedEnvStorage</S>
+                <S>Restart-AzContainerAppRevision</S>
+                <S>Start-AzContainerApp</S>
+                <S>Start-AzContainerAppJob</S>
+                <S>Stop-AzContainerApp</S>
+                <S>Stop-AzContainerAppJobExecution</S>
+                <S>Test-AzContainerAppConnectedEnvNameAvailability</S>
+                <S>Test-AzContainerAppNamespaceAvailability</S>
+                <S>Update-AzContainerApp</S>
+                <S>Update-AzContainerAppAuthConfig</S>
+                <S>Update-AzContainerAppConnectedEnvCert</S>
+                <S>Update-AzContainerAppConnectedEnvDapr</S>
+                <S>Update-AzContainerAppConnectedEnvStorage</S>
+                <S>Update-AzContainerAppJob</S>
+                <S>Update-AzContainerAppManagedCert</S>
+                <S>Update-AzContainerAppManagedEnv</S>
+                <S>Update-AzContainerAppManagedEnvCert</S>
+                <S>Update-AzContainerAppManagedEnvDapr</S>
+                <S>Update-AzContainerAppManagedEnvStorage</S>
+                <S>Update-AzContainerAppSourceControl</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Ref N="Value" RefId="8" />
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="8" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <S N="ReleaseNotes">* Upgraded nuget package to signed package.</S>
+      <Obj N="Dependencies" RefId="10">
+        <TNRef RefId="3" />
+        <LST>
+          <Obj RefId="11">
+            <TN RefId="5">
+              <T>System.Collections.Specialized.OrderedDictionary</T>
+              <T>System.Object</T>
+            </TN>
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Az.Accounts</S>
+              </En>
+              <En>
+                <S N="Key">MinimumVersion</S>
+                <S N="Value">4.0.1</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Az.Accounts/4.0.1</S>
+              </En>
+            </DCT>
+          </Obj>
+        </LST>
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="12">
+        <TN RefId="6">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">Microsoft Corporation. All rights reserved.</S>
+          <S N="description">Microsoft Azure PowerShell: App cmdlets</S>
+          <S N="requireLicenseAcceptance">True</S>
+          <S N="releaseNotes">* Upgraded nuget package to signed package.</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">35796762</S>
+          <S N="downloadCount">71679638</S>
+          <S N="packageSize">1929577</S>
+          <S N="published">2025/01/14 03:10:56 +02:00</S>
+          <S N="created">2025/01/14 03:10:56 +02:00</S>
+          <S N="lastUpdated">2025/09/03 09:10:04 +02:00</S>
+          <S N="tags">Azure ResourceManager ARM PSModule App PSEdition_Core PSEdition_Desktop PSFunction_Disable-AzContainerAppRevision PSCommand_Disable-AzContainerAppRevision PSFunction_Enable-AzContainerAppRevision PSCommand_Enable-AzContainerAppRevision PSFunction_Get-AzContainerApp PSCommand_Get-AzContainerApp PSFunction_Get-AzContainerAppAuthConfig PSCommand_Get-AzContainerAppAuthConfig PSFunction_Get-AzContainerAppAuthToken PSCommand_Get-AzContainerAppAuthToken PSFunction_Get-AzContainerAppAvailableWorkloadProfile PSCommand_Get-AzContainerAppAvailableWorkloadProfile PSFunction_Get-AzContainerAppBillingMeter PSCommand_Get-AzContainerAppBillingMeter PSFunction_Get-AzContainerAppConnectedEnv PSCommand_Get-AzContainerAppConnectedEnv PSFunction_Get-AzContainerAppConnectedEnvCert PSCommand_Get-AzContainerAppConnectedEnvCert PSFunction_Get-AzContainerAppConnectedEnvDapr PSCommand_Get-AzContainerAppConnectedEnvDapr PSFunction_Get-AzContainerAppConnectedEnvDaprSecret PSCommand_Get-AzContainerAppConnectedEnvDaprSecret PSFunction_Get-AzContainerAppConnectedEnvStorage PSCommand_Get-AzContainerAppConnectedEnvStorage PSFunction_Get-AzContainerAppCustomHostName PSCommand_Get-AzContainerAppCustomHostName PSFunction_Get-AzContainerAppDiagnosticDetector PSCommand_Get-AzContainerAppDiagnosticDetector PSFunction_Get-AzContainerAppDiagnosticRevision PSCommand_Get-AzContainerAppDiagnosticRevision PSFunction_Get-AzContainerAppDiagnosticRoot PSCommand_Get-AzContainerAppDiagnosticRoot PSFunction_Get-AzContainerAppJob PSCommand_Get-AzContainerAppJob PSFunction_Get-AzContainerAppJobExecution PSCommand_Get-AzContainerAppJobExecution PSFunction_Get-AzContainerAppJobSecret PSCommand_Get-AzContainerAppJobSecret PSFunction_Get-AzContainerAppManagedCert PSCommand_Get-AzContainerAppManagedCert PSFunction_Get-AzContainerAppManagedEnv PSCommand_Get-AzContainerAppManagedEnv PSFunction_Get-AzContainerAppManagedEnvAuthToken PSCommand_Get-AzContainerAppManagedEnvAuthToken PSFunction_Get-AzContainerAppManagedEnvCert PSCommand_Get-AzContainerAppManagedEnvCert PSFunction_Get-AzContainerAppManagedEnvDapr PSCommand_Get-AzContainerAppManagedEnvDapr PSFunction_Get-AzContainerAppManagedEnvDaprSecret PSCommand_Get-AzContainerAppManagedEnvDaprSecret PSFunction_Get-AzContainerAppManagedEnvDiagnosticDetector PSCommand_Get-AzContainerAppManagedEnvDiagnosticDetector PSFunction_Get-AzContainerAppManagedEnvDiagnosticRoot PSCommand_Get-AzContainerAppManagedEnvDiagnosticRoot PSFunction_Get-AzContainerAppManagedEnvStorage PSCommand_Get-AzContainerAppManagedEnvStorage PSFunction_Get-AzContainerAppManagedEnvWorkloadProfileState PSCommand_Get-AzContainerAppManagedEnvWorkloadProfileState PSFunction_Get-AzContainerAppRevision PSCommand_Get-AzContainerAppRevision PSFunction_Get-AzContainerAppRevisionReplica PSCommand_Get-AzContainerAppRevisionReplica PSFunction_Get-AzContainerAppSecret PSCommand_Get-AzContainerAppSecret PSFunction_Get-AzContainerAppSourceControl PSCommand_Get-AzContainerAppSourceControl PSFunction_New-AzContainerApp PSCommand_New-AzContainerApp PSFunction_New-AzContainerAppAuthConfig PSCommand_New-AzContainerAppAuthConfig PSFunction_New-AzContainerAppConfigurationObject PSCommand_New-AzContainerAppConfigurationObject PSFunction_New-AzContainerAppConnectedEnv PSCommand_New-AzContainerAppConnectedEnv PSFunction_New-AzContainerAppConnectedEnvCert PSCommand_New-AzContainerAppConnectedEnvCert PSFunction_New-AzContainerAppConnectedEnvDapr PSCommand_New-AzContainerAppConnectedEnvDapr PSFunction_New-AzContainerAppConnectedEnvStorage PSCommand_New-AzContainerAppConnectedEnvStorage PSFunction_New-AzContainerAppCustomDomainObject PSCommand_New-AzContainerAppCustomDomainObject PSFunction_New-AzContainerAppDaprMetadataObject PSCommand_New-AzContainerAppDaprMetadataObject PSFunction_New-AzContainerAppEnvironmentVarObject PSCommand_New-AzContainerAppEnvironmentVarObject PSFunction_New-AzContainerAppIdentityProviderObject PSCommand_New-AzContainerAppIdentityProviderObject PSFunction_New-AzContainerAppInitContainerTemplateObject PSCommand_New-AzContainerAppInitContainerTemplateObject PSFunction_New-AzContainerAppIPSecurityRestrictionRuleObject PSCommand_New-AzContainerAppIPSecurityRestrictionRuleObject PSFunction_New-AzContainerAppJob PSCommand_New-AzContainerAppJob PSFunction_New-AzContainerAppJobExecutionContainerObject PSCommand_New-AzContainerAppJobExecutionContainerObject PSFunction_New-AzContainerAppJobScaleRuleObject PSCommand_New-AzContainerAppJobScaleRuleObject PSFunction_New-AzContainerAppManagedCert PSCommand_New-AzContainerAppManagedCert PSFunction_New-AzContainerAppManagedEnv PSCommand_New-AzContainerAppManagedEnv PSFunction_New-AzContainerAppManagedEnvCert PSCommand_New-AzContainerAppManagedEnvCert PSFunction_New-AzContainerAppManagedEnvDapr PSCommand_New-AzContainerAppManagedEnvDapr PSFunction_New-AzContainerAppManagedEnvStorage PSCommand_New-AzContainerAppManagedEnvStorage PSFunction_New-AzContainerAppProbeHeaderObject PSCommand_New-AzContainerAppProbeHeaderObject PSFunction_New-AzContainerAppProbeObject PSCommand_New-AzContainerAppProbeObject PSFunction_New-AzContainerAppRegistryCredentialObject PSCommand_New-AzContainerAppRegistryCredentialObject PSFunction_New-AzContainerAppScaleRuleAuthObject PSCommand_New-AzContainerAppScaleRuleAuthObject PSFunction_New-AzContainerAppScaleRuleObject PSCommand_New-AzContainerAppScaleRuleObject PSFunction_New-AzContainerAppSecretObject PSCommand_New-AzContainerAppSecretObject PSFunction_New-AzContainerAppSecretVolumeItemObject PSCommand_New-AzContainerAppSecretVolumeItemObject PSFunction_New-AzContainerAppServiceBindObject PSCommand_New-AzContainerAppServiceBindObject PSFunction_New-AzContainerAppSourceControl PSCommand_New-AzContainerAppSourceControl PSFunction_New-AzContainerAppTemplateObject PSCommand_New-AzContainerAppTemplateObject PSFunction_New-AzContainerAppTrafficWeightObject PSCommand_New-AzContainerAppTrafficWeightObject PSFunction_New-AzContainerAppVolumeMountObject PSCommand_New-AzContainerAppVolumeMountObject PSFunction_New-AzContainerAppVolumeObject PSCommand_New-AzContainerAppVolumeObject PSFunction_New-AzContainerAppWorkloadProfileObject PSCommand_New-AzContainerAppWorkloadProfileObject PSFunction_Remove-AzContainerApp PSCommand_Remove-AzContainerApp PSFunction_Remove-AzContainerAppAuthConfig PSCommand_Remove-AzContainerAppAuthConfig PSFunction_Remove-AzContainerAppConnectedEnv PSCommand_Remove-AzContainerAppConnectedEnv PSFunction_Remove-AzContainerAppConnectedEnvCert PSCommand_Remove-AzContainerAppConnectedEnvCert PSFunction_Remove-AzContainerAppConnectedEnvDapr PSCommand_Remove-AzContainerAppConnectedEnvDapr PSFunction_Remove-AzContainerAppConnectedEnvStorage PSCommand_Remove-AzContainerAppConnectedEnvStorage PSFunction_Remove-AzContainerAppJob PSCommand_Remove-AzContainerAppJob PSFunction_Remove-AzContainerAppManagedCert PSCommand_Remove-AzContainerAppManagedCert PSFunction_Remove-AzContainerAppManagedEnv PSCommand_Remove-AzContainerAppManagedEnv PSFunction_Remove-AzContainerAppManagedEnvCert PSCommand_Remove-AzContainerAppManagedEnvCert PSFunction_Remove-AzContainerAppManagedEnvDapr PSCommand_Remove-AzContainerAppManagedEnvDapr PSFunction_Remove-AzContainerAppManagedEnvStorage PSCommand_Remove-AzContainerAppManagedEnvStorage PSFunction_Restart-AzContainerAppRevision PSCommand_Restart-AzContainerAppRevision PSFunction_Start-AzContainerApp PSCommand_Start-AzContainerApp PSFunction_Start-AzContainerAppJob PSCommand_Start-AzContainerAppJob PSFunction_Stop-AzContainerApp PSCommand_Stop-AzContainerApp PSFunction_Stop-AzContainerAppJobExecution PSCommand_Stop-AzContainerAppJobExecution PSFunction_Test-AzContainerAppConnectedEnvNameAvailability PSCommand_Test-AzContainerAppConnectedEnvNameAvailability PSFunction_Test-AzContainerAppNamespaceAvailability PSCommand_Test-AzContainerAppNamespaceAvailability PSFunction_Update-AzContainerApp PSCommand_Update-AzContainerApp PSFunction_Update-AzContainerAppAuthConfig PSCommand_Update-AzContainerAppAuthConfig PSFunction_Update-AzContainerAppConnectedEnvCert PSCommand_Update-AzContainerAppConnectedEnvCert PSFunction_Update-AzContainerAppConnectedEnvDapr PSCommand_Update-AzContainerAppConnectedEnvDapr PSFunction_Update-AzContainerAppConnectedEnvStorage PSCommand_Update-AzContainerAppConnectedEnvStorage PSFunction_Update-AzContainerAppJob PSCommand_Update-AzContainerAppJob PSFunction_Update-AzContainerAppManagedCert PSCommand_Update-AzContainerAppManagedCert PSFunction_Update-AzContainerAppManagedEnv PSCommand_Update-AzContainerAppManagedEnv PSFunction_Update-AzContainerAppManagedEnvCert PSCommand_Update-AzContainerAppManagedEnvCert PSFunction_Update-AzContainerAppManagedEnvDapr PSCommand_Update-AzContainerAppManagedEnvDapr PSFunction_Update-AzContainerAppManagedEnvStorage PSCommand_Update-AzContainerAppManagedEnvStorage PSFunction_Update-AzContainerAppSourceControl PSCommand_Update-AzContainerAppSourceControl PSIncludes_Function</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2025-09-03T09:10:04Z</S>
+          <S N="NormalizedVersion">2.0.1</S>
+          <S N="Authors">Microsoft Corporation</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">Az.App.nuspec|App.Autorest\custom\autogen-model-cmdlets\New-AzContainerAppSecretVolumeItemObject.ps1|App.Autorest\custom\autogen-model-cmdlets\New-AzContainerAppTemplateObject.ps1|App.Autorest\custom\autogen-model-cmdlets\New-AzContainerAppVolumeMountObject.ps1|App.Autorest\custom\autogen-model-cmdlets\New-AzContainerAppWorkloadProfileObject.ps1|App.Autorest\internal\Az.App.internal.psm1|App.Autorest\utils\Get-SubscriptionIdTestSafe.ps1|App.Autorest\Az.App.format.ps1xml|App.Autorest\custom\Az.App.custom.psm1|App.Autorest\custom\Update-AzContainerApp.ps1|App.Autorest\custom\autogen-model-cmdlets\New-AzContainerAppConfigurationObject.ps1|App.Autorest\custom\autogen-model-cmdlets\New-AzContainerAppEnvironmentVarObject.ps1|App.Autorest\custom\autogen-model-cmdlets\New-AzContainerAppIPSecurityRestrictionRuleObject.ps1|App.Autorest\custom\autogen-model-cmdlets\New-AzContainerAppProbeHeaderObject.ps1|App.Autorest\custom\autogen-model-cmdlets\New-AzContainerAppRegistryCredentialObject.ps1|App.Autorest\custom\autogen-model-cmdlets\New-AzContainerAppScaleRuleObject.ps1|App.Autorest\custom\autogen-model-cmdlets\New-AzContainerAppServiceBindObject.ps1|App.Autorest\custom\autogen-model-cmdlets\New-AzContainerAppTrafficWeightObject.ps1|App.Autorest\custom\autogen-model-cmdlets\New-AzContainerAppVolumeObject.ps1|App.Autorest\exports\ProxyCmdletDefinitions.ps1|App.Autorest\internal\ProxyCmdletDefinitions.ps1|App.Autorest\utils\Unprotect-SecureString.ps1|Az.App.psd1|App.Autorest\Az.App.psm1|App.Autorest\custom\New-AzContainerApp.ps1|App.Autorest\custom\Update-AzContainerAppJob.ps1|App.Autorest\custom\autogen-model-cmdlets\New-AzContainerAppCustomDomainObject.ps1|App.Autorest\custom\autogen-model-cmdlets\New-AzContainerAppIdentityProviderObject.ps1|App.Autorest\custom\autogen-model-cmdlets\New-AzContainerAppJobExecutionContainerObject.ps1|App.Autorest\custom\autogen-model-cmdlets\New-AzContainerAppProbeObject.ps1|App.Autorest\custom\autogen-model-cmdlets\New-AzContainerAppScaleRuleAuthObject.ps1|App.Autorest\custom\autogen-model-cmdlets\New-AzContainerAppSecretObject.ps1|Az.App.psm1|App.Autorest\bin\Az.App.private.dll|App.Autorest\custom\New-AzContainerAppJob.ps1|App.Autorest\custom\UserAssignedIdentities.json.cs|App.Autorest\custom\autogen-model-cmdlets\New-AzContainerAppDaprMetadataObject.ps1|App.Autorest\custom\autogen-model-cmdlets\New-AzContainerAppInitContainerTemplateObject.ps1|App.Autorest\custom\autogen-model-cmdlets\New-AzContainerAppJobScaleRuleObject.ps1|.signature.p7s</S>
+          <S N="GUID">d26b4cc7-1502-410b-9c3d-a553c0d2d624</S>
+          <S N="PowerShellVersion">5.1</S>
+          <S N="DotNetFrameworkVersion">4.7.2</S>
+          <S N="CompanyName">Microsoft Corporation</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">C:\Users\irman\OneDrive\Documents\PowerShell\Modules\Az.App\2.0.1</S>
+    </MS>
+  </Obj>
+</Objs>

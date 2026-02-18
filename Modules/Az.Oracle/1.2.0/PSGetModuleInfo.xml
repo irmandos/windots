@@ -1,0 +1,264 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">Az.Oracle</S>
+      <Version N="Version">1.2.0</Version>
+      <S N="Type">Module</S>
+      <S N="Description">Microsoft Azure PowerShell: Oracle cmdlets</S>
+      <S N="Author">Microsoft Corporation</S>
+      <S N="CompanyName">azure-sdk</S>
+      <S N="Copyright">Microsoft Corporation. All rights reserved.</S>
+      <DT N="PublishedDate">2025-07-03T01:56:57+02:00</DT>
+      <Obj N="InstalledDate" RefId="1">
+        <DT>2025-03-24T13:57:06.9308128+02:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="2">
+            <TN RefId="1">
+              <T>Deserialized.Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>Deserialized.System.Enum</T>
+              <T>Deserialized.System.ValueType</T>
+              <T>Deserialized.System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <Obj N="UpdatedDate" RefId="3">
+        <DT>2025-09-03T11:46:26.5918176+02:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="4">
+            <TN RefId="2">
+              <T>Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>System.Enum</T>
+              <T>System.ValueType</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <URI N="LicenseUri">https://aka.ms/azps-license</URI>
+      <URI N="ProjectUri">https://github.com/Azure/azure-powershell</URI>
+      <Nil N="IconUri" />
+      <Obj N="Tags" RefId="5">
+        <TN RefId="3">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>Azure</S>
+          <S>ResourceManager</S>
+          <S>ARM</S>
+          <S>PSModule</S>
+          <S>Oracle</S>
+          <S>PSEdition_Core</S>
+          <S>PSEdition_Desktop</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="6">
+        <TN RefId="4">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="7">
+              <TNRef RefId="3" />
+              <LST>
+                <S>Add-AzOracleCloudVMClusterVM</S>
+                <S>Get-AzOracleAutonomousDatabase</S>
+                <S>Get-AzOracleAutonomousDatabaseBackup</S>
+                <S>Get-AzOracleAutonomousDatabaseCharacterSet</S>
+                <S>Get-AzOracleAutonomousDatabaseNationalCharacterSet</S>
+                <S>Get-AzOracleAutonomousDatabaseVersion</S>
+                <S>Get-AzOracleCloudExadataInfrastructure</S>
+                <S>Get-AzOracleCloudVMCluster</S>
+                <S>Get-AzOracleDbNode</S>
+                <S>Get-AzOracleDbServer</S>
+                <S>Get-AzOracleDbSystemShape</S>
+                <S>Get-AzOracleDnsPrivateView</S>
+                <S>Get-AzOracleDnsPrivateZone</S>
+                <S>Get-AzOracleExadbVMCluster</S>
+                <S>Get-AzOracleExascaleDbNode</S>
+                <S>Get-AzOracleExascaleDbStorageVault</S>
+                <S>Get-AzOracleFlexComponent</S>
+                <S>Get-AzOracleGiMinorVersion</S>
+                <S>Get-AzOracleGiVersion</S>
+                <S>Invoke-AzOracleActionDbNode</S>
+                <S>Invoke-AzOracleActionExascaleDbNode</S>
+                <S>Invoke-AzOracleSwitchoverAutonomousDatabase</S>
+                <S>New-AzOracleAutonomousDatabase</S>
+                <S>New-AzOracleAutonomousDatabaseBackup</S>
+                <S>New-AzOracleCloudExadataInfrastructure</S>
+                <S>New-AzOracleCloudVMCluster</S>
+                <S>New-AzOracleCustomerContactObject</S>
+                <S>New-AzOracleExadbVMCluster</S>
+                <S>New-AzOracleExascaleDbStorageVault</S>
+                <S>New-AzOracleNsgCidrObject</S>
+                <S>Remove-AzOracleAutonomousDatabase</S>
+                <S>Remove-AzOracleAutonomousDatabaseBackup</S>
+                <S>Remove-AzOracleCloudExadataInfrastructure</S>
+                <S>Remove-AzOracleCloudVMCluster</S>
+                <S>Remove-AzOracleCloudVMClusterVM</S>
+                <S>Remove-AzOracleExadbVMCluster</S>
+                <S>Remove-AzOracleExadbVMClusterVM</S>
+                <S>Remove-AzOracleExascaleDbStorageVault</S>
+                <S>Rename-AzOracleAutonomousDatabaseDisasterRecoveryConfiguration</S>
+                <S>Restore-AzOracleAutonomousDatabase</S>
+                <S>Update-AzOracleAutonomousDatabase</S>
+                <S>Update-AzOracleCloudExadataInfrastructure</S>
+                <S>Update-AzOracleCloudVMCluster</S>
+                <S>Update-AzOracleExadbVMCluster</S>
+                <S>Update-AzOracleExascaleDbStorageVault</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Obj N="Value" RefId="8">
+              <TNRef RefId="3" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Ref N="Value" RefId="8" />
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="9">
+              <TNRef RefId="3" />
+              <LST>
+                <S>Add-AzOracleCloudVMClusterVM</S>
+                <S>Get-AzOracleAutonomousDatabase</S>
+                <S>Get-AzOracleAutonomousDatabaseBackup</S>
+                <S>Get-AzOracleAutonomousDatabaseCharacterSet</S>
+                <S>Get-AzOracleAutonomousDatabaseNationalCharacterSet</S>
+                <S>Get-AzOracleAutonomousDatabaseVersion</S>
+                <S>Get-AzOracleCloudExadataInfrastructure</S>
+                <S>Get-AzOracleCloudVMCluster</S>
+                <S>Get-AzOracleDbNode</S>
+                <S>Get-AzOracleDbServer</S>
+                <S>Get-AzOracleDbSystemShape</S>
+                <S>Get-AzOracleDnsPrivateView</S>
+                <S>Get-AzOracleDnsPrivateZone</S>
+                <S>Get-AzOracleExadbVMCluster</S>
+                <S>Get-AzOracleExascaleDbNode</S>
+                <S>Get-AzOracleExascaleDbStorageVault</S>
+                <S>Get-AzOracleFlexComponent</S>
+                <S>Get-AzOracleGiMinorVersion</S>
+                <S>Get-AzOracleGiVersion</S>
+                <S>Invoke-AzOracleActionDbNode</S>
+                <S>Invoke-AzOracleActionExascaleDbNode</S>
+                <S>Invoke-AzOracleSwitchoverAutonomousDatabase</S>
+                <S>New-AzOracleAutonomousDatabase</S>
+                <S>New-AzOracleAutonomousDatabaseBackup</S>
+                <S>New-AzOracleCloudExadataInfrastructure</S>
+                <S>New-AzOracleCloudVMCluster</S>
+                <S>New-AzOracleCustomerContactObject</S>
+                <S>New-AzOracleExadbVMCluster</S>
+                <S>New-AzOracleExascaleDbStorageVault</S>
+                <S>New-AzOracleNsgCidrObject</S>
+                <S>Remove-AzOracleAutonomousDatabase</S>
+                <S>Remove-AzOracleAutonomousDatabaseBackup</S>
+                <S>Remove-AzOracleCloudExadataInfrastructure</S>
+                <S>Remove-AzOracleCloudVMCluster</S>
+                <S>Remove-AzOracleCloudVMClusterVM</S>
+                <S>Remove-AzOracleExadbVMCluster</S>
+                <S>Remove-AzOracleExadbVMClusterVM</S>
+                <S>Remove-AzOracleExascaleDbStorageVault</S>
+                <S>Rename-AzOracleAutonomousDatabaseDisasterRecoveryConfiguration</S>
+                <S>Restore-AzOracleAutonomousDatabase</S>
+                <S>Update-AzOracleAutonomousDatabase</S>
+                <S>Update-AzOracleCloudExadataInfrastructure</S>
+                <S>Update-AzOracleCloudVMCluster</S>
+                <S>Update-AzOracleExadbVMCluster</S>
+                <S>Update-AzOracleExascaleDbStorageVault</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Ref N="Value" RefId="8" />
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="8" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <S N="ReleaseNotes">* Upgraded to the stable version 2025-03-01</S>
+      <Obj N="Dependencies" RefId="10">
+        <TNRef RefId="3" />
+        <LST>
+          <Obj RefId="11">
+            <TN RefId="5">
+              <T>System.Collections.Specialized.OrderedDictionary</T>
+              <T>System.Object</T>
+            </TN>
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Az.Accounts</S>
+              </En>
+              <En>
+                <S N="Key">MinimumVersion</S>
+                <S N="Value">5.1.1</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Az.Accounts/5.1.1</S>
+              </En>
+            </DCT>
+          </Obj>
+        </LST>
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="12">
+        <TN RefId="6">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">Microsoft Corporation. All rights reserved.</S>
+          <S N="description">Microsoft Azure PowerShell: Oracle cmdlets</S>
+          <S N="requireLicenseAcceptance">True</S>
+          <S N="releaseNotes">* Upgraded to the stable version 2025-03-01</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">5437495</S>
+          <S N="downloadCount">48026220</S>
+          <S N="packageSize">1434265</S>
+          <S N="published">2025/07/03 01:56:57 +02:00</S>
+          <S N="created">2025/07/03 01:56:57 +02:00</S>
+          <S N="lastUpdated">2025/09/03 09:40:00 +02:00</S>
+          <S N="tags">Azure ResourceManager ARM PSModule Oracle PSEdition_Core PSEdition_Desktop PSFunction_Add-AzOracleCloudVMClusterVM PSCommand_Add-AzOracleCloudVMClusterVM PSFunction_Get-AzOracleAutonomousDatabase PSCommand_Get-AzOracleAutonomousDatabase PSFunction_Get-AzOracleAutonomousDatabaseBackup PSCommand_Get-AzOracleAutonomousDatabaseBackup PSFunction_Get-AzOracleAutonomousDatabaseCharacterSet PSCommand_Get-AzOracleAutonomousDatabaseCharacterSet PSFunction_Get-AzOracleAutonomousDatabaseNationalCharacterSet PSCommand_Get-AzOracleAutonomousDatabaseNationalCharacterSet PSFunction_Get-AzOracleAutonomousDatabaseVersion PSCommand_Get-AzOracleAutonomousDatabaseVersion PSFunction_Get-AzOracleCloudExadataInfrastructure PSCommand_Get-AzOracleCloudExadataInfrastructure PSFunction_Get-AzOracleCloudVMCluster PSCommand_Get-AzOracleCloudVMCluster PSFunction_Get-AzOracleDbNode PSCommand_Get-AzOracleDbNode PSFunction_Get-AzOracleDbServer PSCommand_Get-AzOracleDbServer PSFunction_Get-AzOracleDbSystemShape PSCommand_Get-AzOracleDbSystemShape PSFunction_Get-AzOracleDnsPrivateView PSCommand_Get-AzOracleDnsPrivateView PSFunction_Get-AzOracleDnsPrivateZone PSCommand_Get-AzOracleDnsPrivateZone PSFunction_Get-AzOracleExadbVMCluster PSCommand_Get-AzOracleExadbVMCluster PSFunction_Get-AzOracleExascaleDbNode PSCommand_Get-AzOracleExascaleDbNode PSFunction_Get-AzOracleExascaleDbStorageVault PSCommand_Get-AzOracleExascaleDbStorageVault PSFunction_Get-AzOracleFlexComponent PSCommand_Get-AzOracleFlexComponent PSFunction_Get-AzOracleGiMinorVersion PSCommand_Get-AzOracleGiMinorVersion PSFunction_Get-AzOracleGiVersion PSCommand_Get-AzOracleGiVersion PSFunction_Invoke-AzOracleActionDbNode PSCommand_Invoke-AzOracleActionDbNode PSFunction_Invoke-AzOracleActionExascaleDbNode PSCommand_Invoke-AzOracleActionExascaleDbNode PSFunction_Invoke-AzOracleSwitchoverAutonomousDatabase PSCommand_Invoke-AzOracleSwitchoverAutonomousDatabase PSFunction_New-AzOracleAutonomousDatabase PSCommand_New-AzOracleAutonomousDatabase PSFunction_New-AzOracleAutonomousDatabaseBackup PSCommand_New-AzOracleAutonomousDatabaseBackup PSFunction_New-AzOracleCloudExadataInfrastructure PSCommand_New-AzOracleCloudExadataInfrastructure PSFunction_New-AzOracleCloudVMCluster PSCommand_New-AzOracleCloudVMCluster PSFunction_New-AzOracleCustomerContactObject PSCommand_New-AzOracleCustomerContactObject PSFunction_New-AzOracleExadbVMCluster PSCommand_New-AzOracleExadbVMCluster PSFunction_New-AzOracleExascaleDbStorageVault PSCommand_New-AzOracleExascaleDbStorageVault PSFunction_New-AzOracleNsgCidrObject PSCommand_New-AzOracleNsgCidrObject PSFunction_Remove-AzOracleAutonomousDatabase PSCommand_Remove-AzOracleAutonomousDatabase PSFunction_Remove-AzOracleAutonomousDatabaseBackup PSCommand_Remove-AzOracleAutonomousDatabaseBackup PSFunction_Remove-AzOracleCloudExadataInfrastructure PSCommand_Remove-AzOracleCloudExadataInfrastructure PSFunction_Remove-AzOracleCloudVMCluster PSCommand_Remove-AzOracleCloudVMCluster PSFunction_Remove-AzOracleCloudVMClusterVM PSCommand_Remove-AzOracleCloudVMClusterVM PSFunction_Remove-AzOracleExadbVMCluster PSCommand_Remove-AzOracleExadbVMCluster PSFunction_Remove-AzOracleExadbVMClusterVM PSCommand_Remove-AzOracleExadbVMClusterVM PSFunction_Remove-AzOracleExascaleDbStorageVault PSCommand_Remove-AzOracleExascaleDbStorageVault PSFunction_Rename-AzOracleAutonomousDatabaseDisasterRecoveryConfiguration PSCommand_Rename-AzOracleAutonomousDatabaseDisasterRecoveryConfiguration PSFunction_Restore-AzOracleAutonomousDatabase PSCommand_Restore-AzOracleAutonomousDatabase PSFunction_Update-AzOracleAutonomousDatabase PSCommand_Update-AzOracleAutonomousDatabase PSFunction_Update-AzOracleCloudExadataInfrastructure PSCommand_Update-AzOracleCloudExadataInfrastructure PSFunction_Update-AzOracleCloudVMCluster PSCommand_Update-AzOracleCloudVMCluster PSFunction_Update-AzOracleExadbVMCluster PSCommand_Update-AzOracleExadbVMCluster PSFunction_Update-AzOracleExascaleDbStorageVault PSCommand_Update-AzOracleExascaleDbStorageVault PSIncludes_Function</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2025-09-03T09:40:00Z</S>
+          <S N="NormalizedVersion">1.2.0</S>
+          <S N="Authors">Microsoft Corporation</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">Az.Oracle.nuspec|Oracle.Autorest\custom\autogen-model-cmdlets\New-AzOracleNsgCidrObject.ps1|Oracle.Autorest\exports\ProxyCmdletDefinitions.ps1|Oracle.Autorest\internal\Az.Oracle.internal.psm1|Oracle.Autorest\internal\ProxyCmdletDefinitions.ps1|Oracle.Autorest\utils\Get-SubscriptionIdTestSafe.ps1|Oracle.Autorest\utils\Unprotect-SecureString.ps1|Az.Oracle.psd1|Az.Oracle.psm1|Oracle.Autorest\Az.Oracle.format.ps1xml|Oracle.Autorest\Az.Oracle.psm1|Oracle.Autorest\bin\Az.Oracle.private.dll|Oracle.Autorest\custom\Az.Oracle.custom.psm1|Oracle.Autorest\custom\autogen-model-cmdlets\New-AzOracleCustomerContactObject.ps1|.signature.p7s</S>
+          <S N="GUID">accceef6-8113-453a-a31c-4f2ce57893d6</S>
+          <S N="PowerShellVersion">5.1</S>
+          <S N="DotNetFrameworkVersion">4.7.2</S>
+          <S N="CompanyName">Microsoft Corporation</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">C:\Users\irman\OneDrive\Documents\PowerShell\Modules\Az.Oracle\1.2.0</S>
+    </MS>
+  </Obj>
+</Objs>

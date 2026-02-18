@@ -1,0 +1,583 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">Az.Synapse</S>
+      <Version N="Version">3.0.9</Version>
+      <S N="Type">Module</S>
+      <S N="Description">Microsoft Azure PowerShell - Azure Synapse Analytics in Windows PowerShell and PowerShell Core._x000D__x000A__x000D__x000A_For more information on Azure Synapse Analytics, please visit the following: https://azure.microsoft.com/en-us/services/synapse-analytics/</S>
+      <S N="Author">Microsoft Corporation</S>
+      <S N="CompanyName">azure-sdk</S>
+      <S N="Copyright">Microsoft Corporation. All rights reserved.</S>
+      <DT N="PublishedDate">2024-07-09T01:54:18+02:00</DT>
+      <Obj N="InstalledDate" RefId="1">
+        <DT>2024-07-22T15:50:19.1546836+02:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="2">
+            <TN RefId="1">
+              <T>Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>System.Enum</T>
+              <T>System.ValueType</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <Nil N="UpdatedDate" />
+      <URI N="LicenseUri">https://aka.ms/azps-license</URI>
+      <URI N="ProjectUri">https://github.com/Azure/azure-powershell</URI>
+      <Nil N="IconUri" />
+      <Obj N="Tags" RefId="3">
+        <TN RefId="2">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>Azure</S>
+          <S>ResourceManager</S>
+          <S>ARM</S>
+          <S>Synapse</S>
+          <S>Analytics</S>
+          <S>PSModule</S>
+          <S>PSEdition_Core</S>
+          <S>PSEdition_Desktop</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="4">
+        <TN RefId="3">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Add-AzSynapseDataFlowDebugSessionPackage</S>
+                <S>Add-AzSynapseTriggerSubscription</S>
+                <S>Clear-AzSynapseSqlPoolVulnerabilityAssessmentRuleBaseline</S>
+                <S>Convert-AzSynapseSqlPoolVulnerabilityAssessmentScan</S>
+                <S>Disable-AzSynapseActiveDirectoryOnlyAuthentication</S>
+                <S>Disable-AzSynapseSqlAdvancedDataSecurity</S>
+                <S>Disable-AzSynapseSqlPoolSensitivityRecommendation</S>
+                <S>Enable-AzSynapseActiveDirectoryOnlyAuthentication</S>
+                <S>Enable-AzSynapseSqlAdvancedDataSecurity</S>
+                <S>Enable-AzSynapseSqlPoolSensitivityRecommendation</S>
+                <S>Enable-AzSynapseWorkspace</S>
+                <S>Export-AzSynapseKqlScript</S>
+                <S>Export-AzSynapseNotebook</S>
+                <S>Export-AzSynapseSparkConfiguration</S>
+                <S>Export-AzSynapseSqlScript</S>
+                <S>Get-AzSynapseActiveDirectoryOnlyAuthentication</S>
+                <S>Get-AzSynapseActivityRun</S>
+                <S>Get-AzSynapseDataFlow</S>
+                <S>Get-AzSynapseDataFlowDebugSession</S>
+                <S>Get-AzSynapseDataset</S>
+                <S>Get-AzSynapseDroppedSqlPool</S>
+                <S>Get-AzSynapseFirewallRule</S>
+                <S>Get-AzSynapseIntegrationRuntime</S>
+                <S>Get-AzSynapseIntegrationRuntimeKey</S>
+                <S>Get-AzSynapseIntegrationRuntimeMetric</S>
+                <S>Get-AzSynapseIntegrationRuntimeNode</S>
+                <S>Get-AzSynapseKqlScript</S>
+                <S>Get-AzSynapseLinkConnection</S>
+                <S>Get-AzSynapseLinkConnectionDetailedStatus</S>
+                <S>Get-AzSynapseLinkConnectionLinkTable</S>
+                <S>Get-AzSynapseLinkConnectionLinkTableStatus</S>
+                <S>Get-AzSynapseLinkedService</S>
+                <S>Get-AzSynapseManagedIdentitySqlControlSetting</S>
+                <S>Get-AzSynapseManagedPrivateEndpoint</S>
+                <S>Get-AzSynapseNotebook</S>
+                <S>Get-AzSynapsePipeline</S>
+                <S>Get-AzSynapsePipelineRun</S>
+                <S>Get-AzSynapseRoleAssignment</S>
+                <S>Get-AzSynapseRoleDefinition</S>
+                <S>Get-AzSynapseRoleScope</S>
+                <S>Get-AzSynapseSparkConfiguration</S>
+                <S>Get-AzSynapseSparkJob</S>
+                <S>Get-AzSynapseSparkJobDefinition</S>
+                <S>Get-AzSynapseSparkPool</S>
+                <S>Get-AzSynapseSparkSession</S>
+                <S>Get-AzSynapseSparkStatement</S>
+                <S>Get-AzSynapseSqlActiveDirectoryAdministrator</S>
+                <S>Get-AzSynapseSqlAdvancedDataSecurityPolicy</S>
+                <S>Get-AzSynapseSqlAdvancedThreatProtectionSetting</S>
+                <S>Get-AzSynapseSqlAuditSetting</S>
+                <S>Get-AzSynapseSqlDatabase</S>
+                <S>Get-AzSynapseSqlPool</S>
+                <S>Get-AzSynapseSqlPoolAdvancedThreatProtectionSetting</S>
+                <S>Get-AzSynapseSqlPoolAuditSetting</S>
+                <S>Get-AzSynapseSqlPoolGeoBackup</S>
+                <S>Get-AzSynapseSqlPoolRestorePoint</S>
+                <S>Get-AzSynapseSqlPoolSensitivityClassification</S>
+                <S>Get-AzSynapseSqlPoolSensitivityRecommendation</S>
+                <S>Get-AzSynapseSqlPoolTransparentDataEncryption</S>
+                <S>Get-AzSynapseSqlPoolVulnerabilityAssessmentRuleBaseline</S>
+                <S>Get-AzSynapseSqlPoolVulnerabilityAssessmentScanRecord</S>
+                <S>Get-AzSynapseSqlPoolVulnerabilityAssessmentSetting</S>
+                <S>Get-AzSynapseSqlScript</S>
+                <S>Get-AzSynapseSqlVulnerabilityAssessmentSetting</S>
+                <S>Get-AzSynapseTrigger</S>
+                <S>Get-AzSynapseTriggerRun</S>
+                <S>Get-AzSynapseTriggerSubscriptionStatus</S>
+                <S>Get-AzSynapseWorkspace</S>
+                <S>Get-AzSynapseWorkspaceKey</S>
+                <S>Get-AzSynapseWorkspacePackage</S>
+                <S>Invoke-AzSynapseDataFlowDebugSessionCommand</S>
+                <S>Invoke-AzSynapseIntegrationRuntimeUpgrade</S>
+                <S>Invoke-AzSynapsePipeline</S>
+                <S>Invoke-AzSynapseSparkStatement</S>
+                <S>Invoke-AzSynapseTriggerRun</S>
+                <S>New-AzSynapseFirewallRule</S>
+                <S>New-AzSynapseGitRepositoryConfig</S>
+                <S>New-AzSynapseIntegrationRuntimeKey</S>
+                <S>New-AzSynapseKqlScript</S>
+                <S>New-AzSynapseLinkedServiceEncryptedCredential</S>
+                <S>New-AzSynapseManagedPrivateEndpoint</S>
+                <S>New-AzSynapseManagedVirtualNetworkConfig</S>
+                <S>New-AzSynapseRoleAssignment</S>
+                <S>New-AzSynapseSparkConfiguration</S>
+                <S>New-AzSynapseSparkPool</S>
+                <S>New-AzSynapseSqlDatabase</S>
+                <S>New-AzSynapseSqlPool</S>
+                <S>New-AzSynapseSqlPoolRestorePoint</S>
+                <S>New-AzSynapseWorkspace</S>
+                <S>New-AzSynapseWorkspaceKey</S>
+                <S>New-AzSynapseWorkspacePackage</S>
+                <S>Remove-AzSynapseDataFlow</S>
+                <S>Remove-AzSynapseDataset</S>
+                <S>Remove-AzSynapseFirewallRule</S>
+                <S>Remove-AzSynapseIntegrationRuntime</S>
+                <S>Remove-AzSynapseIntegrationRuntimeNode</S>
+                <S>Remove-AzSynapseKqlScript</S>
+                <S>Remove-AzSynapseLinkConnection</S>
+                <S>Remove-AzSynapseLinkedService</S>
+                <S>Remove-AzSynapseManagedPrivateEndpoint</S>
+                <S>Remove-AzSynapseNotebook</S>
+                <S>Remove-AzSynapsePipeline</S>
+                <S>Remove-AzSynapseRoleAssignment</S>
+                <S>Remove-AzSynapseSparkConfiguration</S>
+                <S>Remove-AzSynapseSparkJobDefinition</S>
+                <S>Remove-AzSynapseSparkPool</S>
+                <S>Remove-AzSynapseSqlActiveDirectoryAdministrator</S>
+                <S>Remove-AzSynapseSqlDatabase</S>
+                <S>Remove-AzSynapseSqlPool</S>
+                <S>Remove-AzSynapseSqlPoolRestorePoint</S>
+                <S>Remove-AzSynapseSqlPoolSensitivityClassification</S>
+                <S>Remove-AzSynapseSqlScript</S>
+                <S>Remove-AzSynapseTrigger</S>
+                <S>Remove-AzSynapseTriggerSubscription</S>
+                <S>Remove-AzSynapseWorkspace</S>
+                <S>Remove-AzSynapseWorkspaceKey</S>
+                <S>Remove-AzSynapseWorkspacePackage</S>
+                <S>Reset-AzSynapseSparkSessionTimeout</S>
+                <S>Reset-AzSynapseSqlAdvancedThreatProtectionSetting</S>
+                <S>Reset-AzSynapseSqlAuditSetting</S>
+                <S>Reset-AzSynapseSqlPoolAdvancedThreatProtectionSetting</S>
+                <S>Reset-AzSynapseSqlPoolAuditSetting</S>
+                <S>Reset-AzSynapseSqlPoolVulnerabilityAssessmentSetting</S>
+                <S>Reset-AzSynapseSqlVulnerabilityAssessmentSetting</S>
+                <S>Restore-AzSynapseSqlPool</S>
+                <S>Resume-AzSynapseSqlPool</S>
+                <S>Set-AzSynapseDataFlow</S>
+                <S>Set-AzSynapseDataset</S>
+                <S>Set-AzSynapseIntegrationRuntime</S>
+                <S>Set-AzSynapseLinkConnection</S>
+                <S>Set-AzSynapseLinkConnectionLinkTable</S>
+                <S>Set-AzSynapseLinkedService</S>
+                <S>Set-AzSynapseManagedIdentitySqlControlSetting</S>
+                <S>Set-AzSynapseNotebook</S>
+                <S>Set-AzSynapsePipeline</S>
+                <S>Set-AzSynapseSparkJobDefinition</S>
+                <S>Set-AzSynapseSqlActiveDirectoryAdministrator</S>
+                <S>Set-AzSynapseSqlAuditSetting</S>
+                <S>Set-AzSynapseSqlPoolAuditSetting</S>
+                <S>Set-AzSynapseSqlPoolSensitivityClassification</S>
+                <S>Set-AzSynapseSqlPoolTransparentDataEncryption</S>
+                <S>Set-AzSynapseSqlPoolVulnerabilityAssessmentRuleBaseline</S>
+                <S>Set-AzSynapseSqlScript</S>
+                <S>Set-AzSynapseTrigger</S>
+                <S>Start-AzSynapseDataFlowDebugSession</S>
+                <S>Start-AzSynapseIntegrationRuntime</S>
+                <S>Start-AzSynapseLinkConnection</S>
+                <S>Start-AzSynapseSparkSession</S>
+                <S>Start-AzSynapseSqlPoolVulnerabilityAssessmentScan</S>
+                <S>Start-AzSynapseTrigger</S>
+                <S>Stop-AzSynapseDataFlowDebugSession</S>
+                <S>Stop-AzSynapseIntegrationRuntime</S>
+                <S>Stop-AzSynapseLinkConnection</S>
+                <S>Stop-AzSynapsePipelineRun</S>
+                <S>Stop-AzSynapseSparkJob</S>
+                <S>Stop-AzSynapseSparkSession</S>
+                <S>Stop-AzSynapseSparkStatement</S>
+                <S>Stop-AzSynapseTrigger</S>
+                <S>Stop-AzSynapseTriggerRun</S>
+                <S>Submit-AzSynapseSparkJob</S>
+                <S>Suspend-AzSynapseSqlPool</S>
+                <S>Sync-AzSynapseIntegrationRuntimeCredential</S>
+                <S>Test-AzSynapseSparkPool</S>
+                <S>Test-AzSynapseSqlDatabase</S>
+                <S>Test-AzSynapseSqlPool</S>
+                <S>Test-AzSynapseWorkspace</S>
+                <S>Update-AzSynapseFirewallRule</S>
+                <S>Update-AzSynapseIntegrationRuntime</S>
+                <S>Update-AzSynapseIntegrationRuntimeNode</S>
+                <S>Update-AzSynapseLinkConnectionLandingZoneCredential</S>
+                <S>Update-AzSynapseManagedVirtualNetworkConfig</S>
+                <S>Update-AzSynapseSparkPool</S>
+                <S>Update-AzSynapseSqlAdvancedThreatProtectionSetting</S>
+                <S>Update-AzSynapseSqlDatabase</S>
+                <S>Update-AzSynapseSqlPool</S>
+                <S>Update-AzSynapseSqlPoolAdvancedThreatProtectionSetting</S>
+                <S>Update-AzSynapseSqlPoolVulnerabilityAssessmentSetting</S>
+                <S>Update-AzSynapseSqlVulnerabilityAssessmentSetting</S>
+                <S>Update-AzSynapseWorkspace</S>
+                <S>Wait-AzSynapseSparkJob</S>
+                <S>Add-AzSynapseKustoPoolLanguageExtension</S>
+                <S>Get-AzSynapseKustoPool</S>
+                <S>Get-AzSynapseKustoPoolAttachedDatabaseConfiguration</S>
+                <S>Get-AzSynapseKustoPoolDatabase</S>
+                <S>Get-AzSynapseKustoPoolDatabasePrincipalAssignment</S>
+                <S>Get-AzSynapseKustoPoolDataConnection</S>
+                <S>Get-AzSynapseKustoPoolFollowerDatabase</S>
+                <S>Get-AzSynapseKustoPoolLanguageExtension</S>
+                <S>Get-AzSynapseKustoPoolPrincipalAssignment</S>
+                <S>Get-AzSynapseKustoPoolSku</S>
+                <S>Invoke-AzSynapseDetachKustoPoolFollowerDatabase</S>
+                <S>New-AzSynapseKustoPool</S>
+                <S>New-AzSynapseKustoPoolAttachedDatabaseConfiguration</S>
+                <S>New-AzSynapseKustoPoolDatabase</S>
+                <S>New-AzSynapseKustoPoolDatabasePrincipalAssignment</S>
+                <S>New-AzSynapseKustoPoolDataConnection</S>
+                <S>New-AzSynapseKustoPoolPrincipalAssignment</S>
+                <S>Remove-AzSynapseKustoPool</S>
+                <S>Remove-AzSynapseKustoPoolAttachedDatabaseConfiguration</S>
+                <S>Remove-AzSynapseKustoPoolDatabase</S>
+                <S>Remove-AzSynapseKustoPoolDatabasePrincipalAssignment</S>
+                <S>Remove-AzSynapseKustoPoolDataConnection</S>
+                <S>Remove-AzSynapseKustoPoolLanguageExtension</S>
+                <S>Remove-AzSynapseKustoPoolPrincipalAssignment</S>
+                <S>Start-AzSynapseKustoPool</S>
+                <S>Stop-AzSynapseKustoPool</S>
+                <S>Update-AzSynapseKustoPool</S>
+                <S>Update-AzSynapseKustoPoolDatabase</S>
+                <S>Update-AzSynapseKustoPoolDataConnection</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="6">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Add-AzSynapseKustoPoolLanguageExtension</S>
+                <S>Get-AzSynapseKustoPool</S>
+                <S>Get-AzSynapseKustoPoolAttachedDatabaseConfiguration</S>
+                <S>Get-AzSynapseKustoPoolDatabase</S>
+                <S>Get-AzSynapseKustoPoolDatabasePrincipalAssignment</S>
+                <S>Get-AzSynapseKustoPoolDataConnection</S>
+                <S>Get-AzSynapseKustoPoolFollowerDatabase</S>
+                <S>Get-AzSynapseKustoPoolLanguageExtension</S>
+                <S>Get-AzSynapseKustoPoolPrincipalAssignment</S>
+                <S>Get-AzSynapseKustoPoolSku</S>
+                <S>Invoke-AzSynapseDetachKustoPoolFollowerDatabase</S>
+                <S>New-AzSynapseKustoPool</S>
+                <S>New-AzSynapseKustoPoolAttachedDatabaseConfiguration</S>
+                <S>New-AzSynapseKustoPoolDatabase</S>
+                <S>New-AzSynapseKustoPoolDatabasePrincipalAssignment</S>
+                <S>New-AzSynapseKustoPoolDataConnection</S>
+                <S>New-AzSynapseKustoPoolPrincipalAssignment</S>
+                <S>Remove-AzSynapseKustoPool</S>
+                <S>Remove-AzSynapseKustoPoolAttachedDatabaseConfiguration</S>
+                <S>Remove-AzSynapseKustoPoolDatabase</S>
+                <S>Remove-AzSynapseKustoPoolDatabasePrincipalAssignment</S>
+                <S>Remove-AzSynapseKustoPoolDataConnection</S>
+                <S>Remove-AzSynapseKustoPoolLanguageExtension</S>
+                <S>Remove-AzSynapseKustoPoolPrincipalAssignment</S>
+                <S>Start-AzSynapseKustoPool</S>
+                <S>Stop-AzSynapseKustoPool</S>
+                <S>Update-AzSynapseKustoPool</S>
+                <S>Update-AzSynapseKustoPoolDatabase</S>
+                <S>Update-AzSynapseKustoPoolDataConnection</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Obj N="Value" RefId="7">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Ref N="Value" RefId="7" />
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Obj N="Value" RefId="8">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Add-AzSynapseDataFlowDebugSessionPackage</S>
+                <S>Add-AzSynapseTriggerSubscription</S>
+                <S>Clear-AzSynapseSqlPoolVulnerabilityAssessmentRuleBaseline</S>
+                <S>Convert-AzSynapseSqlPoolVulnerabilityAssessmentScan</S>
+                <S>Disable-AzSynapseActiveDirectoryOnlyAuthentication</S>
+                <S>Disable-AzSynapseSqlAdvancedDataSecurity</S>
+                <S>Disable-AzSynapseSqlPoolSensitivityRecommendation</S>
+                <S>Enable-AzSynapseActiveDirectoryOnlyAuthentication</S>
+                <S>Enable-AzSynapseSqlAdvancedDataSecurity</S>
+                <S>Enable-AzSynapseSqlPoolSensitivityRecommendation</S>
+                <S>Enable-AzSynapseWorkspace</S>
+                <S>Export-AzSynapseKqlScript</S>
+                <S>Export-AzSynapseNotebook</S>
+                <S>Export-AzSynapseSparkConfiguration</S>
+                <S>Export-AzSynapseSqlScript</S>
+                <S>Get-AzSynapseActiveDirectoryOnlyAuthentication</S>
+                <S>Get-AzSynapseActivityRun</S>
+                <S>Get-AzSynapseDataFlow</S>
+                <S>Get-AzSynapseDataFlowDebugSession</S>
+                <S>Get-AzSynapseDataset</S>
+                <S>Get-AzSynapseDroppedSqlPool</S>
+                <S>Get-AzSynapseFirewallRule</S>
+                <S>Get-AzSynapseIntegrationRuntime</S>
+                <S>Get-AzSynapseIntegrationRuntimeKey</S>
+                <S>Get-AzSynapseIntegrationRuntimeMetric</S>
+                <S>Get-AzSynapseIntegrationRuntimeNode</S>
+                <S>Get-AzSynapseKqlScript</S>
+                <S>Get-AzSynapseLinkConnection</S>
+                <S>Get-AzSynapseLinkConnectionDetailedStatus</S>
+                <S>Get-AzSynapseLinkConnectionLinkTable</S>
+                <S>Get-AzSynapseLinkConnectionLinkTableStatus</S>
+                <S>Get-AzSynapseLinkedService</S>
+                <S>Get-AzSynapseManagedIdentitySqlControlSetting</S>
+                <S>Get-AzSynapseManagedPrivateEndpoint</S>
+                <S>Get-AzSynapseNotebook</S>
+                <S>Get-AzSynapsePipeline</S>
+                <S>Get-AzSynapsePipelineRun</S>
+                <S>Get-AzSynapseRoleAssignment</S>
+                <S>Get-AzSynapseRoleDefinition</S>
+                <S>Get-AzSynapseRoleScope</S>
+                <S>Get-AzSynapseSparkConfiguration</S>
+                <S>Get-AzSynapseSparkJob</S>
+                <S>Get-AzSynapseSparkJobDefinition</S>
+                <S>Get-AzSynapseSparkPool</S>
+                <S>Get-AzSynapseSparkSession</S>
+                <S>Get-AzSynapseSparkStatement</S>
+                <S>Get-AzSynapseSqlActiveDirectoryAdministrator</S>
+                <S>Get-AzSynapseSqlAdvancedDataSecurityPolicy</S>
+                <S>Get-AzSynapseSqlAdvancedThreatProtectionSetting</S>
+                <S>Get-AzSynapseSqlAuditSetting</S>
+                <S>Get-AzSynapseSqlDatabase</S>
+                <S>Get-AzSynapseSqlPool</S>
+                <S>Get-AzSynapseSqlPoolAdvancedThreatProtectionSetting</S>
+                <S>Get-AzSynapseSqlPoolAuditSetting</S>
+                <S>Get-AzSynapseSqlPoolGeoBackup</S>
+                <S>Get-AzSynapseSqlPoolRestorePoint</S>
+                <S>Get-AzSynapseSqlPoolSensitivityClassification</S>
+                <S>Get-AzSynapseSqlPoolSensitivityRecommendation</S>
+                <S>Get-AzSynapseSqlPoolTransparentDataEncryption</S>
+                <S>Get-AzSynapseSqlPoolVulnerabilityAssessmentRuleBaseline</S>
+                <S>Get-AzSynapseSqlPoolVulnerabilityAssessmentScanRecord</S>
+                <S>Get-AzSynapseSqlPoolVulnerabilityAssessmentSetting</S>
+                <S>Get-AzSynapseSqlScript</S>
+                <S>Get-AzSynapseSqlVulnerabilityAssessmentSetting</S>
+                <S>Get-AzSynapseTrigger</S>
+                <S>Get-AzSynapseTriggerRun</S>
+                <S>Get-AzSynapseTriggerSubscriptionStatus</S>
+                <S>Get-AzSynapseWorkspace</S>
+                <S>Get-AzSynapseWorkspaceKey</S>
+                <S>Get-AzSynapseWorkspacePackage</S>
+                <S>Invoke-AzSynapseDataFlowDebugSessionCommand</S>
+                <S>Invoke-AzSynapseIntegrationRuntimeUpgrade</S>
+                <S>Invoke-AzSynapsePipeline</S>
+                <S>Invoke-AzSynapseSparkStatement</S>
+                <S>Invoke-AzSynapseTriggerRun</S>
+                <S>New-AzSynapseFirewallRule</S>
+                <S>New-AzSynapseGitRepositoryConfig</S>
+                <S>New-AzSynapseIntegrationRuntimeKey</S>
+                <S>New-AzSynapseKqlScript</S>
+                <S>New-AzSynapseLinkedServiceEncryptedCredential</S>
+                <S>New-AzSynapseManagedPrivateEndpoint</S>
+                <S>New-AzSynapseManagedVirtualNetworkConfig</S>
+                <S>New-AzSynapseRoleAssignment</S>
+                <S>New-AzSynapseSparkConfiguration</S>
+                <S>New-AzSynapseSparkPool</S>
+                <S>New-AzSynapseSqlDatabase</S>
+                <S>New-AzSynapseSqlPool</S>
+                <S>New-AzSynapseSqlPoolRestorePoint</S>
+                <S>New-AzSynapseWorkspace</S>
+                <S>New-AzSynapseWorkspaceKey</S>
+                <S>New-AzSynapseWorkspacePackage</S>
+                <S>Remove-AzSynapseDataFlow</S>
+                <S>Remove-AzSynapseDataset</S>
+                <S>Remove-AzSynapseFirewallRule</S>
+                <S>Remove-AzSynapseIntegrationRuntime</S>
+                <S>Remove-AzSynapseIntegrationRuntimeNode</S>
+                <S>Remove-AzSynapseKqlScript</S>
+                <S>Remove-AzSynapseLinkConnection</S>
+                <S>Remove-AzSynapseLinkedService</S>
+                <S>Remove-AzSynapseManagedPrivateEndpoint</S>
+                <S>Remove-AzSynapseNotebook</S>
+                <S>Remove-AzSynapsePipeline</S>
+                <S>Remove-AzSynapseRoleAssignment</S>
+                <S>Remove-AzSynapseSparkConfiguration</S>
+                <S>Remove-AzSynapseSparkJobDefinition</S>
+                <S>Remove-AzSynapseSparkPool</S>
+                <S>Remove-AzSynapseSqlActiveDirectoryAdministrator</S>
+                <S>Remove-AzSynapseSqlDatabase</S>
+                <S>Remove-AzSynapseSqlPool</S>
+                <S>Remove-AzSynapseSqlPoolRestorePoint</S>
+                <S>Remove-AzSynapseSqlPoolSensitivityClassification</S>
+                <S>Remove-AzSynapseSqlScript</S>
+                <S>Remove-AzSynapseTrigger</S>
+                <S>Remove-AzSynapseTriggerSubscription</S>
+                <S>Remove-AzSynapseWorkspace</S>
+                <S>Remove-AzSynapseWorkspaceKey</S>
+                <S>Remove-AzSynapseWorkspacePackage</S>
+                <S>Reset-AzSynapseSparkSessionTimeout</S>
+                <S>Reset-AzSynapseSqlAdvancedThreatProtectionSetting</S>
+                <S>Reset-AzSynapseSqlAuditSetting</S>
+                <S>Reset-AzSynapseSqlPoolAdvancedThreatProtectionSetting</S>
+                <S>Reset-AzSynapseSqlPoolAuditSetting</S>
+                <S>Reset-AzSynapseSqlPoolVulnerabilityAssessmentSetting</S>
+                <S>Reset-AzSynapseSqlVulnerabilityAssessmentSetting</S>
+                <S>Restore-AzSynapseSqlPool</S>
+                <S>Resume-AzSynapseSqlPool</S>
+                <S>Set-AzSynapseDataFlow</S>
+                <S>Set-AzSynapseDataset</S>
+                <S>Set-AzSynapseIntegrationRuntime</S>
+                <S>Set-AzSynapseLinkConnection</S>
+                <S>Set-AzSynapseLinkConnectionLinkTable</S>
+                <S>Set-AzSynapseLinkedService</S>
+                <S>Set-AzSynapseManagedIdentitySqlControlSetting</S>
+                <S>Set-AzSynapseNotebook</S>
+                <S>Set-AzSynapsePipeline</S>
+                <S>Set-AzSynapseSparkJobDefinition</S>
+                <S>Set-AzSynapseSqlActiveDirectoryAdministrator</S>
+                <S>Set-AzSynapseSqlAuditSetting</S>
+                <S>Set-AzSynapseSqlPoolAuditSetting</S>
+                <S>Set-AzSynapseSqlPoolSensitivityClassification</S>
+                <S>Set-AzSynapseSqlPoolTransparentDataEncryption</S>
+                <S>Set-AzSynapseSqlPoolVulnerabilityAssessmentRuleBaseline</S>
+                <S>Set-AzSynapseSqlScript</S>
+                <S>Set-AzSynapseTrigger</S>
+                <S>Start-AzSynapseDataFlowDebugSession</S>
+                <S>Start-AzSynapseIntegrationRuntime</S>
+                <S>Start-AzSynapseLinkConnection</S>
+                <S>Start-AzSynapseSparkSession</S>
+                <S>Start-AzSynapseSqlPoolVulnerabilityAssessmentScan</S>
+                <S>Start-AzSynapseTrigger</S>
+                <S>Stop-AzSynapseDataFlowDebugSession</S>
+                <S>Stop-AzSynapseIntegrationRuntime</S>
+                <S>Stop-AzSynapseLinkConnection</S>
+                <S>Stop-AzSynapsePipelineRun</S>
+                <S>Stop-AzSynapseSparkJob</S>
+                <S>Stop-AzSynapseSparkSession</S>
+                <S>Stop-AzSynapseSparkStatement</S>
+                <S>Stop-AzSynapseTrigger</S>
+                <S>Stop-AzSynapseTriggerRun</S>
+                <S>Submit-AzSynapseSparkJob</S>
+                <S>Suspend-AzSynapseSqlPool</S>
+                <S>Sync-AzSynapseIntegrationRuntimeCredential</S>
+                <S>Test-AzSynapseSparkPool</S>
+                <S>Test-AzSynapseSqlDatabase</S>
+                <S>Test-AzSynapseSqlPool</S>
+                <S>Test-AzSynapseWorkspace</S>
+                <S>Update-AzSynapseFirewallRule</S>
+                <S>Update-AzSynapseIntegrationRuntime</S>
+                <S>Update-AzSynapseIntegrationRuntimeNode</S>
+                <S>Update-AzSynapseLinkConnectionLandingZoneCredential</S>
+                <S>Update-AzSynapseManagedVirtualNetworkConfig</S>
+                <S>Update-AzSynapseSparkPool</S>
+                <S>Update-AzSynapseSqlAdvancedThreatProtectionSetting</S>
+                <S>Update-AzSynapseSqlDatabase</S>
+                <S>Update-AzSynapseSqlPool</S>
+                <S>Update-AzSynapseSqlPoolAdvancedThreatProtectionSetting</S>
+                <S>Update-AzSynapseSqlPoolVulnerabilityAssessmentSetting</S>
+                <S>Update-AzSynapseSqlVulnerabilityAssessmentSetting</S>
+                <S>Update-AzSynapseWorkspace</S>
+                <S>Wait-AzSynapseSparkJob</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="7" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <S N="ReleaseNotes">* Updated Azure.Analytics.Synapse.Artifacts to 1.0.0-preview.20._x000D__x000A_* Fixed the issue that Azure.Core.AccessToken is used before assigned.</S>
+      <Obj N="Dependencies" RefId="9">
+        <TNRef RefId="2" />
+        <LST>
+          <Obj RefId="10">
+            <TN RefId="4">
+              <T>System.Collections.Specialized.OrderedDictionary</T>
+              <T>System.Object</T>
+            </TN>
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Az.Accounts</S>
+              </En>
+              <En>
+                <S N="Key">MinimumVersion</S>
+                <S N="Value">3.0.1</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Az.Accounts/3.0.1</S>
+              </En>
+            </DCT>
+          </Obj>
+        </LST>
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="11">
+        <TN RefId="5">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">Microsoft Corporation. All rights reserved.</S>
+          <S N="description">Microsoft Azure PowerShell - Azure Synapse Analytics in Windows PowerShell and PowerShell Core._x000D__x000A__x000D__x000A_For more information on Azure Synapse Analytics, please visit the following: https://azure.microsoft.com/en-us/services/synapse-analytics/</S>
+          <S N="requireLicenseAcceptance">True</S>
+          <S N="releaseNotes">* Updated Azure.Analytics.Synapse.Artifacts to 1.0.0-preview.20._x000D__x000A_* Fixed the issue that Azure.Core.AccessToken is used before assigned.</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">206249</S>
+          <S N="downloadCount">47483762</S>
+          <S N="packageSize">2637649</S>
+          <S N="published">2024/07/09 01:54:18 +02:00</S>
+          <S N="created">2024/07/09 01:54:18 +02:00</S>
+          <S N="lastUpdated">2024/07/11 19:05:03 +02:00</S>
+          <S N="tags">Azure ResourceManager ARM Synapse Analytics PSModule PSEdition_Core PSEdition_Desktop PSCmdlet_Add-AzSynapseDataFlowDebugSessionPackage PSCommand_Add-AzSynapseDataFlowDebugSessionPackage PSCmdlet_Add-AzSynapseTriggerSubscription PSCommand_Add-AzSynapseTriggerSubscription PSCmdlet_Clear-AzSynapseSqlPoolVulnerabilityAssessmentRuleBaseline PSCommand_Clear-AzSynapseSqlPoolVulnerabilityAssessmentRuleBaseline PSCmdlet_Convert-AzSynapseSqlPoolVulnerabilityAssessmentScan PSCommand_Convert-AzSynapseSqlPoolVulnerabilityAssessmentScan PSCmdlet_Disable-AzSynapseActiveDirectoryOnlyAuthentication PSCommand_Disable-AzSynapseActiveDirectoryOnlyAuthentication PSCmdlet_Disable-AzSynapseSqlAdvancedDataSecurity PSCommand_Disable-AzSynapseSqlAdvancedDataSecurity PSCmdlet_Disable-AzSynapseSqlPoolSensitivityRecommendation PSCommand_Disable-AzSynapseSqlPoolSensitivityRecommendation PSCmdlet_Enable-AzSynapseActiveDirectoryOnlyAuthentication PSCommand_Enable-AzSynapseActiveDirectoryOnlyAuthentication PSCmdlet_Enable-AzSynapseSqlAdvancedDataSecurity PSCommand_Enable-AzSynapseSqlAdvancedDataSecurity PSCmdlet_Enable-AzSynapseSqlPoolSensitivityRecommendation PSCommand_Enable-AzSynapseSqlPoolSensitivityRecommendation PSCmdlet_Enable-AzSynapseWorkspace PSCommand_Enable-AzSynapseWorkspace PSCmdlet_Export-AzSynapseKqlScript PSCommand_Export-AzSynapseKqlScript PSCmdlet_Export-AzSynapseNotebook PSCommand_Export-AzSynapseNotebook PSCmdlet_Export-AzSynapseSparkConfiguration PSCommand_Export-AzSynapseSparkConfiguration PSCmdlet_Export-AzSynapseSqlScript PSCommand_Export-AzSynapseSqlScript PSCmdlet_Get-AzSynapseActiveDirectoryOnlyAuthentication PSCommand_Get-AzSynapseActiveDirectoryOnlyAuthentication PSCmdlet_Get-AzSynapseActivityRun PSCommand_Get-AzSynapseActivityRun PSCmdlet_Get-AzSynapseDataFlow PSCommand_Get-AzSynapseDataFlow PSCmdlet_Get-AzSynapseDataFlowDebugSession PSCommand_Get-AzSynapseDataFlowDebugSession PSCmdlet_Get-AzSynapseDataset PSCommand_Get-AzSynapseDataset PSCmdlet_Get-AzSynapseDroppedSqlPool PSCommand_Get-AzSynapseDroppedSqlPool PSCmdlet_Get-AzSynapseFirewallRule PSCommand_Get-AzSynapseFirewallRule PSCmdlet_Get-AzSynapseIntegrationRuntime PSCommand_Get-AzSynapseIntegrationRuntime PSCmdlet_Get-AzSynapseIntegrationRuntimeKey PSCommand_Get-AzSynapseIntegrationRuntimeKey PSCmdlet_Get-AzSynapseIntegrationRuntimeMetric PSCommand_Get-AzSynapseIntegrationRuntimeMetric PSCmdlet_Get-AzSynapseIntegrationRuntimeNode PSCommand_Get-AzSynapseIntegrationRuntimeNode PSCmdlet_Get-AzSynapseKqlScript PSCommand_Get-AzSynapseKqlScript PSCmdlet_Get-AzSynapseLinkConnection PSCommand_Get-AzSynapseLinkConnection PSCmdlet_Get-AzSynapseLinkConnectionDetailedStatus PSCommand_Get-AzSynapseLinkConnectionDetailedStatus PSCmdlet_Get-AzSynapseLinkConnectionLinkTable PSCommand_Get-AzSynapseLinkConnectionLinkTable PSCmdlet_Get-AzSynapseLinkConnectionLinkTableStatus PSCommand_Get-AzSynapseLinkConnectionLinkTableStatus PSCmdlet_Get-AzSynapseLinkedService PSCommand_Get-AzSynapseLinkedService PSCmdlet_Get-AzSynapseManagedIdentitySqlControlSetting PSCommand_Get-AzSynapseManagedIdentitySqlControlSetting PSCmdlet_Get-AzSynapseManagedPrivateEndpoint PSCommand_Get-AzSynapseManagedPrivateEndpoint PSCmdlet_Get-AzSynapseNotebook PSCommand_Get-AzSynapseNotebook PSCmdlet_Get-AzSynapsePipeline PSCommand_Get-AzSynapsePipeline PSCmdlet_Get-AzSynapsePipelineRun PSCommand_Get-AzSynapsePipelineRun PSCmdlet_Get-AzSynapseRoleAssignment PSCommand_Get-AzSynapseRoleAssignment PSCmdlet_Get-AzSynapseRoleDefinition PSCommand_Get-AzSynapseRoleDefinition PSCmdlet_Get-AzSynapseRoleScope PSCommand_Get-AzSynapseRoleScope PSCmdlet_Get-AzSynapseSparkConfiguration PSCommand_Get-AzSynapseSparkConfiguration PSCmdlet_Get-AzSynapseSparkJob PSCommand_Get-AzSynapseSparkJob PSCmdlet_Get-AzSynapseSparkJobDefinition PSCommand_Get-AzSynapseSparkJobDefinition PSCmdlet_Get-AzSynapseSparkPool PSCommand_Get-AzSynapseSparkPool PSCmdlet_Get-AzSynapseSparkSession PSCommand_Get-AzSynapseSparkSession PSCmdlet_Get-AzSynapseSparkStatement PSCommand_Get-AzSynapseSparkStatement PSCmdlet_Get-AzSynapseSqlActiveDirectoryAdministrator PSCommand_Get-AzSynapseSqlActiveDirectoryAdministrator PSCmdlet_Get-AzSynapseSqlAdvancedDataSecurityPolicy PSCommand_Get-AzSynapseSqlAdvancedDataSecurityPolicy PSCmdlet_Get-AzSynapseSqlAdvancedThreatProtectionSetting PSCommand_Get-AzSynapseSqlAdvancedThreatProtectionSetting PSCmdlet_Get-AzSynapseSqlAuditSetting PSCommand_Get-AzSynapseSqlAuditSetting PSCmdlet_Get-AzSynapseSqlDatabase PSCommand_Get-AzSynapseSqlDatabase PSCmdlet_Get-AzSynapseSqlPool PSCommand_Get-AzSynapseSqlPool PSCmdlet_Get-AzSynapseSqlPoolAdvancedThreatProtectionSetting PSCommand_Get-AzSynapseSqlPoolAdvancedThreatProtectionSetting PSCmdlet_Get-AzSynapseSqlPoolAuditSetting PSCommand_Get-AzSynapseSqlPoolAuditSetting PSCmdlet_Get-AzSynapseSqlPoolGeoBackup PSCommand_Get-AzSynapseSqlPoolGeoBackup PSCmdlet_Get-AzSynapseSqlPoolRestorePoint PSCommand_Get-AzSynapseSqlPoolRestorePoint PSCmdlet_Get-AzSynapseSqlPoolSensitivityClassification PSCommand_Get-AzSynapseSqlPoolSensitivityClassification PSCmdlet_Get-AzSynapseSqlPoolSensitivityRecommendation PSCommand_Get-AzSynapseSqlPoolSensitivityRecommendation PSCmdlet_Get-AzSynapseSqlPoolTransparentDataEncryption PSCommand_Get-AzSynapseSqlPoolTransparentDataEncryption PSCmdlet_Get-AzSynapseSqlPoolVulnerabilityAssessmentRuleBaseline PSCommand_Get-AzSynapseSqlPoolVulnerabilityAssessmentRuleBaseline PSCmdlet_Get-AzSynapseSqlPoolVulnerabilityAssessmentScanRecord PSCommand_Get-AzSynapseSqlPoolVulnerabilityAssessmentScanRecord PSCmdlet_Get-AzSynapseSqlPoolVulnerabilityAssessmentSetting PSCommand_Get-AzSynapseSqlPoolVulnerabilityAssessmentSetting PSCmdlet_Get-AzSynapseSqlScript PSCommand_Get-AzSynapseSqlScript PSCmdlet_Get-AzSynapseSqlVulnerabilityAssessmentSetting PSCommand_Get-AzSynapseSqlVulnerabilityAssessmentSetting PSCmdlet_Get-AzSynapseTrigger PSCommand_Get-AzSynapseTrigger PSCmdlet_Get-AzSynapseTriggerRun PSCommand_Get-AzSynapseTriggerRun PSCmdlet_Get-AzSynapseTriggerSubscriptionStatus PSCommand_Get-AzSynapseTriggerSubscriptionStatus PSCmdlet_Get-AzSynapseWorkspace PSCommand_Get-AzSynapseWorkspace PSCmdlet_Get-AzSynapseWorkspaceKey PSCommand_Get-AzSynapseWorkspaceKey PSCmdlet_Get-AzSynapseWorkspacePackage PSCommand_Get-AzSynapseWorkspacePackage PSCmdlet_Invoke-AzSynapseDataFlowDebugSessionCommand PSCommand_Invoke-AzSynapseDataFlowDebugSessionCommand PSCmdlet_Invoke-AzSynapseIntegrationRuntimeUpgrade PSCommand_Invoke-AzSynapseIntegrationRuntimeUpgrade PSCmdlet_Invoke-AzSynapsePipeline PSCommand_Invoke-AzSynapsePipeline PSCmdlet_Invoke-AzSynapseSparkStatement PSCommand_Invoke-AzSynapseSparkStatement PSCmdlet_Invoke-AzSynapseTriggerRun PSCommand_Invoke-AzSynapseTriggerRun PSCmdlet_New-AzSynapseFirewallRule PSCommand_New-AzSynapseFirewallRule PSCmdlet_New-AzSynapseGitRepositoryConfig PSCommand_New-AzSynapseGitRepositoryConfig PSCmdlet_New-AzSynapseIntegrationRuntimeKey PSCommand_New-AzSynapseIntegrationRuntimeKey PSCmdlet_New-AzSynapseKqlScript PSCommand_New-AzSynapseKqlScript PSCmdlet_New-AzSynapseLinkedServiceEncryptedCredential PSCommand_New-AzSynapseLinkedServiceEncryptedCredential PSCmdlet_New-AzSynapseManagedPrivateEndpoint PSCommand_New-AzSynapseManagedPrivateEndpoint PSCmdlet_New-AzSynapseManagedVirtualNetworkConfig PSCommand_New-AzSynapseManagedVirtualNetworkConfig PSCmdlet_New-AzSynapseRoleAssignment PSCommand_New-AzSynapseRoleAssignment PSCmdlet_New-AzSynapseSparkConfiguration PSCommand_New-AzSynapseSparkConfiguration PSCmdlet_New-AzSynapseSparkPool PSCommand_New-AzSynapseSparkPool PSCmdlet_New-AzSynapseSqlDatabase PSCommand_New-AzSynapseSqlDatabase PSCmdlet_New-AzSynapseSqlPool PSCommand_New-AzSynapseSqlPool PSCmdlet_New-AzSynapseSqlPoolRestorePoint PSCommand_New-AzSynapseSqlPoolRestorePoint PSCmdlet_New-AzSynapseWorkspace PSCommand_New-AzSynapseWorkspace PSCmdlet_New-AzSynapseWorkspaceKey PSCommand_New-AzSynapseWorkspaceKey PSCmdlet_New-AzSynapseWorkspacePackage PSCommand_New-AzSynapseWorkspacePackage PSCmdlet_Remove-AzSynapseDataFlow PSCommand_Remove-AzSynapseDataFlow PSCmdlet_Remove-AzSynapseDataset PSCommand_Remove-AzSynapseDataset PSCmdlet_Remove-AzSynapseFirewallRule PSCommand_Remove-AzSynapseFirewallRule PSCmdlet_Remove-AzSynapseIntegrationRuntime PSCommand_Remove-AzSynapseIntegrationRuntime PSCmdlet_Remove-AzSynapseIntegrationRuntimeNode PSCommand_Remove-AzSynapseIntegrationRuntimeNode PSCmdlet_Remove-AzSynapseKqlScript PSCommand_Remove-AzSynapseKqlScript PSCmdlet_Remove-AzSynapseLinkConnection PSCommand_Remove-AzSynapseLinkConnection PSCmdlet_Remove-AzSynapseLinkedService PSCommand_Remove-AzSynapseLinkedService PSCmdlet_Remove-AzSynapseManagedPrivateEndpoint PSCommand_Remove-AzSynapseManagedPrivateEndpoint PSCmdlet_Remove-AzSynapseNotebook PSCommand_Remove-AzSynapseNotebook PSCmdlet_Remove-AzSynapsePipeline PSCommand_Remove-AzSynapsePipeline PSCmdlet_Remove-AzSynapseRoleAssignment PSCommand_Remove-AzSynapseRoleAssignment PSCmdlet_Remove-AzSynapseSparkConfiguration PSCommand_Remove-AzSynapseSparkConfiguration PSCmdlet_Remove-AzSynapseSparkJobDefinition PSCommand_Remove-AzSynapseSparkJobDefinition PSCmdlet_Remove-AzSynapseSparkPool PSCommand_Remove-AzSynapseSparkPool PSCmdlet_Remove-AzSynapseSqlActiveDirectoryAdministrator PSCommand_Remove-AzSynapseSqlActiveDirectoryAdministrator PSCmdlet_Remove-AzSynapseSqlDatabase PSCommand_Remove-AzSynapseSqlDatabase PSCmdlet_Remove-AzSynapseSqlPool PSCommand_Remove-AzSynapseSqlPool PSCmdlet_Remove-AzSynapseSqlPoolRestorePoint PSCommand_Remove-AzSynapseSqlPoolRestorePoint PSCmdlet_Remove-AzSynapseSqlPoolSensitivityClassification PSCommand_Remove-AzSynapseSqlPoolSensitivityClassification PSCmdlet_Remove-AzSynapseSqlScript PSCommand_Remove-AzSynapseSqlScript PSCmdlet_Remove-AzSynapseTrigger PSCommand_Remove-AzSynapseTrigger PSCmdlet_Remove-AzSynapseTriggerSubscription PSCommand_Remove-AzSynapseTriggerSubscription PSCmdlet_Remove-AzSynapseWorkspace PSCommand_Remove-AzSynapseWorkspace PSCmdlet_Remove-AzSynapseWorkspaceKey PSCommand_Remove-AzSynapseWorkspaceKey PSCmdlet_Remove-AzSynapseWorkspacePackage PSCommand_Remove-AzSynapseWorkspacePackage PSCmdlet_Reset-AzSynapseSparkSessionTimeout PSCommand_Reset-AzSynapseSparkSessionTimeout PSCmdlet_Reset-AzSynapseSqlAdvancedThreatProtectionSetting PSCommand_Reset-AzSynapseSqlAdvancedThreatProtectionSetting PSCmdlet_Reset-AzSynapseSqlAuditSetting PSCommand_Reset-AzSynapseSqlAuditSetting PSCmdlet_Reset-AzSynapseSqlPoolAdvancedThreatProtectionSetting PSCommand_Reset-AzSynapseSqlPoolAdvancedThreatProtectionSetting PSCmdlet_Reset-AzSynapseSqlPoolAuditSetting PSCommand_Reset-AzSynapseSqlPoolAuditSetting PSCmdlet_Reset-AzSynapseSqlPoolVulnerabilityAssessmentSetting PSCommand_Reset-AzSynapseSqlPoolVulnerabilityAssessmentSetting PSCmdlet_Reset-AzSynapseSqlVulnerabilityAssessmentSetting PSCommand_Reset-AzSynapseSqlVulnerabilityAssessmentSetting PSCmdlet_Restore-AzSynapseSqlPool PSCommand_Restore-AzSynapseSqlPool PSCmdlet_Resume-AzSynapseSqlPool PSCommand_Resume-AzSynapseSqlPool PSCmdlet_Set-AzSynapseDataFlow PSCommand_Set-AzSynapseDataFlow PSCmdlet_Set-AzSynapseDataset PSCommand_Set-AzSynapseDataset PSCmdlet_Set-AzSynapseIntegrationRuntime PSCommand_Set-AzSynapseIntegrationRuntime PSCmdlet_Set-AzSynapseLinkConnection PSCommand_Set-AzSynapseLinkConnection PSCmdlet_Set-AzSynapseLinkConnectionLinkTable PSCommand_Set-AzSynapseLinkConnectionLinkTable PSCmdlet_Set-AzSynapseLinkedService PSCommand_Set-AzSynapseLinkedService PSCmdlet_Set-AzSynapseManagedIdentitySqlControlSetting PSCommand_Set-AzSynapseManagedIdentitySqlControlSetting PSCmdlet_Set-AzSynapseNotebook PSCommand_Set-AzSynapseNotebook PSCmdlet_Set-AzSynapsePipeline PSCommand_Set-AzSynapsePipeline PSCmdlet_Set-AzSynapseSparkJobDefinition PSCommand_Set-AzSynapseSparkJobDefinition PSCmdlet_Set-AzSynapseSqlActiveDirectoryAdministrator PSCommand_Set-AzSynapseSqlActiveDirectoryAdministrator PSCmdlet_Set-AzSynapseSqlAuditSetting PSCommand_Set-AzSynapseSqlAuditSetting PSCmdlet_Set-AzSynapseSqlPoolAuditSetting PSCommand_Set-AzSynapseSqlPoolAuditSetting PSCmdlet_Set-AzSynapseSqlPoolSensitivityClassification PSCommand_Set-AzSynapseSqlPoolSensitivityClassification PSCmdlet_Set-AzSynapseSqlPoolTransparentDataEncryption PSCommand_Set-AzSynapseSqlPoolTransparentDataEncryption PSCmdlet_Set-AzSynapseSqlPoolVulnerabilityAssessmentRuleBaseline PSCommand_Set-AzSynapseSqlPoolVulnerabilityAssessmentRuleBaseline PSCmdlet_Set-AzSynapseSqlScript PSCommand_Set-AzSynapseSqlScript PSCmdlet_Set-AzSynapseTrigger PSCommand_Set-AzSynapseTrigger PSCmdlet_Start-AzSynapseDataFlowDebugSession PSCommand_Start-AzSynapseDataFlowDebugSession PSCmdlet_Start-AzSynapseIntegrationRuntime PSCommand_Start-AzSynapseIntegrationRuntime PSCmdlet_Start-AzSynapseLinkConnection PSCommand_Start-AzSynapseLinkConnection PSCmdlet_Start-AzSynapseSparkSession PSCommand_Start-AzSynapseSparkSession PSCmdlet_Start-AzSynapseSqlPoolVulnerabilityAssessmentScan PSCommand_Start-AzSynapseSqlPoolVulnerabilityAssessmentScan PSCmdlet_Start-AzSynapseTrigger PSCommand_Start-AzSynapseTrigger PSCmdlet_Stop-AzSynapseDataFlowDebugSession PSCommand_Stop-AzSynapseDataFlowDebugSession PSCmdlet_Stop-AzSynapseIntegrationRuntime PSCommand_Stop-AzSynapseIntegrationRuntime PSCmdlet_Stop-AzSynapseLinkConnection PSCommand_Stop-AzSynapseLinkConnection PSCmdlet_Stop-AzSynapsePipelineRun PSCommand_Stop-AzSynapsePipelineRun PSCmdlet_Stop-AzSynapseSparkJob PSCommand_Stop-AzSynapseSparkJob PSCmdlet_Stop-AzSynapseSparkSession PSCommand_Stop-AzSynapseSparkSession PSCmdlet_Stop-AzSynapseSparkStatement PSCommand_Stop-AzSynapseSparkStatement PSCmdlet_Stop-AzSynapseTrigger PSCommand_Stop-AzSynapseTrigger PSCmdlet_Stop-AzSynapseTriggerRun PSCommand_Stop-AzSynapseTriggerRun PSCmdlet_Submit-AzSynapseSparkJob PSCommand_Submit-AzSynapseSparkJob PSCmdlet_Suspend-AzSynapseSqlPool PSCommand_Suspend-AzSynapseSqlPool PSCmdlet_Sync-AzSynapseIntegrationRuntimeCredential PSCommand_Sync-AzSynapseIntegrationRuntimeCredential PSCmdlet_Test-AzSynapseSparkPool PSCommand_Test-AzSynapseSparkPool PSCmdlet_Test-AzSynapseSqlDatabase PSCommand_Test-AzSynapseSqlDatabase PSCmdlet_Test-AzSynapseSqlPool PSCommand_Test-AzSynapseSqlPool PSCmdlet_Test-AzSynapseWorkspace PSCommand_Test-AzSynapseWorkspace PSCmdlet_Update-AzSynapseFirewallRule PSCommand_Update-AzSynapseFirewallRule PSCmdlet_Update-AzSynapseIntegrationRuntime PSCommand_Update-AzSynapseIntegrationRuntime PSCmdlet_Update-AzSynapseIntegrationRuntimeNode PSCommand_Update-AzSynapseIntegrationRuntimeNode PSCmdlet_Update-AzSynapseLinkConnectionLandingZoneCredential PSCommand_Update-AzSynapseLinkConnectionLandingZoneCredential PSCmdlet_Update-AzSynapseManagedVirtualNetworkConfig PSCommand_Update-AzSynapseManagedVirtualNetworkConfig PSCmdlet_Update-AzSynapseSparkPool PSCommand_Update-AzSynapseSparkPool PSCmdlet_Update-AzSynapseSqlAdvancedThreatProtectionSetting PSCommand_Update-AzSynapseSqlAdvancedThreatProtectionSetting PSCmdlet_Update-AzSynapseSqlDatabase PSCommand_Update-AzSynapseSqlDatabase PSCmdlet_Update-AzSynapseSqlPool PSCommand_Update-AzSynapseSqlPool PSCmdlet_Update-AzSynapseSqlPoolAdvancedThreatProtectionSetting PSCommand_Update-AzSynapseSqlPoolAdvancedThreatProtectionSetting PSCmdlet_Update-AzSynapseSqlPoolVulnerabilityAssessmentSetting PSCommand_Update-AzSynapseSqlPoolVulnerabilityAssessmentSetting PSCmdlet_Update-AzSynapseSqlVulnerabilityAssessmentSetting PSCommand_Update-AzSynapseSqlVulnerabilityAssessmentSetting PSCmdlet_Update-AzSynapseWorkspace PSCommand_Update-AzSynapseWorkspace PSCmdlet_Wait-AzSynapseSparkJob PSCommand_Wait-AzSynapseSparkJob PSIncludes_Cmdlet PSFunction_Add-AzSynapseKustoPoolLanguageExtension PSCommand_Add-AzSynapseKustoPoolLanguageExtension PSFunction_Get-AzSynapseKustoPool PSCommand_Get-AzSynapseKustoPool PSFunction_Get-AzSynapseKustoPoolAttachedDatabaseConfiguration PSCommand_Get-AzSynapseKustoPoolAttachedDatabaseConfiguration PSFunction_Get-AzSynapseKustoPoolDatabase PSCommand_Get-AzSynapseKustoPoolDatabase PSFunction_Get-AzSynapseKustoPoolDatabasePrincipalAssignment PSCommand_Get-AzSynapseKustoPoolDatabasePrincipalAssignment PSFunction_Get-AzSynapseKustoPoolDataConnection PSCommand_Get-AzSynapseKustoPoolDataConnection PSFunction_Get-AzSynapseKustoPoolFollowerDatabase PSCommand_Get-AzSynapseKustoPoolFollowerDatabase PSFunction_Get-AzSynapseKustoPoolLanguageExtension PSCommand_Get-AzSynapseKustoPoolLanguageExtension PSFunction_Get-AzSynapseKustoPoolPrincipalAssignment PSCommand_Get-AzSynapseKustoPoolPrincipalAssignment PSFunction_Get-AzSynapseKustoPoolSku PSCommand_Get-AzSynapseKustoPoolSku PSFunction_Invoke-AzSynapseDetachKustoPoolFollowerDatabase PSCommand_Invoke-AzSynapseDetachKustoPoolFollowerDatabase PSFunction_New-AzSynapseKustoPool PSCommand_New-AzSynapseKustoPool PSFunction_New-AzSynapseKustoPoolAttachedDatabaseConfiguration PSCommand_New-AzSynapseKustoPoolAttachedDatabaseConfiguration PSFunction_New-AzSynapseKustoPoolDatabase PSCommand_New-AzSynapseKustoPoolDatabase PSFunction_New-AzSynapseKustoPoolDatabasePrincipalAssignment PSCommand_New-AzSynapseKustoPoolDatabasePrincipalAssignment PSFunction_New-AzSynapseKustoPoolDataConnection PSCommand_New-AzSynapseKustoPoolDataConnection PSFunction_New-AzSynapseKustoPoolPrincipalAssignment PSCommand_New-AzSynapseKustoPoolPrincipalAssignment PSFunction_Remove-AzSynapseKustoPool PSCommand_Remove-AzSynapseKustoPool PSFunction_Remove-AzSynapseKustoPoolAttachedDatabaseConfiguration PSCommand_Remove-AzSynapseKustoPoolAttachedDatabaseConfiguration PSFunction_Remove-AzSynapseKustoPoolDatabase PSCommand_Remove-AzSynapseKustoPoolDatabase PSFunction_Remove-AzSynapseKustoPoolDatabasePrincipalAssignment PSCommand_Remove-AzSynapseKustoPoolDatabasePrincipalAssignment PSFunction_Remove-AzSynapseKustoPoolDataConnection PSCommand_Remove-AzSynapseKustoPoolDataConnection PSFunction_Remove-AzSynapseKustoPoolLanguageExtension PSCommand_Remove-AzSynapseKustoPoolLanguageExtension PSFunction_Remove-AzSynapseKustoPoolPrincipalAssignment PSCommand_Remove-AzSynapseKustoPoolPrincipalAssignment PSFunction_Start-AzSynapseKustoPool PSCommand_Start-AzSynapseKustoPool PSFunction_Stop-AzSynapseKustoPool PSCommand_Stop-AzSynapseKustoPool PSFunction_Update-AzSynapseKustoPool PSCommand_Update-AzSynapseKustoPool PSFunction_Update-AzSynapseKustoPoolDatabase PSCommand_Update-AzSynapseKustoPoolDatabase PSFunction_Update-AzSynapseKustoPoolDataConnection PSCommand_Update-AzSynapseKustoPoolDataConnection PSIncludes_Function</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2024-07-11T19:05:03Z</S>
+          <S N="NormalizedVersion">3.0.9</S>
+          <S N="Authors">Microsoft Corporation</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">Az.Synapse.nuspec|Azure.Analytics.Synapse.Artifacts.dll|Azure.Analytics.Synapse.Spark.dll|Microsoft.Azure.PowerShell.Cmdlets.Synapse.dll|Microsoft.DataTransfer.Gateway.Encryption.dll|Synapse.Autorest\Az.Synapse.format.ps1xml|Synapse.Autorest\bin\Az.Synapse.private.dll|Synapse.Autorest\custom\New-AzSynapseKustoPool.ps1|Synapse.Autorest\custom\New-AzSynapseKustoPoolDataConnection.ps1|Synapse.Autorest\custom\Update-AzSynapseKustoPoolDataConnection.ps1|Synapse.Autorest\exports\ProxyCmdletDefinitions.ps1|Synapse.Autorest\internal\Az.Synapse.internal.psm1|Synapse.Autorest\internal\ProxyCmdletDefinitions.ps1|Synapse.Autorest\utils\Get-SubscriptionIdTestSafe.ps1|Synapse.Autorest\utils\Unprotect-SecureString.ps1|Az.Synapse.psm1|Azure.Analytics.Synapse.ManagedPrivateEndpoints.dll|Microsoft.Azure.Management.Synapse.dll|Microsoft.Azure.PowerShell.Cmdlets.Synapse.dll-Help.xml|Synapse.format.ps1xml|Synapse.Autorest\Az.Synapse.psm1|Synapse.Autorest\custom\Az.Synapse.custom.psm1|Synapse.Autorest\custom\New-AzSynapseKustoPoolDatabase.ps1|Synapse.Autorest\custom\Update-AzSynapseKustoPoolDatabase.ps1|Az.Synapse.psd1|Azure.Analytics.Synapse.AccessControl.dll</S>
+          <S N="GUID">89eceb4f-9916-4ec5-8499-d5cca97a9cae</S>
+          <S N="PowerShellVersion">5.1</S>
+          <S N="DotNetFrameworkVersion">4.7.2</S>
+          <S N="CompanyName">Microsoft Corporation</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">C:\Users\irman\OneDrive\Documents\PowerShell\Modules\Az.Synapse\3.0.9</S>
+    </MS>
+  </Obj>
+</Objs>

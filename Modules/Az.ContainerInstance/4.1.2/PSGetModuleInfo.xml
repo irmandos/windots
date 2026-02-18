@@ -1,0 +1,234 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">Az.ContainerInstance</S>
+      <Version N="Version">4.1.2</Version>
+      <S N="Type">Module</S>
+      <S N="Description">Microsoft Azure PowerShell: ContainerInstance cmdlets</S>
+      <S N="Author">Microsoft Corporation</S>
+      <S N="CompanyName">azure-sdk</S>
+      <S N="Copyright">Microsoft Corporation. All rights reserved.</S>
+      <DT N="PublishedDate">2025-09-02T02:38:43+02:00</DT>
+      <Obj N="InstalledDate" RefId="1">
+        <DT>2024-07-22T15:48:39.3504298+02:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="2">
+            <TN RefId="1">
+              <T>Deserialized.Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>Deserialized.System.Enum</T>
+              <T>Deserialized.System.ValueType</T>
+              <T>Deserialized.System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <Obj N="UpdatedDate" RefId="3">
+        <DT>2025-09-03T11:31:44.7312773+02:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="4">
+            <TN RefId="2">
+              <T>Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>System.Enum</T>
+              <T>System.ValueType</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <URI N="LicenseUri">https://aka.ms/azps-license</URI>
+      <URI N="ProjectUri">https://github.com/Azure/azure-powershell</URI>
+      <Nil N="IconUri" />
+      <Obj N="Tags" RefId="5">
+        <TN RefId="3">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>Azure</S>
+          <S>ResourceManager</S>
+          <S>ARM</S>
+          <S>PSModule</S>
+          <S>ContainerInstance</S>
+          <S>PSEdition_Core</S>
+          <S>PSEdition_Desktop</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="6">
+        <TN RefId="4">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="7">
+              <TNRef RefId="3" />
+              <LST>
+                <S>Add-AzContainerInstanceOutput</S>
+                <S>Get-AzContainerGroup</S>
+                <S>Get-AzContainerInstanceCachedImage</S>
+                <S>Get-AzContainerInstanceCapability</S>
+                <S>Get-AzContainerInstanceContainerGroupOutboundNetworkDependencyEndpoint</S>
+                <S>Get-AzContainerInstanceContainerGroupProfile</S>
+                <S>Get-AzContainerInstanceContainerGroupProfileRevision</S>
+                <S>Get-AzContainerInstanceLog</S>
+                <S>Get-AzContainerInstanceUsage</S>
+                <S>Invoke-AzContainerInstanceCommand</S>
+                <S>New-AzContainerGroup</S>
+                <S>New-AzContainerGroupImageRegistryCredentialObject</S>
+                <S>New-AzContainerGroupPortObject</S>
+                <S>New-AzContainerGroupVolumeObject</S>
+                <S>New-AzContainerInstanceContainerGroupProfile</S>
+                <S>New-AzContainerInstanceEnvironmentVariableObject</S>
+                <S>New-AzContainerInstanceHttpHeaderObject</S>
+                <S>New-AzContainerInstanceInitDefinitionObject</S>
+                <S>New-AzContainerInstanceNoDefaultObject</S>
+                <S>New-AzContainerInstanceObject</S>
+                <S>New-AzContainerInstancePortObject</S>
+                <S>New-AzContainerInstanceVolumeMountObject</S>
+                <S>Remove-AzContainerGroup</S>
+                <S>Remove-AzContainerInstanceContainerGroupProfile</S>
+                <S>Remove-AzContainerInstanceSubnetServiceAssociationLink</S>
+                <S>Restart-AzContainerGroup</S>
+                <S>Start-AzContainerGroup</S>
+                <S>Stop-AzContainerGroup</S>
+                <S>Update-AzContainerGroup</S>
+                <S>Update-AzContainerInstanceContainerGroupProfile</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Obj N="Value" RefId="8">
+              <TNRef RefId="3" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Ref N="Value" RefId="8" />
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="9">
+              <TNRef RefId="3" />
+              <LST>
+                <S>Add-AzContainerInstanceOutput</S>
+                <S>Get-AzContainerGroup</S>
+                <S>Get-AzContainerInstanceCachedImage</S>
+                <S>Get-AzContainerInstanceCapability</S>
+                <S>Get-AzContainerInstanceContainerGroupOutboundNetworkDependencyEndpoint</S>
+                <S>Get-AzContainerInstanceContainerGroupProfile</S>
+                <S>Get-AzContainerInstanceContainerGroupProfileRevision</S>
+                <S>Get-AzContainerInstanceLog</S>
+                <S>Get-AzContainerInstanceUsage</S>
+                <S>Invoke-AzContainerInstanceCommand</S>
+                <S>New-AzContainerGroup</S>
+                <S>New-AzContainerGroupImageRegistryCredentialObject</S>
+                <S>New-AzContainerGroupPortObject</S>
+                <S>New-AzContainerGroupVolumeObject</S>
+                <S>New-AzContainerInstanceContainerGroupProfile</S>
+                <S>New-AzContainerInstanceEnvironmentVariableObject</S>
+                <S>New-AzContainerInstanceHttpHeaderObject</S>
+                <S>New-AzContainerInstanceInitDefinitionObject</S>
+                <S>New-AzContainerInstanceNoDefaultObject</S>
+                <S>New-AzContainerInstanceObject</S>
+                <S>New-AzContainerInstancePortObject</S>
+                <S>New-AzContainerInstanceVolumeMountObject</S>
+                <S>Remove-AzContainerGroup</S>
+                <S>Remove-AzContainerInstanceContainerGroupProfile</S>
+                <S>Remove-AzContainerInstanceSubnetServiceAssociationLink</S>
+                <S>Restart-AzContainerGroup</S>
+                <S>Start-AzContainerGroup</S>
+                <S>Stop-AzContainerGroup</S>
+                <S>Update-AzContainerGroup</S>
+                <S>Update-AzContainerInstanceContainerGroupProfile</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Ref N="Value" RefId="8" />
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="8" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <S N="ReleaseNotes">* Preannounced breaking changes. Please refer to https://go.microsoft.com/fwlink/?linkid=2333229</S>
+      <Obj N="Dependencies" RefId="10">
+        <TNRef RefId="3" />
+        <LST>
+          <Obj RefId="11">
+            <TN RefId="5">
+              <T>System.Collections.Specialized.OrderedDictionary</T>
+              <T>System.Object</T>
+            </TN>
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Az.Accounts</S>
+              </En>
+              <En>
+                <S N="Key">MinimumVersion</S>
+                <S N="Value">5.3.0</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Az.Accounts/5.3.0</S>
+              </En>
+            </DCT>
+          </Obj>
+        </LST>
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="12">
+        <TN RefId="6">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">Microsoft Corporation. All rights reserved.</S>
+          <S N="description">Microsoft Azure PowerShell: ContainerInstance cmdlets</S>
+          <S N="requireLicenseAcceptance">True</S>
+          <S N="releaseNotes">* Preannounced breaking changes. Please refer to https://go.microsoft.com/fwlink/?linkid=2333229</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">270929</S>
+          <S N="downloadCount">148566766</S>
+          <S N="packageSize">767084</S>
+          <S N="published">2025/09/02 02:38:43 +02:00</S>
+          <S N="created">2025/09/02 02:38:43 +02:00</S>
+          <S N="lastUpdated">2025/09/03 09:30:00 +02:00</S>
+          <S N="tags">Azure ResourceManager ARM PSModule ContainerInstance PSEdition_Core PSEdition_Desktop PSFunction_Add-AzContainerInstanceOutput PSCommand_Add-AzContainerInstanceOutput PSFunction_Get-AzContainerGroup PSCommand_Get-AzContainerGroup PSFunction_Get-AzContainerInstanceCachedImage PSCommand_Get-AzContainerInstanceCachedImage PSFunction_Get-AzContainerInstanceCapability PSCommand_Get-AzContainerInstanceCapability PSFunction_Get-AzContainerInstanceContainerGroupOutboundNetworkDependencyEndpoint PSCommand_Get-AzContainerInstanceContainerGroupOutboundNetworkDependencyEndpoint PSFunction_Get-AzContainerInstanceContainerGroupProfile PSCommand_Get-AzContainerInstanceContainerGroupProfile PSFunction_Get-AzContainerInstanceContainerGroupProfileRevision PSCommand_Get-AzContainerInstanceContainerGroupProfileRevision PSFunction_Get-AzContainerInstanceLog PSCommand_Get-AzContainerInstanceLog PSFunction_Get-AzContainerInstanceUsage PSCommand_Get-AzContainerInstanceUsage PSFunction_Invoke-AzContainerInstanceCommand PSCommand_Invoke-AzContainerInstanceCommand PSFunction_New-AzContainerGroup PSCommand_New-AzContainerGroup PSFunction_New-AzContainerGroupImageRegistryCredentialObject PSCommand_New-AzContainerGroupImageRegistryCredentialObject PSFunction_New-AzContainerGroupPortObject PSCommand_New-AzContainerGroupPortObject PSFunction_New-AzContainerGroupVolumeObject PSCommand_New-AzContainerGroupVolumeObject PSFunction_New-AzContainerInstanceContainerGroupProfile PSCommand_New-AzContainerInstanceContainerGroupProfile PSFunction_New-AzContainerInstanceEnvironmentVariableObject PSCommand_New-AzContainerInstanceEnvironmentVariableObject PSFunction_New-AzContainerInstanceHttpHeaderObject PSCommand_New-AzContainerInstanceHttpHeaderObject PSFunction_New-AzContainerInstanceInitDefinitionObject PSCommand_New-AzContainerInstanceInitDefinitionObject PSFunction_New-AzContainerInstanceNoDefaultObject PSCommand_New-AzContainerInstanceNoDefaultObject PSFunction_New-AzContainerInstanceObject PSCommand_New-AzContainerInstanceObject PSFunction_New-AzContainerInstancePortObject PSCommand_New-AzContainerInstancePortObject PSFunction_New-AzContainerInstanceVolumeMountObject PSCommand_New-AzContainerInstanceVolumeMountObject PSFunction_Remove-AzContainerGroup PSCommand_Remove-AzContainerGroup PSFunction_Remove-AzContainerInstanceContainerGroupProfile PSCommand_Remove-AzContainerInstanceContainerGroupProfile PSFunction_Remove-AzContainerInstanceSubnetServiceAssociationLink PSCommand_Remove-AzContainerInstanceSubnetServiceAssociationLink PSFunction_Restart-AzContainerGroup PSCommand_Restart-AzContainerGroup PSFunction_Start-AzContainerGroup PSCommand_Start-AzContainerGroup PSFunction_Stop-AzContainerGroup PSCommand_Stop-AzContainerGroup PSFunction_Update-AzContainerGroup PSCommand_Update-AzContainerGroup PSFunction_Update-AzContainerInstanceContainerGroupProfile PSCommand_Update-AzContainerInstanceContainerGroupProfile PSIncludes_Function</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2025-09-03T09:30:00Z</S>
+          <S N="NormalizedVersion">4.1.2</S>
+          <S N="Authors">Microsoft Corporation</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">Az.ContainerInstance.nuspec|ContainerInstance.Autorest\custom\New-AzContainerGroupImageRegistryCredentialObject.ps1|ContainerInstance.Autorest\custom\New-AzContainerGroupVolumeObject.ps1|ContainerInstance.Autorest\custom\New-AzContainerInstanceHttpHeaderObject.ps1|ContainerInstance.Autorest\custom\New-AzContainerInstanceNoDefaultObject.ps1|ContainerInstance.Autorest\custom\New-AzContainerInstancePortObject.ps1|ContainerInstance.Autorest\custom\SpecialHandlerToRemoveDefaultValue.cs|ContainerInstance.Autorest\exports\ProxyCmdletDefinitions.ps1|ContainerInstance.Autorest\internal\Az.ContainerInstance.internal.psm1|ContainerInstance.Autorest\internal\ProxyCmdletDefinitions.ps1|ContainerInstance.Autorest\utils\Get-SubscriptionIdTestSafe.ps1|ContainerInstance.Autorest\utils\Unprotect-SecureString.ps1|Az.ContainerInstance.psm1|ContainerInstance.Autorest\Az.ContainerInstance.psm1|ContainerInstance.Autorest\custom\Az.ContainerInstance.custom.psm1|ContainerInstance.Autorest\custom\InvokeAzContainerInstanceCommand_ExecuteExpanded.cs|ContainerInstance.Autorest\custom\New-AzContainerGroupPortObject.ps1|ContainerInstance.Autorest\custom\New-AzContainerInstanceEnvironmentVariableObject.ps1|ContainerInstance.Autorest\custom\New-AzContainerInstanceInitDefinitionObject.ps1|ContainerInstance.Autorest\custom\New-AzContainerInstanceObject.ps1|ContainerInstance.Autorest\custom\New-AzContainerInstanceVolumeMountObject.ps1|Az.ContainerInstance.psd1|ContainerInstance.Autorest\Az.ContainerInstance.format.ps1xml|ContainerInstance.Autorest\bin\Az.ContainerInstance.private.dll|ContainerInstance.Autorest\custom\Invoke-AzContainerInstanceCommand.ps1|ContainerInstance.Autorest\custom\New-AzContainerGroup.ps1|.signature.p7s</S>
+          <S N="GUID">ddf74844-4a25-4263-8a5c-f27979292e4e</S>
+          <S N="PowerShellVersion">5.1</S>
+          <S N="DotNetFrameworkVersion">4.7.2</S>
+          <S N="CompanyName">Microsoft Corporation</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">C:\Users\irman\OneDrive\Documents\PowerShell\Modules\Az.ContainerInstance\4.1.2</S>
+    </MS>
+  </Obj>
+</Objs>

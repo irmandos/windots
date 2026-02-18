@@ -1,0 +1,232 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">Az.StorageMover</S>
+      <Version N="Version">1.5.1</Version>
+      <S N="Type">Module</S>
+      <S N="Description">Microsoft Azure PowerShell: StorageMover cmdlets</S>
+      <S N="Author">Microsoft Corporation</S>
+      <S N="CompanyName">azure-sdk</S>
+      <S N="Copyright">Microsoft Corporation. All rights reserved.</S>
+      <DT N="PublishedDate">2025-09-02T02:40:16+02:00</DT>
+      <Obj N="InstalledDate" RefId="1">
+        <DT>2024-07-22T15:50:13.3165045+02:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="2">
+            <TN RefId="1">
+              <T>Deserialized.Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>Deserialized.System.Enum</T>
+              <T>Deserialized.System.ValueType</T>
+              <T>Deserialized.System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <Obj N="UpdatedDate" RefId="3">
+        <DT>2025-09-03T11:53:41.690424+02:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="4">
+            <TN RefId="2">
+              <T>Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>System.Enum</T>
+              <T>System.ValueType</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <URI N="LicenseUri">https://aka.ms/azps-license</URI>
+      <URI N="ProjectUri">https://github.com/Azure/azure-powershell</URI>
+      <Nil N="IconUri" />
+      <Obj N="Tags" RefId="5">
+        <TN RefId="3">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>Azure</S>
+          <S>ResourceManager</S>
+          <S>ARM</S>
+          <S>PSModule</S>
+          <S>StorageMover</S>
+          <S>PSEdition_Core</S>
+          <S>PSEdition_Desktop</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="6">
+        <TN RefId="4">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="7">
+              <TNRef RefId="3" />
+              <LST>
+                <S>Get-AzStorageMover</S>
+                <S>Get-AzStorageMoverAgent</S>
+                <S>Get-AzStorageMoverEndpoint</S>
+                <S>Get-AzStorageMoverJobDefinition</S>
+                <S>Get-AzStorageMoverJobRun</S>
+                <S>Get-AzStorageMoverProject</S>
+                <S>New-AzStorageMover</S>
+                <S>New-AzStorageMoverAzSmbFileShareEndpoint</S>
+                <S>New-AzStorageMoverAzStorageContainerEndpoint</S>
+                <S>New-AzStorageMoverJobDefinition</S>
+                <S>New-AzStorageMoverNfsEndpoint</S>
+                <S>New-AzStorageMoverProject</S>
+                <S>New-AzStorageMoverSmbEndpoint</S>
+                <S>New-AzStorageMoverUploadLimitWeeklyRecurrenceObject</S>
+                <S>Remove-AzStorageMover</S>
+                <S>Remove-AzStorageMoverEndpoint</S>
+                <S>Remove-AzStorageMoverJobDefinition</S>
+                <S>Remove-AzStorageMoverProject</S>
+                <S>Start-AzStorageMoverJobDefinition</S>
+                <S>Stop-AzStorageMoverJobDefinition</S>
+                <S>Unregister-AzStorageMoverAgent</S>
+                <S>Update-AzStorageMover</S>
+                <S>Update-AzStorageMoverAgent</S>
+                <S>Update-AzStorageMoverAzSmbFileShareEndpoint</S>
+                <S>Update-AzStorageMoverAzStorageContainerEndpoint</S>
+                <S>Update-AzStorageMoverJobDefinition</S>
+                <S>Update-AzStorageMoverNfsEndpoint</S>
+                <S>Update-AzStorageMoverProject</S>
+                <S>Update-AzStorageMoverSmbEndpoint</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Obj N="Value" RefId="8">
+              <TNRef RefId="3" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Ref N="Value" RefId="8" />
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="9">
+              <TNRef RefId="3" />
+              <LST>
+                <S>Get-AzStorageMover</S>
+                <S>Get-AzStorageMoverAgent</S>
+                <S>Get-AzStorageMoverEndpoint</S>
+                <S>Get-AzStorageMoverJobDefinition</S>
+                <S>Get-AzStorageMoverJobRun</S>
+                <S>Get-AzStorageMoverProject</S>
+                <S>New-AzStorageMover</S>
+                <S>New-AzStorageMoverAzSmbFileShareEndpoint</S>
+                <S>New-AzStorageMoverAzStorageContainerEndpoint</S>
+                <S>New-AzStorageMoverJobDefinition</S>
+                <S>New-AzStorageMoverNfsEndpoint</S>
+                <S>New-AzStorageMoverProject</S>
+                <S>New-AzStorageMoverSmbEndpoint</S>
+                <S>New-AzStorageMoverUploadLimitWeeklyRecurrenceObject</S>
+                <S>Remove-AzStorageMover</S>
+                <S>Remove-AzStorageMoverEndpoint</S>
+                <S>Remove-AzStorageMoverJobDefinition</S>
+                <S>Remove-AzStorageMoverProject</S>
+                <S>Start-AzStorageMoverJobDefinition</S>
+                <S>Stop-AzStorageMoverJobDefinition</S>
+                <S>Unregister-AzStorageMoverAgent</S>
+                <S>Update-AzStorageMover</S>
+                <S>Update-AzStorageMoverAgent</S>
+                <S>Update-AzStorageMoverAzSmbFileShareEndpoint</S>
+                <S>Update-AzStorageMoverAzStorageContainerEndpoint</S>
+                <S>Update-AzStorageMoverJobDefinition</S>
+                <S>Update-AzStorageMoverNfsEndpoint</S>
+                <S>Update-AzStorageMoverProject</S>
+                <S>Update-AzStorageMoverSmbEndpoint</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Ref N="Value" RefId="8" />
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="8" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <S N="ReleaseNotes">* Preannounced breaking changes. Please refer to https://go.microsoft.com/fwlink/?linkid=2333229</S>
+      <Obj N="Dependencies" RefId="10">
+        <TNRef RefId="3" />
+        <LST>
+          <Obj RefId="11">
+            <TN RefId="5">
+              <T>System.Collections.Specialized.OrderedDictionary</T>
+              <T>System.Object</T>
+            </TN>
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Az.Accounts</S>
+              </En>
+              <En>
+                <S N="Key">MinimumVersion</S>
+                <S N="Value">5.3.0</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Az.Accounts/5.3.0</S>
+              </En>
+            </DCT>
+          </Obj>
+        </LST>
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="12">
+        <TN RefId="6">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">Microsoft Corporation. All rights reserved.</S>
+          <S N="description">Microsoft Azure PowerShell: StorageMover cmdlets</S>
+          <S N="requireLicenseAcceptance">True</S>
+          <S N="releaseNotes">* Preannounced breaking changes. Please refer to https://go.microsoft.com/fwlink/?linkid=2333229</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">254019</S>
+          <S N="downloadCount">83839585</S>
+          <S N="packageSize">717450</S>
+          <S N="published">2025/09/02 02:40:16 +02:00</S>
+          <S N="created">2025/09/02 02:40:16 +02:00</S>
+          <S N="lastUpdated">2025/09/03 09:50:00 +02:00</S>
+          <S N="tags">Azure ResourceManager ARM PSModule StorageMover PSEdition_Core PSEdition_Desktop PSFunction_Get-AzStorageMover PSCommand_Get-AzStorageMover PSFunction_Get-AzStorageMoverAgent PSCommand_Get-AzStorageMoverAgent PSFunction_Get-AzStorageMoverEndpoint PSCommand_Get-AzStorageMoverEndpoint PSFunction_Get-AzStorageMoverJobDefinition PSCommand_Get-AzStorageMoverJobDefinition PSFunction_Get-AzStorageMoverJobRun PSCommand_Get-AzStorageMoverJobRun PSFunction_Get-AzStorageMoverProject PSCommand_Get-AzStorageMoverProject PSFunction_New-AzStorageMover PSCommand_New-AzStorageMover PSFunction_New-AzStorageMoverAzSmbFileShareEndpoint PSCommand_New-AzStorageMoverAzSmbFileShareEndpoint PSFunction_New-AzStorageMoverAzStorageContainerEndpoint PSCommand_New-AzStorageMoverAzStorageContainerEndpoint PSFunction_New-AzStorageMoverJobDefinition PSCommand_New-AzStorageMoverJobDefinition PSFunction_New-AzStorageMoverNfsEndpoint PSCommand_New-AzStorageMoverNfsEndpoint PSFunction_New-AzStorageMoverProject PSCommand_New-AzStorageMoverProject PSFunction_New-AzStorageMoverSmbEndpoint PSCommand_New-AzStorageMoverSmbEndpoint PSFunction_New-AzStorageMoverUploadLimitWeeklyRecurrenceObject PSCommand_New-AzStorageMoverUploadLimitWeeklyRecurrenceObject PSFunction_Remove-AzStorageMover PSCommand_Remove-AzStorageMover PSFunction_Remove-AzStorageMoverEndpoint PSCommand_Remove-AzStorageMoverEndpoint PSFunction_Remove-AzStorageMoverJobDefinition PSCommand_Remove-AzStorageMoverJobDefinition PSFunction_Remove-AzStorageMoverProject PSCommand_Remove-AzStorageMoverProject PSFunction_Start-AzStorageMoverJobDefinition PSCommand_Start-AzStorageMoverJobDefinition PSFunction_Stop-AzStorageMoverJobDefinition PSCommand_Stop-AzStorageMoverJobDefinition PSFunction_Unregister-AzStorageMoverAgent PSCommand_Unregister-AzStorageMoverAgent PSFunction_Update-AzStorageMover PSCommand_Update-AzStorageMover PSFunction_Update-AzStorageMoverAgent PSCommand_Update-AzStorageMoverAgent PSFunction_Update-AzStorageMoverAzSmbFileShareEndpoint PSCommand_Update-AzStorageMoverAzSmbFileShareEndpoint PSFunction_Update-AzStorageMoverAzStorageContainerEndpoint PSCommand_Update-AzStorageMoverAzStorageContainerEndpoint PSFunction_Update-AzStorageMoverJobDefinition PSCommand_Update-AzStorageMoverJobDefinition PSFunction_Update-AzStorageMoverNfsEndpoint PSCommand_Update-AzStorageMoverNfsEndpoint PSFunction_Update-AzStorageMoverProject PSCommand_Update-AzStorageMoverProject PSFunction_Update-AzStorageMoverSmbEndpoint PSCommand_Update-AzStorageMoverSmbEndpoint PSIncludes_Function</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2025-09-03T09:50:00Z</S>
+          <S N="NormalizedVersion">1.5.1</S>
+          <S N="Authors">Microsoft Corporation</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">Az.StorageMover.nuspec|StorageMover.Autorest\custom\NewAzStorageMoverAzStorageContainerEndpoint.ps1|StorageMover.Autorest\custom\NewAzStorageMoverSmbEndpoint.ps1|StorageMover.Autorest\custom\RemoveAzStorageMover.ps1|StorageMover.Autorest\custom\UpdateAzStorageMoverAzSmbFileShareEndpoint.ps1|StorageMover.Autorest\custom\UpdateAzStorageMoverAzStorageContainerEndpoint.ps1|StorageMover.Autorest\custom\UpdateAzStorageMoverNfsEndpoint.ps1|StorageMover.Autorest\custom\UpdateAzStorageMoverSmbEndpoint.ps1|StorageMover.Autorest\exports\ProxyCmdletDefinitions.ps1|StorageMover.Autorest\internal\Az.StorageMover.internal.psm1|StorageMover.Autorest\internal\ProxyCmdletDefinitions.ps1|StorageMover.Autorest\utils\Get-SubscriptionIdTestSafe.ps1|StorageMover.Autorest\utils\Unprotect-SecureString.ps1|Az.StorageMover.psm1|StorageMover.Autorest\Az.StorageMover.psm1|StorageMover.Autorest\custom\Az.StorageMover.custom.psm1|StorageMover.Autorest\custom\NewAzStorageMoverNfsEndpoint.ps1|StorageMover.Autorest\custom\NewAzStorageMoverUploadLimitWeeklyRecurrenceObject.ps1|StorageMover.Autorest\custom\UnregisterAzStorageMoverAgent.ps1|Az.StorageMover.psd1|StorageMover.Autorest\Az.StorageMover.format.ps1xml|StorageMover.Autorest\bin\Az.StorageMover.private.dll|StorageMover.Autorest\custom\NewAzStorageMoverAzSmbFileShareEndpoint.ps1|.signature.p7s</S>
+          <S N="GUID">d6053d97-1a9b-4fc6-9bd2-09c5b23b34db</S>
+          <S N="PowerShellVersion">5.1</S>
+          <S N="DotNetFrameworkVersion">4.7.2</S>
+          <S N="CompanyName">Microsoft Corporation</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">C:\Users\irman\OneDrive\Documents\PowerShell\Modules\Az.StorageMover\1.5.1</S>
+    </MS>
+  </Obj>
+</Objs>

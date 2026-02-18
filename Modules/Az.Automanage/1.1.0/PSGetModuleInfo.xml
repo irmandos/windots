@@ -1,0 +1,208 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">Az.Automanage</S>
+      <Version N="Version">1.1.0</Version>
+      <S N="Type">Module</S>
+      <S N="Description">Microsoft Azure PowerShell: Automanage cmdlets</S>
+      <S N="Author">Microsoft Corporation</S>
+      <S N="CompanyName">azure-sdk</S>
+      <S N="Copyright">Microsoft Corporation. All rights reserved.</S>
+      <DT N="PublishedDate">2025-01-14T03:11:25+02:00</DT>
+      <Obj N="InstalledDate" RefId="1">
+        <DT>2024-07-22T15:48:29.0219165+02:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="2">
+            <TN RefId="1">
+              <T>Deserialized.Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>Deserialized.System.Enum</T>
+              <T>Deserialized.System.ValueType</T>
+              <T>Deserialized.System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <Obj N="UpdatedDate" RefId="3">
+        <DT>2025-04-01T10:40:16.4208748+02:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="4">
+            <TN RefId="2">
+              <T>Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>System.Enum</T>
+              <T>System.ValueType</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <URI N="LicenseUri">https://aka.ms/azps-license</URI>
+      <URI N="ProjectUri">https://github.com/Azure/azure-powershell</URI>
+      <Nil N="IconUri" />
+      <Obj N="Tags" RefId="5">
+        <TN RefId="3">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>Azure</S>
+          <S>ResourceManager</S>
+          <S>ARM</S>
+          <S>PSModule</S>
+          <S>Automanage</S>
+          <S>PSEdition_Core</S>
+          <S>PSEdition_Desktop</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="6">
+        <TN RefId="4">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Obj N="Value" RefId="7">
+              <TNRef RefId="3" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="8">
+              <TNRef RefId="3" />
+              <LST>
+                <S>Get-AzAutomanageBestPractice</S>
+                <S>Get-AzAutomanageConfigProfile</S>
+                <S>Get-AzAutomanageConfigProfileAssignment</S>
+                <S>Get-AzAutomanageConfigProfileHciAssignment</S>
+                <S>Get-AzAutomanageConfigProfileHcrpAssignment</S>
+                <S>Get-AzAutomanageHciReport</S>
+                <S>Get-AzAutomanageHcrpReport</S>
+                <S>Get-AzAutomanageReport</S>
+                <S>New-AzAutomanageConfigProfile</S>
+                <S>New-AzAutomanageConfigProfileAssignment</S>
+                <S>New-AzAutomanageConfigProfileHciAssignment</S>
+                <S>New-AzAutomanageConfigProfileHcrpAssignment</S>
+                <S>Remove-AzAutomanageConfigProfile</S>
+                <S>Remove-AzAutomanageConfigProfileAssignment</S>
+                <S>Remove-AzAutomanageConfigProfileHciAssignment</S>
+                <S>Remove-AzAutomanageConfigProfileHcrpAssignment</S>
+                <S>Update-AzAutomanageConfigProfile</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="7" />
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="9">
+              <TNRef RefId="3" />
+              <LST>
+                <S>Get-AzAutomanageBestPractice</S>
+                <S>Get-AzAutomanageConfigProfile</S>
+                <S>Get-AzAutomanageConfigProfileAssignment</S>
+                <S>Get-AzAutomanageConfigProfileHciAssignment</S>
+                <S>Get-AzAutomanageConfigProfileHcrpAssignment</S>
+                <S>Get-AzAutomanageHciReport</S>
+                <S>Get-AzAutomanageHcrpReport</S>
+                <S>Get-AzAutomanageReport</S>
+                <S>New-AzAutomanageConfigProfile</S>
+                <S>New-AzAutomanageConfigProfileAssignment</S>
+                <S>New-AzAutomanageConfigProfileHciAssignment</S>
+                <S>New-AzAutomanageConfigProfileHcrpAssignment</S>
+                <S>Remove-AzAutomanageConfigProfile</S>
+                <S>Remove-AzAutomanageConfigProfileAssignment</S>
+                <S>Remove-AzAutomanageConfigProfileHciAssignment</S>
+                <S>Remove-AzAutomanageConfigProfileHcrpAssignment</S>
+                <S>Update-AzAutomanageConfigProfile</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Ref N="Value" RefId="7" />
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="7" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <S N="ReleaseNotes">* Upgraded nuget package to signed package.</S>
+      <Obj N="Dependencies" RefId="10">
+        <TNRef RefId="3" />
+        <LST>
+          <Obj RefId="11">
+            <TN RefId="5">
+              <T>System.Collections.Specialized.OrderedDictionary</T>
+              <T>System.Object</T>
+            </TN>
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Az.Accounts</S>
+              </En>
+              <En>
+                <S N="Key">MinimumVersion</S>
+                <S N="Value">4.0.1</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Az.Accounts/4.0.1</S>
+              </En>
+            </DCT>
+          </Obj>
+        </LST>
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="12">
+        <TN RefId="6">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">Microsoft Corporation. All rights reserved.</S>
+          <S N="description">Microsoft Azure PowerShell: Automanage cmdlets</S>
+          <S N="requireLicenseAcceptance">True</S>
+          <S N="releaseNotes">* Upgraded nuget package to signed package.</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">9423333</S>
+          <S N="downloadCount">56960233</S>
+          <S N="packageSize">498600</S>
+          <S N="published">2025/01/14 03:11:25 +02:00</S>
+          <S N="created">2025/01/14 03:11:25 +02:00</S>
+          <S N="lastUpdated">2025/04/01 08:30:00 +02:00</S>
+          <S N="tags">Azure ResourceManager ARM PSModule Automanage PSEdition_Core PSEdition_Desktop PSFunction_Get-AzAutomanageBestPractice PSCommand_Get-AzAutomanageBestPractice PSFunction_Get-AzAutomanageConfigProfile PSCommand_Get-AzAutomanageConfigProfile PSFunction_Get-AzAutomanageConfigProfileAssignment PSCommand_Get-AzAutomanageConfigProfileAssignment PSFunction_Get-AzAutomanageConfigProfileHciAssignment PSCommand_Get-AzAutomanageConfigProfileHciAssignment PSFunction_Get-AzAutomanageConfigProfileHcrpAssignment PSCommand_Get-AzAutomanageConfigProfileHcrpAssignment PSFunction_Get-AzAutomanageHciReport PSCommand_Get-AzAutomanageHciReport PSFunction_Get-AzAutomanageHcrpReport PSCommand_Get-AzAutomanageHcrpReport PSFunction_Get-AzAutomanageReport PSCommand_Get-AzAutomanageReport PSFunction_New-AzAutomanageConfigProfile PSCommand_New-AzAutomanageConfigProfile PSFunction_New-AzAutomanageConfigProfileAssignment PSCommand_New-AzAutomanageConfigProfileAssignment PSFunction_New-AzAutomanageConfigProfileHciAssignment PSCommand_New-AzAutomanageConfigProfileHciAssignment PSFunction_New-AzAutomanageConfigProfileHcrpAssignment PSCommand_New-AzAutomanageConfigProfileHcrpAssignment PSFunction_Remove-AzAutomanageConfigProfile PSCommand_Remove-AzAutomanageConfigProfile PSFunction_Remove-AzAutomanageConfigProfileAssignment PSCommand_Remove-AzAutomanageConfigProfileAssignment PSFunction_Remove-AzAutomanageConfigProfileHciAssignment PSCommand_Remove-AzAutomanageConfigProfileHciAssignment PSFunction_Remove-AzAutomanageConfigProfileHcrpAssignment PSCommand_Remove-AzAutomanageConfigProfileHcrpAssignment PSFunction_Update-AzAutomanageConfigProfile PSCommand_Update-AzAutomanageConfigProfile PSIncludes_Function</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2025-04-01T08:30:00Z</S>
+          <S N="NormalizedVersion">1.1.0</S>
+          <S N="Authors">Microsoft Corporation</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">Az.Automanage.nuspec|Az.Automanage.psd1|Az.Automanage.psm1|Automanage.Autorest\Az.Automanage.format.ps1xml|Automanage.Autorest\Az.Automanage.psm1|Automanage.Autorest\bin\Az.Automanage.private.dll|Automanage.Autorest\custom\Az.Automanage.custom.psm1|Automanage.Autorest\exports\ProxyCmdletDefinitions.ps1|Automanage.Autorest\internal\Az.Automanage.internal.psm1|Automanage.Autorest\internal\ProxyCmdletDefinitions.ps1|Automanage.Autorest\utils\Get-SubscriptionIdTestSafe.ps1|Automanage.Autorest\utils\Unprotect-SecureString.ps1|.signature.p7s</S>
+          <S N="GUID">b573b797-567a-4f0d-8ba3-6a447bed6278</S>
+          <S N="PowerShellVersion">5.1</S>
+          <S N="DotNetFrameworkVersion">4.7.2</S>
+          <S N="CompanyName">Microsoft Corporation</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">C:\Users\irman\OneDrive\Documents\PowerShell\Modules\Az.Automanage\1.1.0</S>
+    </MS>
+  </Obj>
+</Objs>

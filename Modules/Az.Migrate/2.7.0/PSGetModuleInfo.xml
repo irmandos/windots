@@ -1,0 +1,256 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">Az.Migrate</S>
+      <Version N="Version">2.7.0</Version>
+      <S N="Type">Module</S>
+      <S N="Description">Microsoft Azure PowerShell: Migrate cmdlets</S>
+      <S N="Author">Microsoft Corporation</S>
+      <S N="CompanyName">azure-sdk</S>
+      <S N="Copyright">Microsoft Corporation. All rights reserved.</S>
+      <DT N="PublishedDate">2025-03-04T04:18:37+02:00</DT>
+      <Obj N="InstalledDate" RefId="1">
+        <DT>2024-07-22T15:49:28.1320694+02:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="2">
+            <TN RefId="1">
+              <T>Deserialized.Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>Deserialized.System.Enum</T>
+              <T>Deserialized.System.ValueType</T>
+              <T>Deserialized.System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <Obj N="UpdatedDate" RefId="3">
+        <DT>2025-04-01T10:42:43.0063417+02:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="4">
+            <TN RefId="2">
+              <T>Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>System.Enum</T>
+              <T>System.ValueType</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <URI N="LicenseUri">https://aka.ms/azps-license</URI>
+      <URI N="ProjectUri">https://github.com/Azure/azure-powershell</URI>
+      <Nil N="IconUri" />
+      <Obj N="Tags" RefId="5">
+        <TN RefId="3">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>Azure</S>
+          <S>ResourceManager</S>
+          <S>ARM</S>
+          <S>PSModule</S>
+          <S>Migrate</S>
+          <S>PSEdition_Core</S>
+          <S>PSEdition_Desktop</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="6">
+        <TN RefId="4">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Obj N="Value" RefId="7">
+              <TNRef RefId="3" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="8">
+              <TNRef RefId="3" />
+              <LST>
+                <S>Get-AzMigrateDiscoveredServer</S>
+                <S>Get-AzMigrateJob</S>
+                <S>Get-AzMigrateLocalJob</S>
+                <S>Get-AzMigrateLocalReplicationFabric</S>
+                <S>Get-AzMigrateLocalServerReplication</S>
+                <S>Get-AzMigrateProject</S>
+                <S>Get-AzMigrateReplicationFabric</S>
+                <S>Get-AzMigrateReplicationPolicy</S>
+                <S>Get-AzMigrateReplicationProtectionContainer</S>
+                <S>Get-AzMigrateReplicationProtectionContainerMapping</S>
+                <S>Get-AzMigrateReplicationRecoveryServicesProvider</S>
+                <S>Get-AzMigrateRunAsAccount</S>
+                <S>Get-AzMigrateServerReplication</S>
+                <S>Get-AzMigrateSite</S>
+                <S>Get-AzMigrateSolution</S>
+                <S>Initialize-AzMigrateLocalReplicationInfrastructure</S>
+                <S>Initialize-AzMigrateReplicationInfrastructure</S>
+                <S>New-AzMigrateDiskMapping</S>
+                <S>New-AzMigrateLocalDiskMappingObject</S>
+                <S>New-AzMigrateLocalNicMappingObject</S>
+                <S>New-AzMigrateLocalServerReplication</S>
+                <S>New-AzMigrateNicMapping</S>
+                <S>New-AzMigrateProject</S>
+                <S>New-AzMigrateReplicationPolicy</S>
+                <S>New-AzMigrateReplicationProtectionContainerMapping</S>
+                <S>New-AzMigrateServerReplication</S>
+                <S>New-AzMigrateTestNicMapping</S>
+                <S>Register-AzMigrateProjectTool</S>
+                <S>Remove-AzMigrateLocalServerReplication</S>
+                <S>Remove-AzMigrateProject</S>
+                <S>Remove-AzMigrateServerReplication</S>
+                <S>Restart-AzMigrateServerReplication</S>
+                <S>Resume-AzMigrateServerReplication</S>
+                <S>Set-AzMigrateDiskMapping</S>
+                <S>Set-AzMigrateLocalServerReplication</S>
+                <S>Set-AzMigrateServerReplication</S>
+                <S>Start-AzMigrateLocalServerMigration</S>
+                <S>Start-AzMigrateServerMigration</S>
+                <S>Start-AzMigrateTestMigration</S>
+                <S>Start-AzMigrateTestMigrationCleanup</S>
+                <S>Suspend-AzMigrateServerReplication</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="7" />
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="9">
+              <TNRef RefId="3" />
+              <LST>
+                <S>Get-AzMigrateDiscoveredServer</S>
+                <S>Get-AzMigrateJob</S>
+                <S>Get-AzMigrateLocalJob</S>
+                <S>Get-AzMigrateLocalReplicationFabric</S>
+                <S>Get-AzMigrateLocalServerReplication</S>
+                <S>Get-AzMigrateProject</S>
+                <S>Get-AzMigrateReplicationFabric</S>
+                <S>Get-AzMigrateReplicationPolicy</S>
+                <S>Get-AzMigrateReplicationProtectionContainer</S>
+                <S>Get-AzMigrateReplicationProtectionContainerMapping</S>
+                <S>Get-AzMigrateReplicationRecoveryServicesProvider</S>
+                <S>Get-AzMigrateRunAsAccount</S>
+                <S>Get-AzMigrateServerReplication</S>
+                <S>Get-AzMigrateSite</S>
+                <S>Get-AzMigrateSolution</S>
+                <S>Initialize-AzMigrateLocalReplicationInfrastructure</S>
+                <S>Initialize-AzMigrateReplicationInfrastructure</S>
+                <S>New-AzMigrateDiskMapping</S>
+                <S>New-AzMigrateLocalDiskMappingObject</S>
+                <S>New-AzMigrateLocalNicMappingObject</S>
+                <S>New-AzMigrateLocalServerReplication</S>
+                <S>New-AzMigrateNicMapping</S>
+                <S>New-AzMigrateProject</S>
+                <S>New-AzMigrateReplicationPolicy</S>
+                <S>New-AzMigrateReplicationProtectionContainerMapping</S>
+                <S>New-AzMigrateServerReplication</S>
+                <S>New-AzMigrateTestNicMapping</S>
+                <S>Register-AzMigrateProjectTool</S>
+                <S>Remove-AzMigrateLocalServerReplication</S>
+                <S>Remove-AzMigrateProject</S>
+                <S>Remove-AzMigrateServerReplication</S>
+                <S>Restart-AzMigrateServerReplication</S>
+                <S>Resume-AzMigrateServerReplication</S>
+                <S>Set-AzMigrateDiskMapping</S>
+                <S>Set-AzMigrateLocalServerReplication</S>
+                <S>Set-AzMigrateServerReplication</S>
+                <S>Start-AzMigrateLocalServerMigration</S>
+                <S>Start-AzMigrateServerMigration</S>
+                <S>Start-AzMigrateTestMigration</S>
+                <S>Start-AzMigrateTestMigrationCleanup</S>
+                <S>Suspend-AzMigrateServerReplication</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Ref N="Value" RefId="7" />
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="7" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <S N="ReleaseNotes">* Updated Data.Replication to newer API version_x000D__x000A_    - Updated Data.Replication to point to stable API version 2024-09-01_x000D__x000A_  * Rebranded Data.Replication cmdlets_x000D__x000A_    - Rebranded Data.Replication cmdlets from Azure Stack HCI to Azure Local</S>
+      <Obj N="Dependencies" RefId="10">
+        <TNRef RefId="3" />
+        <LST>
+          <Obj RefId="11">
+            <TN RefId="5">
+              <T>System.Collections.Specialized.OrderedDictionary</T>
+              <T>System.Object</T>
+            </TN>
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Az.Accounts</S>
+              </En>
+              <En>
+                <S N="Key">MinimumVersion</S>
+                <S N="Value">4.0.2</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Az.Accounts/4.0.2</S>
+              </En>
+            </DCT>
+          </Obj>
+        </LST>
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="12">
+        <TN RefId="6">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">Microsoft Corporation. All rights reserved.</S>
+          <S N="description">Microsoft Azure PowerShell: Migrate cmdlets</S>
+          <S N="requireLicenseAcceptance">True</S>
+          <S N="releaseNotes">* Updated Data.Replication to newer API version_x000D__x000A_    - Updated Data.Replication to point to stable API version 2024-09-01_x000D__x000A_  * Rebranded Data.Replication cmdlets_x000D__x000A_    - Rebranded Data.Replication cmdlets from Azure Stack HCI to Azure Local</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">3126933</S>
+          <S N="downloadCount">89044861</S>
+          <S N="packageSize">3012583</S>
+          <S N="published">2025/03/04 04:18:37 +02:00</S>
+          <S N="created">2025/03/04 04:18:37 +02:00</S>
+          <S N="lastUpdated">2025/04/01 08:30:00 +02:00</S>
+          <S N="tags">Azure ResourceManager ARM PSModule Migrate PSEdition_Core PSEdition_Desktop PSFunction_Get-AzMigrateDiscoveredServer PSCommand_Get-AzMigrateDiscoveredServer PSFunction_Get-AzMigrateJob PSCommand_Get-AzMigrateJob PSFunction_Get-AzMigrateLocalJob PSCommand_Get-AzMigrateLocalJob PSFunction_Get-AzMigrateLocalReplicationFabric PSCommand_Get-AzMigrateLocalReplicationFabric PSFunction_Get-AzMigrateLocalServerReplication PSCommand_Get-AzMigrateLocalServerReplication PSFunction_Get-AzMigrateProject PSCommand_Get-AzMigrateProject PSFunction_Get-AzMigrateReplicationFabric PSCommand_Get-AzMigrateReplicationFabric PSFunction_Get-AzMigrateReplicationPolicy PSCommand_Get-AzMigrateReplicationPolicy PSFunction_Get-AzMigrateReplicationProtectionContainer PSCommand_Get-AzMigrateReplicationProtectionContainer PSFunction_Get-AzMigrateReplicationProtectionContainerMapping PSCommand_Get-AzMigrateReplicationProtectionContainerMapping PSFunction_Get-AzMigrateReplicationRecoveryServicesProvider PSCommand_Get-AzMigrateReplicationRecoveryServicesProvider PSFunction_Get-AzMigrateRunAsAccount PSCommand_Get-AzMigrateRunAsAccount PSFunction_Get-AzMigrateServerReplication PSCommand_Get-AzMigrateServerReplication PSFunction_Get-AzMigrateSite PSCommand_Get-AzMigrateSite PSFunction_Get-AzMigrateSolution PSCommand_Get-AzMigrateSolution PSFunction_Initialize-AzMigrateLocalReplicationInfrastructure PSCommand_Initialize-AzMigrateLocalReplicationInfrastructure PSFunction_Initialize-AzMigrateReplicationInfrastructure PSCommand_Initialize-AzMigrateReplicationInfrastructure PSFunction_New-AzMigrateDiskMapping PSCommand_New-AzMigrateDiskMapping PSFunction_New-AzMigrateLocalDiskMappingObject PSCommand_New-AzMigrateLocalDiskMappingObject PSFunction_New-AzMigrateLocalNicMappingObject PSCommand_New-AzMigrateLocalNicMappingObject PSFunction_New-AzMigrateLocalServerReplication PSCommand_New-AzMigrateLocalServerReplication PSFunction_New-AzMigrateNicMapping PSCommand_New-AzMigrateNicMapping PSFunction_New-AzMigrateProject PSCommand_New-AzMigrateProject PSFunction_New-AzMigrateReplicationPolicy PSCommand_New-AzMigrateReplicationPolicy PSFunction_New-AzMigrateReplicationProtectionContainerMapping PSCommand_New-AzMigrateReplicationProtectionContainerMapping PSFunction_New-AzMigrateServerReplication PSCommand_New-AzMigrateServerReplication PSFunction_New-AzMigrateTestNicMapping PSCommand_New-AzMigrateTestNicMapping PSFunction_Register-AzMigrateProjectTool PSCommand_Register-AzMigrateProjectTool PSFunction_Remove-AzMigrateLocalServerReplication PSCommand_Remove-AzMigrateLocalServerReplication PSFunction_Remove-AzMigrateProject PSCommand_Remove-AzMigrateProject PSFunction_Remove-AzMigrateServerReplication PSCommand_Remove-AzMigrateServerReplication PSFunction_Restart-AzMigrateServerReplication PSCommand_Restart-AzMigrateServerReplication PSFunction_Resume-AzMigrateServerReplication PSCommand_Resume-AzMigrateServerReplication PSFunction_Set-AzMigrateDiskMapping PSCommand_Set-AzMigrateDiskMapping PSFunction_Set-AzMigrateLocalServerReplication PSCommand_Set-AzMigrateLocalServerReplication PSFunction_Set-AzMigrateServerReplication PSCommand_Set-AzMigrateServerReplication PSFunction_Start-AzMigrateLocalServerMigration PSCommand_Start-AzMigrateLocalServerMigration PSFunction_Start-AzMigrateServerMigration PSCommand_Start-AzMigrateServerMigration PSFunction_Start-AzMigrateTestMigration PSCommand_Start-AzMigrateTestMigration PSFunction_Start-AzMigrateTestMigrationCleanup PSCommand_Start-AzMigrateTestMigrationCleanup PSFunction_Suspend-AzMigrateServerReplication PSCommand_Suspend-AzMigrateServerReplication PSIncludes_Function</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2025-04-01T08:30:00Z</S>
+          <S N="NormalizedVersion">2.7.0</S>
+          <S N="Authors">Microsoft Corporation</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">Az.Migrate.nuspec|Migrate.Autorest\custom\Get-AzMigrateLocalServerReplication.ps1|Migrate.Autorest\custom\Initialize-AzMigrateReplicationInfrastructure.ps1|Migrate.Autorest\custom\New-AzMigrateLocalNicMappingObject.ps1|Migrate.Autorest\custom\New-AzMigrateProject.ps1|Migrate.Autorest\custom\Remove-AzMigrateLocalServerReplication.ps1|Migrate.Autorest\custom\Resume-AzMigrateServerReplication.ps1|Migrate.Autorest\custom\Set-AzMigrateServerReplication.ps1|Migrate.Autorest\custom\Start-AzMigrateTestMigration.ps1|Migrate.Autorest\custom\Suspend-AzMigrateServerReplication.ps1|Migrate.Autorest\custom\Helper\CommonHelper.ps1|Migrate.Autorest\internal\Az.Migrate.internal.psm1|Migrate.Autorest\utils\Get-SubscriptionIdTestSafe.ps1|Migrate.Autorest\Az.Migrate.format.ps1xml|Migrate.Autorest\custom\Az.Migrate.custom.psm1|Migrate.Autorest\custom\Get-AzMigrateDiscoveredServer.ps1|Migrate.Autorest\custom\Get-AzMigrateServerReplication.ps1|Migrate.Autorest\custom\New-AzMigrateDiskMapping.ps1|Migrate.Autorest\custom\New-AzMigrateLocalServerReplication.ps1|Migrate.Autorest\custom\New-AzMigrateServerReplication.ps1|Migrate.Autorest\custom\Remove-AzMigrateServerReplication.ps1|Migrate.Autorest\custom\Set-AzMigrateDiskMapping.ps1|Migrate.Autorest\custom\Start-AzMigrateLocalServerMigration.ps1|Migrate.Autorest\custom\Start-AzMigrateTestMigrationCleanup.ps1|Migrate.Autorest\custom\Helper\AzLocalCommonSettings.ps1|Migrate.Autorest\exports\ProxyCmdletDefinitions.ps1|Migrate.Autorest\internal\ProxyCmdletDefinitions.ps1|Migrate.Autorest\utils\Unprotect-SecureString.ps1|Az.Migrate.psd1|Migrate.Autorest\Az.Migrate.psm1|Migrate.Autorest\custom\AzLocalDiskInput.cs|Migrate.Autorest\custom\Get-AzMigrateJob.ps1|Migrate.Autorest\custom\Initialize-AzMigrateLocalReplicationInfrastructure.ps1|Migrate.Autorest\custom\New-AzMigrateLocalDiskMappingObject.ps1|Migrate.Autorest\custom\New-AzMigrateNicMapping.ps1|Migrate.Autorest\custom\New-AzMigrateTestNicMapping .ps1|Migrate.Autorest\custom\Restart-AzMigrateServerReplication.ps1|Migrate.Autorest\custom\Set-AzMigrateLocalServerReplication.ps1|Migrate.Autorest\custom\Start-AzMigrateServerMigration.ps1|Az.Migrate.psm1|Migrate.Autorest\bin\Az.Migrate.private.dll|Migrate.Autorest\custom\AzLocalNicInput.cs|Migrate.Autorest\custom\Get-AzMigrateLocalJob.ps1|.signature.p7s</S>
+          <S N="GUID">c638312b-9fd1-4611-a5cc-11a8caa5b698</S>
+          <S N="PowerShellVersion">5.1</S>
+          <S N="DotNetFrameworkVersion">4.7.2</S>
+          <S N="CompanyName">Microsoft Corporation</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">C:\Users\irman\OneDrive\Documents\PowerShell\Modules\Az.Migrate\2.7.0</S>
+    </MS>
+  </Obj>
+</Objs>

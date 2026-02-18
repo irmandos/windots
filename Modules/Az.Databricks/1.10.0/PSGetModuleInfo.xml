@@ -1,0 +1,202 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">Az.Databricks</S>
+      <Version N="Version">1.10.0</Version>
+      <S N="Type">Module</S>
+      <S N="Description">Microsoft Azure PowerShell: Databricks cmdlets</S>
+      <S N="Author">Microsoft Corporation</S>
+      <S N="CompanyName">azure-sdk</S>
+      <S N="Copyright">Microsoft Corporation. All rights reserved.</S>
+      <DT N="PublishedDate">2025-01-14T03:13:18+02:00</DT>
+      <Obj N="InstalledDate" RefId="1">
+        <DT>2024-07-22T15:48:43.7346208+02:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="2">
+            <TN RefId="1">
+              <T>Deserialized.Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>Deserialized.System.Enum</T>
+              <T>Deserialized.System.ValueType</T>
+              <T>Deserialized.System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <Obj N="UpdatedDate" RefId="3">
+        <DT>2025-09-03T11:19:19.8216951+02:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="4">
+            <TN RefId="2">
+              <T>Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>System.Enum</T>
+              <T>System.ValueType</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <URI N="LicenseUri">https://aka.ms/azps-license</URI>
+      <URI N="ProjectUri">https://github.com/Azure/azure-powershell</URI>
+      <Nil N="IconUri" />
+      <Obj N="Tags" RefId="5">
+        <TN RefId="3">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>Azure</S>
+          <S>ResourceManager</S>
+          <S>ARM</S>
+          <S>PSModule</S>
+          <S>Databricks</S>
+          <S>PSEdition_Core</S>
+          <S>PSEdition_Desktop</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="6">
+        <TN RefId="4">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="7">
+              <TNRef RefId="3" />
+              <LST>
+                <S>Get-AzDatabricksAccessConnector</S>
+                <S>Get-AzDatabricksOutboundNetworkDependenciesEndpoint</S>
+                <S>Get-AzDatabricksVNetPeering</S>
+                <S>Get-AzDatabricksWorkspace</S>
+                <S>New-AzDatabricksAccessConnector</S>
+                <S>New-AzDatabricksVNetPeering</S>
+                <S>New-AzDatabricksWorkspace</S>
+                <S>New-AzDatabricksWorkspaceProviderAuthorizationObject</S>
+                <S>Remove-AzDatabricksAccessConnector</S>
+                <S>Remove-AzDatabricksVNetPeering</S>
+                <S>Remove-AzDatabricksWorkspace</S>
+                <S>Update-AzDatabricksAccessConnector</S>
+                <S>Update-AzDatabricksVNetPeering</S>
+                <S>Update-AzDatabricksWorkspace</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Obj N="Value" RefId="8">
+              <TNRef RefId="3" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Ref N="Value" RefId="8" />
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="9">
+              <TNRef RefId="3" />
+              <LST>
+                <S>Get-AzDatabricksAccessConnector</S>
+                <S>Get-AzDatabricksOutboundNetworkDependenciesEndpoint</S>
+                <S>Get-AzDatabricksVNetPeering</S>
+                <S>Get-AzDatabricksWorkspace</S>
+                <S>New-AzDatabricksAccessConnector</S>
+                <S>New-AzDatabricksVNetPeering</S>
+                <S>New-AzDatabricksWorkspace</S>
+                <S>New-AzDatabricksWorkspaceProviderAuthorizationObject</S>
+                <S>Remove-AzDatabricksAccessConnector</S>
+                <S>Remove-AzDatabricksVNetPeering</S>
+                <S>Remove-AzDatabricksWorkspace</S>
+                <S>Update-AzDatabricksAccessConnector</S>
+                <S>Update-AzDatabricksVNetPeering</S>
+                <S>Update-AzDatabricksWorkspace</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Ref N="Value" RefId="8" />
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="8" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <S N="ReleaseNotes">* Upgraded nuget package to signed package._x000D__x000A_* Updated Az.Databricks to use more intuitive parameter names for the ESC feature.</S>
+      <Obj N="Dependencies" RefId="10">
+        <TNRef RefId="3" />
+        <LST>
+          <Obj RefId="11">
+            <TN RefId="5">
+              <T>System.Collections.Specialized.OrderedDictionary</T>
+              <T>System.Object</T>
+            </TN>
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Az.Accounts</S>
+              </En>
+              <En>
+                <S N="Key">MinimumVersion</S>
+                <S N="Value">4.0.1</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Az.Accounts/4.0.1</S>
+              </En>
+            </DCT>
+          </Obj>
+        </LST>
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="12">
+        <TN RefId="6">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">Microsoft Corporation. All rights reserved.</S>
+          <S N="description">Microsoft Azure PowerShell: Databricks cmdlets</S>
+          <S N="requireLicenseAcceptance">True</S>
+          <S N="releaseNotes">* Upgraded nuget package to signed package._x000D__x000A_* Updated Az.Databricks to use more intuitive parameter names for the ESC feature.</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">35751566</S>
+          <S N="downloadCount">135214306</S>
+          <S N="packageSize">624443</S>
+          <S N="published">2025/01/14 03:13:18 +02:00</S>
+          <S N="created">2025/01/14 03:13:18 +02:00</S>
+          <S N="lastUpdated">2025/09/03 09:10:04 +02:00</S>
+          <S N="tags">Azure ResourceManager ARM PSModule Databricks PSEdition_Core PSEdition_Desktop PSFunction_Get-AzDatabricksAccessConnector PSCommand_Get-AzDatabricksAccessConnector PSFunction_Get-AzDatabricksOutboundNetworkDependenciesEndpoint PSCommand_Get-AzDatabricksOutboundNetworkDependenciesEndpoint PSFunction_Get-AzDatabricksVNetPeering PSCommand_Get-AzDatabricksVNetPeering PSFunction_Get-AzDatabricksWorkspace PSCommand_Get-AzDatabricksWorkspace PSFunction_New-AzDatabricksAccessConnector PSCommand_New-AzDatabricksAccessConnector PSFunction_New-AzDatabricksVNetPeering PSCommand_New-AzDatabricksVNetPeering PSFunction_New-AzDatabricksWorkspace PSCommand_New-AzDatabricksWorkspace PSFunction_New-AzDatabricksWorkspaceProviderAuthorizationObject PSCommand_New-AzDatabricksWorkspaceProviderAuthorizationObject PSFunction_Remove-AzDatabricksAccessConnector PSCommand_Remove-AzDatabricksAccessConnector PSFunction_Remove-AzDatabricksVNetPeering PSCommand_Remove-AzDatabricksVNetPeering PSFunction_Remove-AzDatabricksWorkspace PSCommand_Remove-AzDatabricksWorkspace PSFunction_Update-AzDatabricksAccessConnector PSCommand_Update-AzDatabricksAccessConnector PSFunction_Update-AzDatabricksVNetPeering PSCommand_Update-AzDatabricksVNetPeering PSFunction_Update-AzDatabricksWorkspace PSCommand_Update-AzDatabricksWorkspace PSIncludes_Function</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2025-09-03T09:10:04Z</S>
+          <S N="NormalizedVersion">1.10.0</S>
+          <S N="Authors">Microsoft Corporation</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">Az.Databricks.nuspec|Databricks.Autorest\custom\New-AzDatabricksWorkspaceProviderAuthorizationObject.ps1|Databricks.Autorest\custom\Update-AzDatabricksVNetPeering.ps1|Databricks.Autorest\custom\Update-AzDatabricksWorkspace.ps1|Databricks.Autorest\exports\ProxyCmdletDefinitions.ps1|Databricks.Autorest\internal\Az.Databricks.internal.psm1|Databricks.Autorest\internal\ProxyCmdletDefinitions.ps1|Databricks.Autorest\utils\Get-SubscriptionIdTestSafe.ps1|Databricks.Autorest\utils\Unprotect-SecureString.ps1|Az.Databricks.psd1|Az.Databricks.psm1|Databricks.Autorest\Az.Databricks.format.ps1xml|Databricks.Autorest\Az.Databricks.psm1|Databricks.Autorest\bin\Az.Databricks.private.dll|Databricks.Autorest\custom\Az.Databricks.custom.psm1|Databricks.Autorest\custom\New-AzDatabricksWorkspace.ps1|.signature.p7s</S>
+          <S N="GUID">fd603f36-03d8-47f4-9f7c-c13a78761936</S>
+          <S N="PowerShellVersion">5.1</S>
+          <S N="DotNetFrameworkVersion">4.7.2</S>
+          <S N="CompanyName">Microsoft Corporation</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">C:\Users\irman\OneDrive\Documents\PowerShell\Modules\Az.Databricks\1.10.0</S>
+    </MS>
+  </Obj>
+</Objs>

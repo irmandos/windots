@@ -1,0 +1,248 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">Az.ApplicationInsights</S>
+      <Version N="Version">2.3.0</Version>
+      <S N="Type">Module</S>
+      <S N="Description">Microsoft Azure PowerShell: ApplicationInsights cmdlets</S>
+      <S N="Author">Microsoft Corporation</S>
+      <S N="CompanyName">azure-sdk</S>
+      <S N="Copyright">Microsoft Corporation. All rights reserved.</S>
+      <DT N="PublishedDate">2025-01-14T03:11:07+02:00</DT>
+      <Obj N="InstalledDate" RefId="1">
+        <DT>2024-07-22T15:48:26.3324584+02:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="2">
+            <TN RefId="1">
+              <T>Deserialized.Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>Deserialized.System.Enum</T>
+              <T>Deserialized.System.ValueType</T>
+              <T>Deserialized.System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <Obj N="UpdatedDate" RefId="3">
+        <DT>2025-04-01T10:40:06.5771874+02:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="4">
+            <TN RefId="2">
+              <T>Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>System.Enum</T>
+              <T>System.ValueType</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <URI N="LicenseUri">https://aka.ms/azps-license</URI>
+      <URI N="ProjectUri">https://github.com/Azure/azure-powershell</URI>
+      <Nil N="IconUri" />
+      <Obj N="Tags" RefId="5">
+        <TN RefId="3">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>Azure</S>
+          <S>ResourceManager</S>
+          <S>ARM</S>
+          <S>PSModule</S>
+          <S>ApplicationInsights</S>
+          <S>PSEdition_Core</S>
+          <S>PSEdition_Desktop</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="6">
+        <TN RefId="4">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Obj N="Value" RefId="7">
+              <TNRef RefId="3" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="8">
+              <TNRef RefId="3" />
+              <LST>
+                <S>Get-AzApplicationInsights</S>
+                <S>Get-AzApplicationInsightsApiKey</S>
+                <S>Get-AzApplicationInsightsContinuousExport</S>
+                <S>Get-AzApplicationInsightsLinkedStorageAccount</S>
+                <S>Get-AzApplicationInsightsMyWorkbook</S>
+                <S>Get-AzApplicationInsightsWebTest</S>
+                <S>Get-AzApplicationInsightsWorkbook</S>
+                <S>Get-AzApplicationInsightsWorkbookRevision</S>
+                <S>Get-AzApplicationInsightsWorkbookTemplate</S>
+                <S>New-AzApplicationInsights</S>
+                <S>New-AzApplicationInsightsApiKey</S>
+                <S>New-AzApplicationInsightsContinuousExport</S>
+                <S>New-AzApplicationInsightsLinkedStorageAccount</S>
+                <S>New-AzApplicationInsightsMyWorkbook</S>
+                <S>New-AzApplicationInsightsWebTest</S>
+                <S>New-AzApplicationInsightsWebTestGeolocationObject</S>
+                <S>New-AzApplicationInsightsWebTestHeaderFieldObject</S>
+                <S>New-AzApplicationInsightsWorkbook</S>
+                <S>New-AzApplicationInsightsWorkbookTemplate</S>
+                <S>New-AzApplicationInsightsWorkbookTemplateGalleryObject</S>
+                <S>Remove-AzApplicationInsights</S>
+                <S>Remove-AzApplicationInsightsApiKey</S>
+                <S>Remove-AzApplicationInsightsContinuousExport</S>
+                <S>Remove-AzApplicationInsightsLinkedStorageAccount</S>
+                <S>Remove-AzApplicationInsightsMyWorkbook</S>
+                <S>Remove-AzApplicationInsightsWebTest</S>
+                <S>Remove-AzApplicationInsightsWorkbook</S>
+                <S>Remove-AzApplicationInsightsWorkbookTemplate</S>
+                <S>Set-AzApplicationInsightsContinuousExport</S>
+                <S>Set-AzApplicationInsightsDailyCap</S>
+                <S>Set-AzApplicationInsightsPricingPlan</S>
+                <S>Update-AzApplicationInsights</S>
+                <S>Update-AzApplicationInsightsLinkedStorageAccount</S>
+                <S>Update-AzApplicationInsightsMyWorkbook</S>
+                <S>Update-AzApplicationInsightsWebTestTag</S>
+                <S>Update-AzApplicationInsightsWorkbook</S>
+                <S>Update-AzApplicationInsightsWorkbookTemplate</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="7" />
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="9">
+              <TNRef RefId="3" />
+              <LST>
+                <S>Get-AzApplicationInsights</S>
+                <S>Get-AzApplicationInsightsApiKey</S>
+                <S>Get-AzApplicationInsightsContinuousExport</S>
+                <S>Get-AzApplicationInsightsLinkedStorageAccount</S>
+                <S>Get-AzApplicationInsightsMyWorkbook</S>
+                <S>Get-AzApplicationInsightsWebTest</S>
+                <S>Get-AzApplicationInsightsWorkbook</S>
+                <S>Get-AzApplicationInsightsWorkbookRevision</S>
+                <S>Get-AzApplicationInsightsWorkbookTemplate</S>
+                <S>New-AzApplicationInsights</S>
+                <S>New-AzApplicationInsightsApiKey</S>
+                <S>New-AzApplicationInsightsContinuousExport</S>
+                <S>New-AzApplicationInsightsLinkedStorageAccount</S>
+                <S>New-AzApplicationInsightsMyWorkbook</S>
+                <S>New-AzApplicationInsightsWebTest</S>
+                <S>New-AzApplicationInsightsWebTestGeolocationObject</S>
+                <S>New-AzApplicationInsightsWebTestHeaderFieldObject</S>
+                <S>New-AzApplicationInsightsWorkbook</S>
+                <S>New-AzApplicationInsightsWorkbookTemplate</S>
+                <S>New-AzApplicationInsightsWorkbookTemplateGalleryObject</S>
+                <S>Remove-AzApplicationInsights</S>
+                <S>Remove-AzApplicationInsightsApiKey</S>
+                <S>Remove-AzApplicationInsightsContinuousExport</S>
+                <S>Remove-AzApplicationInsightsLinkedStorageAccount</S>
+                <S>Remove-AzApplicationInsightsMyWorkbook</S>
+                <S>Remove-AzApplicationInsightsWebTest</S>
+                <S>Remove-AzApplicationInsightsWorkbook</S>
+                <S>Remove-AzApplicationInsightsWorkbookTemplate</S>
+                <S>Set-AzApplicationInsightsContinuousExport</S>
+                <S>Set-AzApplicationInsightsDailyCap</S>
+                <S>Set-AzApplicationInsightsPricingPlan</S>
+                <S>Update-AzApplicationInsights</S>
+                <S>Update-AzApplicationInsightsLinkedStorageAccount</S>
+                <S>Update-AzApplicationInsightsMyWorkbook</S>
+                <S>Update-AzApplicationInsightsWebTestTag</S>
+                <S>Update-AzApplicationInsightsWorkbook</S>
+                <S>Update-AzApplicationInsightsWorkbookTemplate</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Ref N="Value" RefId="7" />
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="7" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <S N="ReleaseNotes">* Upgraded nuget package to signed package.</S>
+      <Obj N="Dependencies" RefId="10">
+        <TNRef RefId="3" />
+        <LST>
+          <Obj RefId="11">
+            <TN RefId="5">
+              <T>System.Collections.Specialized.OrderedDictionary</T>
+              <T>System.Object</T>
+            </TN>
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Az.Accounts</S>
+              </En>
+              <En>
+                <S N="Key">MinimumVersion</S>
+                <S N="Value">4.0.1</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Az.Accounts/4.0.1</S>
+              </En>
+            </DCT>
+          </Obj>
+        </LST>
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="12">
+        <TN RefId="6">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">Microsoft Corporation. All rights reserved.</S>
+          <S N="description">Microsoft Azure PowerShell: ApplicationInsights cmdlets</S>
+          <S N="requireLicenseAcceptance">True</S>
+          <S N="releaseNotes">* Upgraded nuget package to signed package.</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">9747815</S>
+          <S N="downloadCount">118962356</S>
+          <S N="packageSize">948686</S>
+          <S N="published">2025/01/14 03:11:07 +02:00</S>
+          <S N="created">2025/01/14 03:11:07 +02:00</S>
+          <S N="lastUpdated">2025/04/01 08:30:00 +02:00</S>
+          <S N="tags">Azure ResourceManager ARM PSModule ApplicationInsights PSEdition_Core PSEdition_Desktop PSFunction_Get-AzApplicationInsights PSCommand_Get-AzApplicationInsights PSFunction_Get-AzApplicationInsightsApiKey PSCommand_Get-AzApplicationInsightsApiKey PSFunction_Get-AzApplicationInsightsContinuousExport PSCommand_Get-AzApplicationInsightsContinuousExport PSFunction_Get-AzApplicationInsightsLinkedStorageAccount PSCommand_Get-AzApplicationInsightsLinkedStorageAccount PSFunction_Get-AzApplicationInsightsMyWorkbook PSCommand_Get-AzApplicationInsightsMyWorkbook PSFunction_Get-AzApplicationInsightsWebTest PSCommand_Get-AzApplicationInsightsWebTest PSFunction_Get-AzApplicationInsightsWorkbook PSCommand_Get-AzApplicationInsightsWorkbook PSFunction_Get-AzApplicationInsightsWorkbookRevision PSCommand_Get-AzApplicationInsightsWorkbookRevision PSFunction_Get-AzApplicationInsightsWorkbookTemplate PSCommand_Get-AzApplicationInsightsWorkbookTemplate PSFunction_New-AzApplicationInsights PSCommand_New-AzApplicationInsights PSFunction_New-AzApplicationInsightsApiKey PSCommand_New-AzApplicationInsightsApiKey PSFunction_New-AzApplicationInsightsContinuousExport PSCommand_New-AzApplicationInsightsContinuousExport PSFunction_New-AzApplicationInsightsLinkedStorageAccount PSCommand_New-AzApplicationInsightsLinkedStorageAccount PSFunction_New-AzApplicationInsightsMyWorkbook PSCommand_New-AzApplicationInsightsMyWorkbook PSFunction_New-AzApplicationInsightsWebTest PSCommand_New-AzApplicationInsightsWebTest PSFunction_New-AzApplicationInsightsWebTestGeolocationObject PSCommand_New-AzApplicationInsightsWebTestGeolocationObject PSFunction_New-AzApplicationInsightsWebTestHeaderFieldObject PSCommand_New-AzApplicationInsightsWebTestHeaderFieldObject PSFunction_New-AzApplicationInsightsWorkbook PSCommand_New-AzApplicationInsightsWorkbook PSFunction_New-AzApplicationInsightsWorkbookTemplate PSCommand_New-AzApplicationInsightsWorkbookTemplate PSFunction_New-AzApplicationInsightsWorkbookTemplateGalleryObject PSCommand_New-AzApplicationInsightsWorkbookTemplateGalleryObject PSFunction_Remove-AzApplicationInsights PSCommand_Remove-AzApplicationInsights PSFunction_Remove-AzApplicationInsightsApiKey PSCommand_Remove-AzApplicationInsightsApiKey PSFunction_Remove-AzApplicationInsightsContinuousExport PSCommand_Remove-AzApplicationInsightsContinuousExport PSFunction_Remove-AzApplicationInsightsLinkedStorageAccount PSCommand_Remove-AzApplicationInsightsLinkedStorageAccount PSFunction_Remove-AzApplicationInsightsMyWorkbook PSCommand_Remove-AzApplicationInsightsMyWorkbook PSFunction_Remove-AzApplicationInsightsWebTest PSCommand_Remove-AzApplicationInsightsWebTest PSFunction_Remove-AzApplicationInsightsWorkbook PSCommand_Remove-AzApplicationInsightsWorkbook PSFunction_Remove-AzApplicationInsightsWorkbookTemplate PSCommand_Remove-AzApplicationInsightsWorkbookTemplate PSFunction_Set-AzApplicationInsightsContinuousExport PSCommand_Set-AzApplicationInsightsContinuousExport PSFunction_Set-AzApplicationInsightsDailyCap PSCommand_Set-AzApplicationInsightsDailyCap PSFunction_Set-AzApplicationInsightsPricingPlan PSCommand_Set-AzApplicationInsightsPricingPlan PSFunction_Update-AzApplicationInsights PSCommand_Update-AzApplicationInsights PSFunction_Update-AzApplicationInsightsLinkedStorageAccount PSCommand_Update-AzApplicationInsightsLinkedStorageAccount PSFunction_Update-AzApplicationInsightsMyWorkbook PSCommand_Update-AzApplicationInsightsMyWorkbook PSFunction_Update-AzApplicationInsightsWebTestTag PSCommand_Update-AzApplicationInsightsWebTestTag PSFunction_Update-AzApplicationInsightsWorkbook PSCommand_Update-AzApplicationInsightsWorkbook PSFunction_Update-AzApplicationInsightsWorkbookTemplate PSCommand_Update-AzApplicationInsightsWorkbookTemplate PSIncludes_Function</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2025-04-01T08:30:00Z</S>
+          <S N="NormalizedVersion">2.3.0</S>
+          <S N="Authors">Microsoft Corporation</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">Az.ApplicationInsights.nuspec|ApplicationInsights.Autorest\utils\Get-SubscriptionIdTestSafe.ps1|Az.ApplicationInsights.psm1|ApplicationInsights.Autorest\Az.ApplicationInsights.psm1|ApplicationInsights.Autorest\custom\Az.ApplicationInsights.custom.psm1|ApplicationInsights.Autorest\custom\New-AzApplicationInsights.ps1|ApplicationInsights.Autorest\custom\New-AzApplicationInsightsContinuousExport.ps1|ApplicationInsights.Autorest\custom\New-AzApplicationInsightsWebTestHeaderFieldObject.ps1|ApplicationInsights.Autorest\custom\Set-AzApplicationInsightsDailyCap.ps1|ApplicationInsights.Autorest\custom\Update-AzApplicationInsights.ps1|ApplicationInsights.Autorest\custom\autogen-model-cmdlets\New-AzApplicationInsightsWorkbookTemplateGalleryObject.ps1|ApplicationInsights.Autorest\custom\Models\PSApplicationInsightsComponent.cs|ApplicationInsights.Autorest\custom\Models\PSDailyCap.cs|ApplicationInsights.Autorest\custom\Models\PSExportConfiguration.cs|ApplicationInsights.Autorest\custom\Models\Utilities.cs|ApplicationInsights.Autorest\internal\Az.ApplicationInsights.internal.psm1|ApplicationInsights.Autorest\utils\Unprotect-SecureString.ps1|Az.ApplicationInsights.psd1|ApplicationInsights.Autorest\Az.ApplicationInsights.format.ps1xml|ApplicationInsights.Autorest\bin\Az.ApplicationInsights.private.dll|ApplicationInsights.Autorest\custom\Get-AzApplicationInsights.ps1|ApplicationInsights.Autorest\custom\New-AzApplicationInsightsApiKey.ps1|ApplicationInsights.Autorest\custom\New-AzApplicationInsightsWebTest.ps1|ApplicationInsights.Autorest\custom\Set-AzApplicationInsightsContinuousExport.ps1|ApplicationInsights.Autorest\custom\Set-AzApplicationInsightsPricingPlan.ps1|ApplicationInsights.Autorest\custom\autogen-model-cmdlets\New-AzApplicationInsightsWebTestGeolocationObject.ps1|ApplicationInsights.Autorest\custom\Models\PSApiKey.cs|ApplicationInsights.Autorest\custom\Models\PSComponentLinkedStorageAccounts.cs|ApplicationInsights.Autorest\custom\Models\PSDailyCapStatus.cs|ApplicationInsights.Autorest\custom\Models\PSPrcingPlan.cs|ApplicationInsights.Autorest\exports\ProxyCmdletDefinitions.ps1|ApplicationInsights.Autorest\internal\ProxyCmdletDefinitions.ps1|.signature.p7s</S>
+          <S N="GUID">031a685e-5904-433f-b2f8-4fcef3cd15d8</S>
+          <S N="PowerShellVersion">5.1</S>
+          <S N="DotNetFrameworkVersion">4.7.2</S>
+          <S N="CompanyName">Microsoft Corporation</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">C:\Users\irman\OneDrive\Documents\PowerShell\Modules\Az.ApplicationInsights\2.3.0</S>
+    </MS>
+  </Obj>
+</Objs>
