@@ -20,6 +20,7 @@ Modules/
 Help/
 Backgrounds/
 Icons/
+fonts/
 
 # Sensitive Data
 Microsoft.PowerShell_secrets.ps1
