@@ -14,6 +14,10 @@ Backgrounds/
 # Scripts with hardcoded secrets (Plex Token, etc.)
 z.CustomScripts/
 
+# Generated Directories (Managed by scripts)
+Modules/
+Help/
+
 # Sensitive Data
 Microsoft.PowerShell_secrets.ps1
 *_secret.ps1
