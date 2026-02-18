@@ -13,10 +13,13 @@ Backgrounds/
 
 # Scripts with hardcoded secrets (Plex Token, etc.)
 z.CustomScripts/
+Scripts/
 
-# Generated Directories (Managed by scripts)
+# Generated Directories and Media (Not required for sync)
 Modules/
 Help/
+Backgrounds/
+Icons/
 
 # Sensitive Data
 Microsoft.PowerShell_secrets.ps1
