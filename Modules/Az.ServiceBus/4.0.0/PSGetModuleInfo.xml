@@ -1,0 +1,264 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">Az.ServiceBus</S>
+      <Version N="Version">4.0.0</Version>
+      <S N="Type">Module</S>
+      <S N="Description">Microsoft Azure PowerShell - Service Bus service cmdlets for Azure Resource Manager in Windows PowerShell and PowerShell Core._x000D__x000A__x000D__x000A_For more information on Service Bus, please visit the following: https://learn.microsoft.com/azure/service-bus/</S>
+      <S N="Author">Microsoft Corporation</S>
+      <S N="CompanyName">azure-sdk</S>
+      <S N="Copyright">Microsoft Corporation. All rights reserved.</S>
+      <DT N="PublishedDate">2024-05-21T02:22:32+02:00</DT>
+      <Obj N="InstalledDate" RefId="1">
+        <DT>2024-07-22T15:50:00.9472013+02:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="2">
+            <TN RefId="1">
+              <T>Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>System.Enum</T>
+              <T>System.ValueType</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <Nil N="UpdatedDate" />
+      <URI N="LicenseUri">https://aka.ms/azps-license</URI>
+      <URI N="ProjectUri">https://github.com/Azure/azure-powershell</URI>
+      <Nil N="IconUri" />
+      <Obj N="Tags" RefId="3">
+        <TN RefId="2">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>Azure</S>
+          <S>ResourceManager</S>
+          <S>ARM</S>
+          <S>ServiceBus</S>
+          <S>PSModule</S>
+          <S>PSEdition_Core</S>
+          <S>PSEdition_Desktop</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="4">
+        <TN RefId="3">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="2" />
+              <LST>
+                <S>New-AzServiceBusAuthorizationRuleSASToken</S>
+                <S>Test-AzServiceBusNameAvailability</S>
+                <S>Approve-AzServiceBusPrivateEndpointConnection</S>
+                <S>Complete-AzServiceBusMigration</S>
+                <S>Deny-AzServiceBusPrivateEndpointConnection</S>
+                <S>Get-AzServiceBusAuthorizationRule</S>
+                <S>Get-AzServiceBusGeoDRConfiguration</S>
+                <S>Get-AzServiceBusKey</S>
+                <S>Get-AzServiceBusMigration</S>
+                <S>Get-AzServiceBusNamespace</S>
+                <S>Get-AzServiceBusNetworkRuleSet</S>
+                <S>Get-AzServiceBusPrivateEndpointConnection</S>
+                <S>Get-AzServiceBusPrivateLink</S>
+                <S>Get-AzServiceBusQueue</S>
+                <S>Get-AzServiceBusRule</S>
+                <S>Get-AzServiceBusSubscription</S>
+                <S>Get-AzServiceBusTopic</S>
+                <S>New-AzServiceBusAuthorizationRule</S>
+                <S>New-AzServiceBusGeoDRConfiguration</S>
+                <S>New-AzServiceBusIPRuleConfig</S>
+                <S>New-AzServiceBusKey</S>
+                <S>New-AzServiceBusKeyVaultPropertiesObject</S>
+                <S>New-AzServiceBusNamespace</S>
+                <S>New-AzServiceBusQueue</S>
+                <S>New-AzServiceBusRule</S>
+                <S>New-AzServiceBusSubscription</S>
+                <S>New-AzServiceBusTopic</S>
+                <S>New-AzServiceBusVirtualNetworkRuleConfig</S>
+                <S>Remove-AzServiceBusAuthorizationRule</S>
+                <S>Remove-AzServiceBusGeoDRConfiguration</S>
+                <S>Remove-AzServiceBusMigration</S>
+                <S>Remove-AzServiceBusNamespace</S>
+                <S>Remove-AzServiceBusPrivateEndpointConnection</S>
+                <S>Remove-AzServiceBusQueue</S>
+                <S>Remove-AzServiceBusRule</S>
+                <S>Remove-AzServiceBusSubscription</S>
+                <S>Remove-AzServiceBusTopic</S>
+                <S>Set-AzServiceBusAuthorizationRule</S>
+                <S>Set-AzServiceBusGeoDRConfigurationBreakPair</S>
+                <S>Set-AzServiceBusGeoDRConfigurationFailOver</S>
+                <S>Set-AzServiceBusNamespace</S>
+                <S>Set-AzServiceBusNetworkRuleSet</S>
+                <S>Set-AzServiceBusQueue</S>
+                <S>Set-AzServiceBusRule</S>
+                <S>Set-AzServiceBusSubscription</S>
+                <S>Set-AzServiceBusTopic</S>
+                <S>Start-AzServiceBusMigration</S>
+                <S>Stop-AzServiceBusMigration</S>
+                <S>Test-AzServiceBusName</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="6">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Approve-AzServiceBusPrivateEndpointConnection</S>
+                <S>Complete-AzServiceBusMigration</S>
+                <S>Deny-AzServiceBusPrivateEndpointConnection</S>
+                <S>Get-AzServiceBusAuthorizationRule</S>
+                <S>Get-AzServiceBusGeoDRConfiguration</S>
+                <S>Get-AzServiceBusKey</S>
+                <S>Get-AzServiceBusMigration</S>
+                <S>Get-AzServiceBusNamespace</S>
+                <S>Get-AzServiceBusNetworkRuleSet</S>
+                <S>Get-AzServiceBusPrivateEndpointConnection</S>
+                <S>Get-AzServiceBusPrivateLink</S>
+                <S>Get-AzServiceBusQueue</S>
+                <S>Get-AzServiceBusRule</S>
+                <S>Get-AzServiceBusSubscription</S>
+                <S>Get-AzServiceBusTopic</S>
+                <S>New-AzServiceBusAuthorizationRule</S>
+                <S>New-AzServiceBusGeoDRConfiguration</S>
+                <S>New-AzServiceBusIPRuleConfig</S>
+                <S>New-AzServiceBusKey</S>
+                <S>New-AzServiceBusKeyVaultPropertiesObject</S>
+                <S>New-AzServiceBusNamespace</S>
+                <S>New-AzServiceBusQueue</S>
+                <S>New-AzServiceBusRule</S>
+                <S>New-AzServiceBusSubscription</S>
+                <S>New-AzServiceBusTopic</S>
+                <S>New-AzServiceBusVirtualNetworkRuleConfig</S>
+                <S>Remove-AzServiceBusAuthorizationRule</S>
+                <S>Remove-AzServiceBusGeoDRConfiguration</S>
+                <S>Remove-AzServiceBusMigration</S>
+                <S>Remove-AzServiceBusNamespace</S>
+                <S>Remove-AzServiceBusPrivateEndpointConnection</S>
+                <S>Remove-AzServiceBusQueue</S>
+                <S>Remove-AzServiceBusRule</S>
+                <S>Remove-AzServiceBusSubscription</S>
+                <S>Remove-AzServiceBusTopic</S>
+                <S>Set-AzServiceBusAuthorizationRule</S>
+                <S>Set-AzServiceBusGeoDRConfigurationBreakPair</S>
+                <S>Set-AzServiceBusGeoDRConfigurationFailOver</S>
+                <S>Set-AzServiceBusNamespace</S>
+                <S>Set-AzServiceBusNetworkRuleSet</S>
+                <S>Set-AzServiceBusQueue</S>
+                <S>Set-AzServiceBusRule</S>
+                <S>Set-AzServiceBusSubscription</S>
+                <S>Set-AzServiceBusTopic</S>
+                <S>Start-AzServiceBusMigration</S>
+                <S>Stop-AzServiceBusMigration</S>
+                <S>Test-AzServiceBusName</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Obj N="Value" RefId="7">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Ref N="Value" RefId="7" />
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Obj N="Value" RefId="8">
+              <TNRef RefId="2" />
+              <LST>
+                <S>New-AzServiceBusAuthorizationRuleSASToken</S>
+                <S>Test-AzServiceBusNameAvailability</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="7" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <S N="ReleaseNotes">* Moved cmdlets to V4.</S>
+      <Obj N="Dependencies" RefId="9">
+        <TNRef RefId="2" />
+        <LST>
+          <Obj RefId="10">
+            <TN RefId="4">
+              <T>System.Collections.Specialized.OrderedDictionary</T>
+              <T>System.Object</T>
+            </TN>
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Az.Accounts</S>
+              </En>
+              <En>
+                <S N="Key">MinimumVersion</S>
+                <S N="Value">3.0.0</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Az.Accounts/3.0.0</S>
+              </En>
+            </DCT>
+          </Obj>
+        </LST>
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="11">
+        <TN RefId="5">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">Microsoft Corporation. All rights reserved.</S>
+          <S N="description">Microsoft Azure PowerShell - Service Bus service cmdlets for Azure Resource Manager in Windows PowerShell and PowerShell Core._x000D__x000A__x000D__x000A_For more information on Service Bus, please visit the following: https://learn.microsoft.com/azure/service-bus/</S>
+          <S N="requireLicenseAcceptance">True</S>
+          <S N="releaseNotes">* Moved cmdlets to V4.</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">4647398</S>
+          <S N="downloadCount">81223185</S>
+          <S N="packageSize">1473237</S>
+          <S N="published">2024/05/21 02:22:32 +02:00</S>
+          <S N="created">2024/05/21 02:22:32 +02:00</S>
+          <S N="lastUpdated">2024/07/11 19:05:03 +02:00</S>
+          <S N="tags">Azure ResourceManager ARM ServiceBus PSModule PSEdition_Core PSEdition_Desktop</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2024-07-11T19:05:03Z</S>
+          <S N="NormalizedVersion">4.0.0</S>
+          <S N="Authors">Microsoft Corporation</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">Az.ServiceBus.nuspec|ServiceBus.Autorest\custom\New-AzServiceBusVirtualNetworkRuleConfig.ps1|Az.ServiceBus.psd1|ServiceBus.Autorest\custom\Remove-AzServiceBusAuthorizationRule.ps1|Az.ServiceBus.psm1|ServiceBus.Autorest\custom\Set-AzServiceBusAuthorizationRule.ps1|Microsoft.Azure.Management.ServiceBus.dll|ServiceBus.Autorest\custom\Set-AzServiceBusGeoDRConfigurationBreakPair.ps1|Microsoft.Azure.PowerShell.Cmdlets.ServiceBus.dll|ServiceBus.Autorest\custom\Set-AzServiceBusGeoDRConfigurationFailOver.ps1|Microsoft.Azure.PowerShell.Cmdlets.ServiceBus.dll-Help.xml|ServiceBus.Autorest\custom\Set-AzServiceBusNamespace.ps1|ServiceBus.format.ps1xml|ServiceBus.Autorest\custom\Set-AzServiceBusNetworkRuleSet.ps1|ServiceBus.Autorest\Az.ServiceBus.format.ps1xml|ServiceBus.Autorest\custom\Set-AzServiceBusQueue.ps1|ServiceBus.Autorest\Az.ServiceBus.psm1|ServiceBus.Autorest\custom\Set-AzServiceBusRule.ps1|ServiceBus.Autorest\bin\Az.ServiceBus.private.dll|ServiceBus.Autorest\custom\Set-AzServiceBusSubscription.ps1|ServiceBus.Autorest\custom\Approve-AzServiceBusPrivateEndpointConnection.ps1|ServiceBus.Autorest\custom\Set-AzServiceBusTopic.ps1|ServiceBus.Autorest\custom\Az.ServiceBus.custom.psm1|ServiceBus.Autorest\custom\Test-AzServiceBusName.ps1|ServiceBus.Autorest\custom\Deny-AzServiceBusPrivateEndpointConnection.ps1|ServiceBus.Autorest\custom\autogen-model-cmdlets\New-AzServiceBusKeyVaultPropertiesObject.ps1|ServiceBus.Autorest\custom\Get-AzServiceBusAuthorizationRule.ps1|ServiceBus.Autorest\exports\ProxyCmdletDefinitions.ps1|ServiceBus.Autorest\custom\Get-AzServiceBusKey.ps1|ServiceBus.Autorest\internal\Az.ServiceBus.internal.psm1|ServiceBus.Autorest\custom\New-AzServiceBusAuthorizationRule.ps1|ServiceBus.Autorest\internal\ProxyCmdletDefinitions.ps1|ServiceBus.Autorest\custom\New-AzServiceBusIPRuleConfig.ps1|ServiceBus.Autorest\utils\Get-SubscriptionIdTestSafe.ps1|ServiceBus.Autorest\custom\New-AzServiceBusKey.ps1|ServiceBus.Autorest\utils\Unprotect-SecureString.ps1|ServiceBus.Autorest\custom\New-AzServiceBusNamespace.ps1</S>
+          <S N="Cmdlets">New-AzServiceBusAuthorizationRuleSASToken Test-AzServiceBusNameAvailability</S>
+          <S N="Functions">Approve-AzServiceBusPrivateEndpointConnection Complete-AzServiceBusMigration Deny-AzServiceBusPrivateEndpointConnection Get-AzServiceBusAuthorizationRule Get-AzServiceBusGeoDRConfiguration Get-AzServiceBusKey Get-AzServiceBusMigration Get-AzServiceBusNamespace Get-AzServiceBusNetworkRuleSet Get-AzServiceBusPrivateEndpointConnection Get-AzServiceBusPrivateLink Get-AzServiceBusQueue Get-AzServiceBusRule Get-AzServiceBusSubscription Get-AzServiceBusTopic New-AzServiceBusAuthorizationRule New-AzServiceBusGeoDRConfiguration New-AzServiceBusIPRuleConfig New-AzServiceBusKey New-AzServiceBusKeyVaultPropertiesObject New-AzServiceBusNamespace New-AzServiceBusQueue New-AzServiceBusRule New-AzServiceBusSubscription New-AzServiceBusTopic New-AzServiceBusVirtualNetworkRuleConfig Remove-AzServiceBusAuthorizationRule Remove-AzServiceBusGeoDRConfiguration Remove-AzServiceBusMigration Remove-AzServiceBusNamespace Remove-AzServiceBusPrivateEndpointConnection Remove-AzServiceBusQueue Remove-AzServiceBusRule Remove-AzServiceBusSubscription Remove-AzServiceBusTopic Set-AzServiceBusAuthorizationRule Set-AzServiceBusGeoDRConfigurationBreakPair Set-AzServiceBusGeoDRConfigurationFailOver Set-AzServiceBusNamespace Set-AzServiceBusNetworkRuleSet Set-AzServiceBusQueue Set-AzServiceBusRule Set-AzServiceBusSubscription Set-AzServiceBusTopic Start-AzServiceBusMigration Stop-AzServiceBusMigration Test-AzServiceBusName</S>
+          <S N="GUID">ced192ca-b6cd-4848-90dc-b83a5970befc</S>
+          <S N="PowerShellVersion">5.1</S>
+          <S N="DotNetFrameworkVersion">4.7.2</S>
+          <S N="CompanyName">Microsoft Corporation</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">C:\Users\irman\OneDrive\Documents\PowerShell\Modules\Az.ServiceBus\4.0.0</S>
+    </MS>
+  </Obj>
+</Objs>

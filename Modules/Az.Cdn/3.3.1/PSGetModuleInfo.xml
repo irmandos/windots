@@ -1,0 +1,488 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">Az.Cdn</S>
+      <Version N="Version">3.3.1</Version>
+      <S N="Type">Module</S>
+      <S N="Description">Microsoft Azure PowerShell: Cdn cmdlets</S>
+      <S N="Author">Microsoft Corporation</S>
+      <S N="CompanyName">azure-sdk</S>
+      <S N="Copyright">Microsoft Corporation. All rights reserved.</S>
+      <DT N="PublishedDate">2025-04-01T06:22:56+02:00</DT>
+      <Obj N="InstalledDate" RefId="1">
+        <DT>2024-07-22T15:48:33.0859915+02:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="2">
+            <TN RefId="1">
+              <T>Deserialized.Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>Deserialized.System.Enum</T>
+              <T>Deserialized.System.ValueType</T>
+              <T>Deserialized.System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <Obj N="UpdatedDate" RefId="3">
+        <DT>2025-04-01T10:40:27.2056915+02:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="4">
+            <TN RefId="2">
+              <T>Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>System.Enum</T>
+              <T>System.ValueType</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <URI N="LicenseUri">https://aka.ms/azps-license</URI>
+      <URI N="ProjectUri">https://github.com/Azure/azure-powershell</URI>
+      <Nil N="IconUri" />
+      <Obj N="Tags" RefId="5">
+        <TN RefId="3">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>Azure</S>
+          <S>ResourceManager</S>
+          <S>ARM</S>
+          <S>PSModule</S>
+          <S>Cdn</S>
+          <S>PSEdition_Core</S>
+          <S>PSEdition_Desktop</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="6">
+        <TN RefId="4">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Obj N="Value" RefId="7">
+              <TNRef RefId="3" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="8">
+              <TNRef RefId="3" />
+              <LST>
+                <S>Clear-AzCdnEndpointContent</S>
+                <S>Clear-AzFrontDoorCdnEndpointContent</S>
+                <S>Disable-AzCdnCustomDomainCustomHttps</S>
+                <S>Enable-AzCdnCustomDomainCustomHttps</S>
+                <S>Enable-AzFrontDoorCdnProfileMigration</S>
+                <S>Get-AzCdnCustomDomain</S>
+                <S>Get-AzCdnEdgeNode</S>
+                <S>Get-AzCdnEndpoint</S>
+                <S>Get-AzCdnEndpointResourceUsage</S>
+                <S>Get-AzCdnOrigin</S>
+                <S>Get-AzCdnOriginGroup</S>
+                <S>Get-AzCdnProfile</S>
+                <S>Get-AzCdnProfileResourceUsage</S>
+                <S>Get-AzCdnProfileSupportedOptimizationType</S>
+                <S>Get-AzCdnSubscriptionResourceUsage</S>
+                <S>Get-AzFrontDoorCdnCustomDomain</S>
+                <S>Get-AzFrontDoorCdnEndpoint</S>
+                <S>Get-AzFrontDoorCdnEndpointResourceUsage</S>
+                <S>Get-AzFrontDoorCdnOrigin</S>
+                <S>Get-AzFrontDoorCdnOriginGroup</S>
+                <S>Get-AzFrontDoorCdnOriginGroupResourceUsage</S>
+                <S>Get-AzFrontDoorCdnProfile</S>
+                <S>Get-AzFrontDoorCdnProfileResourceUsage</S>
+                <S>Get-AzFrontDoorCdnRoute</S>
+                <S>Get-AzFrontDoorCdnRule</S>
+                <S>Get-AzFrontDoorCdnRuleSet</S>
+                <S>Get-AzFrontDoorCdnRuleSetResourceUsage</S>
+                <S>Get-AzFrontDoorCdnSecret</S>
+                <S>Get-AzFrontDoorCdnSecurityPolicy</S>
+                <S>Import-AzCdnEndpointContent</S>
+                <S>New-AzCdnCustomDomain</S>
+                <S>New-AzCdnDeliveryRuleCacheExpirationActionObject</S>
+                <S>New-AzCdnDeliveryRuleCacheKeyQueryStringActionObject</S>
+                <S>New-AzCdnDeliveryRuleCookiesConditionObject</S>
+                <S>New-AzCdnDeliveryRuleHttpVersionConditionObject</S>
+                <S>New-AzCdnDeliveryRuleIsDeviceConditionObject</S>
+                <S>New-AzCdnDeliveryRuleObject</S>
+                <S>New-AzCdnDeliveryRulePostArgsConditionObject</S>
+                <S>New-AzCdnDeliveryRuleQueryStringConditionObject</S>
+                <S>New-AzCdnDeliveryRuleRemoteAddressConditionObject</S>
+                <S>New-AzCdnDeliveryRuleRequestBodyConditionObject</S>
+                <S>New-AzCdnDeliveryRuleRequestHeaderActionObject</S>
+                <S>New-AzCdnDeliveryRuleRequestHeaderConditionObject</S>
+                <S>New-AzCdnDeliveryRuleRequestMethodConditionObject</S>
+                <S>New-AzCdnDeliveryRuleRequestSchemeConditionObject</S>
+                <S>New-AzCdnDeliveryRuleRequestUriConditionObject</S>
+                <S>New-AzCdnDeliveryRuleResponseHeaderActionObject</S>
+                <S>New-AzCdnDeliveryRuleUrlFileExtensionConditionObject</S>
+                <S>New-AzCdnDeliveryRuleUrlFileNameConditionObject</S>
+                <S>New-AzCdnDeliveryRuleUrlPathConditionObject</S>
+                <S>New-AzCdnEndpoint</S>
+                <S>New-AzCdnHealthProbeParametersObject</S>
+                <S>New-AzCdnLoadParametersObject</S>
+                <S>New-AzCdnManagedHttpsParametersObject</S>
+                <S>New-AzCdnOrigin</S>
+                <S>New-AzCdnOriginGroup</S>
+                <S>New-AzCdnOriginGroupOverrideActionObject</S>
+                <S>New-AzCdnProfile</S>
+                <S>New-AzCdnPurgeParametersObject</S>
+                <S>New-AzCdnResourceReferenceObject</S>
+                <S>New-AzCdnResponseBasedOriginErrorDetectionParametersObject</S>
+                <S>New-AzCdnUrlRedirectActionObject</S>
+                <S>New-AzCdnUrlRewriteActionObject</S>
+                <S>New-AzCdnUrlSigningActionObject</S>
+                <S>New-AzCdnUserManagedHttpsParametersObject</S>
+                <S>New-AzFrontDoorCdnCustomDomain</S>
+                <S>New-AzFrontDoorCdnCustomDomainTlsSettingParametersObject</S>
+                <S>New-AzFrontDoorCdnEndpoint</S>
+                <S>New-AzFrontDoorCdnMigrationParametersObject</S>
+                <S>New-AzFrontDoorCdnMigrationWebApplicationFirewallMappingObject</S>
+                <S>New-AzFrontDoorCdnOrigin</S>
+                <S>New-AzFrontDoorCdnOriginGroup</S>
+                <S>New-AzFrontDoorCdnOriginGroupHealthProbeSettingObject</S>
+                <S>New-AzFrontDoorCdnOriginGroupLoadBalancingSettingObject</S>
+                <S>New-AzFrontDoorCdnProfile</S>
+                <S>New-AzFrontDoorCdnProfileChangeSkuWafMappingObject</S>
+                <S>New-AzFrontDoorCdnProfileLogScrubbingObject</S>
+                <S>New-AzFrontDoorCdnProfileScrubbingRulesObject</S>
+                <S>New-AzFrontDoorCdnProfileUpgradeParametersObject</S>
+                <S>New-AzFrontDoorCdnPurgeParametersObject</S>
+                <S>New-AzFrontDoorCdnResourceReferenceObject</S>
+                <S>New-AzFrontDoorCdnRoute</S>
+                <S>New-AzFrontDoorCdnRule</S>
+                <S>New-AzFrontDoorCdnRuleClientPortConditionObject</S>
+                <S>New-AzFrontDoorCdnRuleCookiesConditionObject</S>
+                <S>New-AzFrontDoorCdnRuleHostNameConditionObject</S>
+                <S>New-AzFrontDoorCdnRuleHttpVersionConditionObject</S>
+                <S>New-AzFrontDoorCdnRuleIsDeviceConditionObject</S>
+                <S>New-AzFrontDoorCdnRulePostArgsConditionObject</S>
+                <S>New-AzFrontDoorCdnRuleQueryStringConditionObject</S>
+                <S>New-AzFrontDoorCdnRuleRemoteAddressConditionObject</S>
+                <S>New-AzFrontDoorCdnRuleRequestBodyConditionObject</S>
+                <S>New-AzFrontDoorCdnRuleRequestHeaderActionObject</S>
+                <S>New-AzFrontDoorCdnRuleRequestHeaderConditionObject</S>
+                <S>New-AzFrontDoorCdnRuleRequestMethodConditionObject</S>
+                <S>New-AzFrontDoorCdnRuleRequestSchemeConditionObject</S>
+                <S>New-AzFrontDoorCdnRuleRequestUriConditionObject</S>
+                <S>New-AzFrontDoorCdnRuleResponseHeaderActionObject</S>
+                <S>New-AzFrontDoorCdnRuleRouteConfigurationOverrideActionObject</S>
+                <S>New-AzFrontDoorCdnRuleServerPortConditionObject</S>
+                <S>New-AzFrontDoorCdnRuleSet</S>
+                <S>New-AzFrontDoorCdnRuleSocketAddrConditionObject</S>
+                <S>New-AzFrontDoorCdnRuleSslProtocolConditionObject</S>
+                <S>New-AzFrontDoorCdnRuleUrlFileExtensionConditionObject</S>
+                <S>New-AzFrontDoorCdnRuleUrlFileNameConditionObject</S>
+                <S>New-AzFrontDoorCdnRuleUrlPathConditionObject</S>
+                <S>New-AzFrontDoorCdnRuleUrlRedirectActionObject</S>
+                <S>New-AzFrontDoorCdnRuleUrlRewriteActionObject</S>
+                <S>New-AzFrontDoorCdnRuleUrlSigningActionObject</S>
+                <S>New-AzFrontDoorCdnSecret</S>
+                <S>New-AzFrontDoorCdnSecretCustomerCertificateParametersObject</S>
+                <S>New-AzFrontDoorCdnSecretFirstPartyManagedCertificateParametersObject</S>
+                <S>New-AzFrontDoorCdnSecretManagedCertificateParametersObject</S>
+                <S>New-AzFrontDoorCdnSecretUrlSigningKeyParametersObject</S>
+                <S>New-AzFrontDoorCdnSecurityPolicy</S>
+                <S>New-AzFrontDoorCdnSecurityPolicyWebApplicationFirewallAssociationObject</S>
+                <S>New-AzFrontDoorCdnSecurityPolicyWebApplicationFirewallParametersObject</S>
+                <S>Remove-AzCdnCustomDomain</S>
+                <S>Remove-AzCdnEndpoint</S>
+                <S>Remove-AzCdnOrigin</S>
+                <S>Remove-AzCdnOriginGroup</S>
+                <S>Remove-AzCdnProfile</S>
+                <S>Remove-AzFrontDoorCdnCustomDomain</S>
+                <S>Remove-AzFrontDoorCdnEndpoint</S>
+                <S>Remove-AzFrontDoorCdnOrigin</S>
+                <S>Remove-AzFrontDoorCdnOriginGroup</S>
+                <S>Remove-AzFrontDoorCdnProfile</S>
+                <S>Remove-AzFrontDoorCdnRoute</S>
+                <S>Remove-AzFrontDoorCdnRule</S>
+                <S>Remove-AzFrontDoorCdnRuleSet</S>
+                <S>Remove-AzFrontDoorCdnSecret</S>
+                <S>Remove-AzFrontDoorCdnSecurityPolicy</S>
+                <S>Start-AzCdnEndpoint</S>
+                <S>Start-AzFrontDoorCdnProfilePrepareMigration</S>
+                <S>Stop-AzCdnEndpoint</S>
+                <S>Stop-AzFrontDoorCdnProfileMigration</S>
+                <S>Test-AzCdnEndpointCustomDomain</S>
+                <S>Test-AzCdnNameAvailability</S>
+                <S>Test-AzCdnProbe</S>
+                <S>Test-AzFrontDoorCdnEndpointCustomDomain</S>
+                <S>Test-AzFrontDoorCdnEndpointNameAvailability</S>
+                <S>Test-AzFrontDoorCdnProfileHostNameAvailability</S>
+                <S>Test-AzFrontDoorCdnProfileMigration</S>
+                <S>Update-AzCdnEndpoint</S>
+                <S>Update-AzCdnOrigin</S>
+                <S>Update-AzCdnOriginGroup</S>
+                <S>Update-AzCdnProfile</S>
+                <S>Update-AzFrontDoorCdnCustomDomain</S>
+                <S>Update-AzFrontDoorCdnCustomDomainValidationToken</S>
+                <S>Update-AzFrontDoorCdnEndpoint</S>
+                <S>Update-AzFrontDoorCdnOrigin</S>
+                <S>Update-AzFrontDoorCdnOriginGroup</S>
+                <S>Update-AzFrontDoorCdnProfile</S>
+                <S>Update-AzFrontDoorCdnProfileSku</S>
+                <S>Update-AzFrontDoorCdnRoute</S>
+                <S>Update-AzFrontDoorCdnRule</S>
+                <S>Update-AzFrontDoorCdnSecurityPolicy</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="7" />
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="9">
+              <TNRef RefId="3" />
+              <LST>
+                <S>Clear-AzCdnEndpointContent</S>
+                <S>Clear-AzFrontDoorCdnEndpointContent</S>
+                <S>Disable-AzCdnCustomDomainCustomHttps</S>
+                <S>Enable-AzCdnCustomDomainCustomHttps</S>
+                <S>Enable-AzFrontDoorCdnProfileMigration</S>
+                <S>Get-AzCdnCustomDomain</S>
+                <S>Get-AzCdnEdgeNode</S>
+                <S>Get-AzCdnEndpoint</S>
+                <S>Get-AzCdnEndpointResourceUsage</S>
+                <S>Get-AzCdnOrigin</S>
+                <S>Get-AzCdnOriginGroup</S>
+                <S>Get-AzCdnProfile</S>
+                <S>Get-AzCdnProfileResourceUsage</S>
+                <S>Get-AzCdnProfileSupportedOptimizationType</S>
+                <S>Get-AzCdnSubscriptionResourceUsage</S>
+                <S>Get-AzFrontDoorCdnCustomDomain</S>
+                <S>Get-AzFrontDoorCdnEndpoint</S>
+                <S>Get-AzFrontDoorCdnEndpointResourceUsage</S>
+                <S>Get-AzFrontDoorCdnOrigin</S>
+                <S>Get-AzFrontDoorCdnOriginGroup</S>
+                <S>Get-AzFrontDoorCdnOriginGroupResourceUsage</S>
+                <S>Get-AzFrontDoorCdnProfile</S>
+                <S>Get-AzFrontDoorCdnProfileResourceUsage</S>
+                <S>Get-AzFrontDoorCdnRoute</S>
+                <S>Get-AzFrontDoorCdnRule</S>
+                <S>Get-AzFrontDoorCdnRuleSet</S>
+                <S>Get-AzFrontDoorCdnRuleSetResourceUsage</S>
+                <S>Get-AzFrontDoorCdnSecret</S>
+                <S>Get-AzFrontDoorCdnSecurityPolicy</S>
+                <S>Import-AzCdnEndpointContent</S>
+                <S>New-AzCdnCustomDomain</S>
+                <S>New-AzCdnDeliveryRuleCacheExpirationActionObject</S>
+                <S>New-AzCdnDeliveryRuleCacheKeyQueryStringActionObject</S>
+                <S>New-AzCdnDeliveryRuleCookiesConditionObject</S>
+                <S>New-AzCdnDeliveryRuleHttpVersionConditionObject</S>
+                <S>New-AzCdnDeliveryRuleIsDeviceConditionObject</S>
+                <S>New-AzCdnDeliveryRuleObject</S>
+                <S>New-AzCdnDeliveryRulePostArgsConditionObject</S>
+                <S>New-AzCdnDeliveryRuleQueryStringConditionObject</S>
+                <S>New-AzCdnDeliveryRuleRemoteAddressConditionObject</S>
+                <S>New-AzCdnDeliveryRuleRequestBodyConditionObject</S>
+                <S>New-AzCdnDeliveryRuleRequestHeaderActionObject</S>
+                <S>New-AzCdnDeliveryRuleRequestHeaderConditionObject</S>
+                <S>New-AzCdnDeliveryRuleRequestMethodConditionObject</S>
+                <S>New-AzCdnDeliveryRuleRequestSchemeConditionObject</S>
+                <S>New-AzCdnDeliveryRuleRequestUriConditionObject</S>
+                <S>New-AzCdnDeliveryRuleResponseHeaderActionObject</S>
+                <S>New-AzCdnDeliveryRuleUrlFileExtensionConditionObject</S>
+                <S>New-AzCdnDeliveryRuleUrlFileNameConditionObject</S>
+                <S>New-AzCdnDeliveryRuleUrlPathConditionObject</S>
+                <S>New-AzCdnEndpoint</S>
+                <S>New-AzCdnHealthProbeParametersObject</S>
+                <S>New-AzCdnLoadParametersObject</S>
+                <S>New-AzCdnManagedHttpsParametersObject</S>
+                <S>New-AzCdnOrigin</S>
+                <S>New-AzCdnOriginGroup</S>
+                <S>New-AzCdnOriginGroupOverrideActionObject</S>
+                <S>New-AzCdnProfile</S>
+                <S>New-AzCdnPurgeParametersObject</S>
+                <S>New-AzCdnResourceReferenceObject</S>
+                <S>New-AzCdnResponseBasedOriginErrorDetectionParametersObject</S>
+                <S>New-AzCdnUrlRedirectActionObject</S>
+                <S>New-AzCdnUrlRewriteActionObject</S>
+                <S>New-AzCdnUrlSigningActionObject</S>
+                <S>New-AzCdnUserManagedHttpsParametersObject</S>
+                <S>New-AzFrontDoorCdnCustomDomain</S>
+                <S>New-AzFrontDoorCdnCustomDomainTlsSettingParametersObject</S>
+                <S>New-AzFrontDoorCdnEndpoint</S>
+                <S>New-AzFrontDoorCdnMigrationParametersObject</S>
+                <S>New-AzFrontDoorCdnMigrationWebApplicationFirewallMappingObject</S>
+                <S>New-AzFrontDoorCdnOrigin</S>
+                <S>New-AzFrontDoorCdnOriginGroup</S>
+                <S>New-AzFrontDoorCdnOriginGroupHealthProbeSettingObject</S>
+                <S>New-AzFrontDoorCdnOriginGroupLoadBalancingSettingObject</S>
+                <S>New-AzFrontDoorCdnProfile</S>
+                <S>New-AzFrontDoorCdnProfileChangeSkuWafMappingObject</S>
+                <S>New-AzFrontDoorCdnProfileLogScrubbingObject</S>
+                <S>New-AzFrontDoorCdnProfileScrubbingRulesObject</S>
+                <S>New-AzFrontDoorCdnProfileUpgradeParametersObject</S>
+                <S>New-AzFrontDoorCdnPurgeParametersObject</S>
+                <S>New-AzFrontDoorCdnResourceReferenceObject</S>
+                <S>New-AzFrontDoorCdnRoute</S>
+                <S>New-AzFrontDoorCdnRule</S>
+                <S>New-AzFrontDoorCdnRuleClientPortConditionObject</S>
+                <S>New-AzFrontDoorCdnRuleCookiesConditionObject</S>
+                <S>New-AzFrontDoorCdnRuleHostNameConditionObject</S>
+                <S>New-AzFrontDoorCdnRuleHttpVersionConditionObject</S>
+                <S>New-AzFrontDoorCdnRuleIsDeviceConditionObject</S>
+                <S>New-AzFrontDoorCdnRulePostArgsConditionObject</S>
+                <S>New-AzFrontDoorCdnRuleQueryStringConditionObject</S>
+                <S>New-AzFrontDoorCdnRuleRemoteAddressConditionObject</S>
+                <S>New-AzFrontDoorCdnRuleRequestBodyConditionObject</S>
+                <S>New-AzFrontDoorCdnRuleRequestHeaderActionObject</S>
+                <S>New-AzFrontDoorCdnRuleRequestHeaderConditionObject</S>
+                <S>New-AzFrontDoorCdnRuleRequestMethodConditionObject</S>
+                <S>New-AzFrontDoorCdnRuleRequestSchemeConditionObject</S>
+                <S>New-AzFrontDoorCdnRuleRequestUriConditionObject</S>
+                <S>New-AzFrontDoorCdnRuleResponseHeaderActionObject</S>
+                <S>New-AzFrontDoorCdnRuleRouteConfigurationOverrideActionObject</S>
+                <S>New-AzFrontDoorCdnRuleServerPortConditionObject</S>
+                <S>New-AzFrontDoorCdnRuleSet</S>
+                <S>New-AzFrontDoorCdnRuleSocketAddrConditionObject</S>
+                <S>New-AzFrontDoorCdnRuleSslProtocolConditionObject</S>
+                <S>New-AzFrontDoorCdnRuleUrlFileExtensionConditionObject</S>
+                <S>New-AzFrontDoorCdnRuleUrlFileNameConditionObject</S>
+                <S>New-AzFrontDoorCdnRuleUrlPathConditionObject</S>
+                <S>New-AzFrontDoorCdnRuleUrlRedirectActionObject</S>
+                <S>New-AzFrontDoorCdnRuleUrlRewriteActionObject</S>
+                <S>New-AzFrontDoorCdnRuleUrlSigningActionObject</S>
+                <S>New-AzFrontDoorCdnSecret</S>
+                <S>New-AzFrontDoorCdnSecretCustomerCertificateParametersObject</S>
+                <S>New-AzFrontDoorCdnSecretFirstPartyManagedCertificateParametersObject</S>
+                <S>New-AzFrontDoorCdnSecretManagedCertificateParametersObject</S>
+                <S>New-AzFrontDoorCdnSecretUrlSigningKeyParametersObject</S>
+                <S>New-AzFrontDoorCdnSecurityPolicy</S>
+                <S>New-AzFrontDoorCdnSecurityPolicyWebApplicationFirewallAssociationObject</S>
+                <S>New-AzFrontDoorCdnSecurityPolicyWebApplicationFirewallParametersObject</S>
+                <S>Remove-AzCdnCustomDomain</S>
+                <S>Remove-AzCdnEndpoint</S>
+                <S>Remove-AzCdnOrigin</S>
+                <S>Remove-AzCdnOriginGroup</S>
+                <S>Remove-AzCdnProfile</S>
+                <S>Remove-AzFrontDoorCdnCustomDomain</S>
+                <S>Remove-AzFrontDoorCdnEndpoint</S>
+                <S>Remove-AzFrontDoorCdnOrigin</S>
+                <S>Remove-AzFrontDoorCdnOriginGroup</S>
+                <S>Remove-AzFrontDoorCdnProfile</S>
+                <S>Remove-AzFrontDoorCdnRoute</S>
+                <S>Remove-AzFrontDoorCdnRule</S>
+                <S>Remove-AzFrontDoorCdnRuleSet</S>
+                <S>Remove-AzFrontDoorCdnSecret</S>
+                <S>Remove-AzFrontDoorCdnSecurityPolicy</S>
+                <S>Start-AzCdnEndpoint</S>
+                <S>Start-AzFrontDoorCdnProfilePrepareMigration</S>
+                <S>Stop-AzCdnEndpoint</S>
+                <S>Stop-AzFrontDoorCdnProfileMigration</S>
+                <S>Test-AzCdnEndpointCustomDomain</S>
+                <S>Test-AzCdnNameAvailability</S>
+                <S>Test-AzCdnProbe</S>
+                <S>Test-AzFrontDoorCdnEndpointCustomDomain</S>
+                <S>Test-AzFrontDoorCdnEndpointNameAvailability</S>
+                <S>Test-AzFrontDoorCdnProfileHostNameAvailability</S>
+                <S>Test-AzFrontDoorCdnProfileMigration</S>
+                <S>Update-AzCdnEndpoint</S>
+                <S>Update-AzCdnOrigin</S>
+                <S>Update-AzCdnOriginGroup</S>
+                <S>Update-AzCdnProfile</S>
+                <S>Update-AzFrontDoorCdnCustomDomain</S>
+                <S>Update-AzFrontDoorCdnCustomDomainValidationToken</S>
+                <S>Update-AzFrontDoorCdnEndpoint</S>
+                <S>Update-AzFrontDoorCdnOrigin</S>
+                <S>Update-AzFrontDoorCdnOriginGroup</S>
+                <S>Update-AzFrontDoorCdnProfile</S>
+                <S>Update-AzFrontDoorCdnProfileSku</S>
+                <S>Update-AzFrontDoorCdnRoute</S>
+                <S>Update-AzFrontDoorCdnRule</S>
+                <S>Update-AzFrontDoorCdnSecurityPolicy</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Ref N="Value" RefId="7" />
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="7" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <S N="ReleaseNotes">* This upgrade contains no changes in cdn powershell commandline tool, it only notifies user that we are going to upgrade the version of autorest, and will bring some breaking changes.</S>
+      <Obj N="Dependencies" RefId="10">
+        <TNRef RefId="3" />
+        <LST>
+          <Obj RefId="11">
+            <TN RefId="5">
+              <T>System.Collections.Specialized.OrderedDictionary</T>
+              <T>System.Object</T>
+            </TN>
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Az.Accounts</S>
+              </En>
+              <En>
+                <S N="Key">MinimumVersion</S>
+                <S N="Value">4.1.0</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Az.Accounts/4.1.0</S>
+              </En>
+            </DCT>
+          </Obj>
+        </LST>
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="12">
+        <TN RefId="6">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">Microsoft Corporation. All rights reserved.</S>
+          <S N="description">Microsoft Azure PowerShell: Cdn cmdlets</S>
+          <S N="requireLicenseAcceptance">True</S>
+          <S N="releaseNotes">* This upgrade contains no changes in cdn powershell commandline tool, it only notifies user that we are going to upgrade the version of autorest, and will bring some breaking changes.</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">False</S>
+          <S N="versionDownloadCount">24321</S>
+          <S N="downloadCount">118595371</S>
+          <S N="packageSize">2346812</S>
+          <S N="published">2025/04/01 06:22:56 +02:00</S>
+          <S N="created">2025/04/01 06:22:56 +02:00</S>
+          <S N="lastUpdated">2025/04/01 08:30:00 +02:00</S>
+          <S N="tags">Azure ResourceManager ARM PSModule Cdn PSEdition_Core PSEdition_Desktop PSFunction_Clear-AzCdnEndpointContent PSCommand_Clear-AzCdnEndpointContent PSFunction_Clear-AzFrontDoorCdnEndpointContent PSCommand_Clear-AzFrontDoorCdnEndpointContent PSFunction_Disable-AzCdnCustomDomainCustomHttps PSCommand_Disable-AzCdnCustomDomainCustomHttps PSFunction_Enable-AzCdnCustomDomainCustomHttps PSCommand_Enable-AzCdnCustomDomainCustomHttps PSFunction_Enable-AzFrontDoorCdnProfileMigration PSCommand_Enable-AzFrontDoorCdnProfileMigration PSFunction_Get-AzCdnCustomDomain PSCommand_Get-AzCdnCustomDomain PSFunction_Get-AzCdnEdgeNode PSCommand_Get-AzCdnEdgeNode PSFunction_Get-AzCdnEndpoint PSCommand_Get-AzCdnEndpoint PSFunction_Get-AzCdnEndpointResourceUsage PSCommand_Get-AzCdnEndpointResourceUsage PSFunction_Get-AzCdnOrigin PSCommand_Get-AzCdnOrigin PSFunction_Get-AzCdnOriginGroup PSCommand_Get-AzCdnOriginGroup PSFunction_Get-AzCdnProfile PSCommand_Get-AzCdnProfile PSFunction_Get-AzCdnProfileResourceUsage PSCommand_Get-AzCdnProfileResourceUsage PSFunction_Get-AzCdnProfileSupportedOptimizationType PSCommand_Get-AzCdnProfileSupportedOptimizationType PSFunction_Get-AzCdnSubscriptionResourceUsage PSCommand_Get-AzCdnSubscriptionResourceUsage PSFunction_Get-AzFrontDoorCdnCustomDomain PSCommand_Get-AzFrontDoorCdnCustomDomain PSFunction_Get-AzFrontDoorCdnEndpoint PSCommand_Get-AzFrontDoorCdnEndpoint PSFunction_Get-AzFrontDoorCdnEndpointResourceUsage PSCommand_Get-AzFrontDoorCdnEndpointResourceUsage PSFunction_Get-AzFrontDoorCdnOrigin PSCommand_Get-AzFrontDoorCdnOrigin PSFunction_Get-AzFrontDoorCdnOriginGroup PSCommand_Get-AzFrontDoorCdnOriginGroup PSFunction_Get-AzFrontDoorCdnOriginGroupResourceUsage PSCommand_Get-AzFrontDoorCdnOriginGroupResourceUsage PSFunction_Get-AzFrontDoorCdnProfile PSCommand_Get-AzFrontDoorCdnProfile PSFunction_Get-AzFrontDoorCdnProfileResourceUsage PSCommand_Get-AzFrontDoorCdnProfileResourceUsage PSFunction_Get-AzFrontDoorCdnRoute PSCommand_Get-AzFrontDoorCdnRoute PSFunction_Get-AzFrontDoorCdnRule PSCommand_Get-AzFrontDoorCdnRule PSFunction_Get-AzFrontDoorCdnRuleSet PSCommand_Get-AzFrontDoorCdnRuleSet PSFunction_Get-AzFrontDoorCdnRuleSetResourceUsage PSCommand_Get-AzFrontDoorCdnRuleSetResourceUsage PSFunction_Get-AzFrontDoorCdnSecret PSCommand_Get-AzFrontDoorCdnSecret PSFunction_Get-AzFrontDoorCdnSecurityPolicy PSCommand_Get-AzFrontDoorCdnSecurityPolicy PSFunction_Import-AzCdnEndpointContent PSCommand_Import-AzCdnEndpointContent PSFunction_New-AzCdnCustomDomain PSCommand_New-AzCdnCustomDomain PSFunction_New-AzCdnDeliveryRuleCacheExpirationActionObject PSCommand_New-AzCdnDeliveryRuleCacheExpirationActionObject PSFunction_New-AzCdnDeliveryRuleCacheKeyQueryStringActionObject PSCommand_New-AzCdnDeliveryRuleCacheKeyQueryStringActionObject PSFunction_New-AzCdnDeliveryRuleCookiesConditionObject PSCommand_New-AzCdnDeliveryRuleCookiesConditionObject PSFunction_New-AzCdnDeliveryRuleHttpVersionConditionObject PSCommand_New-AzCdnDeliveryRuleHttpVersionConditionObject PSFunction_New-AzCdnDeliveryRuleIsDeviceConditionObject PSCommand_New-AzCdnDeliveryRuleIsDeviceConditionObject PSFunction_New-AzCdnDeliveryRuleObject PSCommand_New-AzCdnDeliveryRuleObject PSFunction_New-AzCdnDeliveryRulePostArgsConditionObject PSCommand_New-AzCdnDeliveryRulePostArgsConditionObject PSFunction_New-AzCdnDeliveryRuleQueryStringConditionObject PSCommand_New-AzCdnDeliveryRuleQueryStringConditionObject PSFunction_New-AzCdnDeliveryRuleRemoteAddressConditionObject PSCommand_New-AzCdnDeliveryRuleRemoteAddressConditionObject PSFunction_New-AzCdnDeliveryRuleRequestBodyConditionObject PSCommand_New-AzCdnDeliveryRuleRequestBodyConditionObject PSFunction_New-AzCdnDeliveryRuleRequestHeaderActionObject PSCommand_New-AzCdnDeliveryRuleRequestHeaderActionObject PSFunction_New-AzCdnDeliveryRuleRequestHeaderConditionObject PSCommand_New-AzCdnDeliveryRuleRequestHeaderConditionObject PSFunction_New-AzCdnDeliveryRuleRequestMethodConditionObject PSCommand_New-AzCdnDeliveryRuleRequestMethodConditionObject PSFunction_New-AzCdnDeliveryRuleRequestSchemeConditionObject PSCommand_New-AzCdnDeliveryRuleRequestSchemeConditionObject PSFunction_New-AzCdnDeliveryRuleRequestUriConditionObject PSCommand_New-AzCdnDeliveryRuleRequestUriConditionObject PSFunction_New-AzCdnDeliveryRuleResponseHeaderActionObject PSCommand_New-AzCdnDeliveryRuleResponseHeaderActionObject PSFunction_New-AzCdnDeliveryRuleUrlFileExtensionConditionObject PSCommand_New-AzCdnDeliveryRuleUrlFileExtensionConditionObject PSFunction_New-AzCdnDeliveryRuleUrlFileNameConditionObject PSCommand_New-AzCdnDeliveryRuleUrlFileNameConditionObject PSFunction_New-AzCdnDeliveryRuleUrlPathConditionObject PSCommand_New-AzCdnDeliveryRuleUrlPathConditionObject PSFunction_New-AzCdnEndpoint PSCommand_New-AzCdnEndpoint PSFunction_New-AzCdnHealthProbeParametersObject PSCommand_New-AzCdnHealthProbeParametersObject PSFunction_New-AzCdnLoadParametersObject PSCommand_New-AzCdnLoadParametersObject PSFunction_New-AzCdnManagedHttpsParametersObject PSCommand_New-AzCdnManagedHttpsParametersObject PSFunction_New-AzCdnOrigin PSCommand_New-AzCdnOrigin PSFunction_New-AzCdnOriginGroup PSCommand_New-AzCdnOriginGroup PSFunction_New-AzCdnOriginGroupOverrideActionObject PSCommand_New-AzCdnOriginGroupOverrideActionObject PSFunction_New-AzCdnProfile PSCommand_New-AzCdnProfile PSFunction_New-AzCdnPurgeParametersObject PSCommand_New-AzCdnPurgeParametersObject PSFunction_New-AzCdnResourceReferenceObject PSCommand_New-AzCdnResourceReferenceObject PSFunction_New-AzCdnResponseBasedOriginErrorDetectionParametersObject PSCommand_New-AzCdnResponseBasedOriginErrorDetectionParametersObject PSFunction_New-AzCdnUrlRedirectActionObject PSCommand_New-AzCdnUrlRedirectActionObject PSFunction_New-AzCdnUrlRewriteActionObject PSCommand_New-AzCdnUrlRewriteActionObject PSFunction_New-AzCdnUrlSigningActionObject PSCommand_New-AzCdnUrlSigningActionObject PSFunction_New-AzCdnUserManagedHttpsParametersObject PSCommand_New-AzCdnUserManagedHttpsParametersObject PSFunction_New-AzFrontDoorCdnCustomDomain PSCommand_New-AzFrontDoorCdnCustomDomain PSFunction_New-AzFrontDoorCdnCustomDomainTlsSettingParametersObject PSCommand_New-AzFrontDoorCdnCustomDomainTlsSettingParametersObject PSFunction_New-AzFrontDoorCdnEndpoint PSCommand_New-AzFrontDoorCdnEndpoint PSFunction_New-AzFrontDoorCdnMigrationParametersObject PSCommand_New-AzFrontDoorCdnMigrationParametersObject PSFunction_New-AzFrontDoorCdnMigrationWebApplicationFirewallMappingObject PSCommand_New-AzFrontDoorCdnMigrationWebApplicationFirewallMappingObject PSFunction_New-AzFrontDoorCdnOrigin PSCommand_New-AzFrontDoorCdnOrigin PSFunction_New-AzFrontDoorCdnOriginGroup PSCommand_New-AzFrontDoorCdnOriginGroup PSFunction_New-AzFrontDoorCdnOriginGroupHealthProbeSettingObject PSCommand_New-AzFrontDoorCdnOriginGroupHealthProbeSettingObject PSFunction_New-AzFrontDoorCdnOriginGroupLoadBalancingSettingObject PSCommand_New-AzFrontDoorCdnOriginGroupLoadBalancingSettingObject PSFunction_New-AzFrontDoorCdnProfile PSCommand_New-AzFrontDoorCdnProfile PSFunction_New-AzFrontDoorCdnProfileChangeSkuWafMappingObject PSCommand_New-AzFrontDoorCdnProfileChangeSkuWafMappingObject PSFunction_New-AzFrontDoorCdnProfileLogScrubbingObject PSCommand_New-AzFrontDoorCdnProfileLogScrubbingObject PSFunction_New-AzFrontDoorCdnProfileScrubbingRulesObject PSCommand_New-AzFrontDoorCdnProfileScrubbingRulesObject PSFunction_New-AzFrontDoorCdnProfileUpgradeParametersObject PSCommand_New-AzFrontDoorCdnProfileUpgradeParametersObject PSFunction_New-AzFrontDoorCdnPurgeParametersObject PSCommand_New-AzFrontDoorCdnPurgeParametersObject PSFunction_New-AzFrontDoorCdnResourceReferenceObject PSCommand_New-AzFrontDoorCdnResourceReferenceObject PSFunction_New-AzFrontDoorCdnRoute PSCommand_New-AzFrontDoorCdnRoute PSFunction_New-AzFrontDoorCdnRule PSCommand_New-AzFrontDoorCdnRule PSFunction_New-AzFrontDoorCdnRuleClientPortConditionObject PSCommand_New-AzFrontDoorCdnRuleClientPortConditionObject PSFunction_New-AzFrontDoorCdnRuleCookiesConditionObject PSCommand_New-AzFrontDoorCdnRuleCookiesConditionObject PSFunction_New-AzFrontDoorCdnRuleHostNameConditionObject PSCommand_New-AzFrontDoorCdnRuleHostNameConditionObject PSFunction_New-AzFrontDoorCdnRuleHttpVersionConditionObject PSCommand_New-AzFrontDoorCdnRuleHttpVersionConditionObject PSFunction_New-AzFrontDoorCdnRuleIsDeviceConditionObject PSCommand_New-AzFrontDoorCdnRuleIsDeviceConditionObject PSFunction_New-AzFrontDoorCdnRulePostArgsConditionObject PSCommand_New-AzFrontDoorCdnRulePostArgsConditionObject PSFunction_New-AzFrontDoorCdnRuleQueryStringConditionObject PSCommand_New-AzFrontDoorCdnRuleQueryStringConditionObject PSFunction_New-AzFrontDoorCdnRuleRemoteAddressConditionObject PSCommand_New-AzFrontDoorCdnRuleRemoteAddressConditionObject PSFunction_New-AzFrontDoorCdnRuleRequestBodyConditionObject PSCommand_New-AzFrontDoorCdnRuleRequestBodyConditionObject PSFunction_New-AzFrontDoorCdnRuleRequestHeaderActionObject PSCommand_New-AzFrontDoorCdnRuleRequestHeaderActionObject PSFunction_New-AzFrontDoorCdnRuleRequestHeaderConditionObject PSCommand_New-AzFrontDoorCdnRuleRequestHeaderConditionObject PSFunction_New-AzFrontDoorCdnRuleRequestMethodConditionObject PSCommand_New-AzFrontDoorCdnRuleRequestMethodConditionObject PSFunction_New-AzFrontDoorCdnRuleRequestSchemeConditionObject PSCommand_New-AzFrontDoorCdnRuleRequestSchemeConditionObject PSFunction_New-AzFrontDoorCdnRuleRequestUriConditionObject PSCommand_New-AzFrontDoorCdnRuleRequestUriConditionObject PSFunction_New-AzFrontDoorCdnRuleResponseHeaderActionObject PSCommand_New-AzFrontDoorCdnRuleResponseHeaderActionObject PSFunction_New-AzFrontDoorCdnRuleRouteConfigurationOverrideActionObject PSCommand_New-AzFrontDoorCdnRuleRouteConfigurationOverrideActionObject PSFunction_New-AzFrontDoorCdnRuleServerPortConditionObject PSCommand_New-AzFrontDoorCdnRuleServerPortConditionObject PSFunction_New-AzFrontDoorCdnRuleSet PSCommand_New-AzFrontDoorCdnRuleSet PSFunction_New-AzFrontDoorCdnRuleSocketAddrConditionObject PSCommand_New-AzFrontDoorCdnRuleSocketAddrConditionObject PSFunction_New-AzFrontDoorCdnRuleSslProtocolConditionObject PSCommand_New-AzFrontDoorCdnRuleSslProtocolConditionObject PSFunction_New-AzFrontDoorCdnRuleUrlFileExtensionConditionObject PSCommand_New-AzFrontDoorCdnRuleUrlFileExtensionConditionObject PSFunction_New-AzFrontDoorCdnRuleUrlFileNameConditionObject PSCommand_New-AzFrontDoorCdnRuleUrlFileNameConditionObject PSFunction_New-AzFrontDoorCdnRuleUrlPathConditionObject PSCommand_New-AzFrontDoorCdnRuleUrlPathConditionObject PSFunction_New-AzFrontDoorCdnRuleUrlRedirectActionObject PSCommand_New-AzFrontDoorCdnRuleUrlRedirectActionObject PSFunction_New-AzFrontDoorCdnRuleUrlRewriteActionObject PSCommand_New-AzFrontDoorCdnRuleUrlRewriteActionObject PSFunction_New-AzFrontDoorCdnRuleUrlSigningActionObject PSCommand_New-AzFrontDoorCdnRuleUrlSigningActionObject PSFunction_New-AzFrontDoorCdnSecret PSCommand_New-AzFrontDoorCdnSecret PSFunction_New-AzFrontDoorCdnSecretCustomerCertificateParametersObject PSCommand_New-AzFrontDoorCdnSecretCustomerCertificateParametersObject PSFunction_New-AzFrontDoorCdnSecretFirstPartyManagedCertificateParametersObject PSCommand_New-AzFrontDoorCdnSecretFirstPartyManagedCertificateParametersObject PSFunction_New-AzFrontDoorCdnSecretManagedCertificateParametersObject PSCommand_New-AzFrontDoorCdnSecretManagedCertificateParametersObject PSFunction_New-AzFrontDoorCdnSecretUrlSigningKeyParametersObject PSCommand_New-AzFrontDoorCdnSecretUrlSigningKeyParametersObject PSFunction_New-AzFrontDoorCdnSecurityPolicy PSCommand_New-AzFrontDoorCdnSecurityPolicy PSFunction_New-AzFrontDoorCdnSecurityPolicyWebApplicationFirewallAssociationObject PSCommand_New-AzFrontDoorCdnSecurityPolicyWebApplicationFirewallAssociationObject PSFunction_New-AzFrontDoorCdnSecurityPolicyWebApplicationFirewallParametersObject PSCommand_New-AzFrontDoorCdnSecurityPolicyWebApplicationFirewallParametersObject PSFunction_Remove-AzCdnCustomDomain PSCommand_Remove-AzCdnCustomDomain PSFunction_Remove-AzCdnEndpoint PSCommand_Remove-AzCdnEndpoint PSFunction_Remove-AzCdnOrigin PSCommand_Remove-AzCdnOrigin PSFunction_Remove-AzCdnOriginGroup PSCommand_Remove-AzCdnOriginGroup PSFunction_Remove-AzCdnProfile PSCommand_Remove-AzCdnProfile PSFunction_Remove-AzFrontDoorCdnCustomDomain PSCommand_Remove-AzFrontDoorCdnCustomDomain PSFunction_Remove-AzFrontDoorCdnEndpoint PSCommand_Remove-AzFrontDoorCdnEndpoint PSFunction_Remove-AzFrontDoorCdnOrigin PSCommand_Remove-AzFrontDoorCdnOrigin PSFunction_Remove-AzFrontDoorCdnOriginGroup PSCommand_Remove-AzFrontDoorCdnOriginGroup PSFunction_Remove-AzFrontDoorCdnProfile PSCommand_Remove-AzFrontDoorCdnProfile PSFunction_Remove-AzFrontDoorCdnRoute PSCommand_Remove-AzFrontDoorCdnRoute PSFunction_Remove-AzFrontDoorCdnRule PSCommand_Remove-AzFrontDoorCdnRule PSFunction_Remove-AzFrontDoorCdnRuleSet PSCommand_Remove-AzFrontDoorCdnRuleSet PSFunction_Remove-AzFrontDoorCdnSecret PSCommand_Remove-AzFrontDoorCdnSecret PSFunction_Remove-AzFrontDoorCdnSecurityPolicy PSCommand_Remove-AzFrontDoorCdnSecurityPolicy PSFunction_Start-AzCdnEndpoint PSCommand_Start-AzCdnEndpoint PSFunction_Start-AzFrontDoorCdnProfilePrepareMigration PSCommand_Start-AzFrontDoorCdnProfilePrepareMigration PSFunction_Stop-AzCdnEndpoint PSCommand_Stop-AzCdnEndpoint PSFunction_Stop-AzFrontDoorCdnProfileMigration PSCommand_Stop-AzFrontDoorCdnProfileMigration PSFunction_Test-AzCdnEndpointCustomDomain PSCommand_Test-AzCdnEndpointCustomDomain PSFunction_Test-AzCdnNameAvailability PSCommand_Test-AzCdnNameAvailability PSFunction_Test-AzCdnProbe PSCommand_Test-AzCdnProbe PSFunction_Test-AzFrontDoorCdnEndpointCustomDomain PSCommand_Test-AzFrontDoorCdnEndpointCustomDomain PSFunction_Test-AzFrontDoorCdnEndpointNameAvailability PSCommand_Test-AzFrontDoorCdnEndpointNameAvailability PSFunction_Test-AzFrontDoorCdnProfileHostNameAvailability PSCommand_Test-AzFrontDoorCdnProfileHostNameAvailability PSFunction_Test-AzFrontDoorCdnProfileMigration PSCommand_Test-AzFrontDoorCdnProfileMigration PSFunction_Update-AzCdnEndpoint PSCommand_Update-AzCdnEndpoint PSFunction_Update-AzCdnOrigin PSCommand_Update-AzCdnOrigin PSFunction_Update-AzCdnOriginGroup PSCommand_Update-AzCdnOriginGroup PSFunction_Update-AzCdnProfile PSCommand_Update-AzCdnProfile PSFunction_Update-AzFrontDoorCdnCustomDomain PSCommand_Update-AzFrontDoorCdnCustomDomain PSFunction_Update-AzFrontDoorCdnCustomDomainValidationToken PSCommand_Update-AzFrontDoorCdnCustomDomainValidationToken PSFunction_Update-AzFrontDoorCdnEndpoint PSCommand_Update-AzFrontDoorCdnEndpoint PSFunction_Update-AzFrontDoorCdnOrigin PSCommand_Update-AzFrontDoorCdnOrigin PSFunction_Update-AzFrontDoorCdnOriginGroup PSCommand_Update-AzFrontDoorCdnOriginGroup PSFunction_Update-AzFrontDoorCdnProfile PSCommand_Update-AzFrontDoorCdnProfile PSFunction_Update-AzFrontDoorCdnProfileSku PSCommand_Update-AzFrontDoorCdnProfileSku PSFunction_Update-AzFrontDoorCdnRoute PSCommand_Update-AzFrontDoorCdnRoute PSFunction_Update-AzFrontDoorCdnRule PSCommand_Update-AzFrontDoorCdnRule PSFunction_Update-AzFrontDoorCdnSecurityPolicy PSCommand_Update-AzFrontDoorCdnSecurityPolicy PSIncludes_Function</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2025-04-01T08:30:00Z</S>
+          <S N="NormalizedVersion">3.3.1</S>
+          <S N="Authors">Microsoft Corporation</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">Az.Cdn.nuspec|Cdn.Autorest\custom\Update-AzFrontDoorCdnProfile.ps1|Cdn.Autorest\custom\autogen-model-cmdlets\New-AzCdnDeliveryRuleIsDeviceConditionObject.ps1|Cdn.Autorest\custom\autogen-model-cmdlets\New-AzCdnDeliveryRuleRequestHeaderActionObject.ps1|Cdn.Autorest\custom\autogen-model-cmdlets\New-AzCdnDeliveryRuleUrlFileExtensionConditionObject.ps1|Cdn.Autorest\custom\autogen-model-cmdlets\New-AzCdnPurgeParametersObject.ps1|Cdn.Autorest\custom\common\Utils.ps1|Cdn.Autorest\custom\Enable-AzFrontDoorCdnProfileMigration.ps1|Cdn.Autorest\custom\New-AzFrontDoorCdnDeliveryRuleClientPortConditionObject.ps1|Cdn.Autorest\custom\New-AzFrontDoorCdnProfileChangeSkuWafMappingObject.ps1|Cdn.Autorest\custom\New-AzFrontDoorCdnRuleCookiesConditionObject.ps1|Cdn.Autorest\custom\New-AzFrontDoorCdnRuleRemoteAddressConditionObject.ps1|Cdn.Autorest\custom\New-AzFrontDoorCdnRuleRequestUriConditionObject.ps1|Cdn.Autorest\custom\New-AzFrontDoorCdnRuleUrlFileExtensionConditionObject.ps1|Cdn.Autorest\custom\New-AzFrontDoorCdnSecretCustomerCertificateParametersObject.ps1|Cdn.Autorest\custom\Remove-AzCdnProfile.ps1|Cdn.Autorest\custom\Update-AzFrontDoorCdnProfileSku.ps1|Cdn.Autorest\custom\autogen-model-cmdlets\New-AzCdnDeliveryRuleObject.ps1|Cdn.Autorest\custom\autogen-model-cmdlets\New-AzCdnDeliveryRuleRequestHeaderConditionObject.ps1|Cdn.Autorest\custom\autogen-model-cmdlets\New-AzCdnDeliveryRuleUrlFileNameConditionObject.ps1|Cdn.Autorest\custom\autogen-model-cmdlets\New-AzCdnResourceReferenceObject.ps1|Cdn.Autorest\exports\ProxyCmdletDefinitions.ps1|Az.Cdn.psd1|Cdn.Autorest\custom\Get-AzCdnProfile.ps1|Cdn.Autorest\custom\New-AzFrontDoorCdnMigrationParametersObject.ps1|Cdn.Autorest\custom\New-AzFrontDoorCdnProfileLogScrubbingObject.ps1|Cdn.Autorest\custom\New-AzFrontDoorCdnRuleHostNameConditionObject.ps1|Cdn.Autorest\custom\New-AzFrontDoorCdnRuleRequestBodyConditionObject.ps1|Cdn.Autorest\custom\New-AzFrontDoorCdnRuleResponseHeaderActionObject.ps1|Cdn.Autorest\custom\New-AzFrontDoorCdnRuleUrlFileNameConditionObject.ps1|Cdn.Autorest\custom\New-AzFrontDoorCdnSecretFirstPartyManagedCertificateParametersObject.ps1|Cdn.Autorest\custom\Remove-AzFrontDoorCdnProfile.ps1|Cdn.Autorest\custom\autogen-model-cmdlets\New-AzCdnDeliveryRuleCacheExpirationActionObject.ps1|Cdn.Autorest\custom\autogen-model-cmdlets\New-AzCdnDeliveryRulePostArgsConditionObject.ps1|Cdn.Autorest\custom\autogen-model-cmdlets\New-AzCdnDeliveryRuleRequestMethodConditionObject.ps1|Cdn.Autorest\custom\autogen-model-cmdlets\New-AzCdnDeliveryRuleUrlPathConditionObject.ps1|Cdn.Autorest\custom\autogen-model-cmdlets\New-AzCdnResponseBasedOriginErrorDetectionParametersObject.ps1|Cdn.Autorest\internal\Az.Cdn.internal.psm1|Az.Cdn.psm1|Cdn.Autorest\custom\Get-AzFrontDoorCdnProfile.ps1|Cdn.Autorest\custom\New-AzFrontDoorCdnMigrationWebApplicationFirewallMappingObject.ps1|Cdn.Autorest\custom\New-AzFrontDoorCdnProfileScrubbingRulesObject.ps1|Cdn.Autorest\custom\New-AzFrontDoorCdnRuleHttpVersionConditionObject.ps1|Cdn.Autorest\custom\New-AzFrontDoorCdnRuleRequestHeaderActionObject.ps1|Cdn.Autorest\custom\New-AzFrontDoorCdnRuleRouteConfigurationOverrideActionObject.ps1|Cdn.Autorest\custom\New-AzFrontDoorCdnRuleUrlPathConditionObject.ps1|Cdn.Autorest\custom\New-AzFrontDoorCdnSecretManagedCertificateParametersObject.ps1|Cdn.Autorest\custom\Start-AzFrontDoorCdnProfilePrepareMigration.ps1|Cdn.Autorest\custom\autogen-model-cmdlets\New-AzCdnDeliveryRuleCacheKeyQueryStringActionObject.ps1|Cdn.Autorest\custom\autogen-model-cmdlets\New-AzCdnDeliveryRuleQueryStringConditionObject.ps1|Cdn.Autorest\custom\autogen-model-cmdlets\New-AzCdnDeliveryRuleRequestSchemeConditionObject.ps1|Cdn.Autorest\custom\autogen-model-cmdlets\New-AzCdnHealthProbeParametersObject.ps1|Cdn.Autorest\custom\autogen-model-cmdlets\New-AzCdnUrlRedirectActionObject.ps1|Cdn.Autorest\internal\ProxyCmdletDefinitions.ps1|Cdn.Autorest\Az.Cdn.format.ps1xml|Cdn.Autorest\custom\New-AzCdnManagedHttpsParametersObject.ps1|Cdn.Autorest\custom\New-AzFrontDoorCdnOriginGroupHealthProbeSettingObject.ps1|Cdn.Autorest\custom\New-AzFrontDoorCdnProfileUpgradeParametersObject.ps1|Cdn.Autorest\custom\New-AzFrontDoorCdnRuleIsDeviceConditionObject.ps1|Cdn.Autorest\custom\New-AzFrontDoorCdnRuleRequestHeaderConditionObject.ps1|Cdn.Autorest\custom\New-AzFrontDoorCdnRuleServerPortConditionObject.ps1|Cdn.Autorest\custom\New-AzFrontDoorCdnRuleUrlRedirectActionObject.ps1|Cdn.Autorest\custom\New-AzFrontDoorCdnSecretUrlSigningKeyParametersObject.ps1|Cdn.Autorest\custom\Stop-AzFrontDoorCdnProfileMigration.ps1|Cdn.Autorest\custom\autogen-model-cmdlets\New-AzCdnDeliveryRuleCookiesConditionObject.ps1|Cdn.Autorest\custom\autogen-model-cmdlets\New-AzCdnDeliveryRuleRemoteAddressConditionObject.ps1|Cdn.Autorest\custom\autogen-model-cmdlets\New-AzCdnDeliveryRuleRequestUriConditionObject.ps1|Cdn.Autorest\custom\autogen-model-cmdlets\New-AzCdnLoadParametersObject.ps1|Cdn.Autorest\custom\autogen-model-cmdlets\New-AzCdnUrlRewriteActionObject.ps1|Cdn.Autorest\utils\Get-SubscriptionIdTestSafe.ps1|Cdn.Autorest\Az.Cdn.psm1|Cdn.Autorest\custom\New-AzCdnProfile.ps1|Cdn.Autorest\custom\New-AzFrontDoorCdnOriginGroupLoadBalancingSettingObject.ps1|Cdn.Autorest\custom\New-AzFrontDoorCdnPurgeParametersObject.ps1|Cdn.Autorest\custom\New-AzFrontDoorCdnRulePostArgsConditionObject.ps1|Cdn.Autorest\custom\New-AzFrontDoorCdnRuleRequestMethodConditionObject.ps1|Cdn.Autorest\custom\New-AzFrontDoorCdnRuleSocketAddrConditionObject.ps1|Cdn.Autorest\custom\New-AzFrontDoorCdnRuleUrlRewriteActionObject.ps1|Cdn.Autorest\custom\New-AzFrontDoorCdnSecurityPolicyWebApplicationFirewallAssociationObject.ps1|Cdn.Autorest\custom\Test-AzFrontDoorCdnProfileMigration.ps1|Cdn.Autorest\custom\autogen-model-cmdlets\New-AzCdnDeliveryRuleHttpVersionConditionObject.ps1|Cdn.Autorest\custom\autogen-model-cmdlets\New-AzCdnDeliveryRuleRequestBodyConditionObject.ps1|Cdn.Autorest\custom\autogen-model-cmdlets\New-AzCdnDeliveryRuleResponseHeaderActionObject.ps1|Cdn.Autorest\custom\autogen-model-cmdlets\New-AzCdnOriginGroupOverrideActionObject.ps1|Cdn.Autorest\custom\autogen-model-cmdlets\New-AzCdnUrlSigningActionObject.ps1|Cdn.Autorest\utils\Unprotect-SecureString.ps1|Cdn.Autorest\bin\Az.Cdn.private.dll|Cdn.Autorest\custom\New-AzCdnUserManagedHttpsParametersObject.ps1|Cdn.Autorest\custom\New-AzFrontDoorCdnProfile.ps1|Cdn.Autorest\custom\New-AzFrontDoorCdnResourceReferenceObject.ps1|Cdn.Autorest\custom\New-AzFrontDoorCdnRuleQueryStringConditionObject.ps1|Cdn.Autorest\custom\New-AzFrontDoorCdnRuleRequestSchemeConditionObject.ps1|Cdn.Autorest\custom\New-AzFrontDoorCdnRuleSslProtocolConditionObject.ps1|Cdn.Autorest\custom\New-AzFrontDoorCdnRuleUrlSigningActionObject.ps1|Cdn.Autorest\custom\New-AzFrontDoorCdnSecurityPolicyWebApplicationFirewallParametersObject.ps1|Cdn.Autorest\custom\Update-AzCdnProfile.ps1|Cdn.Autorest\custom\Az.Cdn.custom.psm1|Cdn.Autorest\custom\New-AzFrontDoorCdnCustomDomainTlsSettingParametersObject.ps1|.signature.p7s</S>
+          <S N="GUID">91832aaa-dc11-4583-8239-bce5fd531604</S>
+          <S N="PowerShellVersion">5.1</S>
+          <S N="DotNetFrameworkVersion">4.7.2</S>
+          <S N="CompanyName">Microsoft Corporation</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">C:\Users\irman\OneDrive\Documents\PowerShell\Modules\Az.Cdn\3.3.1</S>
+    </MS>
+  </Obj>
+</Objs>

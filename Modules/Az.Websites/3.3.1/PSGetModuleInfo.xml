@@ -1,0 +1,398 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">Az.Websites</S>
+      <Version N="Version">3.3.1</Version>
+      <S N="Type">Module</S>
+      <S N="Description">Microsoft Azure PowerShell - App Service (Web Apps) service cmdlets for Azure Resource Manager in Windows PowerShell and PowerShell Core._x000D__x000A__x000D__x000A_For more information on App Service, please visit the following: https://learn.microsoft.com/azure/app-service-web/</S>
+      <S N="Author">Microsoft Corporation</S>
+      <S N="CompanyName">azure-sdk</S>
+      <S N="Copyright">Microsoft Corporation. All rights reserved.</S>
+      <DT N="PublishedDate">2025-03-04T04:23:33+02:00</DT>
+      <Obj N="InstalledDate" RefId="1">
+        <DT>2024-07-22T15:50:22.1055797+02:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="2">
+            <TN RefId="1">
+              <T>Deserialized.Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>Deserialized.System.Enum</T>
+              <T>Deserialized.System.ValueType</T>
+              <T>Deserialized.System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <Obj N="UpdatedDate" RefId="3">
+        <DT>2025-03-24T13:58:18.4649345+02:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="4">
+            <TN RefId="2">
+              <T>Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>System.Enum</T>
+              <T>System.ValueType</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <URI N="LicenseUri">https://aka.ms/azps-license</URI>
+      <URI N="ProjectUri">https://github.com/Azure/azure-powershell</URI>
+      <Nil N="IconUri" />
+      <Obj N="Tags" RefId="5">
+        <TN RefId="3">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>Azure</S>
+          <S>ResourceManager</S>
+          <S>ARM</S>
+          <S>Websites</S>
+          <S>Website</S>
+          <S>AppService</S>
+          <S>PSModule</S>
+          <S>PSEdition_Core</S>
+          <S>PSEdition_Desktop</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="6">
+        <TN RefId="4">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Obj N="Value" RefId="7">
+              <TNRef RefId="3" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="7" />
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="7" />
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Obj N="Value" RefId="8">
+              <TNRef RefId="3" />
+              <LST>
+                <S>Add-AzWebAppAccessRestrictionRule</S>
+                <S>Add-AzWebAppTrafficRouting</S>
+                <S>Edit-AzWebAppBackupConfiguration</S>
+                <S>Get-AzAppServiceEnvironment</S>
+                <S>Get-AzAppServicePlan</S>
+                <S>Get-AzDeletedWebApp</S>
+                <S>Get-AzWebApp</S>
+                <S>Get-AzWebAppAccessRestrictionConfig</S>
+                <S>Get-AzWebAppBackup</S>
+                <S>Get-AzWebAppBackupConfiguration</S>
+                <S>Get-AzWebAppBackupList</S>
+                <S>Get-AzWebAppCertificate</S>
+                <S>Get-AzWebAppContainerContinuousDeploymentUrl</S>
+                <S>Get-AzWebAppPublishingProfile</S>
+                <S>Get-AzWebAppSlot</S>
+                <S>Get-AzWebAppSlotConfigName</S>
+                <S>Get-AzWebAppSlotPublishingProfile</S>
+                <S>Get-AzWebAppSnapshot</S>
+                <S>Get-AzWebAppSSLBinding</S>
+                <S>Get-AzWebAppTrafficRouting</S>
+                <S>Import-AzWebAppKeyVaultCertificate</S>
+                <S>New-AzAppServiceEnvironment</S>
+                <S>New-AzAppServiceEnvironmentInboundServices</S>
+                <S>New-AzAppServicePlan</S>
+                <S>New-AzWebApp</S>
+                <S>New-AzWebAppAzureStoragePath</S>
+                <S>New-AzWebAppBackup</S>
+                <S>New-AzWebAppCertificate</S>
+                <S>New-AzWebAppDatabaseBackupSetting</S>
+                <S>New-AzWebAppSlot</S>
+                <S>New-AzWebAppSSLBinding</S>
+                <S>Publish-AzWebApp</S>
+                <S>Remove-AzAppServiceEnvironment</S>
+                <S>Remove-AzAppServicePlan</S>
+                <S>Remove-AzWebApp</S>
+                <S>Remove-AzWebAppAccessRestrictionRule</S>
+                <S>Remove-AzWebAppBackup</S>
+                <S>Remove-AzWebAppCertificate</S>
+                <S>Remove-AzWebAppSlot</S>
+                <S>Remove-AzWebAppSSLBinding</S>
+                <S>Remove-AzWebAppTrafficRouting</S>
+                <S>Reset-AzWebAppPublishingProfile</S>
+                <S>Reset-AzWebAppSlotPublishingProfile</S>
+                <S>Restart-AzWebApp</S>
+                <S>Restart-AzWebAppSlot</S>
+                <S>Restore-AzDeletedWebApp</S>
+                <S>Restore-AzWebAppBackup</S>
+                <S>Restore-AzWebAppSnapshot</S>
+                <S>Set-AzAppServicePlan</S>
+                <S>Set-AzWebApp</S>
+                <S>Set-AzWebAppSlot</S>
+                <S>Set-AzWebAppSlotConfigName</S>
+                <S>Start-AzWebApp</S>
+                <S>Start-AzWebAppSlot</S>
+                <S>Stop-AzWebApp</S>
+                <S>Stop-AzWebAppSlot</S>
+                <S>Switch-AzWebAppSlot</S>
+                <S>Update-AzWebAppAccessRestrictionConfig</S>
+                <S>Update-AzWebAppTrafficRouting</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="9">
+              <TNRef RefId="3" />
+              <LST>
+                <S>Get-AzStaticWebApp</S>
+                <S>Get-AzStaticWebAppBuild</S>
+                <S>Get-AzStaticWebAppBuildAppSetting</S>
+                <S>Get-AzStaticWebAppBuildFunction</S>
+                <S>Get-AzStaticWebAppBuildFunctionAppSetting</S>
+                <S>Get-AzStaticWebAppConfiguredRole</S>
+                <S>Get-AzStaticWebAppCustomDomain</S>
+                <S>Get-AzStaticWebAppFunction</S>
+                <S>Get-AzStaticWebAppFunctionAppSetting</S>
+                <S>Get-AzStaticWebAppSecret</S>
+                <S>Get-AzStaticWebAppSetting</S>
+                <S>Get-AzStaticWebAppUser</S>
+                <S>Get-AzStaticWebAppUserProvidedFunctionApp</S>
+                <S>Get-AzWebAppContinuousWebJob</S>
+                <S>Get-AzWebAppSlotContinuousWebJob</S>
+                <S>Get-AzWebAppSlotTriggeredWebJob</S>
+                <S>Get-AzWebAppSlotTriggeredWebJobHistory</S>
+                <S>Get-AzWebAppSlotWebJob</S>
+                <S>Get-AzWebAppTriggeredWebJob</S>
+                <S>Get-AzWebAppTriggeredWebJobHistory</S>
+                <S>Get-AzWebAppWebJob</S>
+                <S>New-AzStaticWebApp</S>
+                <S>New-AzStaticWebAppBuildAppSetting</S>
+                <S>New-AzStaticWebAppBuildFunctionAppSetting</S>
+                <S>New-AzStaticWebAppCustomDomain</S>
+                <S>New-AzStaticWebAppFunctionAppSetting</S>
+                <S>New-AzStaticWebAppSetting</S>
+                <S>New-AzStaticWebAppUserRoleInvitationLink</S>
+                <S>Register-AzStaticWebAppUserProvidedFunctionApp</S>
+                <S>Remove-AzStaticWebApp</S>
+                <S>Remove-AzStaticWebAppAttachedRepository</S>
+                <S>Remove-AzStaticWebAppBuild</S>
+                <S>Remove-AzStaticWebAppCustomDomain</S>
+                <S>Remove-AzStaticWebAppUser</S>
+                <S>Remove-AzWebAppContinuousWebJob</S>
+                <S>Remove-AzWebAppSlotContinuousWebJob</S>
+                <S>Remove-AzWebAppSlotTriggeredWebJob</S>
+                <S>Remove-AzWebAppTriggeredWebJob</S>
+                <S>Reset-AzStaticWebAppApiKey</S>
+                <S>Start-AzWebAppContinuousWebJob</S>
+                <S>Start-AzWebAppSlotContinuousWebJob</S>
+                <S>Start-AzWebAppSlotTriggeredWebJob</S>
+                <S>Start-AzWebAppTriggeredWebJob</S>
+                <S>Stop-AzWebAppContinuousWebJob</S>
+                <S>Stop-AzWebAppSlotContinuousWebJob</S>
+                <S>Test-AzStaticWebAppCustomDomain</S>
+                <S>Unregister-AzStaticWebAppBuildUserProvidedFunctionApp</S>
+                <S>Unregister-AzStaticWebAppUserProvidedFunctionApp</S>
+                <S>Update-AzStaticWebApp</S>
+                <S>Update-AzStaticWebAppUser</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="10">
+              <TNRef RefId="3" />
+              <LST>
+                <S>Add-AzWebAppAccessRestrictionRule</S>
+                <S>Add-AzWebAppTrafficRouting</S>
+                <S>Edit-AzWebAppBackupConfiguration</S>
+                <S>Get-AzAppServiceEnvironment</S>
+                <S>Get-AzAppServicePlan</S>
+                <S>Get-AzDeletedWebApp</S>
+                <S>Get-AzWebApp</S>
+                <S>Get-AzWebAppAccessRestrictionConfig</S>
+                <S>Get-AzWebAppBackup</S>
+                <S>Get-AzWebAppBackupConfiguration</S>
+                <S>Get-AzWebAppBackupList</S>
+                <S>Get-AzWebAppCertificate</S>
+                <S>Get-AzWebAppContainerContinuousDeploymentUrl</S>
+                <S>Get-AzWebAppPublishingProfile</S>
+                <S>Get-AzWebAppSlot</S>
+                <S>Get-AzWebAppSlotConfigName</S>
+                <S>Get-AzWebAppSlotPublishingProfile</S>
+                <S>Get-AzWebAppSnapshot</S>
+                <S>Get-AzWebAppSSLBinding</S>
+                <S>Get-AzWebAppTrafficRouting</S>
+                <S>Import-AzWebAppKeyVaultCertificate</S>
+                <S>New-AzAppServiceEnvironment</S>
+                <S>New-AzAppServiceEnvironmentInboundServices</S>
+                <S>New-AzAppServicePlan</S>
+                <S>New-AzWebApp</S>
+                <S>New-AzWebAppAzureStoragePath</S>
+                <S>New-AzWebAppBackup</S>
+                <S>New-AzWebAppCertificate</S>
+                <S>New-AzWebAppDatabaseBackupSetting</S>
+                <S>New-AzWebAppSlot</S>
+                <S>New-AzWebAppSSLBinding</S>
+                <S>Publish-AzWebApp</S>
+                <S>Remove-AzAppServiceEnvironment</S>
+                <S>Remove-AzAppServicePlan</S>
+                <S>Remove-AzWebApp</S>
+                <S>Remove-AzWebAppAccessRestrictionRule</S>
+                <S>Remove-AzWebAppBackup</S>
+                <S>Remove-AzWebAppCertificate</S>
+                <S>Remove-AzWebAppSlot</S>
+                <S>Remove-AzWebAppSSLBinding</S>
+                <S>Remove-AzWebAppTrafficRouting</S>
+                <S>Reset-AzWebAppPublishingProfile</S>
+                <S>Reset-AzWebAppSlotPublishingProfile</S>
+                <S>Restart-AzWebApp</S>
+                <S>Restart-AzWebAppSlot</S>
+                <S>Restore-AzDeletedWebApp</S>
+                <S>Restore-AzWebAppBackup</S>
+                <S>Restore-AzWebAppSnapshot</S>
+                <S>Set-AzAppServicePlan</S>
+                <S>Set-AzWebApp</S>
+                <S>Set-AzWebAppSlot</S>
+                <S>Set-AzWebAppSlotConfigName</S>
+                <S>Start-AzWebApp</S>
+                <S>Start-AzWebAppSlot</S>
+                <S>Stop-AzWebApp</S>
+                <S>Stop-AzWebAppSlot</S>
+                <S>Switch-AzWebAppSlot</S>
+                <S>Update-AzWebAppAccessRestrictionConfig</S>
+                <S>Update-AzWebAppTrafficRouting</S>
+                <S>Get-AzStaticWebApp</S>
+                <S>Get-AzStaticWebAppBuild</S>
+                <S>Get-AzStaticWebAppBuildAppSetting</S>
+                <S>Get-AzStaticWebAppBuildFunction</S>
+                <S>Get-AzStaticWebAppBuildFunctionAppSetting</S>
+                <S>Get-AzStaticWebAppConfiguredRole</S>
+                <S>Get-AzStaticWebAppCustomDomain</S>
+                <S>Get-AzStaticWebAppFunction</S>
+                <S>Get-AzStaticWebAppFunctionAppSetting</S>
+                <S>Get-AzStaticWebAppSecret</S>
+                <S>Get-AzStaticWebAppSetting</S>
+                <S>Get-AzStaticWebAppUser</S>
+                <S>Get-AzStaticWebAppUserProvidedFunctionApp</S>
+                <S>Get-AzWebAppContinuousWebJob</S>
+                <S>Get-AzWebAppSlotContinuousWebJob</S>
+                <S>Get-AzWebAppSlotTriggeredWebJob</S>
+                <S>Get-AzWebAppSlotTriggeredWebJobHistory</S>
+                <S>Get-AzWebAppSlotWebJob</S>
+                <S>Get-AzWebAppTriggeredWebJob</S>
+                <S>Get-AzWebAppTriggeredWebJobHistory</S>
+                <S>Get-AzWebAppWebJob</S>
+                <S>New-AzStaticWebApp</S>
+                <S>New-AzStaticWebAppBuildAppSetting</S>
+                <S>New-AzStaticWebAppBuildFunctionAppSetting</S>
+                <S>New-AzStaticWebAppCustomDomain</S>
+                <S>New-AzStaticWebAppFunctionAppSetting</S>
+                <S>New-AzStaticWebAppSetting</S>
+                <S>New-AzStaticWebAppUserRoleInvitationLink</S>
+                <S>Register-AzStaticWebAppUserProvidedFunctionApp</S>
+                <S>Remove-AzStaticWebApp</S>
+                <S>Remove-AzStaticWebAppAttachedRepository</S>
+                <S>Remove-AzStaticWebAppBuild</S>
+                <S>Remove-AzStaticWebAppCustomDomain</S>
+                <S>Remove-AzStaticWebAppUser</S>
+                <S>Remove-AzWebAppContinuousWebJob</S>
+                <S>Remove-AzWebAppSlotContinuousWebJob</S>
+                <S>Remove-AzWebAppSlotTriggeredWebJob</S>
+                <S>Remove-AzWebAppTriggeredWebJob</S>
+                <S>Reset-AzStaticWebAppApiKey</S>
+                <S>Start-AzWebAppContinuousWebJob</S>
+                <S>Start-AzWebAppSlotContinuousWebJob</S>
+                <S>Start-AzWebAppSlotTriggeredWebJob</S>
+                <S>Start-AzWebAppTriggeredWebJob</S>
+                <S>Stop-AzWebAppContinuousWebJob</S>
+                <S>Stop-AzWebAppSlotContinuousWebJob</S>
+                <S>Test-AzStaticWebAppCustomDomain</S>
+                <S>Unregister-AzStaticWebAppBuildUserProvidedFunctionApp</S>
+                <S>Unregister-AzStaticWebAppUserProvidedFunctionApp</S>
+                <S>Update-AzStaticWebApp</S>
+                <S>Update-AzStaticWebAppUser</S>
+              </LST>
+            </Obj>
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <S N="ReleaseNotes">* Migrated Websites.Helper generation from autorest csharp to autorest powershell.</S>
+      <Obj N="Dependencies" RefId="11">
+        <TNRef RefId="3" />
+        <LST>
+          <Obj RefId="12">
+            <TN RefId="5">
+              <T>System.Collections.Specialized.OrderedDictionary</T>
+              <T>System.Object</T>
+            </TN>
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Az.Accounts</S>
+              </En>
+              <En>
+                <S N="Key">MinimumVersion</S>
+                <S N="Value">4.0.2</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Az.Accounts/4.0.2</S>
+              </En>
+            </DCT>
+          </Obj>
+        </LST>
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="13">
+        <TN RefId="6">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">Microsoft Corporation. All rights reserved.</S>
+          <S N="description">Microsoft Azure PowerShell - App Service (Web Apps) service cmdlets for Azure Resource Manager in Windows PowerShell and PowerShell Core._x000D__x000A__x000D__x000A_For more information on App Service, please visit the following: https://learn.microsoft.com/azure/app-service-web/</S>
+          <S N="requireLicenseAcceptance">True</S>
+          <S N="releaseNotes">* Migrated Websites.Helper generation from autorest csharp to autorest powershell.</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">2316686</S>
+          <S N="downloadCount">114620627</S>
+          <S N="packageSize">2574932</S>
+          <S N="published">2025/03/04 04:23:33 +02:00</S>
+          <S N="created">2025/03/04 04:23:33 +02:00</S>
+          <S N="lastUpdated">2025/03/24 11:50:00 +02:00</S>
+          <S N="tags">Azure ResourceManager ARM Websites Website AppService PSModule PSEdition_Core PSEdition_Desktop PSCmdlet_Add-AzWebAppAccessRestrictionRule PSCommand_Add-AzWebAppAccessRestrictionRule PSCmdlet_Add-AzWebAppTrafficRouting PSCommand_Add-AzWebAppTrafficRouting PSCmdlet_Edit-AzWebAppBackupConfiguration PSCommand_Edit-AzWebAppBackupConfiguration PSCmdlet_Get-AzAppServiceEnvironment PSCommand_Get-AzAppServiceEnvironment PSCmdlet_Get-AzAppServicePlan PSCommand_Get-AzAppServicePlan PSCmdlet_Get-AzDeletedWebApp PSCommand_Get-AzDeletedWebApp PSCmdlet_Get-AzWebApp PSCommand_Get-AzWebApp PSCmdlet_Get-AzWebAppAccessRestrictionConfig PSCommand_Get-AzWebAppAccessRestrictionConfig PSCmdlet_Get-AzWebAppBackup PSCommand_Get-AzWebAppBackup PSCmdlet_Get-AzWebAppBackupConfiguration PSCommand_Get-AzWebAppBackupConfiguration PSCmdlet_Get-AzWebAppBackupList PSCommand_Get-AzWebAppBackupList PSCmdlet_Get-AzWebAppCertificate PSCommand_Get-AzWebAppCertificate PSCmdlet_Get-AzWebAppContainerContinuousDeploymentUrl PSCommand_Get-AzWebAppContainerContinuousDeploymentUrl PSCmdlet_Get-AzWebAppPublishingProfile PSCommand_Get-AzWebAppPublishingProfile PSCmdlet_Get-AzWebAppSlot PSCommand_Get-AzWebAppSlot PSCmdlet_Get-AzWebAppSlotConfigName PSCommand_Get-AzWebAppSlotConfigName PSCmdlet_Get-AzWebAppSlotPublishingProfile PSCommand_Get-AzWebAppSlotPublishingProfile PSCmdlet_Get-AzWebAppSnapshot PSCommand_Get-AzWebAppSnapshot PSCmdlet_Get-AzWebAppSSLBinding PSCommand_Get-AzWebAppSSLBinding PSCmdlet_Get-AzWebAppTrafficRouting PSCommand_Get-AzWebAppTrafficRouting PSCmdlet_Import-AzWebAppKeyVaultCertificate PSCommand_Import-AzWebAppKeyVaultCertificate PSCmdlet_New-AzAppServiceEnvironment PSCommand_New-AzAppServiceEnvironment PSCmdlet_New-AzAppServiceEnvironmentInboundServices PSCommand_New-AzAppServiceEnvironmentInboundServices PSCmdlet_New-AzAppServicePlan PSCommand_New-AzAppServicePlan PSCmdlet_New-AzWebApp PSCommand_New-AzWebApp PSCmdlet_New-AzWebAppAzureStoragePath PSCommand_New-AzWebAppAzureStoragePath PSCmdlet_New-AzWebAppBackup PSCommand_New-AzWebAppBackup PSCmdlet_New-AzWebAppCertificate PSCommand_New-AzWebAppCertificate PSCmdlet_New-AzWebAppDatabaseBackupSetting PSCommand_New-AzWebAppDatabaseBackupSetting PSCmdlet_New-AzWebAppSlot PSCommand_New-AzWebAppSlot PSCmdlet_New-AzWebAppSSLBinding PSCommand_New-AzWebAppSSLBinding PSCmdlet_Publish-AzWebApp PSCommand_Publish-AzWebApp PSCmdlet_Remove-AzAppServiceEnvironment PSCommand_Remove-AzAppServiceEnvironment PSCmdlet_Remove-AzAppServicePlan PSCommand_Remove-AzAppServicePlan PSCmdlet_Remove-AzWebApp PSCommand_Remove-AzWebApp PSCmdlet_Remove-AzWebAppAccessRestrictionRule PSCommand_Remove-AzWebAppAccessRestrictionRule PSCmdlet_Remove-AzWebAppBackup PSCommand_Remove-AzWebAppBackup PSCmdlet_Remove-AzWebAppCertificate PSCommand_Remove-AzWebAppCertificate PSCmdlet_Remove-AzWebAppSlot PSCommand_Remove-AzWebAppSlot PSCmdlet_Remove-AzWebAppSSLBinding PSCommand_Remove-AzWebAppSSLBinding PSCmdlet_Remove-AzWebAppTrafficRouting PSCommand_Remove-AzWebAppTrafficRouting PSCmdlet_Reset-AzWebAppPublishingProfile PSCommand_Reset-AzWebAppPublishingProfile PSCmdlet_Reset-AzWebAppSlotPublishingProfile PSCommand_Reset-AzWebAppSlotPublishingProfile PSCmdlet_Restart-AzWebApp PSCommand_Restart-AzWebApp PSCmdlet_Restart-AzWebAppSlot PSCommand_Restart-AzWebAppSlot PSCmdlet_Restore-AzDeletedWebApp PSCommand_Restore-AzDeletedWebApp PSCmdlet_Restore-AzWebAppBackup PSCommand_Restore-AzWebAppBackup PSCmdlet_Restore-AzWebAppSnapshot PSCommand_Restore-AzWebAppSnapshot PSCmdlet_Set-AzAppServicePlan PSCommand_Set-AzAppServicePlan PSCmdlet_Set-AzWebApp PSCommand_Set-AzWebApp PSCmdlet_Set-AzWebAppSlot PSCommand_Set-AzWebAppSlot PSCmdlet_Set-AzWebAppSlotConfigName PSCommand_Set-AzWebAppSlotConfigName PSCmdlet_Start-AzWebApp PSCommand_Start-AzWebApp PSCmdlet_Start-AzWebAppSlot PSCommand_Start-AzWebAppSlot PSCmdlet_Stop-AzWebApp PSCommand_Stop-AzWebApp PSCmdlet_Stop-AzWebAppSlot PSCommand_Stop-AzWebAppSlot PSCmdlet_Switch-AzWebAppSlot PSCommand_Switch-AzWebAppSlot PSCmdlet_Update-AzWebAppAccessRestrictionConfig PSCommand_Update-AzWebAppAccessRestrictionConfig PSCmdlet_Update-AzWebAppTrafficRouting PSCommand_Update-AzWebAppTrafficRouting PSIncludes_Cmdlet PSFunction_Get-AzStaticWebApp PSCommand_Get-AzStaticWebApp PSFunction_Get-AzStaticWebAppBuild PSCommand_Get-AzStaticWebAppBuild PSFunction_Get-AzStaticWebAppBuildAppSetting PSCommand_Get-AzStaticWebAppBuildAppSetting PSFunction_Get-AzStaticWebAppBuildFunction PSCommand_Get-AzStaticWebAppBuildFunction PSFunction_Get-AzStaticWebAppBuildFunctionAppSetting PSCommand_Get-AzStaticWebAppBuildFunctionAppSetting PSFunction_Get-AzStaticWebAppConfiguredRole PSCommand_Get-AzStaticWebAppConfiguredRole PSFunction_Get-AzStaticWebAppCustomDomain PSCommand_Get-AzStaticWebAppCustomDomain PSFunction_Get-AzStaticWebAppFunction PSCommand_Get-AzStaticWebAppFunction PSFunction_Get-AzStaticWebAppFunctionAppSetting PSCommand_Get-AzStaticWebAppFunctionAppSetting PSFunction_Get-AzStaticWebAppSecret PSCommand_Get-AzStaticWebAppSecret PSFunction_Get-AzStaticWebAppSetting PSCommand_Get-AzStaticWebAppSetting PSFunction_Get-AzStaticWebAppUser PSCommand_Get-AzStaticWebAppUser PSFunction_Get-AzStaticWebAppUserProvidedFunctionApp PSCommand_Get-AzStaticWebAppUserProvidedFunctionApp PSFunction_Get-AzWebAppContinuousWebJob PSCommand_Get-AzWebAppContinuousWebJob PSFunction_Get-AzWebAppSlotContinuousWebJob PSCommand_Get-AzWebAppSlotContinuousWebJob PSFunction_Get-AzWebAppSlotTriggeredWebJob PSCommand_Get-AzWebAppSlotTriggeredWebJob PSFunction_Get-AzWebAppSlotTriggeredWebJobHistory PSCommand_Get-AzWebAppSlotTriggeredWebJobHistory PSFunction_Get-AzWebAppSlotWebJob PSCommand_Get-AzWebAppSlotWebJob PSFunction_Get-AzWebAppTriggeredWebJob PSCommand_Get-AzWebAppTriggeredWebJob PSFunction_Get-AzWebAppTriggeredWebJobHistory PSCommand_Get-AzWebAppTriggeredWebJobHistory PSFunction_Get-AzWebAppWebJob PSCommand_Get-AzWebAppWebJob PSFunction_New-AzStaticWebApp PSCommand_New-AzStaticWebApp PSFunction_New-AzStaticWebAppBuildAppSetting PSCommand_New-AzStaticWebAppBuildAppSetting PSFunction_New-AzStaticWebAppBuildFunctionAppSetting PSCommand_New-AzStaticWebAppBuildFunctionAppSetting PSFunction_New-AzStaticWebAppCustomDomain PSCommand_New-AzStaticWebAppCustomDomain PSFunction_New-AzStaticWebAppFunctionAppSetting PSCommand_New-AzStaticWebAppFunctionAppSetting PSFunction_New-AzStaticWebAppSetting PSCommand_New-AzStaticWebAppSetting PSFunction_New-AzStaticWebAppUserRoleInvitationLink PSCommand_New-AzStaticWebAppUserRoleInvitationLink PSFunction_Register-AzStaticWebAppUserProvidedFunctionApp PSCommand_Register-AzStaticWebAppUserProvidedFunctionApp PSFunction_Remove-AzStaticWebApp PSCommand_Remove-AzStaticWebApp PSFunction_Remove-AzStaticWebAppAttachedRepository PSCommand_Remove-AzStaticWebAppAttachedRepository PSFunction_Remove-AzStaticWebAppBuild PSCommand_Remove-AzStaticWebAppBuild PSFunction_Remove-AzStaticWebAppCustomDomain PSCommand_Remove-AzStaticWebAppCustomDomain PSFunction_Remove-AzStaticWebAppUser PSCommand_Remove-AzStaticWebAppUser PSFunction_Remove-AzWebAppContinuousWebJob PSCommand_Remove-AzWebAppContinuousWebJob PSFunction_Remove-AzWebAppSlotContinuousWebJob PSCommand_Remove-AzWebAppSlotContinuousWebJob PSFunction_Remove-AzWebAppSlotTriggeredWebJob PSCommand_Remove-AzWebAppSlotTriggeredWebJob PSFunction_Remove-AzWebAppTriggeredWebJob PSCommand_Remove-AzWebAppTriggeredWebJob PSFunction_Reset-AzStaticWebAppApiKey PSCommand_Reset-AzStaticWebAppApiKey PSFunction_Start-AzWebAppContinuousWebJob PSCommand_Start-AzWebAppContinuousWebJob PSFunction_Start-AzWebAppSlotContinuousWebJob PSCommand_Start-AzWebAppSlotContinuousWebJob PSFunction_Start-AzWebAppSlotTriggeredWebJob PSCommand_Start-AzWebAppSlotTriggeredWebJob PSFunction_Start-AzWebAppTriggeredWebJob PSCommand_Start-AzWebAppTriggeredWebJob PSFunction_Stop-AzWebAppContinuousWebJob PSCommand_Stop-AzWebAppContinuousWebJob PSFunction_Stop-AzWebAppSlotContinuousWebJob PSCommand_Stop-AzWebAppSlotContinuousWebJob PSFunction_Test-AzStaticWebAppCustomDomain PSCommand_Test-AzStaticWebAppCustomDomain PSFunction_Unregister-AzStaticWebAppBuildUserProvidedFunctionApp PSCommand_Unregister-AzStaticWebAppBuildUserProvidedFunctionApp PSFunction_Unregister-AzStaticWebAppUserProvidedFunctionApp PSCommand_Unregister-AzStaticWebAppUserProvidedFunctionApp PSFunction_Update-AzStaticWebApp PSCommand_Update-AzStaticWebApp PSFunction_Update-AzStaticWebAppUser PSCommand_Update-AzStaticWebAppUser PSIncludes_Function</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2025-03-24T11:50:00Z</S>
+          <S N="NormalizedVersion">3.3.1</S>
+          <S N="Authors">Microsoft Corporation</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">Az.Websites.nuspec|Websites.Autorest\internal\ProxyCmdletDefinitions.ps1|Websites.Autorest\utils\Get-SubscriptionIdTestSafe.ps1|Websites.Autorest\utils\Unprotect-SecureString.ps1|Az.Websites.psm1|Microsoft.Azure.PowerShell.Cmdlets.Websites.dll|Microsoft.Azure.PowerShell.Cmdlets.Websites.dll-Help.xml|Microsoft.Azure.PowerShell.Cmdlets.Websites.Helper.dll|Websites.format.ps1xml|Websites.Autorest\Az.Websites.format.ps1xml|Websites.Autorest\Az.Websites.psm1|Websites.Autorest\bin\Az.Websites.private.dll|Websites.Autorest\custom\Az.Websites.custom.psm1|Websites.Autorest\custom\New-AzStaticWebApp.ps1|Websites.Autorest\exports\ProxyCmdletDefinitions.ps1|Websites.Autorest\internal\Az.Websites.internal.psm1|Az.Websites.psd1|Microsoft.Azure.Management.Websites.dll|.signature.p7s</S>
+          <S N="GUID">80c60f49-dd83-4f4e-92ad-5f3449de36e3</S>
+          <S N="PowerShellVersion">5.1</S>
+          <S N="DotNetFrameworkVersion">4.7.2</S>
+          <S N="CompanyName">Microsoft Corporation</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">C:\Users\irman\OneDrive\Documents\PowerShell\Modules\Az.Websites\3.3.1</S>
+    </MS>
+  </Obj>
+</Objs>

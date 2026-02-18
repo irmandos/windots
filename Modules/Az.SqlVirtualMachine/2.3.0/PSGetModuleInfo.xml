@@ -1,0 +1,194 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">Az.SqlVirtualMachine</S>
+      <Version N="Version">2.3.0</Version>
+      <S N="Type">Module</S>
+      <S N="Description">Microsoft Azure PowerShell: SqlVirtualMachine cmdlets</S>
+      <S N="Author">Microsoft Corporation</S>
+      <S N="CompanyName">azure-sdk</S>
+      <S N="Copyright">Microsoft Corporation. All rights reserved.</S>
+      <DT N="PublishedDate">2024-07-09T01:53:44+02:00</DT>
+      <Obj N="InstalledDate" RefId="1">
+        <DT>2024-07-22T15:50:07.2491476+02:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="2">
+            <TN RefId="1">
+              <T>Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>System.Enum</T>
+              <T>System.ValueType</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <Nil N="UpdatedDate" />
+      <URI N="LicenseUri">https://aka.ms/azps-license</URI>
+      <URI N="ProjectUri">https://github.com/Azure/azure-powershell</URI>
+      <Nil N="IconUri" />
+      <Obj N="Tags" RefId="3">
+        <TN RefId="2">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>Azure</S>
+          <S>ResourceManager</S>
+          <S>ARM</S>
+          <S>PSModule</S>
+          <S>SqlVirtualMachine</S>
+          <S>PSEdition_Core</S>
+          <S>PSEdition_Desktop</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="4">
+        <TN RefId="3">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Assert-AzSqlVMEntraAuth</S>
+                <S>Get-AzAvailabilityGroupListener</S>
+                <S>Get-AzSqlVM</S>
+                <S>Get-AzSqlVMGroup</S>
+                <S>Invoke-AzRedeploySqlVM</S>
+                <S>Invoke-AzSqlVMTroubleshoot</S>
+                <S>New-AzAvailabilityGroupListener</S>
+                <S>New-AzSqlVirtualMachineAgReplicaObject</S>
+                <S>New-AzSqlVirtualMachineMultiSubnetIPConfigurationObject</S>
+                <S>New-AzSqlVM</S>
+                <S>New-AzSqlVMGroup</S>
+                <S>Remove-AzAvailabilityGroupListener</S>
+                <S>Remove-AzSqlVM</S>
+                <S>Remove-AzSqlVMGroup</S>
+                <S>Start-AzSqlVMAssessment</S>
+                <S>Update-AzSqlVM</S>
+                <S>Update-AzSqlVMGroup</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="6">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Assert-AzSqlVMEntraAuth</S>
+                <S>Get-AzAvailabilityGroupListener</S>
+                <S>Get-AzSqlVM</S>
+                <S>Get-AzSqlVMGroup</S>
+                <S>Invoke-AzRedeploySqlVM</S>
+                <S>Invoke-AzSqlVMTroubleshoot</S>
+                <S>New-AzAvailabilityGroupListener</S>
+                <S>New-AzSqlVirtualMachineAgReplicaObject</S>
+                <S>New-AzSqlVirtualMachineMultiSubnetIPConfigurationObject</S>
+                <S>New-AzSqlVM</S>
+                <S>New-AzSqlVMGroup</S>
+                <S>Remove-AzAvailabilityGroupListener</S>
+                <S>Remove-AzSqlVM</S>
+                <S>Remove-AzSqlVMGroup</S>
+                <S>Start-AzSqlVMAssessment</S>
+                <S>Update-AzSqlVM</S>
+                <S>Update-AzSqlVMGroup</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Obj N="Value" RefId="7">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Ref N="Value" RefId="7" />
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Ref N="Value" RefId="7" />
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="7" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <S N="ReleaseNotes">* Enabled Microsoft entra id on SQL VM.</S>
+      <Obj N="Dependencies" RefId="8">
+        <TNRef RefId="2" />
+        <LST>
+          <Obj RefId="9">
+            <TN RefId="4">
+              <T>System.Collections.Specialized.OrderedDictionary</T>
+              <T>System.Object</T>
+            </TN>
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Az.Accounts</S>
+              </En>
+              <En>
+                <S N="Key">MinimumVersion</S>
+                <S N="Value">3.0.1</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Az.Accounts/3.0.1</S>
+              </En>
+            </DCT>
+          </Obj>
+        </LST>
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="10">
+        <TN RefId="5">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">Microsoft Corporation. All rights reserved.</S>
+          <S N="description">Microsoft Azure PowerShell: SqlVirtualMachine cmdlets</S>
+          <S N="requireLicenseAcceptance">True</S>
+          <S N="releaseNotes">* Enabled Microsoft entra id on SQL VM.</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">201172</S>
+          <S N="downloadCount">76043039</S>
+          <S N="packageSize">646487</S>
+          <S N="published">2024/07/09 01:53:44 +02:00</S>
+          <S N="created">2024/07/09 01:53:44 +02:00</S>
+          <S N="lastUpdated">2024/07/11 19:05:03 +02:00</S>
+          <S N="tags">Azure ResourceManager ARM PSModule SqlVirtualMachine PSEdition_Core PSEdition_Desktop PSFunction_Assert-AzSqlVMEntraAuth PSCommand_Assert-AzSqlVMEntraAuth PSFunction_Get-AzAvailabilityGroupListener PSCommand_Get-AzAvailabilityGroupListener PSFunction_Get-AzSqlVM PSCommand_Get-AzSqlVM PSFunction_Get-AzSqlVMGroup PSCommand_Get-AzSqlVMGroup PSFunction_Invoke-AzRedeploySqlVM PSCommand_Invoke-AzRedeploySqlVM PSFunction_Invoke-AzSqlVMTroubleshoot PSCommand_Invoke-AzSqlVMTroubleshoot PSFunction_New-AzAvailabilityGroupListener PSCommand_New-AzAvailabilityGroupListener PSFunction_New-AzSqlVirtualMachineAgReplicaObject PSCommand_New-AzSqlVirtualMachineAgReplicaObject PSFunction_New-AzSqlVirtualMachineMultiSubnetIPConfigurationObject PSCommand_New-AzSqlVirtualMachineMultiSubnetIPConfigurationObject PSFunction_New-AzSqlVM PSCommand_New-AzSqlVM PSFunction_New-AzSqlVMGroup PSCommand_New-AzSqlVMGroup PSFunction_Remove-AzAvailabilityGroupListener PSCommand_Remove-AzAvailabilityGroupListener PSFunction_Remove-AzSqlVM PSCommand_Remove-AzSqlVM PSFunction_Remove-AzSqlVMGroup PSCommand_Remove-AzSqlVMGroup PSFunction_Start-AzSqlVMAssessment PSCommand_Start-AzSqlVMAssessment PSFunction_Update-AzSqlVM PSCommand_Update-AzSqlVM PSFunction_Update-AzSqlVMGroup PSCommand_Update-AzSqlVMGroup PSIncludes_Function</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2024-07-11T19:05:03Z</S>
+          <S N="NormalizedVersion">2.3.0</S>
+          <S N="Authors">Microsoft Corporation</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">Az.SqlVirtualMachine.nuspec|SqlVirtualMachine.Autorest\internal\ProxyCmdletDefinitions.ps1|SqlVirtualMachine.Autorest\utils\Get-SubscriptionIdTestSafe.ps1|SqlVirtualMachine.Autorest\utils\Unprotect-SecureString.ps1|Az.SqlVirtualMachine.psm1|SqlVirtualMachine.Autorest\Az.SqlVirtualMachine.psm1|SqlVirtualMachine.Autorest\custom\Assert-AzSqlVMEntraAuth.ps1|SqlVirtualMachine.Autorest\custom\Az.SqlVirtualMachine.custom.psm1|SqlVirtualMachine.Autorest\custom\New-AzAvailabilityGroupListener.ps1|SqlVirtualMachine.Autorest\custom\New-AzSqlVM.ps1|SqlVirtualMachine.Autorest\custom\Update-AzSqlVM.ps1|SqlVirtualMachine.Autorest\custom\Update-AzSqlVMGroup.ps1|SqlVirtualMachine.Autorest\custom\autogen-model-cmdlets\New-AzSqlVirtualMachineAgReplicaObject.ps1|SqlVirtualMachine.Autorest\custom\autogen-model-cmdlets\New-AzSqlVirtualMachineMultiSubnetIPConfigurationObject.ps1|SqlVirtualMachine.Autorest\exports\ProxyCmdletDefinitions.ps1|SqlVirtualMachine.Autorest\internal\Az.SqlVirtualMachine.internal.psm1|Az.SqlVirtualMachine.psd1|SqlVirtualMachine.Autorest\Az.SqlVirtualMachine.format.ps1xml|SqlVirtualMachine.Autorest\bin\Az.SqlVirtualMachine.private.dll</S>
+          <S N="GUID">91832aaa-dc11-4583-8239-bce5fd531604</S>
+          <S N="PowerShellVersion">5.1</S>
+          <S N="DotNetFrameworkVersion">4.7.2</S>
+          <S N="CompanyName">Microsoft Corporation</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">C:\Users\irman\OneDrive\Documents\PowerShell\Modules\Az.SqlVirtualMachine\2.3.0</S>
+    </MS>
+  </Obj>
+</Objs>

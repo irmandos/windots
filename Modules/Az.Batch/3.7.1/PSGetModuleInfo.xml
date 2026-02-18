@@ -1,0 +1,318 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">Az.Batch</S>
+      <Version N="Version">3.7.1</Version>
+      <S N="Type">Module</S>
+      <S N="Description">Microsoft Azure PowerShell - Batch service cmdlets for Azure Resource Manager in Windows PowerShell and PowerShell Core._x000D__x000A__x000D__x000A_For information on Batch, please visit the following: https://learn.microsoft.com/azure/batch/</S>
+      <S N="Author">Microsoft Corporation</S>
+      <S N="CompanyName">azure-sdk</S>
+      <S N="Copyright">Microsoft Corporation. All rights reserved.</S>
+      <DT N="PublishedDate">2025-09-02T02:38:22+02:00</DT>
+      <Obj N="InstalledDate" RefId="1">
+        <DT>2024-07-22T15:48:31.054658+02:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="2">
+            <TN RefId="1">
+              <T>Deserialized.Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>Deserialized.System.Enum</T>
+              <T>Deserialized.System.ValueType</T>
+              <T>Deserialized.System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <Obj N="UpdatedDate" RefId="3">
+        <DT>2025-09-03T11:29:58.7632666+02:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="4">
+            <TN RefId="2">
+              <T>Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>System.Enum</T>
+              <T>System.ValueType</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <URI N="LicenseUri">https://aka.ms/azps-license</URI>
+      <URI N="ProjectUri">https://github.com/Azure/azure-powershell</URI>
+      <Nil N="IconUri" />
+      <Obj N="Tags" RefId="5">
+        <TN RefId="3">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>Azure</S>
+          <S>ResourceManager</S>
+          <S>ARM</S>
+          <S>Batch</S>
+          <S>PSModule</S>
+          <S>PSEdition_Core</S>
+          <S>PSEdition_Desktop</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="6">
+        <TN RefId="4">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="7">
+              <TNRef RefId="3" />
+              <LST>
+                <S>Disable-AzBatchAutoScale</S>
+                <S>Disable-AzBatchComputeNodeScheduling</S>
+                <S>Disable-AzBatchJob</S>
+                <S>Disable-AzBatchJobSchedule</S>
+                <S>Enable-AzBatchAutoScale</S>
+                <S>Enable-AzBatchComputeNodeScheduling</S>
+                <S>Enable-AzBatchJob</S>
+                <S>Enable-AzBatchJobSchedule</S>
+                <S>Enable-AzBatchTask</S>
+                <S>Get-AzBatchAccount</S>
+                <S>Get-AzBatchAccountKey</S>
+                <S>Get-AzBatchApplication</S>
+                <S>Get-AzBatchApplicationPackage</S>
+                <S>Get-AzBatchCertificate</S>
+                <S>Get-AzBatchComputeNode</S>
+                <S>Get-AzBatchComputeNodeExtension</S>
+                <S>Get-AzBatchJob</S>
+                <S>Get-AzBatchJobPreparationAndReleaseTaskStatus</S>
+                <S>Get-AzBatchJobSchedule</S>
+                <S>Get-AzBatchLocationQuota</S>
+                <S>Get-AzBatchNodeFile</S>
+                <S>Get-AzBatchNodeFileContent</S>
+                <S>Get-AzBatchPool</S>
+                <S>Get-AzBatchPoolNodeCount</S>
+                <S>Get-AzBatchPoolUsageMetric</S>
+                <S>Get-AzBatchRemoteDesktopProtocolFile</S>
+                <S>Get-AzBatchRemoteLoginSetting</S>
+                <S>Get-AzBatchSubtask</S>
+                <S>Get-AzBatchSupportedImage</S>
+                <S>Get-AzBatchSupportedVirtualMachineSku</S>
+                <S>Get-AzBatchTask</S>
+                <S>Get-AzBatchTaskCount</S>
+                <S>Get-AzBatchTaskSlotCount</S>
+                <S>New-AzBatchAccount</S>
+                <S>New-AzBatchAccountKey</S>
+                <S>New-AzBatchApplication</S>
+                <S>New-AzBatchApplicationPackage</S>
+                <S>New-AzBatchCertificate</S>
+                <S>New-AzBatchComputeNodeUser</S>
+                <S>New-AzBatchJob</S>
+                <S>New-AzBatchJobSchedule</S>
+                <S>New-AzBatchPool</S>
+                <S>New-AzBatchResourceFile</S>
+                <S>New-AzBatchTask</S>
+                <S>Remove-AzBatchAccount</S>
+                <S>Remove-AzBatchApplication</S>
+                <S>Remove-AzBatchApplicationPackage</S>
+                <S>Remove-AzBatchCertificate</S>
+                <S>Remove-AzBatchComputeNode</S>
+                <S>Remove-AzBatchComputeNodeUser</S>
+                <S>Remove-AzBatchJob</S>
+                <S>Remove-AzBatchJobSchedule</S>
+                <S>Remove-AzBatchNodeFile</S>
+                <S>Remove-AzBatchPool</S>
+                <S>Remove-AzBatchTask</S>
+                <S>Reset-AzBatchComputeNode</S>
+                <S>Restart-AzBatchComputeNode</S>
+                <S>Set-AzBatchAccount</S>
+                <S>Set-AzBatchApplication</S>
+                <S>Set-AzBatchComputeNodeUser</S>
+                <S>Set-AzBatchJob</S>
+                <S>Set-AzBatchJobSchedule</S>
+                <S>Set-AzBatchPool</S>
+                <S>Set-AzBatchTask</S>
+                <S>Start-AzBatchComputeNodeServiceLogUpload</S>
+                <S>Start-AzBatchPoolResize</S>
+                <S>Stop-AzBatchCertificateDeletion</S>
+                <S>Stop-AzBatchJob</S>
+                <S>Stop-AzBatchJobSchedule</S>
+                <S>Stop-AzBatchPoolResize</S>
+                <S>Stop-AzBatchTask</S>
+                <S>Test-AzBatchAutoScale</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Obj N="Value" RefId="8">
+              <TNRef RefId="3" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Ref N="Value" RefId="8" />
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Ref N="Value" RefId="8" />
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Obj N="Value" RefId="9">
+              <TNRef RefId="3" />
+              <LST>
+                <S>Disable-AzBatchAutoScale</S>
+                <S>Disable-AzBatchComputeNodeScheduling</S>
+                <S>Disable-AzBatchJob</S>
+                <S>Disable-AzBatchJobSchedule</S>
+                <S>Enable-AzBatchAutoScale</S>
+                <S>Enable-AzBatchComputeNodeScheduling</S>
+                <S>Enable-AzBatchJob</S>
+                <S>Enable-AzBatchJobSchedule</S>
+                <S>Enable-AzBatchTask</S>
+                <S>Get-AzBatchAccount</S>
+                <S>Get-AzBatchAccountKey</S>
+                <S>Get-AzBatchApplication</S>
+                <S>Get-AzBatchApplicationPackage</S>
+                <S>Get-AzBatchCertificate</S>
+                <S>Get-AzBatchComputeNode</S>
+                <S>Get-AzBatchComputeNodeExtension</S>
+                <S>Get-AzBatchJob</S>
+                <S>Get-AzBatchJobPreparationAndReleaseTaskStatus</S>
+                <S>Get-AzBatchJobSchedule</S>
+                <S>Get-AzBatchLocationQuota</S>
+                <S>Get-AzBatchNodeFile</S>
+                <S>Get-AzBatchNodeFileContent</S>
+                <S>Get-AzBatchPool</S>
+                <S>Get-AzBatchPoolNodeCount</S>
+                <S>Get-AzBatchPoolUsageMetric</S>
+                <S>Get-AzBatchRemoteDesktopProtocolFile</S>
+                <S>Get-AzBatchRemoteLoginSetting</S>
+                <S>Get-AzBatchSubtask</S>
+                <S>Get-AzBatchSupportedImage</S>
+                <S>Get-AzBatchSupportedVirtualMachineSku</S>
+                <S>Get-AzBatchTask</S>
+                <S>Get-AzBatchTaskCount</S>
+                <S>Get-AzBatchTaskSlotCount</S>
+                <S>New-AzBatchAccount</S>
+                <S>New-AzBatchAccountKey</S>
+                <S>New-AzBatchApplication</S>
+                <S>New-AzBatchApplicationPackage</S>
+                <S>New-AzBatchCertificate</S>
+                <S>New-AzBatchComputeNodeUser</S>
+                <S>New-AzBatchJob</S>
+                <S>New-AzBatchJobSchedule</S>
+                <S>New-AzBatchPool</S>
+                <S>New-AzBatchResourceFile</S>
+                <S>New-AzBatchTask</S>
+                <S>Remove-AzBatchAccount</S>
+                <S>Remove-AzBatchApplication</S>
+                <S>Remove-AzBatchApplicationPackage</S>
+                <S>Remove-AzBatchCertificate</S>
+                <S>Remove-AzBatchComputeNode</S>
+                <S>Remove-AzBatchComputeNodeUser</S>
+                <S>Remove-AzBatchJob</S>
+                <S>Remove-AzBatchJobSchedule</S>
+                <S>Remove-AzBatchNodeFile</S>
+                <S>Remove-AzBatchPool</S>
+                <S>Remove-AzBatchTask</S>
+                <S>Reset-AzBatchComputeNode</S>
+                <S>Restart-AzBatchComputeNode</S>
+                <S>Set-AzBatchAccount</S>
+                <S>Set-AzBatchApplication</S>
+                <S>Set-AzBatchComputeNodeUser</S>
+                <S>Set-AzBatchJob</S>
+                <S>Set-AzBatchJobSchedule</S>
+                <S>Set-AzBatchPool</S>
+                <S>Set-AzBatchTask</S>
+                <S>Start-AzBatchComputeNodeServiceLogUpload</S>
+                <S>Start-AzBatchPoolResize</S>
+                <S>Stop-AzBatchCertificateDeletion</S>
+                <S>Stop-AzBatchJob</S>
+                <S>Stop-AzBatchJobSchedule</S>
+                <S>Stop-AzBatchPoolResize</S>
+                <S>Stop-AzBatchTask</S>
+                <S>Test-AzBatchAutoScale</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="8" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <S N="ReleaseNotes">* Preannounced breaking changes. Please refer to https://go.microsoft.com/fwlink/?linkid=2333229</S>
+      <Obj N="Dependencies" RefId="10">
+        <TNRef RefId="3" />
+        <LST>
+          <Obj RefId="11">
+            <TN RefId="5">
+              <T>System.Collections.Specialized.OrderedDictionary</T>
+              <T>System.Object</T>
+            </TN>
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Az.Accounts</S>
+              </En>
+              <En>
+                <S N="Key">MinimumVersion</S>
+                <S N="Value">5.3.0</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Az.Accounts/5.3.0</S>
+              </En>
+            </DCT>
+          </Obj>
+        </LST>
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="12">
+        <TN RefId="6">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">Microsoft Corporation. All rights reserved.</S>
+          <S N="description">Microsoft Azure PowerShell - Batch service cmdlets for Azure Resource Manager in Windows PowerShell and PowerShell Core._x000D__x000A__x000D__x000A_For information on Batch, please visit the following: https://learn.microsoft.com/azure/batch/</S>
+          <S N="requireLicenseAcceptance">True</S>
+          <S N="releaseNotes">* Preannounced breaking changes. Please refer to https://go.microsoft.com/fwlink/?linkid=2333229</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">269282</S>
+          <S N="downloadCount">149849818</S>
+          <S N="packageSize">1156757</S>
+          <S N="published">2025/09/02 02:38:22 +02:00</S>
+          <S N="created">2025/09/02 02:38:22 +02:00</S>
+          <S N="lastUpdated">2025/09/03 09:20:06 +02:00</S>
+          <S N="tags">Azure ResourceManager ARM Batch PSModule PSEdition_Core PSEdition_Desktop PSCmdlet_Disable-AzBatchAutoScale PSCommand_Disable-AzBatchAutoScale PSCmdlet_Disable-AzBatchComputeNodeScheduling PSCommand_Disable-AzBatchComputeNodeScheduling PSCmdlet_Disable-AzBatchJob PSCommand_Disable-AzBatchJob PSCmdlet_Disable-AzBatchJobSchedule PSCommand_Disable-AzBatchJobSchedule PSCmdlet_Enable-AzBatchAutoScale PSCommand_Enable-AzBatchAutoScale PSCmdlet_Enable-AzBatchComputeNodeScheduling PSCommand_Enable-AzBatchComputeNodeScheduling PSCmdlet_Enable-AzBatchJob PSCommand_Enable-AzBatchJob PSCmdlet_Enable-AzBatchJobSchedule PSCommand_Enable-AzBatchJobSchedule PSCmdlet_Enable-AzBatchTask PSCommand_Enable-AzBatchTask PSCmdlet_Get-AzBatchAccount PSCommand_Get-AzBatchAccount PSCmdlet_Get-AzBatchAccountKey PSCommand_Get-AzBatchAccountKey PSCmdlet_Get-AzBatchApplication PSCommand_Get-AzBatchApplication PSCmdlet_Get-AzBatchApplicationPackage PSCommand_Get-AzBatchApplicationPackage PSCmdlet_Get-AzBatchCertificate PSCommand_Get-AzBatchCertificate PSCmdlet_Get-AzBatchComputeNode PSCommand_Get-AzBatchComputeNode PSCmdlet_Get-AzBatchComputeNodeExtension PSCommand_Get-AzBatchComputeNodeExtension PSCmdlet_Get-AzBatchJob PSCommand_Get-AzBatchJob PSCmdlet_Get-AzBatchJobPreparationAndReleaseTaskStatus PSCommand_Get-AzBatchJobPreparationAndReleaseTaskStatus PSCmdlet_Get-AzBatchJobSchedule PSCommand_Get-AzBatchJobSchedule PSCmdlet_Get-AzBatchLocationQuota PSCommand_Get-AzBatchLocationQuota PSCmdlet_Get-AzBatchNodeFile PSCommand_Get-AzBatchNodeFile PSCmdlet_Get-AzBatchNodeFileContent PSCommand_Get-AzBatchNodeFileContent PSCmdlet_Get-AzBatchPool PSCommand_Get-AzBatchPool PSCmdlet_Get-AzBatchPoolNodeCount PSCommand_Get-AzBatchPoolNodeCount PSCmdlet_Get-AzBatchPoolUsageMetric PSCommand_Get-AzBatchPoolUsageMetric PSCmdlet_Get-AzBatchRemoteDesktopProtocolFile PSCommand_Get-AzBatchRemoteDesktopProtocolFile PSCmdlet_Get-AzBatchRemoteLoginSetting PSCommand_Get-AzBatchRemoteLoginSetting PSCmdlet_Get-AzBatchSubtask PSCommand_Get-AzBatchSubtask PSCmdlet_Get-AzBatchSupportedImage PSCommand_Get-AzBatchSupportedImage PSCmdlet_Get-AzBatchSupportedVirtualMachineSku PSCommand_Get-AzBatchSupportedVirtualMachineSku PSCmdlet_Get-AzBatchTask PSCommand_Get-AzBatchTask PSCmdlet_Get-AzBatchTaskCount PSCommand_Get-AzBatchTaskCount PSCmdlet_Get-AzBatchTaskSlotCount PSCommand_Get-AzBatchTaskSlotCount PSCmdlet_New-AzBatchAccount PSCommand_New-AzBatchAccount PSCmdlet_New-AzBatchAccountKey PSCommand_New-AzBatchAccountKey PSCmdlet_New-AzBatchApplication PSCommand_New-AzBatchApplication PSCmdlet_New-AzBatchApplicationPackage PSCommand_New-AzBatchApplicationPackage PSCmdlet_New-AzBatchCertificate PSCommand_New-AzBatchCertificate PSCmdlet_New-AzBatchComputeNodeUser PSCommand_New-AzBatchComputeNodeUser PSCmdlet_New-AzBatchJob PSCommand_New-AzBatchJob PSCmdlet_New-AzBatchJobSchedule PSCommand_New-AzBatchJobSchedule PSCmdlet_New-AzBatchPool PSCommand_New-AzBatchPool PSCmdlet_New-AzBatchResourceFile PSCommand_New-AzBatchResourceFile PSCmdlet_New-AzBatchTask PSCommand_New-AzBatchTask PSCmdlet_Remove-AzBatchAccount PSCommand_Remove-AzBatchAccount PSCmdlet_Remove-AzBatchApplication PSCommand_Remove-AzBatchApplication PSCmdlet_Remove-AzBatchApplicationPackage PSCommand_Remove-AzBatchApplicationPackage PSCmdlet_Remove-AzBatchCertificate PSCommand_Remove-AzBatchCertificate PSCmdlet_Remove-AzBatchComputeNode PSCommand_Remove-AzBatchComputeNode PSCmdlet_Remove-AzBatchComputeNodeUser PSCommand_Remove-AzBatchComputeNodeUser PSCmdlet_Remove-AzBatchJob PSCommand_Remove-AzBatchJob PSCmdlet_Remove-AzBatchJobSchedule PSCommand_Remove-AzBatchJobSchedule PSCmdlet_Remove-AzBatchNodeFile PSCommand_Remove-AzBatchNodeFile PSCmdlet_Remove-AzBatchPool PSCommand_Remove-AzBatchPool PSCmdlet_Remove-AzBatchTask PSCommand_Remove-AzBatchTask PSCmdlet_Reset-AzBatchComputeNode PSCommand_Reset-AzBatchComputeNode PSCmdlet_Restart-AzBatchComputeNode PSCommand_Restart-AzBatchComputeNode PSCmdlet_Set-AzBatchAccount PSCommand_Set-AzBatchAccount PSCmdlet_Set-AzBatchApplication PSCommand_Set-AzBatchApplication PSCmdlet_Set-AzBatchComputeNodeUser PSCommand_Set-AzBatchComputeNodeUser PSCmdlet_Set-AzBatchJob PSCommand_Set-AzBatchJob PSCmdlet_Set-AzBatchJobSchedule PSCommand_Set-AzBatchJobSchedule PSCmdlet_Set-AzBatchPool PSCommand_Set-AzBatchPool PSCmdlet_Set-AzBatchTask PSCommand_Set-AzBatchTask PSCmdlet_Start-AzBatchComputeNodeServiceLogUpload PSCommand_Start-AzBatchComputeNodeServiceLogUpload PSCmdlet_Start-AzBatchPoolResize PSCommand_Start-AzBatchPoolResize PSCmdlet_Stop-AzBatchCertificateDeletion PSCommand_Stop-AzBatchCertificateDeletion PSCmdlet_Stop-AzBatchJob PSCommand_Stop-AzBatchJob PSCmdlet_Stop-AzBatchJobSchedule PSCommand_Stop-AzBatchJobSchedule PSCmdlet_Stop-AzBatchPoolResize PSCommand_Stop-AzBatchPoolResize PSCmdlet_Stop-AzBatchTask PSCommand_Stop-AzBatchTask PSCmdlet_Test-AzBatchAutoScale PSCommand_Test-AzBatchAutoScale PSIncludes_Cmdlet</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2025-09-03T09:20:06Z</S>
+          <S N="NormalizedVersion">3.7.1</S>
+          <S N="Authors">Microsoft Corporation</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">Az.Batch.nuspec|Az.Batch.psd1|Az.Batch.psm1|Batch.format.ps1xml|Microsoft.AspNetCore.WebUtilities.dll|Microsoft.Azure.Batch.dll|Microsoft.Azure.PowerShell.Batch.Management.Sdk.dll|Microsoft.Azure.PowerShell.Cmdlets.Batch.dll|Microsoft.Azure.PowerShell.Cmdlets.Batch.dll-Help.xml|Microsoft.Extensions.Primitives.dll|Microsoft.Net.Http.Headers.dll|Microsoft.WindowsAzure.Storage.dll|System.Runtime.CompilerServices.Unsafe.dll|.signature.p7s</S>
+          <S N="GUID">c6da7084-6a9c-4c33-b162-0f2c6bfad401</S>
+          <S N="PowerShellVersion">5.1</S>
+          <S N="DotNetFrameworkVersion">4.7.2</S>
+          <S N="CompanyName">Microsoft Corporation</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">C:\Users\irman\OneDrive\Documents\PowerShell\Modules\Az.Batch\3.7.1</S>
+    </MS>
+  </Obj>
+</Objs>

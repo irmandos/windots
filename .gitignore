@@ -1,0 +1,21 @@
+# User specific and temporary files
+*.tmp
+*.bak
+*.log
+.vscode/
+
+# Local History and Backups (Keep locally, do not sync)
+backup/
+Backups/
+Session.vim
+.history/
+Backgrounds/
+
+# Scripts with hardcoded secrets (Plex Token, etc.)
+z.CustomScripts/
+
+# Sensitive Data
+Microsoft.PowerShell_secrets.ps1
+*_secret.ps1
+*.pfx
+*.kdbx

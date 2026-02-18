@@ -1,0 +1,168 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">Az.LoadTesting</S>
+      <Version N="Version">1.0.1</Version>
+      <S N="Type">Module</S>
+      <S N="Description">Microsoft Azure PowerShell: LoadTesting cmdlets</S>
+      <S N="Author">Microsoft Corporation</S>
+      <S N="CompanyName">azure-sdk</S>
+      <S N="Copyright">Microsoft Corporation. All rights reserved.</S>
+      <DT N="PublishedDate">2024-04-30T02:24:42+02:00</DT>
+      <Obj N="InstalledDate" RefId="1">
+        <DT>2024-07-22T15:49:15.1038716+02:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="2">
+            <TN RefId="1">
+              <T>Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>System.Enum</T>
+              <T>System.ValueType</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <Nil N="UpdatedDate" />
+      <URI N="LicenseUri">https://aka.ms/azps-license</URI>
+      <URI N="ProjectUri">https://github.com/Azure/azure-powershell</URI>
+      <Nil N="IconUri" />
+      <Obj N="Tags" RefId="3">
+        <TN RefId="2">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>Azure</S>
+          <S>ResourceManager</S>
+          <S>ARM</S>
+          <S>PSModule</S>
+          <S>LoadTesting</S>
+          <S>PSEdition_Core</S>
+          <S>PSEdition_Desktop</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="4">
+        <TN RefId="3">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Get-AzLoad</S>
+                <S>New-AzLoad</S>
+                <S>Remove-AzLoad</S>
+                <S>Update-AzLoad</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="6">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Get-AzLoad</S>
+                <S>New-AzLoad</S>
+                <S>Remove-AzLoad</S>
+                <S>Update-AzLoad</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Obj N="Value" RefId="7">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Ref N="Value" RefId="7" />
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Ref N="Value" RefId="7" />
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="7" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <S N="ReleaseNotes">* Introduced secrets detection feature to safeguard sensitive data.</S>
+      <Obj N="Dependencies" RefId="8">
+        <TNRef RefId="2" />
+        <LST>
+          <Obj RefId="9">
+            <TN RefId="4">
+              <T>System.Collections.Specialized.OrderedDictionary</T>
+              <T>System.Object</T>
+            </TN>
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Az.Accounts</S>
+              </En>
+              <En>
+                <S N="Key">MinimumVersion</S>
+                <S N="Value">2.19.0</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Az.Accounts/2.19.0</S>
+              </En>
+            </DCT>
+          </Obj>
+        </LST>
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="10">
+        <TN RefId="5">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">Microsoft Corporation. All rights reserved.</S>
+          <S N="description">Microsoft Azure PowerShell: LoadTesting cmdlets</S>
+          <S N="requireLicenseAcceptance">True</S>
+          <S N="releaseNotes">* Introduced secrets detection feature to safeguard sensitive data.</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">5996988</S>
+          <S N="downloadCount">24823059</S>
+          <S N="packageSize">432254</S>
+          <S N="published">2024/04/30 02:24:42 +02:00</S>
+          <S N="created">2024/04/30 02:24:42 +02:00</S>
+          <S N="lastUpdated">2024/07/11 19:05:03 +02:00</S>
+          <S N="tags">Azure ResourceManager ARM PSModule LoadTesting PSEdition_Core PSEdition_Desktop PSFunction_Get-AzLoad PSCommand_Get-AzLoad PSFunction_New-AzLoad PSCommand_New-AzLoad PSFunction_Remove-AzLoad PSCommand_Remove-AzLoad PSFunction_Update-AzLoad PSCommand_Update-AzLoad PSIncludes_Function</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2024-07-11T19:05:03Z</S>
+          <S N="NormalizedVersion">1.0.1</S>
+          <S N="Authors">Microsoft Corporation</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">Az.LoadTesting.nuspec|Az.LoadTesting.psd1|LoadTesting.Autorest\custom\New-AzLoad.ps1|Az.LoadTesting.psm1|LoadTesting.Autorest\custom\Remove-AzLoad.ps1|LoadTesting.Autorest\Az.LoadTesting.format.ps1xml|LoadTesting.Autorest\custom\Update-AzLoad.ps1|LoadTesting.Autorest\Az.LoadTesting.psm1|LoadTesting.Autorest\custom\UserAssignedIdentitiesCustom.cs|LoadTesting.Autorest\bin\Az.LoadTesting.private.dll|LoadTesting.Autorest\exports\ProxyCmdletDefinitions.ps1|LoadTesting.Autorest\custom\Az.LoadTesting.custom.psm1|LoadTesting.Autorest\internal\Az.LoadTesting.internal.psm1|LoadTesting.Autorest\custom\Get-AzLoad.ps1|LoadTesting.Autorest\internal\ProxyCmdletDefinitions.ps1|LoadTesting.Autorest\custom\LoadTestResourceCustom.cs|LoadTesting.Autorest\utils\Get-SubscriptionIdTestSafe.ps1|LoadTesting.Autorest\utils\Unprotect-SecureString.ps1</S>
+          <S N="GUID">739ddedf-3d49-40e0-bc84-00bedfe6b2ec</S>
+          <S N="PowerShellVersion">5.1</S>
+          <S N="DotNetFrameworkVersion">4.7.2</S>
+          <S N="CompanyName">Microsoft Corporation</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">C:\Users\irman\OneDrive\Documents\PowerShell\Modules\Az.LoadTesting\1.0.1</S>
+    </MS>
+  </Obj>
+</Objs>

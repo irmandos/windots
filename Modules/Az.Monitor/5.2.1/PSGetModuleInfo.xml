@@ -1,0 +1,386 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">Az.Monitor</S>
+      <Version N="Version">5.2.1</Version>
+      <S N="Type">Module</S>
+      <S N="Description">Microsoft Azure PowerShell - Monitor service cmdlets for Azure Resource Manager in Windows PowerShell and PowerShell Core._x000D__x000A__x000D__x000A_For more information on Monitor, please visit the following: https://learn.microsoft.com/azure/monitoring-and-diagnostics/</S>
+      <S N="Author">Microsoft Corporation</S>
+      <S N="CompanyName">azure-sdk</S>
+      <S N="Copyright">Microsoft Corporation. All rights reserved.</S>
+      <DT N="PublishedDate">2024-05-21T02:19:55+02:00</DT>
+      <Obj N="InstalledDate" RefId="1">
+        <DT>2024-07-22T15:49:29.7725457+02:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="2">
+            <TN RefId="1">
+              <T>Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>System.Enum</T>
+              <T>System.ValueType</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <Nil N="UpdatedDate" />
+      <URI N="LicenseUri">https://aka.ms/azps-license</URI>
+      <URI N="ProjectUri">https://github.com/Azure/azure-powershell</URI>
+      <Nil N="IconUri" />
+      <Obj N="Tags" RefId="3">
+        <TN RefId="2">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>Azure</S>
+          <S>ResourceManager</S>
+          <S>ARM</S>
+          <S>Monitor</S>
+          <S>PSModule</S>
+          <S>PSEdition_Core</S>
+          <S>PSEdition_Desktop</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="4">
+        <TN RefId="3">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Add-AzLogProfile</S>
+                <S>Add-AzMetricAlertRule</S>
+                <S>Add-AzMetricAlertRuleV2</S>
+                <S>Add-AzWebtestAlertRule</S>
+                <S>Get-AzActivityLog</S>
+                <S>Get-AzAlertHistory</S>
+                <S>Get-AzAlertRule</S>
+                <S>Get-AzAutoscaleHistory</S>
+                <S>Get-AzInsightsPrivateLinkScope</S>
+                <S>Get-AzInsightsPrivateLinkScopedResource</S>
+                <S>Get-AzLogProfile</S>
+                <S>Get-AzMetric</S>
+                <S>Get-AzMetricAlertRuleV2</S>
+                <S>Get-AzMetricDefinition</S>
+                <S>New-AzAlertRuleEmail</S>
+                <S>New-AzAlertRuleWebhook</S>
+                <S>New-AzInsightsPrivateLinkScope</S>
+                <S>New-AzInsightsPrivateLinkScopedResource</S>
+                <S>New-AzMetricAlertRuleV2Criteria</S>
+                <S>New-AzMetricAlertRuleV2DimensionSelection</S>
+                <S>New-AzMetricFilter</S>
+                <S>Remove-AzAlertRule</S>
+                <S>Remove-AzInsightsPrivateLinkScope</S>
+                <S>Remove-AzInsightsPrivateLinkScopedResource</S>
+                <S>Remove-AzLogProfile</S>
+                <S>Remove-AzMetricAlertRuleV2</S>
+                <S>Update-AzInsightsPrivateLinkScope</S>
+                <S>Enable-AzActionGroupReceiver</S>
+                <S>Get-AzActionGroup</S>
+                <S>Get-AzActivityLogAlert</S>
+                <S>Get-AzAutoscalePredictiveMetric</S>
+                <S>Get-AzAutoscaleSetting</S>
+                <S>Get-AzDataCollectionEndpoint</S>
+                <S>Get-AzDataCollectionRule</S>
+                <S>Get-AzDataCollectionRuleAssociation</S>
+                <S>Get-AzDiagnosticSetting</S>
+                <S>Get-AzDiagnosticSettingCategory</S>
+                <S>Get-AzEventCategory</S>
+                <S>Get-AzMetricsBatch</S>
+                <S>Get-AzMonitorWorkspace</S>
+                <S>Get-AzScheduledQueryRule</S>
+                <S>Get-AzSubscriptionDiagnosticSetting</S>
+                <S>New-AzActionGroup</S>
+                <S>New-AzActionGroupArmRoleReceiverObject</S>
+                <S>New-AzActionGroupAutomationRunbookReceiverObject</S>
+                <S>New-AzActionGroupAzureAppPushReceiverObject</S>
+                <S>New-AzActionGroupAzureFunctionReceiverObject</S>
+                <S>New-AzActionGroupEmailReceiverObject</S>
+                <S>New-AzActionGroupEventHubReceiverObject</S>
+                <S>New-AzActionGroupItsmReceiverObject</S>
+                <S>New-AzActionGroupLogicAppReceiverObject</S>
+                <S>New-AzActionGroupSmsReceiverObject</S>
+                <S>New-AzActionGroupVoiceReceiverObject</S>
+                <S>New-AzActionGroupWebhookReceiverObject</S>
+                <S>New-AzActivityLogAlert</S>
+                <S>New-AzActivityLogAlertActionGroupObject</S>
+                <S>New-AzActivityLogAlertAlertRuleAnyOfOrLeafConditionObject</S>
+                <S>New-AzActivityLogAlertAlertRuleLeafConditionObject</S>
+                <S>New-AzAutoscaleNotificationObject</S>
+                <S>New-AzAutoscaleProfileObject</S>
+                <S>New-AzAutoscaleScaleRuleMetricDimensionObject</S>
+                <S>New-AzAutoscaleScaleRuleObject</S>
+                <S>New-AzAutoscaleSetting</S>
+                <S>New-AzAutoscaleWebhookNotificationObject</S>
+                <S>New-AzDataCollectionEndpoint</S>
+                <S>New-AzDataCollectionRule</S>
+                <S>New-AzDataCollectionRuleAssociation</S>
+                <S>New-AzDataFlowObject</S>
+                <S>New-AzDiagnosticSetting</S>
+                <S>New-AzDiagnosticSettingLogSettingsObject</S>
+                <S>New-AzDiagnosticSettingMetricSettingsObject</S>
+                <S>New-AzDiagnosticSettingSubscriptionLogSettingsObject</S>
+                <S>New-AzEventHubDestinationObject</S>
+                <S>New-AzEventHubDirectDestinationObject</S>
+                <S>New-AzExtensionDataSourceObject</S>
+                <S>New-AzIisLogsDataSourceObject</S>
+                <S>New-AzLogAnalyticsDestinationObject</S>
+                <S>New-AzLogFilesDataSourceObject</S>
+                <S>New-AzMonitoringAccountDestinationObject</S>
+                <S>New-AzMonitorWorkspace</S>
+                <S>New-AzPerfCounterDataSourceObject</S>
+                <S>New-AzPlatformTelemetryDataSourceObject</S>
+                <S>New-AzPrometheusForwarderDataSourceObject</S>
+                <S>New-AzScheduledQueryRule</S>
+                <S>New-AzScheduledQueryRuleConditionObject</S>
+                <S>New-AzScheduledQueryRuleDimensionObject</S>
+                <S>New-AzStorageBlobDestinationObject</S>
+                <S>New-AzStorageTableDestinationObject</S>
+                <S>New-AzSubscriptionDiagnosticSetting</S>
+                <S>New-AzSyslogDataSourceObject</S>
+                <S>New-AzWindowsEventLogDataSourceObject</S>
+                <S>New-AzWindowsFirewallLogsDataSourceObject</S>
+                <S>Remove-AzActionGroup</S>
+                <S>Remove-AzActivityLogAlert</S>
+                <S>Remove-AzAutoscaleSetting</S>
+                <S>Remove-AzDataCollectionEndpoint</S>
+                <S>Remove-AzDataCollectionRule</S>
+                <S>Remove-AzDataCollectionRuleAssociation</S>
+                <S>Remove-AzDiagnosticSetting</S>
+                <S>Remove-AzMonitorWorkspace</S>
+                <S>Remove-AzScheduledQueryRule</S>
+                <S>Remove-AzSubscriptionDiagnosticSetting</S>
+                <S>Test-AzActionGroup</S>
+                <S>Update-AzActionGroup</S>
+                <S>Update-AzActivityLogAlert</S>
+                <S>Update-AzAutoscaleSetting</S>
+                <S>Update-AzDataCollectionEndpoint</S>
+                <S>Update-AzDataCollectionRule</S>
+                <S>Update-AzDataCollectionRuleAssociation</S>
+                <S>Update-AzMonitorWorkspace</S>
+                <S>Update-AzScheduledQueryRule</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="6">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Enable-AzActionGroupReceiver</S>
+                <S>Get-AzActionGroup</S>
+                <S>Get-AzActivityLogAlert</S>
+                <S>Get-AzAutoscalePredictiveMetric</S>
+                <S>Get-AzAutoscaleSetting</S>
+                <S>Get-AzDataCollectionEndpoint</S>
+                <S>Get-AzDataCollectionRule</S>
+                <S>Get-AzDataCollectionRuleAssociation</S>
+                <S>Get-AzDiagnosticSetting</S>
+                <S>Get-AzDiagnosticSettingCategory</S>
+                <S>Get-AzEventCategory</S>
+                <S>Get-AzMetricsBatch</S>
+                <S>Get-AzMonitorWorkspace</S>
+                <S>Get-AzScheduledQueryRule</S>
+                <S>Get-AzSubscriptionDiagnosticSetting</S>
+                <S>New-AzActionGroup</S>
+                <S>New-AzActionGroupArmRoleReceiverObject</S>
+                <S>New-AzActionGroupAutomationRunbookReceiverObject</S>
+                <S>New-AzActionGroupAzureAppPushReceiverObject</S>
+                <S>New-AzActionGroupAzureFunctionReceiverObject</S>
+                <S>New-AzActionGroupEmailReceiverObject</S>
+                <S>New-AzActionGroupEventHubReceiverObject</S>
+                <S>New-AzActionGroupItsmReceiverObject</S>
+                <S>New-AzActionGroupLogicAppReceiverObject</S>
+                <S>New-AzActionGroupSmsReceiverObject</S>
+                <S>New-AzActionGroupVoiceReceiverObject</S>
+                <S>New-AzActionGroupWebhookReceiverObject</S>
+                <S>New-AzActivityLogAlert</S>
+                <S>New-AzActivityLogAlertActionGroupObject</S>
+                <S>New-AzActivityLogAlertAlertRuleAnyOfOrLeafConditionObject</S>
+                <S>New-AzActivityLogAlertAlertRuleLeafConditionObject</S>
+                <S>New-AzAutoscaleNotificationObject</S>
+                <S>New-AzAutoscaleProfileObject</S>
+                <S>New-AzAutoscaleScaleRuleMetricDimensionObject</S>
+                <S>New-AzAutoscaleScaleRuleObject</S>
+                <S>New-AzAutoscaleSetting</S>
+                <S>New-AzAutoscaleWebhookNotificationObject</S>
+                <S>New-AzDataCollectionEndpoint</S>
+                <S>New-AzDataCollectionRule</S>
+                <S>New-AzDataCollectionRuleAssociation</S>
+                <S>New-AzDataFlowObject</S>
+                <S>New-AzDiagnosticSetting</S>
+                <S>New-AzDiagnosticSettingLogSettingsObject</S>
+                <S>New-AzDiagnosticSettingMetricSettingsObject</S>
+                <S>New-AzDiagnosticSettingSubscriptionLogSettingsObject</S>
+                <S>New-AzEventHubDestinationObject</S>
+                <S>New-AzEventHubDirectDestinationObject</S>
+                <S>New-AzExtensionDataSourceObject</S>
+                <S>New-AzIisLogsDataSourceObject</S>
+                <S>New-AzLogAnalyticsDestinationObject</S>
+                <S>New-AzLogFilesDataSourceObject</S>
+                <S>New-AzMonitoringAccountDestinationObject</S>
+                <S>New-AzMonitorWorkspace</S>
+                <S>New-AzPerfCounterDataSourceObject</S>
+                <S>New-AzPlatformTelemetryDataSourceObject</S>
+                <S>New-AzPrometheusForwarderDataSourceObject</S>
+                <S>New-AzScheduledQueryRule</S>
+                <S>New-AzScheduledQueryRuleConditionObject</S>
+                <S>New-AzScheduledQueryRuleDimensionObject</S>
+                <S>New-AzStorageBlobDestinationObject</S>
+                <S>New-AzStorageTableDestinationObject</S>
+                <S>New-AzSubscriptionDiagnosticSetting</S>
+                <S>New-AzSyslogDataSourceObject</S>
+                <S>New-AzWindowsEventLogDataSourceObject</S>
+                <S>New-AzWindowsFirewallLogsDataSourceObject</S>
+                <S>Remove-AzActionGroup</S>
+                <S>Remove-AzActivityLogAlert</S>
+                <S>Remove-AzAutoscaleSetting</S>
+                <S>Remove-AzDataCollectionEndpoint</S>
+                <S>Remove-AzDataCollectionRule</S>
+                <S>Remove-AzDataCollectionRuleAssociation</S>
+                <S>Remove-AzDiagnosticSetting</S>
+                <S>Remove-AzMonitorWorkspace</S>
+                <S>Remove-AzScheduledQueryRule</S>
+                <S>Remove-AzSubscriptionDiagnosticSetting</S>
+                <S>Test-AzActionGroup</S>
+                <S>Update-AzActionGroup</S>
+                <S>Update-AzActivityLogAlert</S>
+                <S>Update-AzAutoscaleSetting</S>
+                <S>Update-AzDataCollectionEndpoint</S>
+                <S>Update-AzDataCollectionRule</S>
+                <S>Update-AzDataCollectionRuleAssociation</S>
+                <S>Update-AzMonitorWorkspace</S>
+                <S>Update-AzScheduledQueryRule</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Obj N="Value" RefId="7">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Ref N="Value" RefId="7" />
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Obj N="Value" RefId="8">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Add-AzLogProfile</S>
+                <S>Add-AzMetricAlertRule</S>
+                <S>Add-AzMetricAlertRuleV2</S>
+                <S>Add-AzWebtestAlertRule</S>
+                <S>Get-AzActivityLog</S>
+                <S>Get-AzAlertHistory</S>
+                <S>Get-AzAlertRule</S>
+                <S>Get-AzAutoscaleHistory</S>
+                <S>Get-AzInsightsPrivateLinkScope</S>
+                <S>Get-AzInsightsPrivateLinkScopedResource</S>
+                <S>Get-AzLogProfile</S>
+                <S>Get-AzMetric</S>
+                <S>Get-AzMetricAlertRuleV2</S>
+                <S>Get-AzMetricDefinition</S>
+                <S>New-AzAlertRuleEmail</S>
+                <S>New-AzAlertRuleWebhook</S>
+                <S>New-AzInsightsPrivateLinkScope</S>
+                <S>New-AzInsightsPrivateLinkScopedResource</S>
+                <S>New-AzMetricAlertRuleV2Criteria</S>
+                <S>New-AzMetricAlertRuleV2DimensionSelection</S>
+                <S>New-AzMetricFilter</S>
+                <S>Remove-AzAlertRule</S>
+                <S>Remove-AzInsightsPrivateLinkScope</S>
+                <S>Remove-AzInsightsPrivateLinkScopedResource</S>
+                <S>Remove-AzLogProfile</S>
+                <S>Remove-AzMetricAlertRuleV2</S>
+                <S>Update-AzInsightsPrivateLinkScope</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="7" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <S N="ReleaseNotes">* Removed breaking change warning messages for Metric Management Plane_x000D__x000A_    * Get-AzMetric_x000D__x000A_    * Get-AzMetricDefinition_x000D__x000A_    * New-AzMetricFilter</S>
+      <Obj N="Dependencies" RefId="9">
+        <TNRef RefId="2" />
+        <LST>
+          <Obj RefId="10">
+            <TN RefId="4">
+              <T>System.Collections.Specialized.OrderedDictionary</T>
+              <T>System.Object</T>
+            </TN>
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Az.Accounts</S>
+              </En>
+              <En>
+                <S N="Key">MinimumVersion</S>
+                <S N="Value">3.0.0</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Az.Accounts/3.0.0</S>
+              </En>
+            </DCT>
+          </Obj>
+        </LST>
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="11">
+        <TN RefId="5">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">Microsoft Corporation. All rights reserved.</S>
+          <S N="description">Microsoft Azure PowerShell - Monitor service cmdlets for Azure Resource Manager in Windows PowerShell and PowerShell Core._x000D__x000A__x000D__x000A_For more information on Monitor, please visit the following: https://learn.microsoft.com/azure/monitoring-and-diagnostics/</S>
+          <S N="requireLicenseAcceptance">True</S>
+          <S N="releaseNotes">* Removed breaking change warning messages for Metric Management Plane_x000D__x000A_    * Get-AzMetric_x000D__x000A_    * Get-AzMetricDefinition_x000D__x000A_    * New-AzMetricFilter</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">4727156</S>
+          <S N="downloadCount">83905368</S>
+          <S N="packageSize">3755992</S>
+          <S N="published">2024/05/21 02:19:55 +02:00</S>
+          <S N="created">2024/05/21 02:19:55 +02:00</S>
+          <S N="lastUpdated">2024/07/11 19:05:03 +02:00</S>
+          <S N="tags">Azure ResourceManager ARM Monitor PSModule PSEdition_Core PSEdition_Desktop PSCmdlet_Add-AzLogProfile PSCommand_Add-AzLogProfile PSCmdlet_Add-AzMetricAlertRule PSCommand_Add-AzMetricAlertRule PSCmdlet_Add-AzMetricAlertRuleV2 PSCommand_Add-AzMetricAlertRuleV2 PSCmdlet_Add-AzWebtestAlertRule PSCommand_Add-AzWebtestAlertRule PSCmdlet_Get-AzActivityLog PSCommand_Get-AzActivityLog PSCmdlet_Get-AzAlertHistory PSCommand_Get-AzAlertHistory PSCmdlet_Get-AzAlertRule PSCommand_Get-AzAlertRule PSCmdlet_Get-AzAutoscaleHistory PSCommand_Get-AzAutoscaleHistory PSCmdlet_Get-AzInsightsPrivateLinkScope PSCommand_Get-AzInsightsPrivateLinkScope PSCmdlet_Get-AzInsightsPrivateLinkScopedResource PSCommand_Get-AzInsightsPrivateLinkScopedResource PSCmdlet_Get-AzLogProfile PSCommand_Get-AzLogProfile PSCmdlet_Get-AzMetric PSCommand_Get-AzMetric PSCmdlet_Get-AzMetricAlertRuleV2 PSCommand_Get-AzMetricAlertRuleV2 PSCmdlet_Get-AzMetricDefinition PSCommand_Get-AzMetricDefinition PSCmdlet_New-AzAlertRuleEmail PSCommand_New-AzAlertRuleEmail PSCmdlet_New-AzAlertRuleWebhook PSCommand_New-AzAlertRuleWebhook PSCmdlet_New-AzInsightsPrivateLinkScope PSCommand_New-AzInsightsPrivateLinkScope PSCmdlet_New-AzInsightsPrivateLinkScopedResource PSCommand_New-AzInsightsPrivateLinkScopedResource PSCmdlet_New-AzMetricAlertRuleV2Criteria PSCommand_New-AzMetricAlertRuleV2Criteria PSCmdlet_New-AzMetricAlertRuleV2DimensionSelection PSCommand_New-AzMetricAlertRuleV2DimensionSelection PSCmdlet_New-AzMetricFilter PSCommand_New-AzMetricFilter PSCmdlet_Remove-AzAlertRule PSCommand_Remove-AzAlertRule PSCmdlet_Remove-AzInsightsPrivateLinkScope PSCommand_Remove-AzInsightsPrivateLinkScope PSCmdlet_Remove-AzInsightsPrivateLinkScopedResource PSCommand_Remove-AzInsightsPrivateLinkScopedResource PSCmdlet_Remove-AzLogProfile PSCommand_Remove-AzLogProfile PSCmdlet_Remove-AzMetricAlertRuleV2 PSCommand_Remove-AzMetricAlertRuleV2 PSCmdlet_Update-AzInsightsPrivateLinkScope PSCommand_Update-AzInsightsPrivateLinkScope PSIncludes_Cmdlet PSFunction_Enable-AzActionGroupReceiver PSCommand_Enable-AzActionGroupReceiver PSFunction_Get-AzActionGroup PSCommand_Get-AzActionGroup PSFunction_Get-AzActivityLogAlert PSCommand_Get-AzActivityLogAlert PSFunction_Get-AzAutoscalePredictiveMetric PSCommand_Get-AzAutoscalePredictiveMetric PSFunction_Get-AzAutoscaleSetting PSCommand_Get-AzAutoscaleSetting PSFunction_Get-AzDataCollectionEndpoint PSCommand_Get-AzDataCollectionEndpoint PSFunction_Get-AzDataCollectionRule PSCommand_Get-AzDataCollectionRule PSFunction_Get-AzDataCollectionRuleAssociation PSCommand_Get-AzDataCollectionRuleAssociation PSFunction_Get-AzDiagnosticSetting PSCommand_Get-AzDiagnosticSetting PSFunction_Get-AzDiagnosticSettingCategory PSCommand_Get-AzDiagnosticSettingCategory PSFunction_Get-AzEventCategory PSCommand_Get-AzEventCategory PSFunction_Get-AzMetricsBatch PSCommand_Get-AzMetricsBatch PSFunction_Get-AzMonitorWorkspace PSCommand_Get-AzMonitorWorkspace PSFunction_Get-AzScheduledQueryRule PSCommand_Get-AzScheduledQueryRule PSFunction_Get-AzSubscriptionDiagnosticSetting PSCommand_Get-AzSubscriptionDiagnosticSetting PSFunction_New-AzActionGroup PSCommand_New-AzActionGroup PSFunction_New-AzActionGroupArmRoleReceiverObject PSCommand_New-AzActionGroupArmRoleReceiverObject PSFunction_New-AzActionGroupAutomationRunbookReceiverObject PSCommand_New-AzActionGroupAutomationRunbookReceiverObject PSFunction_New-AzActionGroupAzureAppPushReceiverObject PSCommand_New-AzActionGroupAzureAppPushReceiverObject PSFunction_New-AzActionGroupAzureFunctionReceiverObject PSCommand_New-AzActionGroupAzureFunctionReceiverObject PSFunction_New-AzActionGroupEmailReceiverObject PSCommand_New-AzActionGroupEmailReceiverObject PSFunction_New-AzActionGroupEventHubReceiverObject PSCommand_New-AzActionGroupEventHubReceiverObject PSFunction_New-AzActionGroupItsmReceiverObject PSCommand_New-AzActionGroupItsmReceiverObject PSFunction_New-AzActionGroupLogicAppReceiverObject PSCommand_New-AzActionGroupLogicAppReceiverObject PSFunction_New-AzActionGroupSmsReceiverObject PSCommand_New-AzActionGroupSmsReceiverObject PSFunction_New-AzActionGroupVoiceReceiverObject PSCommand_New-AzActionGroupVoiceReceiverObject PSFunction_New-AzActionGroupWebhookReceiverObject PSCommand_New-AzActionGroupWebhookReceiverObject PSFunction_New-AzActivityLogAlert PSCommand_New-AzActivityLogAlert PSFunction_New-AzActivityLogAlertActionGroupObject PSCommand_New-AzActivityLogAlertActionGroupObject PSFunction_New-AzActivityLogAlertAlertRuleAnyOfOrLeafConditionObject PSCommand_New-AzActivityLogAlertAlertRuleAnyOfOrLeafConditionObject PSFunction_New-AzActivityLogAlertAlertRuleLeafConditionObject PSCommand_New-AzActivityLogAlertAlertRuleLeafConditionObject PSFunction_New-AzAutoscaleNotificationObject PSCommand_New-AzAutoscaleNotificationObject PSFunction_New-AzAutoscaleProfileObject PSCommand_New-AzAutoscaleProfileObject PSFunction_New-AzAutoscaleScaleRuleMetricDimensionObject PSCommand_New-AzAutoscaleScaleRuleMetricDimensionObject PSFunction_New-AzAutoscaleScaleRuleObject PSCommand_New-AzAutoscaleScaleRuleObject PSFunction_New-AzAutoscaleSetting PSCommand_New-AzAutoscaleSetting PSFunction_New-AzAutoscaleWebhookNotificationObject PSCommand_New-AzAutoscaleWebhookNotificationObject PSFunction_New-AzDataCollectionEndpoint PSCommand_New-AzDataCollectionEndpoint PSFunction_New-AzDataCollectionRule PSCommand_New-AzDataCollectionRule PSFunction_New-AzDataCollectionRuleAssociation PSCommand_New-AzDataCollectionRuleAssociation PSFunction_New-AzDataFlowObject PSCommand_New-AzDataFlowObject PSFunction_New-AzDiagnosticSetting PSCommand_New-AzDiagnosticSetting PSFunction_New-AzDiagnosticSettingLogSettingsObject PSCommand_New-AzDiagnosticSettingLogSettingsObject PSFunction_New-AzDiagnosticSettingMetricSettingsObject PSCommand_New-AzDiagnosticSettingMetricSettingsObject PSFunction_New-AzDiagnosticSettingSubscriptionLogSettingsObject PSCommand_New-AzDiagnosticSettingSubscriptionLogSettingsObject PSFunction_New-AzEventHubDestinationObject PSCommand_New-AzEventHubDestinationObject PSFunction_New-AzEventHubDirectDestinationObject PSCommand_New-AzEventHubDirectDestinationObject PSFunction_New-AzExtensionDataSourceObject PSCommand_New-AzExtensionDataSourceObject PSFunction_New-AzIisLogsDataSourceObject PSCommand_New-AzIisLogsDataSourceObject PSFunction_New-AzLogAnalyticsDestinationObject PSCommand_New-AzLogAnalyticsDestinationObject PSFunction_New-AzLogFilesDataSourceObject PSCommand_New-AzLogFilesDataSourceObject PSFunction_New-AzMonitoringAccountDestinationObject PSCommand_New-AzMonitoringAccountDestinationObject PSFunction_New-AzMonitorWorkspace PSCommand_New-AzMonitorWorkspace PSFunction_New-AzPerfCounterDataSourceObject PSCommand_New-AzPerfCounterDataSourceObject PSFunction_New-AzPlatformTelemetryDataSourceObject PSCommand_New-AzPlatformTelemetryDataSourceObject PSFunction_New-AzPrometheusForwarderDataSourceObject PSCommand_New-AzPrometheusForwarderDataSourceObject PSFunction_New-AzScheduledQueryRule PSCommand_New-AzScheduledQueryRule PSFunction_New-AzScheduledQueryRuleConditionObject PSCommand_New-AzScheduledQueryRuleConditionObject PSFunction_New-AzScheduledQueryRuleDimensionObject PSCommand_New-AzScheduledQueryRuleDimensionObject PSFunction_New-AzStorageBlobDestinationObject PSCommand_New-AzStorageBlobDestinationObject PSFunction_New-AzStorageTableDestinationObject PSCommand_New-AzStorageTableDestinationObject PSFunction_New-AzSubscriptionDiagnosticSetting PSCommand_New-AzSubscriptionDiagnosticSetting PSFunction_New-AzSyslogDataSourceObject PSCommand_New-AzSyslogDataSourceObject PSFunction_New-AzWindowsEventLogDataSourceObject PSCommand_New-AzWindowsEventLogDataSourceObject PSFunction_New-AzWindowsFirewallLogsDataSourceObject PSCommand_New-AzWindowsFirewallLogsDataSourceObject PSFunction_Remove-AzActionGroup PSCommand_Remove-AzActionGroup PSFunction_Remove-AzActivityLogAlert PSCommand_Remove-AzActivityLogAlert PSFunction_Remove-AzAutoscaleSetting PSCommand_Remove-AzAutoscaleSetting PSFunction_Remove-AzDataCollectionEndpoint PSCommand_Remove-AzDataCollectionEndpoint PSFunction_Remove-AzDataCollectionRule PSCommand_Remove-AzDataCollectionRule PSFunction_Remove-AzDataCollectionRuleAssociation PSCommand_Remove-AzDataCollectionRuleAssociation PSFunction_Remove-AzDiagnosticSetting PSCommand_Remove-AzDiagnosticSetting PSFunction_Remove-AzMonitorWorkspace PSCommand_Remove-AzMonitorWorkspace PSFunction_Remove-AzScheduledQueryRule PSCommand_Remove-AzScheduledQueryRule PSFunction_Remove-AzSubscriptionDiagnosticSetting PSCommand_Remove-AzSubscriptionDiagnosticSetting PSFunction_Test-AzActionGroup PSCommand_Test-AzActionGroup PSFunction_Update-AzActionGroup PSCommand_Update-AzActionGroup PSFunction_Update-AzActivityLogAlert PSCommand_Update-AzActivityLogAlert PSFunction_Update-AzAutoscaleSetting PSCommand_Update-AzAutoscaleSetting PSFunction_Update-AzDataCollectionEndpoint PSCommand_Update-AzDataCollectionEndpoint PSFunction_Update-AzDataCollectionRule PSCommand_Update-AzDataCollectionRule PSFunction_Update-AzDataCollectionRuleAssociation PSCommand_Update-AzDataCollectionRuleAssociation PSFunction_Update-AzMonitorWorkspace PSCommand_Update-AzMonitorWorkspace PSFunction_Update-AzScheduledQueryRule PSCommand_Update-AzScheduledQueryRule PSIncludes_Function</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2024-07-11T19:05:03Z</S>
+          <S N="NormalizedVersion">5.2.1</S>
+          <S N="Authors">Microsoft Corporation</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">Az.Monitor.nuspec|DataCollectionRule.Autorest\bin\Az.DataCollectionRule.private.dll|Az.Monitor.psd1|DataCollectionRule.Autorest\custom\Az.DataCollectionRule.custom.psm1|Az.Monitor.psm1|DataCollectionRule.Autorest\custom\New-AzExtensionDataSourceObject.ps1|Microsoft.Azure.Management.Monitor.dll|DataCollectionRule.Autorest\custom\New-AzPrometheusForwarderDataSourceObject.ps1|Microsoft.Azure.PowerShell.Cmdlets.Monitor.dll|DataCollectionRule.Autorest\custom\autogen-model-cmdlets\New-AzDataFlowObject.ps1|Microsoft.Azure.PowerShell.Cmdlets.Monitor.dll-Help.xml|DataCollectionRule.Autorest\custom\autogen-model-cmdlets\New-AzEventHubDestinationObject.ps1|Monitor.format.ps1xml|DataCollectionRule.Autorest\custom\autogen-model-cmdlets\New-AzEventHubDirectDestinationObject.ps1|ActionGroup.Autorest\Az.ActionGroup.format.ps1xml|DataCollectionRule.Autorest\custom\autogen-model-cmdlets\New-AzIisLogsDataSourceObject.ps1|ActionGroup.Autorest\Az.ActionGroup.psm1|DataCollectionRule.Autorest\custom\autogen-model-cmdlets\New-AzLogAnalyticsDestinationObject.ps1|ActionGroup.Autorest\bin\Az.ActionGroup.private.dll|DataCollectionRule.Autorest\custom\autogen-model-cmdlets\New-AzLogFilesDataSourceObject.ps1|ActionGroup.Autorest\custom\ActionGroupReceiver.cs|DataCollectionRule.Autorest\custom\autogen-model-cmdlets\New-AzMonitoringAccountDestinationObject.ps1|ActionGroup.Autorest\custom\Az.ActionGroup.custom.psm1|DataCollectionRule.Autorest\custom\autogen-model-cmdlets\New-AzPerfCounterDataSourceObject.ps1|ActionGroup.Autorest\custom\Test-AzActionGroup.ps1|DataCollectionRule.Autorest\custom\autogen-model-cmdlets\New-AzPlatformTelemetryDataSourceObject.ps1|ActionGroup.Autorest\custom\autogen-model-cmdlets\New-AzActionGroupArmRoleReceiverObject.ps1|DataCollectionRule.Autorest\custom\autogen-model-cmdlets\New-AzStorageBlobDestinationObject.ps1|ActionGroup.Autorest\custom\autogen-model-cmdlets\New-AzActionGroupAutomationRunbookReceiverObject.ps1|DataCollectionRule.Autorest\custom\autogen-model-cmdlets\New-AzStorageTableDestinationObject.ps1|ActionGroup.Autorest\custom\autogen-model-cmdlets\New-AzActionGroupAzureAppPushReceiverObject.ps1|DataCollectionRule.Autorest\custom\autogen-model-cmdlets\New-AzSyslogDataSourceObject.ps1|ActionGroup.Autorest\custom\autogen-model-cmdlets\New-AzActionGroupAzureFunctionReceiverObject.ps1|DataCollectionRule.Autorest\custom\autogen-model-cmdlets\New-AzWindowsEventLogDataSourceObject.ps1|ActionGroup.Autorest\custom\autogen-model-cmdlets\New-AzActionGroupEmailReceiverObject.ps1|DataCollectionRule.Autorest\custom\autogen-model-cmdlets\New-AzWindowsFirewallLogsDataSourceObject.ps1|ActionGroup.Autorest\custom\autogen-model-cmdlets\New-AzActionGroupEventHubReceiverObject.ps1|DataCollectionRule.Autorest\exports\ProxyCmdletDefinitions.ps1|ActionGroup.Autorest\custom\autogen-model-cmdlets\New-AzActionGroupItsmReceiverObject.ps1|DataCollectionRule.Autorest\internal\Az.DataCollectionRule.internal.psm1|ActionGroup.Autorest\custom\autogen-model-cmdlets\New-AzActionGroupLogicAppReceiverObject.ps1|DataCollectionRule.Autorest\utils\Get-SubscriptionIdTestSafe.ps1|ActionGroup.Autorest\custom\autogen-model-cmdlets\New-AzActionGroupSmsReceiverObject.ps1|DataCollectionRule.Autorest\utils\Unprotect-SecureString.ps1|ActionGroup.Autorest\custom\autogen-model-cmdlets\New-AzActionGroupVoiceReceiverObject.ps1|DiagnosticSetting.Autorest\Az.DiagnosticSetting.format.ps1xml|ActionGroup.Autorest\custom\autogen-model-cmdlets\New-AzActionGroupWebhookReceiverObject.ps1|DiagnosticSetting.Autorest\Az.DiagnosticSetting.psm1|ActionGroup.Autorest\exports\ProxyCmdletDefinitions.ps1|DiagnosticSetting.Autorest\bin\Az.DiagnosticSetting.private.dll|ActionGroup.Autorest\internal\Az.ActionGroup.internal.psm1|DiagnosticSetting.Autorest\custom\Az.DiagnosticSetting.custom.psm1|ActionGroup.Autorest\internal\ProxyCmdletDefinitions.ps1|DiagnosticSetting.Autorest\custom\autogen-model-cmdlets\New-AzDiagnosticSettingLogSettingsObject.ps1|ActionGroup.Autorest\utils\Get-SubscriptionIdTestSafe.ps1|DiagnosticSetting.Autorest\custom\autogen-model-cmdlets\New-AzDiagnosticSettingMetricSettingsObject.ps1|ActionGroup.Autorest\utils\Unprotect-SecureString.ps1|DiagnosticSetting.Autorest\custom\autogen-model-cmdlets\New-AzDiagnosticSettingSubscriptionLogSettingsObject.ps1|ActivityLogAlert.Autorest\Az.ActivityLogAlert.format.ps1xml|DiagnosticSetting.Autorest\exports\ProxyCmdletDefinitions.ps1|ActivityLogAlert.Autorest\Az.ActivityLogAlert.psm1|DiagnosticSetting.Autorest\internal\Az.DiagnosticSetting.internal.psm1|ActivityLogAlert.Autorest\bin\Az.ActivityLogAlert.private.dll|DiagnosticSetting.Autorest\utils\Get-SubscriptionIdTestSafe.ps1|ActivityLogAlert.Autorest\custom\Az.ActivityLogAlert.custom.psm1|DiagnosticSetting.Autorest\utils\Unprotect-SecureString.ps1|ActivityLogAlert.Autorest\custom\New-AzActivityLogAlert.ps1|MetricData.Autorest\Az.Metricdata.format.ps1xml|ActivityLogAlert.Autorest\custom\Update-AzActivityLogAlert.ps1|MetricData.Autorest\Az.Metricdata.psm1|ActivityLogAlert.Autorest\custom\autogen-model-cmdlets\New-AzActivityLogAlertActionGroupObject.ps1|MetricData.Autorest\bin\Az.Metricdata.private.dll|ActivityLogAlert.Autorest\custom\autogen-model-cmdlets\New-AzActivityLogAlertAlertRuleAnyOfOrLeafConditionObject.ps1|MetricData.Autorest\custom\Az.Metricdata.custom.psm1|ActivityLogAlert.Autorest\custom\autogen-model-cmdlets\New-AzActivityLogAlertAlertRuleLeafConditionObject.ps1|MetricData.Autorest\exports\ProxyCmdletDefinitions.ps1|ActivityLogAlert.Autorest\exports\ProxyCmdletDefinitions.ps1|MetricData.Autorest\internal\Az.Metricdata.internal.psm1|ActivityLogAlert.Autorest\internal\Az.ActivityLogAlert.internal.psm1|MetricData.Autorest\utils\Get-SubscriptionIdTestSafe.ps1|ActivityLogAlert.Autorest\internal\ProxyCmdletDefinitions.ps1|MetricData.Autorest\utils\Unprotect-SecureString.ps1|ActivityLogAlert.Autorest\utils\Get-SubscriptionIdTestSafe.ps1|MonitorWorkspace.Autorest\Az.MonitorWorkspace.format.ps1xml|ActivityLogAlert.Autorest\utils\Unprotect-SecureString.ps1|MonitorWorkspace.Autorest\Az.MonitorWorkspace.psm1|Autoscale.Autorest\Az.Autoscale.format.ps1xml|MonitorWorkspace.Autorest\bin\Az.MonitorWorkspace.private.dll|Autoscale.Autorest\Az.Autoscale.psm1|MonitorWorkspace.Autorest\custom\Az.MonitorWorkspace.custom.psm1|Autoscale.Autorest\bin\Az.Autoscale.private.dll|MonitorWorkspace.Autorest\exports\ProxyCmdletDefinitions.ps1|Autoscale.Autorest\custom\Az.Autoscale.custom.psm1|MonitorWorkspace.Autorest\internal\Az.MonitorWorkspace.internal.psm1|Autoscale.Autorest\custom\Update-AzAutoscaleSetting.ps1|MonitorWorkspace.Autorest\utils\Get-SubscriptionIdTestSafe.ps1|Autoscale.Autorest\custom\autogen-model-cmdlets\New-AzAutoscaleNotificationObject.ps1|MonitorWorkspace.Autorest\utils\Unprotect-SecureString.ps1|Autoscale.Autorest\custom\autogen-model-cmdlets\New-AzAutoscaleProfileObject.ps1|ScheduledQueryRule.Autorest\Az.ScheduledQueryRule.format.ps1xml|Autoscale.Autorest\custom\autogen-model-cmdlets\New-AzAutoscaleScaleRuleMetricDimensionObject.ps1|ScheduledQueryRule.Autorest\Az.ScheduledQueryRule.psm1|Autoscale.Autorest\custom\autogen-model-cmdlets\New-AzAutoscaleScaleRuleObject.ps1|ScheduledQueryRule.Autorest\bin\Az.ScheduledQueryRule.private.dll|Autoscale.Autorest\custom\autogen-model-cmdlets\New-AzAutoscaleWebhookNotificationObject.ps1|ScheduledQueryRule.Autorest\custom\Az.ScheduledQueryRule.custom.psm1|Autoscale.Autorest\exports\ProxyCmdletDefinitions.ps1|ScheduledQueryRule.Autorest\custom\autogen-model-cmdlets\New-AzScheduledQueryRuleConditionObject.ps1|Autoscale.Autorest\internal\Az.Autoscale.internal.psm1|ScheduledQueryRule.Autorest\custom\autogen-model-cmdlets\New-AzScheduledQueryRuleDimensionObject.ps1|Autoscale.Autorest\internal\ProxyCmdletDefinitions.ps1|ScheduledQueryRule.Autorest\exports\ProxyCmdletDefinitions.ps1|Autoscale.Autorest\utils\Get-SubscriptionIdTestSafe.ps1|ScheduledQueryRule.Autorest\internal\Az.ScheduledQueryRule.internal.psm1|Autoscale.Autorest\utils\Unprotect-SecureString.ps1|ScheduledQueryRule.Autorest\utils\Get-SubscriptionIdTestSafe.ps1|DataCollectionRule.Autorest\Az.DataCollectionRule.format.ps1xml|ScheduledQueryRule.Autorest\utils\Unprotect-SecureString.ps1|DataCollectionRule.Autorest\Az.DataCollectionRule.psm1</S>
+          <S N="GUID">bc723b54-a697-44a2-9c48-d5749b138d1a</S>
+          <S N="PowerShellVersion">5.1</S>
+          <S N="DotNetFrameworkVersion">4.7.2</S>
+          <S N="CompanyName">Microsoft Corporation</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">C:\Users\irman\OneDrive\Documents\PowerShell\Modules\Az.Monitor\5.2.1</S>
+    </MS>
+  </Obj>
+</Objs>

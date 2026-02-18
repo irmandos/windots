@@ -1,0 +1,332 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<helpItems schema="maml" xmlns="http://msh">
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Get-WheaMemoryPolicy</command:name>
+      <command:verb>Get</command:verb>
+      <command:noun>WheaMemoryPolicy</command:noun>
+      <maml:description>
+        <maml:para>Gets the WHEA memory policies for a computer.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>The Get-WheaMemoryPolicy cmdlet gets the Windows Hardware Error Architecture (WHEA) memory policies in effect on a local or remote computer.</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Get-WheaMemoryPolicy</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="CN">
+          <maml:name>ComputerName</maml:name>
+          <maml:description>
+            <maml:para>Specifies the name of the remote computer from which to retrieve policy information. If you do not specify a computer name, the command returns the policy of the local computer. The alias for ComputerName is cn.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="CN">
+        <maml:name>ComputerName</maml:name>
+        <maml:description>
+          <maml:para>Specifies the name of the remote computer from which to retrieve policy information. If you do not specify a computer name, the command returns the policy of the local computer. The alias for ComputerName is cn.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes />
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>WheaMemoryPolicy</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>Example 1: Get the WHEA memory policy settings from the local computer</maml:title>
+        <dev:code>PS C:\&gt; Get-WHEAMemoryPolicy
+DisableOffline : False
+DisablePFA : False
+PersistMemoryOffline : True
+PFAPageCount : 64
+PFAErrorThreshold : 16
+PFATimeOut : 86400</dev:code>
+        <dev:remarks>
+          <maml:para>This command gets WHEA memory policy values from the local computer as a WheaMemoryPolicy object.</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Online Version:</maml:linkText>
+        <maml:uri>https://learn.microsoft.com/powershell/module/whea/get-wheamemorypolicy?view=windowsserver2025-ps&amp;wt.mc_id=ps-gethelp</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Set-WheaMemoryPolicy</maml:linkText>
+        <maml:uri></maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Set-WheaMemoryPolicy</command:name>
+      <command:verb>Set</command:verb>
+      <command:noun>WheaMemoryPolicy</command:noun>
+      <maml:description>
+        <maml:para>Sets the WHEA memory policy for a computer.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>The Set-WheaMemoryPolicy cmdlet sets the elements of the WHEA (Windows Hardware Error Architecture) memory policy on the specified computer.</maml:para>
+      <maml:para>WHEA receives memory errors, corrected and uncorrected, from the platform and implements a Predictive Failure Analysis (PFA) algorithm based on corrected errors. WHEA attempts to remove from the available system memory the pages that have uncorrected errors, or are predicted to fail based on corrected errors. The removal decisions can be persisted across reboots. You can change the WHEA decision criteria against memory errors by tuning the WHEA memory policy. These policy elements can be set independently of each other. The new policy element values take effect immediately.</maml:para>
+      <maml:para>WHEA memory policy elements are:</maml:para>
+      <maml:para>- DisableOffline. Disable decisions to take memory offline based on corrected or uncorrected errors.</maml:para>
+      <maml:para>- DisablePFA. Disable predictive failure analysis (PFA) of memory pages based on the number of corrected errors reported in the page.</maml:para>
+      <maml:para>- PersistMemoryOffline. Persist the decisions to take memory offline across reboots. This element applies to both corrected and uncorrected errors.</maml:para>
+      <maml:para>- PFAPageCount. The maximum number of memory pages that WHEA monitors using PFA.</maml:para>
+      <maml:para>- PFAErrorThreshold. The number of errors that need to occur within the timeout period for the page to be candidate for removal.</maml:para>
+      <maml:para>- PFATimeout. The number of seconds before PFA takes a page out of the monitoring list.</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Set-WheaMemoryPolicy</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="CN">
+          <maml:name>ComputerName</maml:name>
+          <maml:description>
+            <maml:para>Specifies the name of the remote computer from which to retrieve policy information. If you do not specify a computer name, the command returns the policy of the local computer. The alias for ComputerName is cn.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
+          <maml:name>DisableOffline</maml:name>
+          <maml:description>
+            <maml:para>Disables WHEA from taking memory pages offline in response to corrected or uncorrected memory errors.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
+          <dev:type>
+            <maml:name>Boolean</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
+          <maml:name>DisablePFA</maml:name>
+          <maml:description>
+            <maml:para>Disables the predictive failure analysis algorithm and stops WHEA from monitoring memory pages that have corrected errors.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
+          <dev:type>
+            <maml:name>Boolean</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
+          <maml:name>PFAErrorThreshold</maml:name>
+          <maml:description>
+            <maml:para>Specifies the number of corrected errors that must occur before a memory page in the PFA monitoring list is considered bad and is taken offline.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">UInt32</command:parameterValue>
+          <dev:type>
+            <maml:name>UInt32</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
+          <maml:name>PFAPageCount</maml:name>
+          <maml:description>
+            <maml:para>Specifies the maximum size of the PFA monitoring list for pages that experience corrected memory errors.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">UInt32</command:parameterValue>
+          <dev:type>
+            <maml:name>UInt32</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
+          <maml:name>PFATimeout</maml:name>
+          <maml:description>
+            <maml:para>Specifies the number of seconds that WHEA monitors a memory page using PFA. WHEA starts monitoring a memory page when the page has its first corrected error. WHEA stops monitoring a memory page when one of the following events occurs:</maml:para>
+            <maml:para>- The monitoring interval exceeds the PfaTimeout value.</maml:para>
+            <maml:para>or</maml:para>
+            <maml:para>- The number of detected errors exceeds the PfaErrorThreshold value.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">UInt32</command:parameterValue>
+          <dev:type>
+            <maml:name>UInt32</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
+          <maml:name>PersistMemoryOffline</maml:name>
+          <maml:description>
+            <maml:para>Indicates whether to persist memory-offline decisions across computer reboots.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
+          <dev:type>
+            <maml:name>Boolean</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="CN">
+        <maml:name>ComputerName</maml:name>
+        <maml:description>
+          <maml:para>Specifies the name of the remote computer from which to retrieve policy information. If you do not specify a computer name, the command returns the policy of the local computer. The alias for ComputerName is cn.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
+        <maml:name>DisableOffline</maml:name>
+        <maml:description>
+          <maml:para>Disables WHEA from taking memory pages offline in response to corrected or uncorrected memory errors.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
+        <dev:type>
+          <maml:name>Boolean</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
+        <maml:name>DisablePFA</maml:name>
+        <maml:description>
+          <maml:para>Disables the predictive failure analysis algorithm and stops WHEA from monitoring memory pages that have corrected errors.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
+        <dev:type>
+          <maml:name>Boolean</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
+        <maml:name>PFAErrorThreshold</maml:name>
+        <maml:description>
+          <maml:para>Specifies the number of corrected errors that must occur before a memory page in the PFA monitoring list is considered bad and is taken offline.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">UInt32</command:parameterValue>
+        <dev:type>
+          <maml:name>UInt32</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
+        <maml:name>PFAPageCount</maml:name>
+        <maml:description>
+          <maml:para>Specifies the maximum size of the PFA monitoring list for pages that experience corrected memory errors.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">UInt32</command:parameterValue>
+        <dev:type>
+          <maml:name>UInt32</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
+        <maml:name>PFATimeout</maml:name>
+        <maml:description>
+          <maml:para>Specifies the number of seconds that WHEA monitors a memory page using PFA. WHEA starts monitoring a memory page when the page has its first corrected error. WHEA stops monitoring a memory page when one of the following events occurs:</maml:para>
+          <maml:para>- The monitoring interval exceeds the PfaTimeout value.</maml:para>
+          <maml:para>or</maml:para>
+          <maml:para>- The number of detected errors exceeds the PfaErrorThreshold value.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">UInt32</command:parameterValue>
+        <dev:type>
+          <maml:name>UInt32</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
+        <maml:name>PersistMemoryOffline</maml:name>
+        <maml:description>
+          <maml:para>Indicates whether to persist memory-offline decisions across computer reboots.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">Boolean</command:parameterValue>
+        <dev:type>
+          <maml:name>Boolean</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes />
+    <command:returnValues />
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>------ Example 1: Enable WHEA predictive failure analysis ------</maml:title>
+        <dev:code>PS C:\&gt; Set-WheaMemoryPolicy -DisablePFA $False</dev:code>
+        <dev:remarks>
+          <maml:para>This command enables predictive failure analysis on the local computer.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>Example 2: Change the memory time out policy on a remote computer</maml:title>
+        <dev:code>PS C:\&gt; Set-WHEAMemoryPolicy -ComputerName "TestPC" -PFATimeout 600</dev:code>
+        <dev:remarks>
+          <maml:para>This command changes the WHEA memory policy on the remote computer named TestPC to use a timeout of 600 seconds.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>---- Example 3: Get and set WHEA memory policy in a script ----</maml:title>
+        <dev:code>PS C:\&gt; $X = Get-WheaMemoryPolicy
+PS C:\&gt; $X.DisableOffline = $True
+PS C:\&gt; $X | Set-WheaMemoryPolicy</dev:code>
+        <dev:remarks>
+          <maml:para>This command gets the memory policy in the variable $X, sets the value of X. DisableOffline to True, and then uses $X to set the memory policy.</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Online Version:</maml:linkText>
+        <maml:uri>https://learn.microsoft.com/powershell/module/whea/set-wheamemorypolicy?view=windowsserver2025-ps&amp;wt.mc_id=ps-gethelp</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>Get-WheaMemoryPolicy</maml:linkText>
+        <maml:uri></maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+</helpItems>
