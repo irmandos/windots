@@ -123,6 +123,12 @@ function docs {
     Set-Location -Path $HOME\Documents
 }
 
+<#
+.SYNOPSIS
+    Navigate to the Desktop folder.
+.EXAMPLE
+    dtop
+#>
 function dtop {
     Set-Location -Path $HOME\Desktop
 }
@@ -151,6 +157,15 @@ function la {
     }
 }
 
+<#
+.SYNOPSIS
+    List all files including hidden ones in the current or specified directory.
+.PARAMETER Path
+    Directory to list (defaults to the current directory).
+.EXAMPLE
+    ll
+    ll C:\Users\irman\Desktop
+#>
 function ll {
     [CmdletBinding()]
     param (
@@ -1245,8 +1260,11 @@ function show-process-tree {
             }
         }
         
-        # Display tree function
-        function Show-ProcessBranch {
+        <#
+            .SYNOPSIS
+                Internal helper: recursively renders one branch of the process tree.
+            #>
+            function Show-ProcessBranch {
             param (
                 [Parameter(Mandatory = $true)]
                 $Process,
@@ -2182,6 +2200,12 @@ function push-profile {
 
     Push-Location $repoPath
     try {
+        # Regenerate the README command reference from the live profile BEFORE committing,
+        # so every push ships the latest synopsis/alias index. Safe if help-content isn't loaded.
+        if (Get-Command Update-ProfileReadme -ErrorAction SilentlyContinue) {
+            Update-ProfileReadme | Out-Null
+        }
+
         $pending = git status --porcelain
         if ($pending) {
             Write-Host "Committing changes (signed)..." -ForegroundColor Yellow
@@ -2408,3 +2432,7 @@ Set-Alias -Name psync -Value sync-profile
 #Write-Verbose "Aliases module version $script:ModuleVersion loaded successfully."
 #
 ##endregion Module Exports
+
+<#
+.SYNOPSIS
+#>
