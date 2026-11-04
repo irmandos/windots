@@ -121,4 +121,3 @@ if ($IsVSCodeTerminal) {
 # Initialize full interactive session
 Initialize-InteractiveSession
 #endregion FULL INTERACTIVE PROFILE
-```

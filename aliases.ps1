@@ -163,6 +163,56 @@ function ll {
 
 #endregion File and Directory Management Functions
 
+#region Gemini CLI Functions
+
+<#
+.SYNOPSIS
+    Smart Gemini CLI wrapper with automatic workspace management
+.DESCRIPTION
+    Ensures Gemini starts in the root directory and allows switching to projects.
+.PARAMETER Project
+    The name of the project folder under the Gemini CLI root.
+.PARAMETER RemainingArgs
+    Additional arguments passed to the original Gemini command.
+.EXAMPLE
+    gemini
+    # Starts in the root Gemini folder
+.EXAMPLE
+    gemini MyProject
+    # Switches to the MyProject subdirectory and starts Gemini
+#>
+function pgemini {
+    [CmdletBinding()]
+    param(
+        [Parameter(Position=0)]
+        [string]$Project,
+        [Parameter(ValueFromRemainingArguments=$true)]
+        [string[]]$RemainingArgs
+    )
+
+    $BaseRoot = "C:\Users\irman\OneDrive\Apps\Obsidian Vaults\Agents_AI\gemini-cli"
+    $OriginalGemini = "C:\Users\irman\AppData\Roaming\npm\gemini.ps1"
+
+    if ($Project -and $Project -notmatch "^[-/]") {
+        $ProjectPath = Join-Path $BaseRoot $Project
+        if (Test-Path $ProjectPath -PathType Container) {
+            Set-Location $ProjectPath
+            Write-Host "Switched to project: $Project" -ForegroundColor Cyan
+            & $OriginalGemini @RemainingArgs
+        } else {
+            # Not a directory, might be a prompt, flag, or command (e.g., 'mcp')
+            Set-Location $BaseRoot
+            & $OriginalGemini $Project @RemainingArgs
+        }
+    } else {
+        Set-Location $BaseRoot
+        & $OriginalGemini $Project @RemainingArgs
+    }
+}
+
+#endregion Gemini CLI Functions
+
+
 #region Git Functions
 
 <#
