@@ -98,16 +98,45 @@ function Install-Applications {
             return
         }
 
-        # Check if installed (simple check)
-        $installed = winget list -e --id $app.WingetName
-        if (-not $installed) {
-            Write-Host "Installing $($app.WingetName)..." -ForegroundColor Yellow
-            winget install --id $app.WingetName -e --accept-package-agreements --accept-source-agreements --silent
-        }
-        else {
-            Write-Verbose "$($app.WingetName) already installed."
-        }
+        # Check if installed using winget's exit code (0 = present, non-zero = absent).
+                # NOTE: previously used `winget list ...` output as a truthiness test, but winget
+                # prints "No installed package found matching input criteria" on a missing app,
+                # which is truthy -- so a fresh machine would have silently skipped every install.
+                winget list -e --id $app.WingetName > $null 2>&1
+                if ($LASTEXITCODE -ne 0) {
+                    Write-Host "Installing $($app.WingetName)..." -ForegroundColor Yellow
+                    winget install --id $app.WingetName -e --accept-package-agreements --accept-source-agreements --silent
+                    if ($LASTEXITCODE -eq 0) {
+                        Write-Host "Installed $($app.WingetName)" -ForegroundColor Green
+                    }
+                    else {
+                        Write-Warning "Failed to install $($app.WingetName) (exit $LASTEXITCODE)"
+                    }
+                }
+                else {
+                    Write-Verbose "$($app.WingetName) already installed."
+                }
     }
+}
+
+# Function to create the secrets file from the example template if it doesn't exist
+function Initialize-SecretsFile {
+    $secretsPath = Join-Path $PSScriptRoot 'Microsoft.PowerShell_secrets.ps1'
+    $examplePath = Join-Path $PSScriptRoot 'Microsoft.PowerShell_secrets.ps1.example'
+
+    if (Test-Path $secretsPath) {
+        Write-Verbose "Secrets file already exists."
+        return $true
+    }
+
+    if (-not (Test-Path $examplePath)) {
+        Write-Warning "Secrets example template not found. No secrets file will be created."
+        return $false
+    }
+
+    Copy-Item -Path $examplePath -Destination $secretsPath -Force
+    Write-Host "Created secrets file from template. Add your API keys: $secretsPath" -ForegroundColor Yellow
+    return $true
 }
 
 # Function to setup profile
@@ -152,6 +181,7 @@ if (-not (Test-InternetConnection)) { break }
 Install-Modules -Modules $myModules
 Install-Applications -AppList $AppList
 Install-NerdFont
+Initialize-SecretsFile
 Setup-Profile
 
 Write-Host "`nSetup Completed Successfully!" -ForegroundColor Green

@@ -19,7 +19,6 @@ $script:RequiredModules = @(
     @{Name = 'PSReadLine'; AllowPrerelease = $true }
     @{Name = 'posh-git' }
     @{Name = 'Terminal-Icons' }
-    @{Name = 'Get-ChildItemColor' }
 )
 
 $script:RequiredWingetApps = @(
@@ -440,12 +439,12 @@ function Initialize-OhMyPosh {
     }
 
     try {
-        if ($ForVSCode) {
-            oh-my-posh init pwsh --config "$env:OneDriveConsumer\Documents\PowerShell\oh-my-posh-vscode.json" | Invoke-Expression
-        }
-        else {
-            oh-my-posh init pwsh --config "$env:OneDriveConsumer\Documents\PowerShell\oh-my-posh-theme.json" | Invoke-Expression
-        }
+        # Resolve themes relative to this script (portable across OneDrive and local clones);
+        # fall back to the main theme if a VSCode-specific one is absent
+        $mainTheme = Join-Path $PSScriptRoot 'oh-my-posh-theme.json'
+        $vscodeTheme = Join-Path $PSScriptRoot 'oh-my-posh-vscode.json'
+        $themePath = if ($ForVSCode -and (Test-Path $vscodeTheme)) { $vscodeTheme } else { $mainTheme }
+        oh-my-posh init pwsh --config $themePath | Invoke-Expression
         Write-Verbose "Oh-My-Posh initialized successfully"
     }
     catch {
@@ -515,6 +514,12 @@ function Initialize-InteractiveSession {
 
     # Display system information
     Show-SystemInfo
+
+    # Remind the user if there are unpushed profile (windots) changes -- only in interactive sessions.
+    # The function lives in aliases.ps1, so guard on it existing.
+    if (Get-Command Show-ProfileSyncReminder -ErrorAction SilentlyContinue) {
+        Show-ProfileSyncReminder
+    }
 
     # Start background module check (non-blocking)
     Start-BackgroundModuleCheck

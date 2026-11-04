@@ -540,7 +540,7 @@ function update-system {
         try {
             Write-Host "Updating installed applications..." -ForegroundColor Yellow
             if (Get-Command winget -ErrorAction SilentlyContinue) {
-                winget upgrade --all
+                winget upgrade --all --accept-package-agreements --accept-source-agreements --silent
                 Write-Host "Winget packages updated." -ForegroundColor Green
             }
             else {
@@ -565,7 +565,10 @@ function update-system {
             
             if ($isElevated) {
                 if (Get-Command -Name Get-WindowsUpdate -ErrorAction SilentlyContinue) {
-                    Get-WindowsUpdate -MicrosoftUpdate -AcceptAll -Install -IgnoreReboot
+                    $null = Get-WindowsUpdate -MicrosoftUpdate -AcceptAll -Install -IgnoreReboot
+                    if (Test-Path 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\WindowsUpdate\Auto Update\RebootRequired') {
+                        Write-Warning "Windows updates installed but a REBOOT is required to complete them."
+                    }
                     Write-Host "Windows updates installed." -ForegroundColor Green
                 }
                 else {
@@ -578,14 +581,14 @@ function update-system {
                 # Check if PSWindowsUpdate is available even if not elevated, just to give a better error if it's missing entirely
                 # Note: Get-Command might fail for some admin-only modules but usually visible
                 if (Get-Command -Name Get-WindowsUpdate -ErrorAction SilentlyContinue) {
-                    $cmd = "Get-WindowsUpdate -MicrosoftUpdate -AcceptAll -Install -IgnoreReboot; Write-Host 'Press any key to close...'; [void][System.Console]::ReadKey()"
+                    $cmd = "Import-Module PSWindowsUpdate -ErrorAction SilentlyContinue; Get-WindowsUpdate -MicrosoftUpdate -AcceptAll -Install -IgnoreReboot; if (Test-Path 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\WindowsUpdate\Auto Update\RebootRequired') { Write-Warning 'Reboot required to complete updates.' }; Write-Host 'Press any key to close...'; [void][System.Console]::ReadKey()"
                     Start-Process pwsh -ArgumentList "-Command", "& { $cmd }" -Verb RunAs -Wait
                 }
                 else {
                     # If we can't see the command, we try to run it anyway in the elevated session, 
                     # but if we are sure it's missing we could warn. 
                     # Safer to just try running it in the elevated session as the module might be installed in a scope visible to admin.
-                     $cmd = "if (Get-Command -Name Get-WindowsUpdate -ErrorAction SilentlyContinue) { Get-WindowsUpdate -MicrosoftUpdate -AcceptAll -Install -IgnoreReboot } else { Write-Warning 'PSWindowsUpdate module not found.' }; Write-Host 'Press any key to close...'; [void][System.Console]::ReadKey()"
+                     $cmd = "Import-Module PSWindowsUpdate -ErrorAction SilentlyContinue; if (Get-Command -Name Get-WindowsUpdate -ErrorAction SilentlyContinue) { Get-WindowsUpdate -MicrosoftUpdate -AcceptAll -Install -IgnoreReboot; if (Test-Path 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\WindowsUpdate\Auto Update\RebootRequired') { Write-Warning 'Reboot required to complete updates.' } } else { Write-Warning 'PSWindowsUpdate module not found.' }; Write-Host 'Press any key to close...'; [void][System.Console]::ReadKey()"
                      Start-Process pwsh -ArgumentList "-Command", "& { $cmd }" -Verb RunAs -Wait
                 }
                 Write-Host "Windows update process completed." -ForegroundColor Green
@@ -2137,11 +2140,187 @@ function reload-profile {
     }
 }
 
+<#
+.SYNOPSIS
+    Synchronise the windots profile repo with GitHub: backup, pull, stage, commit (signed), push.
+.DESCRIPTION
+    The dedicated profile-management push, pull, and sync flow. Each verb:
+      - Push: creates a timestamped backup, then commits any working-tree changes
+        (signed via the SSH agent, since commit.gpgsign=true) and pushes unpushed commits.
+      - Pull: pulls the profile's remote (git pull --rebase) so local matches cloud.
+      - Sync: pull then push (default when no Action supplied).
+    It always runs from this profile's repo directory, and never signs with
+    --no-gpg-sign -- signing is the default here so commits are verified.
+.PARAMETER Action
+    'sync' (default), 'push', or 'pull'.
+.PARAMETER Message
+    Optional commit message; prompted interactively if empty and changes exist.
+.PARAMETER SkipBackup
+    Do not take a backup before a push (backup is on by default for safety).
+.EXAMPLE
+    push-profile "Add windots sync flow"
+    # Commits (signed) and pushes with the given message, after a backup.
+#>
+function push-profile {
+    [CmdletBinding()]
+    param(
+        [Parameter(Position = 0)]
+        [string]$Message = '',
+        [switch]$SkipBackup
+    )
+
+    $repoPath = $PSScriptRoot
+    if (-not (Test-Path (Join-Path $repoPath '.git'))) {
+        Write-Warning "No windots git repository at $repoPath -- nothing to push."
+        return
+    }
+
+    if (-not $SkipBackup) {
+        Write-Host "Backing up profile before push..." -ForegroundColor Cyan
+        backup-profile -IncludeScripts -Name "before-push-$(Get-Date -Format 'yyyyMMdd-HHmmss')" | Out-Null
+    }
+
+    Push-Location $repoPath
+    try {
+        $pending = git status --porcelain
+        if ($pending) {
+            Write-Host "Committing changes (signed)..." -ForegroundColor Yellow
+            if (-not $Message) { $Message = Read-Host "Commit message" }
+            git add -A
+            git commit -S -m $Message
+            if ($LASTEXITCODE -ne 0) {
+                Write-Warning "Commit failed or signing aborted -- nothing pushed."
+                return
+            }
+        }
+        else {
+            Write-Host "No working-tree changes in the profile repo." -ForegroundColor Green
+        }
+        Write-Host "Pushing windots..." -ForegroundColor Yellow
+        git push
+        if ($LASTEXITCODE -eq 0) {
+            Write-Host "Windots pushed successfully." -ForegroundColor Green
+        }
+        else {
+            Write-Warning "Windots push failed (exit $LASTEXITCODE)."
+        }
+    }
+    finally {
+        Pop-Location
+    }
+}
+
+<#
+.SYNOPSIS
+    Pull the windots profile repo from GitHub so local matches cloud.
+.EXAMPLE
+    pull-profile
+    # Rebase local profile onto the latest remote.
+#>
+function pull-profile {
+    [CmdletBinding()]
+    param()
+
+    $repoPath = $PSScriptRoot
+    if (-not (Test-Path (Join-Path $repoPath '.git'))) {
+        Write-Warning "No windots git repository at $repoPath -- nothing to pull."
+        return
+    }
+
+    Push-Location $repoPath
+    try {
+        Write-Host "Pulling windots profile..." -ForegroundColor Cyan
+        git pull --rebase
+        if ($LASTEXITCODE -eq 0) {
+            Write-Host "Windots profile up to date (or updated)." -ForegroundColor Green
+        }
+        else {
+            Write-Warning "Windots pull failed (exit $LASTEXITCODE). Check for local changes or network."
+        }
+    }
+    finally {
+        Pop-Location
+    }
+}
+
+<#
+.SYNOPSIS
+    Sync the windots profile repo: pull then push (backup + signed commit + push).
+.EXAMPLE
+    sync-profile
+    sync-profile -Action push -Message "Updated theme"
+#>
+function sync-profile {
+    [CmdletBinding()]
+    param(
+        [Parameter(Position = 0)]
+        [ValidateSet('sync', 'push', 'pull')]
+        [string]$Action = 'sync',
+        [string]$Message = ''
+    )
+
+    switch ($Action) {
+        'pull' { pull-profile }
+        'push' { push-profile -Message $Message }
+        default {
+            pull-profile
+            push-profile -Message $Message
+        }
+    }
+}
+
+<#
+.SYNOPSIS
+    Show a one-line banner below system info if the windots repo has uncommitted or unpushed changes.
+.DESCRIPTION
+    Best-effort and silent on failure or when the repo is clean. Shows only in
+    interactive sessions (called from module-manager's Initialize-InteractiveSession).
+#>
+function Show-ProfileSyncReminder {
+    [CmdletBinding()]
+    param()
+
+    # Belt-and-braces: never run from a non-interactive context or a terminal we can't trust
+    if (-not $IsInteractive -and -not [Environment]::UserInteractive) { return }
+
+    try {
+        $repoPath = $PSScriptRoot
+        if (-not (Test-Path (Join-Path $repoPath '.git'))) { return }
+
+        Push-Location $repoPath
+        try {
+            $dirty = git status --porcelain
+            $aheadCount = 0
+            try { $aheadRaw = git rev-list --count '@{u}..HEAD' 2>$null } catch { $aheadRaw = $null }
+            if ($aheadRaw) { $null = [int]::TryParse($aheadRaw.Trim(), [ref]$aheadCount) }
+
+            if ($dirty -or $aheadCount -gt 0) {
+                Write-Host ''
+                Write-Host '  ┌──────────────────────────────────────────────┐' -ForegroundColor Yellow
+                Write-Host '  │  windots: changes to push -- run  push-profile │' -ForegroundColor Yellow
+                Write-Host '  └──────────────────────────────────────────────┘' -ForegroundColor Yellow
+                Write-Host ''
+            }
+        }
+        finally {
+            Pop-Location
+        }
+    }
+    catch {
+        # never let an error here break session startup
+    }
+}
+
 # Create aliases for profile management functions
 Set-Alias -Name ep -Value edit-profile
 Set-Alias -Name bp -Value backup-profile
 #Set-Alias -Name rp -Value restore-profile
 Set-Alias -Name reload -Value reload-profile
+# Windots sync aliases: dedicated profile push/pull/sync flow
+Set-Alias -Name pw -Value push-profile
+Set-Alias -Name ppush -Value push-profile
+Set-Alias -Name ppull -Value pull-profile
+Set-Alias -Name psync -Value sync-profile
 
 #endregion Profile Management
 

@@ -15,6 +15,12 @@
 
 # Robust Session Detection
 $script:IsVSCodeTerminal = $env:TERM_PROGRAM -eq 'vscode' -or $Host.Name -eq 'Visual Studio Code Host'
+# Generic IDE/editor terminal detection: VS Code, JetBrains family, VS, embedded consoles
+$script:IsIdeTerminal = $script:IsVSCodeTerminal `
+    -or $env:TERM_PROGRAM -match 'vscode|jetbrains|intellij|pycharm|webstorm|goland|rider|clion|datagrip|cursor' `
+    -or $env:TERM_PROGRAM -match 'code' `
+    -or $env:VSCODE_CWD `
+    -or $env:JETBRAINSIDEASELECTED
 $isUserInteractive = [Environment]::UserInteractive
 $hasInteractiveArg = [Environment]::GetCommandLineArgs() -contains '-NonInteractive'
 
@@ -22,11 +28,6 @@ $hasInteractiveArg = [Environment]::GetCommandLineArgs() -contains '-NonInteract
 # 1. Not UserInteractive AND Not VSCode ( VS Code Integrated Console sometimes reports UserInteractive=False incorrectly)
 # 2. explicitly passed -NonInteractive
 $script:IsNonInteractive = ($hasInteractiveArg) -or (-not $isUserInteractive -and -not $script:IsVSCodeTerminal)
-
-# Exit early for non-interactive sessions
-if ($script:IsNonInteractive) {
-    return
-}
 
 $script:IsAzureFunction = $env:AZUREPS_HOST_ENVIRONMENT -or $env:AZURE_FUNCTIONS_ENVIRONMENT
 if ($script:IsAzureFunction) {
@@ -56,7 +57,11 @@ if ($VerbosePreference -eq 'Continue') {
 . "$PSScriptRoot\module-manager.ps1"
 
 # Load essential modules with optimized parallel loading
-# This uses the optimized Import-RequiredModules function from module-manager.ps1
+# This uses the optimized Import-RequiredModules function from module-manager.ps1.
+# On a fresh machine the modules aren't there yet, so install any missing ones
+# synchronously first (cache-gated: only runs when needed, not every session),
+# then import -- avoids a degraded first launch while the background job catches up.
+Install-RequiredPSModules -ErrorAction SilentlyContinue
 Import-RequiredModules
 
 # Import local secrets (Ignored by Git)
@@ -75,20 +80,22 @@ if ($IsNonInteractive) {
 }
 #endregion MINIMAL PROFILE
 
-#region VSCODE SPECIFIC CONFIGURATION
+#region VSCODE / IDE SPECIFIC CONFIGURATION
 #############################################################################
-# VS Code specific configuration
-# Limited terminal customization for integrated terminal
+# VS Code / IDE specific configuration
+# Limited terminal customization for integrated terminals
 #############################################################################
-if ($IsVSCodeTerminal) {
+if ($script:IsIdeTerminal) {
     # Import additional VS Code specific modules and functions
     . "$PSScriptRoot\profile-manager.ps1"
     
     # Function for Oh-My-Posh with VS Code optimized settings
     function Set-OhMyPoshVSCode {
         if (Get-Command "oh-my-posh" -ErrorAction SilentlyContinue) {
-            # Simplified theme for VS Code (faster loading)
-            oh-my-posh init pwsh --config "$PSScriptRoot\oh-my-posh-vscode.json" | Invoke-Expression
+            # Simplify theme for VS Code (faster loading); fall back to main theme if the VSCode one is absent
+            $vscodeTheme = Join-Path $PSScriptRoot 'oh-my-posh-vscode.json'
+            $themePath = if (Test-Path $vscodeTheme) { $vscodeTheme } else { Join-Path $PSScriptRoot 'oh-my-posh-theme.json' }
+            oh-my-posh init pwsh --config $themePath | Invoke-Expression
         }
     }
     

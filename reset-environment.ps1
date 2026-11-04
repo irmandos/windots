@@ -30,7 +30,7 @@ function Reset-PowerShellEnvironment {
     Install-Module -Name PowerShellGet -Force -AllowClobber -Scope CurrentUser
 
     # Force update all required modules
-    $requiredModules = @('PSReadLine', 'posh-git', 'Terminal-Icons', 'Get-ChildItemColor')
+    $requiredModules = @('PSReadLine', 'posh-git', 'Terminal-Icons')
     
     foreach ($module in $requiredModules) {
         Write-Host "Updating module: $module" -ForegroundColor Yellow
